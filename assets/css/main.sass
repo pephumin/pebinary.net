@@ -4,15 +4,20 @@ section: null
 homepage: false
 ---
 
+// Base
+@import '1/vars'
+@import '1/bourbon/bourbon'
+@import '1/fonts'
+@import '1/normalize'
+
 // Modules
-@import 'base/bourbon/bourbon'
-@import 'base/fonts'
-@import 'base/normalize'
-@import 'base/pe'
-@import 'base/pygment'
-@import 'base/vars'
+@import '2/bootstrap'
+@import '2/pe'
+@import '2/pygment'
 
 // Custom
-@import 'body'
-@import 'style'
-@import 'logo'
+@import '3/body'
+@import '3/layout'
+@import '3/logo'
+//@import '3/notuse'
+@import '3/others'

@@ -1,0 +1,427 @@
+
+// Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+h1, h2, h3, h4, h5, h6
+  margin-top: 0
+  margin-bottom: 2rem
+  font-weight: 300
+
+h1
+  font-size: 3.8rem
+  line-height: 1.2
+  letter-spacing: -.1rem
+
+h2
+  font-size: 3.2rem
+  line-height: 1.25
+  letter-spacing: -.1rem
+
+h3
+  font-size: 2.8rem
+  line-height: 1.3
+  letter-spacing: -.1rem
+
+h4
+  font-size: 2.4rem
+  line-height: 1.35
+  letter-spacing: -.08rem
+
+h5
+  font-size: 2.0rem
+  line-height: 1.5
+  letter-spacing: -.05rem
+
+h6
+  font-size: 1.8rem
+  line-height: 1.7
+  letter-spacing: 0
+
+
+// Buttons
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button
+  display: inline-block
+  height: 38px
+  padding: 0 30px
+  color: $grey
+  background-color: transparent
+  border: 1px solid $grey
+  border-radius: 4px
+  text-align: center
+  font-size: 11px
+  font-weight: 600
+  line-height: 38px
+  letter-spacing: .1rem
+  text-transform: uppercase
+  text-decoration: none
+  white-space: nowrap
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+.button:hover,
+.button:focus,
+button:hover,
+button:focus
+  color: $white
+  background-color: $lightgrey
+  border: 1px solid $lightgrey
+  border-color: transparent
+  outline: 0
+  text-decoration: none
+
+.button-x
+  display: inline-block
+  height: 38px
+  padding: 0 30px
+  color: $white
+  background-color: $lightgrey
+  border: 1px solid $lightgrey
+  border-radius: 4px
+  text-align: center
+  font-size: 11px
+  font-weight: 600
+  line-height: 38px
+  letter-spacing: .1rem
+  text-transform: uppercase
+  text-decoration: none
+  white-space: nowrap
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+.button-x:hover,
+.button-x:focus
+  color: $grey
+  background-color: transparent
+  border: 1px solid $grey
+  border-color: transparent
+  outline: 0
+  text-decoration: none
+
+.button-p
+  display: inline-block
+  height: 38px
+  padding: 0 30px
+  color: $indigo
+  background-color: transparent
+  border: 1px solid $indigo
+  border-radius: 4px
+  text-align: center
+  font-size: 11px
+  font-weight: 600
+  line-height: 38px
+  letter-spacing: .1rem
+  text-transform: uppercase
+  text-decoration: none
+  white-space: nowrap
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+.button-p:hover,
+.button-p:focus
+  color: $white
+  background-color: $indigo
+  border: 1px solid $indigo
+  border-color: transparent
+  outline: 0
+  text-decoration: none
+
+input
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"]
+    display: inline-block
+    height: 38px
+    padding: 0 30px
+    color: $grey
+    background-color: transparent
+    border: 1px solid $grey
+    border-radius: 4px
+    text-align: center
+    font-size: 11px
+    font-weight: 600
+    line-height: 38px
+    letter-spacing: .1rem
+    text-transform: uppercase
+    text-decoration: none
+    white-space: nowrap
+    cursor: pointer
+    box-sizing: border-box
+
+input
+  &[type="submit"]:hover,
+  &[type="submit"]:focus,
+  &[type="reset"]:hover,
+  &[type="reset"]:focus,
+  &[type="button"]:hover,
+  &[type="button"]:focus
+    color: $white
+    background-color: $lightgrey
+    border: 1px solid $lightgrey
+    border-color: transparent
+    outline: 0
+    text-decoration: none
+
+input
+  &[type="submit"].button-p,
+  &[type="reset"].button-p,
+  &[type="button"].button-p
+    display: inline-block
+    height: 38px
+    padding: 0 30px
+    color: $indigo
+    background-color: transparent
+    border: 1px solid $indigo
+    border-radius: 4px
+    text-align: center
+    font-size: 11px
+    font-weight: 600
+    line-height: 38px
+    letter-spacing: .1rem
+    text-transform: uppercase
+    text-decoration: none
+    white-space: nowrap
+    cursor: pointer
+    box-sizing: border-box
+
+input
+  &[type="submit"].button-p:hover,
+  &[type="submit"].button-p:focus,
+  &[type="reset"].button-p:hover,
+  &[type="reset"].button-p:focus,
+  &[type="button"].button-p:hover,
+  &[type="button"].button-p:focus
+    color: $white
+    background-color: $indigo
+    border: 1px solid $indigo
+    border-color: transparent
+    outline: 0
+    text-decoration: none
+
+// Forms
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+textarea,
+select
+  height: 38px
+  padding: 6px 10px
+  background-color: $white
+  border: 1px solid $silver
+  border-radius: 4px
+  box-shadow: none
+  box-sizing: border-box
+
+textarea
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  min-height: 65px
+  padding-top: 6px
+  padding-bottom: 6px
+
+textarea:focus,
+select:focus
+  border: 1px solid $blue
+  outline: 0
+
+input
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"]
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+input
+  &[type="email"]:focus,
+  &[type="number"]:focus,
+  &[type="search"]:focus,
+  &[type="text"]:focus,
+  &[type="tel"]:focus,
+  &[type="url"]:focus,
+  &[type="password"]:focus
+    border: 1px solid $blue
+    outline: 0
+
+label,
+legend
+  display: block
+  margin-bottom: .5rem
+  font-weight: 600
+
+fieldset
+  padding: 0
+  border-width: 0
+
+input
+  &[type="checkbox"],
+  &[type="radio"]
+    display: inline
+
+label > .label-body
+  display: inline-block
+  margin-left: .5rem
+  font-weight: normal
+
+
+// Lists
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ul
+  list-style: circle inside
+  padding-left: 0
+  margin-top: 0
+
+ol
+  list-style: decimal inside
+  padding-left: 0
+  margin-top: 0
+
+ul
+  padding-left: 0
+  margin-top: 0
+  ul, ol
+    margin: 1.0rem 0 1.0rem 2.0rem
+    font-size: 85%
+
+ol
+  ol, ul
+    margin: 1.0rem 0 1.0rem 2.0rem
+    font-size: 85%
+
+li
+  margin-bottom: 0.5rem
+
+dl
+  margin: 0 0 15px 0
+  //padding-left: 20px
+
+  dt
+    font-weight: bold
+    margin-top: 10px
+
+  dd
+    margin-left: 0
+    padding-left: 0
+    font-style: italic
+
+  p
+    padding-left: 20px
+    font-style: italic
+
+// Code
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+code
+  padding: 2px 4px
+  font-size: 90%
+  color: $red
+  background-color: #F9F2F4
+  border-radius: 4px
+
+kbd
+  padding: 2px 4px
+  font-size: 90%
+  color: $white
+  background-color: $black
+  border-radius: 3px
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25)
+
+  kbd
+    padding: 0
+    font-size: 100%
+    font-weight: bold
+    box-shadow: none
+
+pre
+  display: block
+  padding: 10px 0px 0px 0px
+  font-size: 90%
+  line-height: 1.42857
+  word-break: break-all
+  word-wrap: break-word
+  color: $black
+  background-color: $white-shadow
+  border: 1px solid $silver
+  border-radius: 4px
+
+  code
+    font-size: inherit
+    color: inherit
+    white-space: pre-wrap
+    background-color: transparent
+    border-radius: 0
+
+blockquote
+  color: $darkgrey
+  margin: 0 0 20px 2px
+  padding: 0px 20px
+  border-left: 3px solid $lightgrey
+  font-style: italic
+  background-color: $white-shadow
+
+// Tables
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+table
+  width: 100%
+  margin-bottom: 20px
+  text-align: left
+
+th
+  padding: 10px 12px
+  background: $grey
+  color: $white
+  border-bottom: 1px solid $silver
+
+td
+  padding: 12px 15px
+  border-bottom: 1px solid $silver
+
+// Spacing
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+button,
+.button
+  margin-bottom: 1rem
+
+input,
+textarea,
+select,
+fieldset
+  margin-bottom: 1.5rem
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form
+  margin-bottom: 2.5rem
+
+
+// Clearing
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.container:after,
+.row:before,
+.row:after,
+.u-cf
+  content: ""
+  display: table
+  clear: both

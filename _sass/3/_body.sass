@@ -1,0 +1,168 @@
+// Base Styles
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// html is set to 62.5% so that all the REM measurements throughout Skeleton
+// are based on 10px sizing. So basically 1.5rem = 15px :)
+
+html
+  font-size: 62.5%
+
+body
+  font-size: 1.6em
+  line-height: 1.7
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  color: $darkgrey
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+p
+  margin: 0 0 20px 0
+
+a
+  color: $indigo
+  text-decoration: none
+  outline: 0
+
+  &:hover
+    text-decoration: none
+    color: $orange
+
+hr
+  margin-top: 3rem
+  margin-bottom: 3.5rem
+  border-width: 0
+  border-top: 1px solid $silver
+
+del
+  color: $lightgrey
+
+.anchorjs-link
+  color: $indigo
+  text-decoration: none
+
+  &:hover
+    color: $orange
+    text-decoration: none
+
+*:hover > .anchorjs-link
+  transition: color .25s linear
+
+.white
+  color: $white
+
+.silver
+  color: $silver
+
+.lightkgrey
+  color: $lightgrey
+
+.grey
+  color: $grey
+
+.darkgrey
+  color: $darkgrey
+
+.black
+  color: $black
+
+.blue
+  color: $blue
+
+.darkblue
+  color: $darkblue
+
+.navy
+  color: $navy
+
+.lightgreen
+  color: $lightgreen
+
+.green
+  color: $green
+
+.darkgreen
+  color: $darkgreen
+
+.deepgreen
+  color: $deepgreen
+
+.yellow
+  color: $yellow
+
+.orange
+  color: $orange
+
+.red
+  color: $red
+
+.tg
+  color: $c-thaiairways
+
+.scb
+  color: $c-scb
+
+.plum
+  color: $plum
+
+.lightplum
+  color: $lightplum
+
+.indigo
+  color: $indigo
+
+.tropicalindigo
+  color: $tropicalindigo
+
+.badge
+  display: inline
+  min-width: 10px
+  padding: 3px 7px
+  font-size: 12px
+  font-weight: bold
+  color: $white
+  line-height: 1
+  vertical-align: middle
+  white-space: nowrap
+  text-align: center
+  background-color: $indigo
+  border-radius: 10px
+  &:empty
+    display: none
+
+.label
+  display: inline
+  padding: 0.15rem
+  font-size: 60%
+  font-weight: bold
+  line-height: 1
+  text-transform: uppercase
+  color: $white
+  text-align: center
+  white-space: nowrap
+  background-color: $red
+  vertical-align: super
+  border-radius: 0.25rem
+  &:empty
+    display: none
+
+.scroll-to-top
+  //font-family: "ubuntu"
+  font-size: 2.0rem
+  background: rgba(17, 17, 17, 0.3)
+  color: $white
+  bottom: 4%
+  cursor: pointer
+  display: none
+  position: fixed
+  right: 20px
+  z-index: 999
+  text-align: center
+  line-height: 40px
+  width: 40px
+  border-radius: 4px
+  -webkit-transition: background-color 0.3s linear
+  -moz-transition: background-color 0.3s linear
+  -o-transition: background-color 0.3s linear
+  transition: background-color 0.3s linear
+  &:hover
+    background: $darkgreen
+    opacity: 0.8
