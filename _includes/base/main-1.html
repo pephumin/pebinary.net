@@ -1,73 +1,21 @@
-<div class="main">
+<main>
   <div class="container">
     <div class="row">
-      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+      <div class="col-md-3 col-lg-3">
         <aside class="left">
-          <nav class="leftmenu">
-            <ul class="navlist-parent">
-              <li class="navlist-parent">
-                <span class="navlist-section">Parent 1</span>
-                <ul class="navlist-child">
-                  <li class="navlist-child">Children 1</li>
-                  <li class="navlist-child">Children 2</li>
-                  <li class="navlist-child">Children 3</li>
-                  <li class="navlist-child">Children 4</li>
-                  <li class="navlist-child">Children 5</li>
-                </ul>
-              </li>
-              <li class="navlist-parent">
-                <span class="navlist-section">Parent 2</span>
-                <ul class="navlist-child">
-                  <li class="navlist-child">Children 1</li>
-                  <li class="navlist-child">Children 2</li>
-                  <li class="navlist-child">Children 3</li>
-                  <li class="navlist-child">Children 4</li>
-                  <li class="navlist-child">Children 5</li>
-                </ul>
-              </li>
-              <li class="navlist-parent">
-                <span class="navlist-section">Parent 3</span>
-                <ul class="navlist-child">
-                  <li class="navlist-child">Children 1</li>
-                  <li class="navlist-child">Children 2</li>
-                  <li class="navlist-child">Children 3</li>
-                  <li class="navlist-child">Children 4</li>
-                  <li class="navlist-child">Children 5</li>
-                </ul>
-              </li>
-              <li class="navlist-parent">
-                <span class="navlist-section">Parent 4</span>
-                <ul class="navlist-child">
-                  <li class="navlist-child">Children 1</li>
-                  <li class="navlist-child">Children 2</li>
-                  <li class="navlist-child">Children 3</li>
-                  <li class="navlist-child">Children 4</li>
-                  <li class="navlist-child">Children 5</li>
-                </ul>
-              </li>
-              <li class="navlist-parent">
-                <span class="navlist-section">Parent 5</span>
-                <ul class="navlist-child">
-                  <li class="navlist-child">Children 1</li>
-                  <li class="navlist-child">Children 2</li>
-                  <li class="navlist-child">Children 3</li>
-                  <li class="navlist-child">Children 4</li>
-                  <li class="navlist-child">Children 5</li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+          {% if page.url contains "/members/" %}{% include base/navleft.html section = "left-members" %}{% elsif page.url contains "/clients/" %}{% include base/navleft.html section = "clients" %}{% endif %}
         </aside>
         <aside class="search">
           Form for a quick search
         </aside>
       </div>
-      {% if $internal %}<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">{% else %}<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">{% endif %}
-        <nav class="bread">
-          <ol class="navlist-breadcrumb">
-            <li class="navlist-bc">Home</li>
-            <li class="navlist-bc">Section</li>
-            <li class="navlist-bc">Page</li>
+      <div class="col-md-9 col-lg-9">
+        <nav class="breadcrumb-top">
+          <ol class="breadcrumb">
+            <li>Home</li>
+            <li>Clients</li>
+            <li>Parent</li>
+            <li class="active">Children</li>
           </ol>
         </nav>
         <!-- <hr> -->

@@ -1,13 +1,15 @@
 
 <header>
   <div class="container">
-    <p class="toplogo">{% include base/logo.html %}<span class="sub-brand">client support</span></p>
+    <p class="toplogo"><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}" class="toplogo">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a> <span class="label red">{% if page.section == "clients" %}client support{% elsif page.section == "members" %}member support{% else %}support{% endif %}</span></p>
+    <p class="description">{{ site.description }}</p>
     <nav class="topnav">
       <ul>
-        <li>Menu 1</li>
-        <li>Menu 2</li>
-        <li>Menu 3</li>
-        <li>Menu 4</li>
+        {% for entry in site.data.navigation.topnav %}{% if entry.section == page.section %}
+        <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}"><span class="pe-stack here pe-2x"><i class="pe-circle pe-stack-2x" title="{{ entry.description }}"></i><i class="pe-{{ entry.icon }} pe-stack-1x pe-inverse" title="{{ entry.description }}"></i></span><br><span class="topnav-item">{{ entry.title }}</span></a></li>
+        {% else %}
+        <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}"><span class="pe-stack pe-2x"><i class="pe-circle pe-stack-2x" title="{{ entry.description }}"></i><i class="pe-{{ entry.icon }} pe-stack-1x pe-inverse" title="{{ entry.description }}"></i></span><br><span class="topnav-item">{{ entry.title }}</span></a></li>
+        {% endif %}{% endfor %}
       </ul>
     </nav>
   </div>

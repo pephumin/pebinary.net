@@ -1,15 +1,14 @@
 
 <footer>
   <div class="container">
-    <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> 2016&nbsp;
-    <a href="/"><span class="black"><span class="logo1"><i class="pe-logo"></i></span> <span class="logo2">pe</span><span class="logo3">binary</span></span></a>
+    <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
+    <a href="{{ "/" | prepend: site.baseurl }}"><span class="white">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</span></a>
     <span class="hidden-xs hidden-sm">All rights reserved.</span><br>
     <nav class="footer">
       <ul class="list-inline">
-        <li><a href="/about/privacy.html"><i class="pe-lock"></i> <span class="hidden-md hidden-lg">Privacy</span><span class="hidden-xs hidden-sm">Privacy policy</span></a>&nbsp;</li>
-        <li><a href="/about/tos.html"><i class="pe-gavel"></i> <span class="hidden-md hidden-lg">TOS</span><span class="hidden-xs hidden-sm">Terms of services</span></a>&nbsp;</li>
-        <li><a href="/about/terms.html"><i class="pe-balance-scale"></i> <span class="hidden-md hidden-lg">Terms</span><span class="hidden-xs hidden-sm">Terms & conditions</span></a>&nbsp;</li>
-        <li><a href="/about/sitemap.html"><i class="pe-sitemap"></i> <span class="hidden-md hidden-lg">Sitemap</span><span class="hidden-xs hidden-sm">Sitemap</span></a>&nbsp;</li>
+        {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
+        <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
+        {% endunless %}{% endfor %}
       </ul>
     </nav>
   </div>

@@ -1,0 +1,134 @@
+
+topnav:
+
+- title: "Home"
+  icon: home
+  host: support-en
+  url: "/"
+  section: "home"
+  description: "The front page of our support website"
+- title: "Clients"
+  icon: briefcase
+  host: support-en
+  url: "/clients/"
+  section: "clients"
+  description: "Supports for clients"
+- title: "Members"
+  icon: user
+  host: support-en
+  url: "/members/"
+  section: "members"
+  description: "Supports for members"
+- title: "Back"
+  icon: reply
+  host: main-en
+  url:
+  section:
+  description: "Back to the main website"
+
+
+
+left-clients:
+
+
+
+left-members:
+
+- title: "General"
+  icon: university
+  items:
+    - title: "Loggin in"
+      url: "/members/A/1.html"
+      label: false
+      label-color: false
+      disable: false
+    - title: "Signing up"
+      url: "/members/A/2.html"
+      label: false
+      label-color: false
+      disable: true
+    - title: "Getting help"
+      url: "/members/A/3.html"
+      label: false
+      label-color: false
+      disable: false
+    - title: "Public surveys"
+      url: "/members/A/4.html"
+      label: false
+      label-color: false
+      disable: false
+- title: "Dashboard"
+  icon: dashboard
+  items:
+    - title: "My surveys"
+      url: "/members/B/1.html"
+      label: false
+      label-color: false
+      disable: false
+    - title: "My history"
+      url: "/members/B/2.html"
+      label: "new"
+      label-color: "red"
+      disable: false
+    - title: "My points"
+      url: "/members/B/3.html"
+      label: "cool"
+      label-color: "blue"
+      disable: false
+    - title: "My tools"
+      url: "/members/B/4.html"
+      label: false
+      label-color: false
+      disable: false
+- title: "Survey"
+  icon: pencil-square-o
+  items:
+    - title: "Conduct a survey"
+      url: "/members/C/1.html"
+      label: false
+      label-color: false
+      disable: false
+    - title: "Save for later"
+      url: "/members/C/2.html"
+      label: false
+      label-color: false
+      disable: false
+    - title: "Submitting"
+      url: "/members/C/3.html"
+      label: false
+      label-color: false
+      disable: false
+
+
+footer:
+
+- title: "Privacy policy"
+  stitle: "Privacy"
+  icon: lock
+  host: main-en
+  url: "/about/privacy.html"
+  disable: false
+- title: "Terms of services"
+  stitle: "TOS"
+  icon: gavel
+  host: main-en
+  url: "/about/tos.html"
+  disable: false
+- title: "Terms & conditions"
+  stitle: "Terms"
+  icon: balance-scale
+  host: main-en
+  url: "/about/terms.html"
+  disable: false
+- title: "Sitemap"
+  stitle: "Sitemap"
+  icon: sitemap
+  host: main-en
+  url: "/about/sitemap.html"
+  disable: false
+- title: "Search engine"
+  stitle: "Search"
+  icon: globe
+  host: main-en
+  url: "/sitemap.xml"
+  disable: true
