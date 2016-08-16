@@ -6,9 +6,9 @@
     <nav class="topnav">
       <ul>
         {% for entry in site.data.navigation.topnav %}{% if entry.section == page.section %}
-        <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}"><span class="pe-stack here pe-2x"><i class="pe-circle pe-stack-2x" title="{{ entry.description }}"></i><i class="pe-{{ entry.icon }} pe-stack-1x pe-inverse" title="{{ entry.description }}"></i></span><br><span class="topnav-item">{{ entry.title }}</span></a></li>
+        <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}">{% capture stack1 %}{% include base/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description active = "true" %}{% endcapture %}{{ stack1 | rstrip }}<br><span class="topnav-item">{{ entry.title }}</span></a></li>
         {% else %}
-        <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}"><span class="pe-stack pe-2x"><i class="pe-circle pe-stack-2x" title="{{ entry.description }}"></i><i class="pe-{{ entry.icon }} pe-stack-1x pe-inverse" title="{{ entry.description }}"></i></span><br><span class="topnav-item">{{ entry.title }}</span></a></li>
+        <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}">{% capture stack1 %}{% include base/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description %}{% endcapture %}{{ stack1 | rstrip }}<br><span class="topnav-item">{{ entry.title }}</span></a></li>
         {% endif %}{% endfor %}
       </ul>
     </nav>
