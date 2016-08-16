@@ -39,6 +39,9 @@ domains:
   member:             http://www.siamsquare.org
   support:            http://support.pebinary.com
 
+include:
+  - _pages
+
 exclude:
   - README.md
   - run
@@ -52,40 +55,51 @@ gems:
   - jekyll-sitemap
   - jekyll-timeago
   - jekyll-archives
-  #- jekyll-geo-pattern
 
-#jekyll-archives:
-#  enabled:
-#    - categories
-#    - tags
-#  layout: archive
-#  permalinks:
-#    category: /blog/category/:name/
-#    tag: /blog/tag/:name/
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layout:             archive
+#   permalinks:
+#     category:         /blog/category/:name/
+#     tag:              /blog/tag/:name/
 
 compress_html:
-  clippings: []
-  comments: ["<!-- ", " -->"]
-  endings: []
-  startings: []
-  blanklines: true
-  profile: false
+  clippings:          []
+  comments:           ["<!-- ", " -->"]
+  endings:            []
+  startings:          []
+  blanklines:         true
+  profile:            false
 
-#jekyll_timeago:
-#  depth: 1
-#  today: 'today'
-#  yesterday: 'yesterday'
-#  tomorrow: 'tomorrow'
-#  and: 'and'
-#  suffix: 'ago'
-#  prefix: ''
-#  suffix_future: ''
-#  prefix_future: 'in'
-#  years: 'years'
-#  year: 'year'
-#  months: 'months'
-#  month: 'month'
-#  weeks: 'weeks'
-#  week: 'week'
-#  days: 'days'
-#  day: 'day'
+# jekyll_timeago:
+#   depth:              1
+#   today:              "today"
+#   yesterday:          "yesterday"
+#   tomorrow:           "tomorrow"
+#   and:                "and"
+#   suffix:             "ago"
+#   prefix:             ""
+#   suffix_future:      ""
+#   prefix_future:      "in"
+#   years:              "years"
+#   year:               "year"
+#   months:             "months"
+#   month:              "month"
+#   weeks:              "weeks"
+#   week:               "week"
+#   days:               "days"
+#   day:                "day"
+
+# collections:
+#   members:
+#     output:           true
+#     #permalink:        /:collection/:path/
+#     permalink:        /:path/
+#     title:            "Support for members"
+#   clients:
+#     output:           true
+#     #permalink:        /:collection/:path/
+#     permalink:        /:path/
+#     title:            "Support for clients"
