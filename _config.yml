@@ -10,7 +10,7 @@
 
 title:                "PE BINARY CO., LTD."
 email:                support@pebinary.com
-description:          "A market research company specialised in mobile survey"
+description:          "A support website dedicated to our clients and members"
 locale:               en-GB
 permalink:            pretty
 excerpt_separator:    <!--more-->
@@ -23,7 +23,7 @@ baseurl:              /support.pebinary.com
 #permalink:           /blog/:year/:month/:day/:title
 encoding:             utf-8
 timezone:             Asia/Bangkok
-google_analytics:     false
+google_analytics:     UA-82554411-2
 
 markdown:             kramdown
 highlighter:          rouge
