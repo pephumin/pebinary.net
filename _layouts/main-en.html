@@ -10,11 +10,37 @@ layout: brew
 
 <body>
 {% include base/header.html %}
-{% include base/main-1.html %}
+<main>
+  <section class="container">
+    <div class="row">
 
-{{ content }}
+      {% if format == "two-left" %}
+      <div class="col-md-3 col-lg-3">
 
-{% include base/main-2.html %}
+{% if page.url contains "/members/" %}
+{% include base/navvertical.html section = "members" %}
+{% elsif page.url contains "/clients/" %}
+{% include base/navvertical.html section = "clients" %}
+{% endif %}
+
+{% include base/searchbox.html %}
+
+      {% endif %}
+
+
+      {% if format == "two-left" %}
+      </div>
+      <div class="col-md-9 col-lg-9">
+      {% endif %}
+
+
+
+        {{ content }}
+{% include base/helpful.html %}
+      </div>
+    </div>
+  </section>
+</main>
 {% include base/js.html %}
 {% include base/footer.html %}
 </body>

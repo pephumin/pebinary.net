@@ -1,0 +1,13 @@
+        <aside class="left">
+          <nav class="menulist">
+          {% for entry in site.data.navigation[include.section] %}
+            <p>{% if entry.icon %}<i class="pe-{{ entry.icon }} pe-fw"></i> {% endif %}{{ entry.title }}
+              <ul class="vertical">
+              {% for item in entry.items %}
+                {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.disable %}{{ item.title }}{% elsif item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</li>
+              {% endfor %}
+              </ul>
+            </p>
+          {% endfor %}
+          </nav>
+        </aside>

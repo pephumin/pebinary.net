@@ -21,6 +21,8 @@ baseurl:              /support.pebinary.com
 #paginate:            5
 #paginate_path:       /blog/:num/
 #permalink:           /blog/:year/:month/:day/:title
+quiet:                false
+verbose:              true
 encoding:             utf-8
 timezone:             Asia/Bangkok
 google_analytics:     UA-82554411-2
@@ -28,16 +30,23 @@ google_analytics:     UA-82554411-2
 markdown:             kramdown
 highlighter:          rouge
 #highlighter:         pygments
-
 kramdown:
   input:              GFM
+  auto_ids:           true
+  footnote_nr:        1
+  entity_output:      as_char
+  toc_levels:         1..6
+  smart_quotes:       lsquo,rsquo,ldquo,rdquo
+  hard_wrap:          false
+  footnote_nr:        1
 
 domains:
   main-en:            http://www.pebinary.com
   main-th:            http://www.pebinary.co.th
-  client:             http://www.siamsquare.net
+  support-en:
+  support-th:         http://support.pebinary.co.th
   member:             http://www.siamsquare.org
-  support:            http://support.pebinary.com
+  client:             http://www.siamsquare.net
 
 include:
   - _pages
@@ -60,10 +69,10 @@ gems:
 #   enabled:
 #     - categories
 #     - tags
-#   layout:             archive
+#   layout:           archive
 #   permalinks:
-#     category:         /blog/category/:name/
-#     tag:              /blog/tag/:name/
+#     category:       /blog/category/:name/
+#     tag:            /blog/tag/:name/
 
 compress_html:
   clippings:          []
@@ -73,33 +82,57 @@ compress_html:
   blanklines:         true
   profile:            false
 
-# jekyll_timeago:
-#   depth:              1
-#   today:              "today"
-#   yesterday:          "yesterday"
-#   tomorrow:           "tomorrow"
-#   and:                "and"
-#   suffix:             "ago"
-#   prefix:             ""
-#   suffix_future:      ""
-#   prefix_future:      "in"
-#   years:              "years"
-#   year:               "year"
-#   months:             "months"
-#   month:              "month"
-#   weeks:              "weeks"
-#   week:               "week"
-#   days:               "days"
-#   day:                "day"
+jekyll_timeago:
+  depth:              1
+  today:              "today"
+  yesterday:          "yesterday"
+  tomorrow:           "tomorrow"
+  and:                "and"
+  suffix:             "ago"
+  prefix:             ""
+  suffix_future:      ""
+  prefix_future:      "in"
+  years:              "years"
+  year:               "year"
+  months:             "months"
+  month:              "month"
+  weeks:              "weeks"
+  week:               "week"
+  days:               "days"
+  day:                "day"
 
-# collections:
-#   members:
-#     output:           true
-#     #permalink:        /:collection/:path/
-#     permalink:        /:path/
-#     title:            "Support for members"
-#   clients:
-#     output:           true
-#     #permalink:        /:collection/:path/
-#     permalink:        /:path/
-#     title:            "Support for clients"
+collections:
+
+  members:
+    output:           true
+    permalink:        /:collection/:path.html
+    title:            "Support for members"
+
+  clients:
+    output:           true
+    permalink:        /:collection/:path.html
+    title:            "Support for clients"
+
+defaults:
+  -
+    scope:
+      path:           ""
+      type:           "members"
+    values:
+      layout:         "main-en"
+      section:        "members"
+      nav:            "members"
+  -
+    scope:
+      path:           ""
+      type:           "clients"
+    values:
+      layout:         "main-en"
+      section:        "clients"
+      nav:            "clients"
+  -
+    scope:
+      path:           "_pages"
+      type:           "pages"
+    values:
+      layout:         "index-en"

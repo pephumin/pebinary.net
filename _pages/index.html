@@ -1,0 +1,30 @@
+---
+title: "The main page of website"
+section: home
+permalink: /
+layout: index-en
+homepage: true
+---
+
+<section class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+      <h2>Member section</h2>
+      {% assign mm = site.members | sort: "permalink" %}
+      <ul>
+      {% for entry in mm %}
+          <li><a href="{{ entry.url }}">{{ entry.title }}</a> ({{ entry.category }})</li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+      <h2>Client section</h2>
+      {% assign cc = site.clients %}
+      <ul>
+      {% for entry in cc %}
+          <li><a href="{{ entry.url }}">{{ entry.title }}</a> ({{ entry.category }})</li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

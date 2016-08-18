@@ -1,40 +1,33 @@
 ---
-layout: index-en
-title: Support for clients
-homepage: false
+title: "Clients"
 section: clients
 permalink: /clients/
+layout: index-en
 ---
 
 <section class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-      Topics
-      <ul>
+      <h2>Topics</h2>
       {% for entry in site.data.navigation.clients %}
-        <li>{% if entry.icon %}<i class="pe-{{ entry.icon }} pe-fw"></i> {% endif %}{{ entry.title }}
-          <ul>
-          {% for item in entry.items %}
-            {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.disable %}{{ item.title }}{% elsif item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</li>
-          {% endfor %}
-          </ul>
-        </li>
+        <strong>{% if entry.icon %}<i class="pe-{{ entry.icon }} pe-fw"></i> {% endif %}{{ entry.title }}</strong>
+        <ul class="vertical">
+        {% for item in entry.items %}
+          {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.disable %}{{ item.title }}{% elsif item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</li>
+        {% endfor %}
+        </ul>
       {% endfor %}
-      </ul>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-      Topics
-      <ul>
+      <h2>Topics</h2>
       {% for entry in site.data.navigation.clients %}
-        <li>{% if entry.icon %}<i class="pe-{{ entry.icon }} pe-fw"></i> {% endif %}{{ entry.title }}
-          <ul>
-          {% for item in entry.items %}
-            {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.disable %}{{ item.title }}{% elsif item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</li>
-          {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
+        <strong>{% if entry.icon %}<i class="pe-{{ entry.icon }} pe-fw"></i> {% endif %}{{ entry.title }}</strong>
+        <ul class="vertical">
+        {% for item in entry.items %}
+          {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.disable %}{{ item.title }}{% elsif item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</li>
+        {% endfor %}
       </ul>
+      {% endfor %}
     </div>
   </div>
 </section>

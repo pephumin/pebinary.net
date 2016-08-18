@@ -1,5 +1,8 @@
+############################################################################
+# HEADER NAVIGATION
+############################################################################
 
-topnav:
+header:
 
 - title: "Home"
   icon: home
@@ -7,18 +10,21 @@ topnav:
   url: "/"
   section: "home"
   description: "The front page of our support website"
-- title: "Clients"
-  icon: briefcase
-  host: support-en
-  url: "/clients/"
-  section: "clients"
-  description: "Supports for clients"
+
 - title: "Members"
   icon: user
   host: support-en
   url: "/members/"
   section: "members"
   description: "Supports for members"
+
+- title: "Clients"
+  icon: briefcase
+  host: support-en
+  url: "/clients/"
+  section: "clients"
+  description: "Supports for clients"
+
 - title: "Back"
   icon: reply
   host: main-en
@@ -28,77 +34,9 @@ topnav:
 
 
 
-clients:
-
-
-
-members:
-
-- title: "General"
-  icon: university
-  items:
-    - title: "Loggin in"
-      url: "/members/A/1.html"
-      label: false
-      label-color: false
-      disable: false
-    - title: "Signing up"
-      url: "/members/A/2.html"
-      label: false
-      label-color: false
-      disable: true
-    - title: "Getting help"
-      url: "/members/A/3.html"
-      label: false
-      label-color: false
-      disable: false
-    - title: "Public surveys"
-      url: "/members/A/4.html"
-      label: false
-      label-color: false
-      disable: false
-- title: "Dashboard"
-  icon: dashboard
-  items:
-    - title: "My surveys"
-      url: "/members/B/1.html"
-      label: false
-      label-color: false
-      disable: false
-    - title: "My history"
-      url: "/members/B/2.html"
-      label: "new"
-      label-color: "red"
-      disable: false
-    - title: "My points"
-      url: "/members/B/3.html"
-      label: "cool"
-      label-color: "blue"
-      disable: false
-    - title: "My tools"
-      url: "/members/B/4.html"
-      label: false
-      label-color: false
-      disable: false
-- title: "Survey"
-  icon: pencil-square-o
-  items:
-    - title: "Conduct a survey"
-      url: "/members/C/1.html"
-      label: false
-      label-color: false
-      disable: false
-    - title: "Save for later"
-      url: "/members/C/2.html"
-      label: false
-      label-color: false
-      disable: false
-    - title: "Submitting"
-      url: "/members/C/3.html"
-      label: false
-      label-color: false
-      disable: false
-
+############################################################################
+# FOOTER NAVIGATION
+############################################################################
 
 footer:
 
@@ -108,27 +46,261 @@ footer:
   host: main-en
   url: "/about/privacy.html"
   disable: false
+
 - title: "Terms of services"
   stitle: "TOS"
   icon: gavel
   host: main-en
   url: "/about/tos.html"
   disable: false
+
 - title: "Terms & conditions"
   stitle: "Terms"
   icon: balance-scale
   host: main-en
   url: "/about/terms.html"
   disable: false
+
 - title: "Sitemap"
   stitle: "Sitemap"
   icon: sitemap
   host: main-en
   url: "/about/sitemap.html"
   disable: false
-- title: "Search engine"
-  stitle: "Search"
-  icon: globe
-  host: main-en
-  url: "/sitemap.xml"
-  disable: true
+
+
+
+############################################################################
+# MEMBER DOCUMENT MENU
+############################################################################
+
+members:
+
+- title: "General"
+  icon: question-circle-o
+  items:
+
+    - title: "Loggin in"
+      url: "/members/A/1.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Signing up"
+      url: "/members/A/2.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Getting help"
+      url: "/members/A/3.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Public surveys"
+      url: "/members/A/4.html"
+      label: false
+      label-color: false
+      disable: false
+
+- title: "Dashboard"
+  icon: dashboard
+  items:
+
+    - title: "My surveys"
+      url: "/members/B/1.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "My history"
+      url: "/members/B/2.html"
+      label: "new"
+      label-color: "red"
+      disable: false
+
+    - title: "My points"
+      url: "/members/B/3.html"
+      label: "cool"
+      label-color: "blue"
+      disable: false
+
+    - title: "My tools"
+      url: "/members/B/4.html"
+      label: false
+      label-color: false
+      disable: false
+
+- title: "Survey"
+  icon: pencil-square-o
+  items:
+
+    - title: "Conduct a survey"
+      url: "/members/C/1.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Save for later"
+      url: "/members/C/2.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Submitting"
+      url: "/members/C/3.html"
+      label: false
+      label-color: false
+      disable: false
+
+
+
+############################################################################
+# CLIENT DOCUMENT MENU
+############################################################################
+
+clients:
+
+- title: "Create a survey"
+  icon: file-o
+  items:
+
+    - title: "General tab"
+      url: "/clients/A/1.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Question tab"
+      url: "/clients/A/2.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Order tab"
+      url: "/clients/A/3.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Condition tab"
+      url: "/clients/A/4.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Preview tab"
+      url: "/clients/A/5.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Finish tab"
+      url: "/clients/A/6.html"
+      label: false
+      label-color: false
+      disable: false
+
+- title: "Manage a survey"
+  icon: gears
+  items:
+
+    - title: "Edit a survey"
+      url: "/clients/B/1.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Test a survey"
+      url: "/clients/B/2.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Publish a survey"
+      url: "/clients/B/3.html"
+      label: false
+      label-color: false
+      disable: false
+
+- title: "Themes"
+  icon: question-circle-o
+  items:
+
+    - title: "Create a theme"
+      url: "/clients/C/1.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Assign a theme"
+      url: "/clients/C/2.html"
+      label: false
+      label-color: false
+      disable: false
+
+- title: "Response types"
+  icon: question-circle-o
+  items:
+
+    - title: "Understading"
+      url: "/clients/D/1.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Examples"
+      url: "/clients/D/2.html"
+      label: false
+      label-color: false
+      disable: false
+
+- title: "Survey results"
+  icon: question-circle-o
+  items:
+
+    - title: "Cross analysis"
+      url: "/clients/E/1.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Cross tabulation"
+      url: "/clients/E/2.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Exporting to CSV"
+      url: "/clients/E/3.html"
+      label: false
+      label-color: false
+      disable: false
+
+- title: "Survey statistics"
+  icon: question-circle-o
+  items:
+
+    - title: "Refreshing statistics"
+      url: "/clients/F/1.html"
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Reseting statistics"
+      url: "/clients/F/2.html"
+      label: false
+      label-color: false
+      disable: false
+
+
+- title: "Administration"
+  icon: question-circle-o
+  items:
+
+    - title: "Batch account creation"
+      url: "/clients/G/1.html"
+      label: false
+      label-color: false
+      disable: true

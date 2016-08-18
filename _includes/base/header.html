@@ -1,11 +1,10 @@
-
 <header>
   <div class="container">
-    <p class="toplogo"><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}" class="toplogo">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a> <span class="label red">{% if page.section == "clients" %}client support{% elsif page.section == "members" %}member support{% else %}support{% endif %}</span></p>
+    <p class="toplogo"><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}" class="toplogo">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a> <span class="label red">{% if page.section == "members" %}member support{% elsif page.section == "clients" %}client support{% else %}support{% endif %}</span></p>
     <p class="description">{{ site.description }}</p>
     <nav class="topnav">
       <ul>
-        {% for entry in site.data.navigation.topnav %}{% if entry.section == page.section %}
+        {% for entry in site.data.navigation.header %}{% if page.section == entry.section %}
         <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}">{% capture stack1 %}{% include base/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description active = "true" %}{% endcapture %}{{ stack1 | rstrip }}<br><span class="topnav-item">{{ entry.title }}</span></a></li>
         {% else %}
         <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}">{% capture stack1 %}{% include base/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description %}{% endcapture %}{{ stack1 | rstrip }}<br><span class="topnav-item">{{ entry.title }}</span></a></li>
@@ -13,4 +12,9 @@
       </ul>
     </nav>
   </div>
+  {% unless page.section == "home" %}
+  <div class="subnav">
+    {% include base/navbreadcrumb.html %}
+  </div>
+  {% endunless %}
 </header>
