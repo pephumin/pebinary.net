@@ -1,0 +1,17 @@
+---
+title: "Search the website"
+permalink: /search.json
+layout:
+search: exclude
+---
+[
+  {% for mm in site.members %}
+    {
+      "title"    : "{{ mm.title | escape }}",
+      "section"  : "{{ mm.section }}",
+      "category" : "{{ mm.category | join: ', ' }}",
+      "tags"     : "{{ mm.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ mm.url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
