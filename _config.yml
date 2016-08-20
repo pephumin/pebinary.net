@@ -10,7 +10,7 @@
 
 title:                "PE BINARY CO., LTD."
 email:                support@pebinary.com
-description:          "A support website dedicated to our clients and members"
+description:          "A support website dedicated to our members and clients"
 locale:               en-GB
 permalink:            pretty
 excerpt_separator:    <!--more-->
@@ -65,14 +65,15 @@ gems:
   - jekyll-timeago
   - jekyll-archives
 
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layout:           archive
-#   permalinks:
-#     category:       /blog/category/:name/
-#     tag:            /blog/tag/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout:           archive
+  permalinks:
+    category:       /:collection/category/:name/
+    tag:            /:collection/tag/:name/
+  limit:              5
 
 compress_html:
   clippings:          []
