@@ -11,7 +11,7 @@ layout: brew
 <body>
 {% include base/header.html %}
 <main>
-  <section class="container">
+  <article class="container">
     <div class="row">
 
       {% if format == "two-left" %}
@@ -33,13 +33,43 @@ layout: brew
       <div class="col-md-9 col-lg-9">
       {% endif %}
 
+      {% if page.toc %}
+      <span class="hidden-xs"><div id="toc"></div></span>
+      {% endif %}
 
 
         {{ content }}
-{% include base/helpful.html %}
+
+        <hr>
+
+        <section class="additional">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="helpful">
+                <h5>Was it helpful?</h5>
+                <div class="h-yes">Yes</div>
+                <div class="h-none"></div>
+                <div class="h-no">No</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+              <div class="listing">
+                <h5>Similar topics</h5>
+                <div class="listing-group">
+                  <a class="listing-item" href="#">Cras justo odio</a>
+                  <a class="listing-item" href="#">Dapibus ac facilisis in</a>
+                  <a class="listing-item" href="#">Morbi leo risus</a>
+                  <a class="listing-item" href="#">Porta ac consectetur ac</a>
+                  <a class="listing-item" href="#">Vestibulum at eros</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
-  </section>
+  </article>
 </main>
 {% include base/js.html %}
 {% include base/footer.html %}

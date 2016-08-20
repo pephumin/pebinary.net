@@ -1,15 +1,21 @@
-
 <footer>
-  <div class="container">
-    <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
-    <a href="{{ "/" | prepend: site.baseurl }}"><span class="white">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</span></a>
-    <span class="hidden-xs hidden-sm">All rights reserved.</span><br>
-    <nav class="footer">
-      <ul class="list-inline">
-        {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
-        <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
-        {% endunless %}{% endfor %}
-      </ul>
-    </nav>
+  {% unless page.section == "home" %}
+  <div class="footer-1">
+{% include base/navbreadcrumb.html %}
+  </div>
+  {% endunless %}
+  <div class="footer-2">
+    <div class="container">
+      <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
+      <a href="{{ "/" | prepend: site.baseurl }}" class="footerlogo">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a>
+      <span class="hidden-xs hidden-sm">All rights reserved.</span><br>
+      <nav class="footer">
+        <ul class="list-inline">
+          {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
+          <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
+          {% endunless %}{% endfor %}
+        </ul>
+      </nav>
+    </div>
   </div>
 </footer>

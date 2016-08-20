@@ -1,0 +1,99 @@
+---
+title: "The main page of website"
+section: home
+permalink: /cat.html
+layout: index-en
+homepage: true
+---
+
+<section class="container search">
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="search...">
+    <ul id="results-container"></ul>
+  </div>
+</section>
+
+<section class="container home">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <h1>Member section</h1>
+      <div class="listing">
+        <h3>General</h3>
+        {% assign mm = site.members | where: "category", "general" %}
+        <div class="listing-group">
+          {% for entry in mm %}
+          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="listing">
+        <h3>Dashboard</h3>
+        {% assign mm = site.members | where: "category", "dashboard" %}
+        <div class="listing-group">
+          {% for entry in mm %}
+          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="listing">
+        <h3>Participation</h3>
+        {% assign mm = site.members | where: "category", "participation" %}
+        <div class="listing-group">
+          {% for entry in mm %}
+          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <h1>Client section</h1>
+      <div class="listing">
+        <h3>Create a survey</h3>
+        {% assign mm = site.clients | where: "category", "Create a survey" %}
+        <div class="listing-group">
+          {% for entry in mm %}
+          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="listing">
+        <h3>Managing surveys</h3>
+        {% assign mm = site.clients | where: "category", "Managing surveys" %}
+        <div class="listing-group">
+          {% for entry in mm %}
+          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="listing">
+        <h3>Customise surveys</h3>
+        {% assign mm = site.clients | where: "category", "Customise surveys" %}
+        <div class="listing-group">
+          {% for entry in mm %}
+          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="listing">
+        <h3>Survey results</h3>
+        {% assign mm = site.clients | where: "category", "Survey results" %}
+        <div class="listing-group">
+          {% for entry in mm %}
+          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="listing">
+        <h3>Appendix</h3>
+        {% assign mm = site.clients | where: "category", "Appendix" %}
+        <div class="listing-group">
+          {% for entry in mm %}
+          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>

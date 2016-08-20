@@ -1,20 +1,14 @@
 <header>
-  <div class="container">
-    <p class="toplogo"><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}" class="toplogo">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a> <span class="label red">{% if page.section == "members" %}member support{% elsif page.section == "clients" %}client support{% else %}support{% endif %}</span></p>
-    <p class="description">{{ site.description }}</p>
-    <nav class="topnav">
-      <ul>
-        {% for entry in site.data.navigation.header %}{% if page.section == entry.section %}
-        <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}">{% capture stack1 %}{% include base/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description active = "true" %}{% endcapture %}{{ stack1 | rstrip }}<br><span class="topnav-item">{{ entry.title }}</span></a></li>
-        {% else %}
-        <li><a href="{{ entry.url | prepend: site.data.domains.[entry.host] }}" title="{{ entry.description }}">{% capture stack1 %}{% include base/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description %}{% endcapture %}{{ stack1 | rstrip }}<br><span class="topnav-item">{{ entry.title }}</span></a></li>
-        {% endif %}{% endfor %}
-      </ul>
-    </nav>
+  <div class="header-1">
+    <div class="container">
+      <h1><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a> <span class="label red">{% if page.section == "members" %}member support{% elsif page.section == "clients" %}client support{% else %}support{% endif %}</span></h1>
+      <p class="description">{{ site.description }}</p>
+{% include base/navtop.html %}
+    </div>
   </div>
   {% unless page.section == "home" %}
-  <div class="subnav">
-    {% include base/navbreadcrumb.html %}
+  <div class="header-2">
+{% include base/navbreadcrumb.html %}
   </div>
   {% endunless %}
 </header>

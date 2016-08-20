@@ -6,25 +6,79 @@ layout: index-en
 homepage: true
 ---
 
-<section class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
-      <h2>Member section</h2>
-      {% assign mm = site.members | sort: "permalink" %}
-      <ul>
-      {% for entry in mm %}
-          <li><a href="{{ entry.url }}">{{ entry.title }}</a> ({{ entry.category }})</li>
-      {% endfor %}
-      </ul>
+<section class="search">
+<button type="button" class="button-x" data-toggle="modal" data-target=".searchbox">search</button>
+<div class="modal fade searchbox" tabindex="-1" role="dialog" aria-labelledby="SearchBox">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div id="search-container center-block">
+        <input type="text" id="search-input" placeholder="Type keyword">
+        <ul id="search-results"></ul>
+      </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
-      <h2>Client section</h2>
-      {% assign cc = site.clients %}
-      <ul>
-      {% for entry in cc %}
-          <li><a href="{{ entry.url }}">{{ entry.title }}</a> ({{ entry.category }})</li>
-      {% endfor %}
-      </ul>
+  </div>
+</div>
+</section>
+
+<section class="container home">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <h1>Member section</h1>
+      <div class="listing">
+        <h3>Category name</h3>
+        <div class="listing-group">
+
+          {% for entry in site.members %}
+          <div class="listing-item">
+            <strong><a href="{{ entry.url }}">{{ entry.title }}</a></strong>
+            <br>
+            <small>
+            {% if entry.categories %}
+              {% for category in entry.categories %}
+                <i class="pe-folder-open-o pe-fw"></i> <a href="/members/{{ category | slugify | prepend: site.baseurl }}">{{ category }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            <br>
+            {% if entry.tags %}
+              {% for tag in entry.tags %}
+                <i class="pe-tag pe-fw"></i> <a href="/members/{{ tag | slugify | prepend: site.baseurl }}">{{ tag }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            </small>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <h1>Client section</h1>
+      <div class="listing">
+        <h3>Category name</h3>
+        <div class="listing-group">
+
+          {% for entry in site.clients %}
+          <div class="listing-item">
+            <strong><a href="{{ entry.url }}">{{ entry.title }}</a></strong>
+            <br>
+            <small>
+            {% if entry.categories %}
+              {% for category in entry.categories %}
+                <i class="pe-folder-open-o pe-fw"></i> <a href="/members/{{ category | slugify | prepend: site.baseurl }}">{{ category }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            <br>
+            {% if entry.tags %}
+              {% for tag in entry.tags %}
+                <i class="pe-tag pe-fw"></i> <a href="/members/{{ tag | slugify | prepend: site.baseurl }}">{{ tag }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            </small>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
     </div>
   </div>
 </section>
