@@ -1,14 +1,21 @@
 <header>
   <div class="header-1">
     <div class="container">
-      <h1><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a> <span class="label red">{% if page.section == "members" %}member support{% elsif page.section == "clients" %}client support{% else %}support{% endif %}</span></h1>
-      <p class="description">{{ site.description }}</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 hbox1">
+          <h1><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">{% capture logo %}{% include base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a> <span class="sub-brand">{% if page.section == "members" %}member support{% elsif page.section == "clients" %}client support{% else %}support{% endif %}</span></h1>
+          <p class="description">{{ site.description }}</p>
+          <p class="thai-name"><i>{{ site.thaititle }}</i></p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 hbox2">
 {% include base/navtop.html %}
+        </div>
+      </div>
     </div>
   </div>
-  {% unless page.section == "home" %}
+{% unless page.section == "home" %}
   <div class="header-2">
 {% include base/navbreadcrumb.html %}
   </div>
-  {% endunless %}
+{% endunless %}
 </header>

@@ -25,12 +25,19 @@ header:
   section: "clients"
   description: "Supports for clients"
 
-- title: "Back"
-  icon: reply
-  host: main-en
+- title: "Search"
+  icon: search
+  host: support-en
   url:
-  section:
-  description: "Back to the main website"
+  section: "search"
+  description: "Search this website"
+
+# - title: "Back"
+#   icon: reply
+#   host: main-en
+#   url:
+#   section: "back"
+#   description: "Back to the main website"
 
 
 

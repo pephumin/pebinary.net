@@ -1,77 +1,105 @@
 ---
-layout: brew
+layout: index-en
 ---
 
-<!doctype html>
-<html lang="{{ site.locale }}">
-<head>
-{% include base/meta.html %}
-</head>
-
-<body>
-{% include base/header.html %}
-<main>
-  <article class="container">
-    <div class="row">
-
-      {% if format == "two-left" %}
-      <div class="col-md-3 col-lg-3">
-
-{% if page.url contains "/members/" %}
-{% include base/navvertical.html section = "members" %}
-{% elsif page.url contains "/clients/" %}
-{% include base/navvertical.html section = "clients" %}
-{% endif %}
-
-{% include base/searchbox.html %}
-
-      {% endif %}
-
-
-      {% if format == "two-left" %}
-      </div>
-      <div class="col-md-9 col-lg-9">
-      {% endif %}
-
-      {% if page.toc %}
-      <span class="hidden-xs"><div id="toc"></div></span>
-      {% endif %}
-
-
-        {{ content }}
-
-        <hr>
-
-        <section class="additional">
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="helpful">
-                <h5>Was it helpful?</h5>
-                <div class="h-yes">Yes</div>
-                <div class="h-none"></div>
-                <div class="h-no">No</div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-              <div class="listing">
-                <h5>Similar topics</h5>
-                <div class="listing-group">
-                  <a class="listing-item" href="#">Cras justo odio</a>
-                  <a class="listing-item" href="#">Dapibus ac facilisis in</a>
-                  <a class="listing-item" href="#">Morbi leo risus</a>
-                  <a class="listing-item" href="#">Porta ac consectetur ac</a>
-                  <a class="listing-item" href="#">Vestibulum at eros</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-      </div>
+<main class="container">
+  <div class="row">
+    {% if format == "layout-left" %}
+    <div class="col-md-3 col-lg-3">
+      <aside class="menu">
+        {% include base/navvertical.html section = page.section %}
+      </aside>
     </div>
-  </article>
+    <div class="col-md-9 col-lg-9">
+      <article>
+        <header>
+          <h1>{{ page.title }}</h1>
+          <p class="post-meta">
+            Section:&nbsp;{{ page.section }}<br>
+          {% if page.categories %}
+            Category:&nbsp;
+            {% for category in page.categories %}
+              <i class="pe-folder-open-o pe-fw"></i> {{ category }}
+            {% endfor %}
+          {% endif %}
+          <br>
+          {% if page.tags %}
+            Tag:&nbsp;
+            {% for tag in page.tags %}
+              <i class="pe-tag pe-fw"></i> {{ tag | slugify }}
+            {% endfor %}
+          {% endif %}
+          </p>
+        </header>
+        {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
+        <body>
+          {{ content }}
+        </body>
+      </article>
+      {% include base/more.html %}
+    </div>
+    {% elsif format == "layout-right" %}
+    <div class="col-md-9 col-lg-9">
+      <article>
+        <header>
+          <h1>{{ page.title }}</h1>
+          <p class="post-meta">
+            Section:&nbsp;{{ page.section }}<br>
+          {% if page.categories %}
+            Category:&nbsp;
+            {% for category in page.categories %}
+              <i class="pe-folder-open-o pe-fw"></i> {{ category }}
+            {% endfor %}
+          {% endif %}
+          <br>
+          {% if page.tags %}
+            Tag:&nbsp;
+            {% for tag in page.tags %}
+              <i class="pe-tag pe-fw"></i> {{ tag | slugify }}
+            {% endfor %}
+          {% endif %}
+          </p>
+        </header>
+        {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
+        <body>
+          {{ content }}
+        </body>
+      </article>
+      {% include base/more.html %}
+    </div>
+    <div class="col-md-3 col-lg-3">
+      <aside class="menu">
+        {% include base/navvertical.html section = page.section %}
+      </aside>
+    </div>
+    {% else %}
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <article>
+        <header>
+          <h1>{{ page.title }}</h1>
+          <p class="post-meta">
+            Section:&nbsp;{{ page.section }}<br>
+          {% if page.categories %}
+            Category:&nbsp;
+            {% for category in page.categories %}
+              <i class="pe-folder-open-o pe-fw"></i> {{ category }}
+            {% endfor %}
+          {% endif %}
+          <br>
+          {% if page.tags %}
+            Tag:&nbsp;
+            {% for tag in page.tags %}
+              <i class="pe-tag pe-fw"></i> {{ tag | slugify }}
+            {% endfor %}
+          {% endif %}
+          </p>
+        </header>
+        {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
+        <body>
+          {{ content }}
+        </body>
+      </article>
+      {% include base/more.html %}
+    {% endif %}
+  </div>
 </main>
-{% include base/js.html %}
-{% include base/footer.html %}
-</body>
-</html>

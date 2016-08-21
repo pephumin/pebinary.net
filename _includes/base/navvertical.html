@@ -1,4 +1,3 @@
-        <aside class="left">
           <nav class="menulist">
           {% for entry in site.data.navigation[include.section] %}
             <p>{% if entry.icon %}<i class="pe-{{ entry.icon }} pe-fw"></i> {% endif %}{{ entry.title }}
@@ -10,4 +9,3 @@
             </p>
           {% endfor %}
           </nav>
-        </aside>

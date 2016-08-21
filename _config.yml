@@ -9,6 +9,7 @@
 
 
 title:                "PE BINARY CO., LTD."
+thaititle:            "บริษัท พีอี ไบนารี่ จำกัด"
 email:                support@pebinary.com
 description:          "A support website dedicated to our members and clients"
 locale:               en-GB
@@ -123,6 +124,12 @@ defaults:
       layout:         "main-en"
       section:        "members"
       nav:            "members"
+      icon:           ""
+      pageformat:     ""
+      toc:            false
+      published:      true
+      author:         "helpdesk"
+      author-email:   "support@pebinary.com"
   -
     scope:
       path:           ""
@@ -131,9 +138,18 @@ defaults:
       layout:         "main-en"
       section:        "clients"
       nav:            "clients"
+      icon:           ""
+      pageformat:     ""
+      toc:            false
+      published:      true
+      author:         "helpdesk"
+      author-email:   "support@pebinary.com"
   -
     scope:
       path:           "_pages"
       type:           "pages"
     values:
       layout:         "index-en"
+      icon:           "university"
+      pageformat:     ""
+      published:      true
