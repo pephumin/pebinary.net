@@ -1,79 +1,68 @@
 ---
-title: "Response types"
-category: "General information"
+title: "Strike rate"
 section: "clients"
 permalink: /clients/C/1.html
-icon: university
-published: true
+category: [clients, monitor]
+tags: [progress]
 ---
 
-### Response types
+### Survey statistics
 
-#### Yes/No
+While completing surveys, various access statistics are collected for administrative review. These statistics, described in the table further below, allow you to better understand how your respondents interact with the surveys you create.
 
-Explanation: Use this for questions that will require a basic yes/no answer.
+Questions, such as below examples, provide valuable insight into the effectiveness of your surveys.
 
-Example:
-Yes
-No
+Are my respondents having difficulty logging in?
+Are respondents moving through surveys, or are they abandoning them prematurely?
+What percentage of survey attempts have resulted in a complete survey?
 
-#### Text Box
+<table class="table table-hover">
+  <tr class="active">
+    <th>Wording</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>Login Failures</td>
+    <td>The number of failed attempts to authenticate to take a particular survey.  This count only reflects the number of failures while attempting to access <em>a particular survey</em>.  Failed attempts to access the list of possible surveys are not recorded.</td>
+  </tr>
+  <tr>
+    <td>Attempted</td>
+    <td>The number of unique attempts to start taking a survey, regardless of whether the attempt results in a completed or suspended survey.</td>
+  </tr>
+  <tr>
+    <td>Abandoned</td>
+    <td>The number of surveys begun, but not suspended or completed.  This statistic can accumulate for a myriad of reasons, including:
+      <ul>
+        <li>Closing the browser and returning to the survey</li>
+        <li>Refreshing the survey (via the browser refresh) before submitting</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Suspended</td>
+    <td>The number of surveys saved for later completion.</td>
+  </tr>
+  <tr>
+    <td>Completed</td>
+    <td>The number of surveys completed. If a survey allows a respondent to reply multiple times, this statistic accumulates for each successful completion of the survey.</td>
+  </tr>
+</table>
 
-Explanation:
-Use this for questions that require a one line answer. Note: the size of the textbox can be set using the length field, he maximum length of the textbox can be set using the precision field.
-Example:
+If your survey is effective, the number of login failures and abandoned surveys is low, the number of attempts is nearly equal to the number of complete, and the number of suspended is small.
 
-#### Essay
+As a general rule of thumb, you should investigate your survey implementation if any of these conditions occur:
 
-Explanation:
-Use this for questions in requiring an answer in essay format. Note: The col and row width of the essay area can be set be using the length and precision fields.
-Example:
+Excessive number of login failures.
+Large number of abandoned surveys.
+Large disparity in the number of attempted and completed surveys.
+High number of suspended, and low number of completed, surveys.
 
-#### Radio Buttons
+#### Refreshing Statistics
 
-Explanation:
-Use radio buttons for questions that have a set of possible answers, but only one can be selected.
-Example:
- Option 1
- Option 2
+As respondents complete surveys, the statistics will change. You may update the statistics page to show the most recent values by clicking the "Refresh Statistics" button.
 
-#### Check Boxes
+#### Reseting Statistics
 
-Explanation:
-Use check boxes for questions that have a set of possible answers out of which multiple can be selected.
-Example:
- Option 1
- Option 2
+Occasionally, you may need to reset survey statistics. For example, if you held a "trial run" survey phase before the actual deployment, you would need to delete all the responses and reset the statistics for the "actual run."
 
-#### Dropdown Box
-
-Explanation:
-Use this to drop down a list of possible selections. For example, what state are you from? The drop down menu would then produce the list of states.
-Example:
-
-#### Rate (scale 1..N)
-
-Explanation:
-Use this for questions that require a rating. You can have a rating scale of 1 to N, set by the length field. Multiple options can also be added to the rating block as you see below. To show an extra column "N/A", set the precision field to 1.
-Example:
-1	2	3	4	5	N/A
-Option 1						
-Option 2						
-Option 3						
-Date
-
-Explanation:
-Use this for responses that require uses to submit back a date. Configure the date format in the ini file.
-Example:
- (e.g. 21/09/2003)
-
-#### Numeric
-
-Explanation:
-Use this for questions which you will only want a numeric answer. Note: All non-numeric responses are disgarded. The length determines the max number of digits that can be used, the precision field adds extra size for the numbers begind the comma. This is not very precise yet, so just use the length field for now.
-Example:
-
-#### Session text
-
-Explanation:
-Use this to add some text to you survey (like a disclaimer before sending on submit). This is in fact no question a user can answer to.
+To reset statistics for a survey, place a check in the "Reset" column on the row containing the survey you want to reset, then click the "Reset Statistics" button. You may reset more than one survey by placing a check beside every survey you want to reset, then clicking the "Reset Statistics" button. You will be prompted to confirm the reset action each time you click the "Reset Statistics" button; answer "Ok" to reset, or "Cancel" to skip the reset.

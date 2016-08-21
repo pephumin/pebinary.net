@@ -1,12 +1,10 @@
 ---
 title: "General information"
-category: "General"
 section: "members"
 permalink: /members/A/1.html
-icon:
-published: true
+category: [member, general]
+tags: [info]
 ---
 
-## General information regarding to the membership
 
 Only members can access to our surveys.

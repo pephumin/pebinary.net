@@ -1,15 +1,12 @@
 ---
 title: "Survey results"
-category: "Survey results"
 section: "clients"
 permalink: /clients/D/1.html
-icon: university
-published: true
+category: [clients, results]
+tags: [analysis]
 ---
 
-### Survey results
-
-#### Cross analysis
+### Cross analysis
 
 To cross analyse results from a survey choose a question by selecting the appropriate radio button to the left of the question. You must then choose one or more of the question's choices by selecting the appropriate checkbox under the chosen question. This will display the entire results of this survey based on the criteria you have chosen.
 
@@ -22,7 +19,7 @@ This will produce the following result:
 
 
 
-#### Cross tabulation
+### Cross tabulation
 
 Cross tabulation returns a result set based on a two question selection. This is achieved by choosing which question's options will form the rows or columns for the cross tabulated result set. Selecting a radio button in the red box to the right of the question indicates the row selection and selecting a radio button in the blue box to the right of the question indicates the column selection.
 

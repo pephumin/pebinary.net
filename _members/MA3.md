@@ -1,13 +1,11 @@
 ---
 title: "Login"
-category: "General"
 section: "members"
 permalink: /members/A/3.html
-icon:
-published: true
+category: [members, general]
+tags: [login, users]
 ---
 
-## Login
 
 If your survey administrator has given you an account, enter your User ID and Password in the corresponding fields within the box labeled "Login". When done, click the Login button.
 

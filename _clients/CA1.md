@@ -1,15 +1,10 @@
 ---
-title: "Tab 1: Survey information"
-category: "Create a survey"
+title: "Add survey information"
 section: "clients"
 permalink: /clients/A/1.html
-icon: file-o
-published: true
+category: [clients, new-survey]
+tags: [create]
 ---
-
-## Create a survey
-
-### General tab
 
 Enter a name for the survey in the name field. Do not use spaces in this name, think of this as a filename. Underscore's are acceptable.
 

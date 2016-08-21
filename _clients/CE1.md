@@ -1,15 +1,12 @@
 ---
 title: "Administration"
-category: "Managing surveys"
 section: "clients"
 permalink: /clients/E/1.html
-icon: university
-published: true
+category: [clients, account]
+tags: [admin]
 ---
 
-### Administration
-
-#### Batch Account Creation
+### Batch Account Creation
 
 On either the Respondent or Designer Management Interfaces, click Bulk Upload. You will be presented with a form asking for File Type and File to Upload. From the File Type dropdown, select the file type you wish to upload. From the File to Upload browse your local filesystem to find the specific file you are uploading.
 

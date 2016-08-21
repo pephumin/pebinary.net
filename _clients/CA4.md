@@ -1,15 +1,10 @@
 ---
-title: "Tab 4: Setting question flows"
-category: "Create a survey"
+title: "Setting question flows"
 section: "clients"
 permalink: /clients/A/4.html
-icon: university
-published: true
+category: [clients, new-survey]
+tags: [create]
 ---
-
-## Create a survey
-
-### Condition tab
 
 On this tab, you can change define conditions on questions, so a question is only shown when a condition is met.
 

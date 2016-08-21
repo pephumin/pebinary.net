@@ -1,13 +1,10 @@
 ---
 title: "Publishing your survey"
-category: "Managing surveys"
 section: "clients"
 permalink: /clients/B/3.html
-icon: university
-published: true
+category: [clients, your-survey]
+tags: [create]
 ---
-
-### Publishing a survey
 
 Once you have created/edited a survey, and are ready to make it available online you must activate it. Go to the Management Interface, click Change the Status of a Survey. Find the survey you want to activate. Make note of the survey ID(SID) and the name(SURVEYNAME).
 

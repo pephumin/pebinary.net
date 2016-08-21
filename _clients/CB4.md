@@ -1,15 +1,12 @@
 ---
 title: "Themes"
-category: "Customise surveys"
 section: "clients"
 permalink: /clients/B/4.html
-icon: university
-published: true
+category: [clients, your-survey]
+tags: [create]
 ---
 
-### Themes
-
-#### Creating themes
+### Creating themes
 
 To download a template to create your own css style sheet, click here.
 
@@ -24,6 +21,6 @@ To create a new theme simply copy the template.css file and edit the class defin
 Once you've saved your new theme it will become available for selection from the dropdown list that is found on the general tab page.
 
 
-#### Assigning themes
+### Assigning themes
 
 Themes can be assigned either when you create a new survey, or when you edit an existing survey. Select the General Tab, navigate to the drop down box near the bottom of the page, and select the appropiate theme you wish to use.

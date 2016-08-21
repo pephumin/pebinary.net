@@ -1,13 +1,11 @@
 ---
 title: "My surveys"
-category: "Dashboard"
 section: "members"
 permalink: /members/B/1.html
-icon:
-published: true
+category: [members, dashboard]
+tags: [my-surveys, survey]
 ---
 
-## My surveys
 
 These are the surveys that you can take. These surveys can be private to you, or a group you're in, or they can be public surveys.
 

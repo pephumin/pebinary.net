@@ -1,13 +1,11 @@
 ---
-title: "Submitting"
-category: "Participation"
+title: "Submit the completed survey"
 section: "members"
 permalink: /members/C/3.html
-icon:
-published: true
+category: [members, participation]
+tags: [submit, survey]
 ---
 
-## Submitting
 
 When you have finished taking the survey, click the Submit Survey button. Your responses will be saved and you will be taken to a thank you page.
 
