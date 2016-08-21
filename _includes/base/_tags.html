@@ -1,0 +1,18 @@
+{% capture tags %}
+    {% for tag in site.tags %}
+        {{ tag[0] }}
+    {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+{% for tag in sortedtags %}
+<div id="tag-{{ tag }}" class="tag-posts">
+    {% for post in site.posts %}
+        {% for otag in post.tags %}
+            {% if tag == otag %}
+                ... (display post here)
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</div>
+{% endfor %}
