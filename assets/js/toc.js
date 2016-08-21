@@ -2,10 +2,10 @@
   $.fn.toc = function(options) {
     var defaults = {
       noBackToTopLinks: true,
-      title: '<p>Contents</p>',
+      title: '<i class="pe-list-alt pe-2x"></i><p>Contents</p>',
       minimumHeaders: 3,
       headers: 'h2, h3',
-      listType: 'ul', // values: [ol|ul]
+      listType: 'ol', // values: [ol|ul]
       showEffect: 'none', // values: [show|slideDown|fadeIn|none]
       showSpeed: 'slow', // set to 0 to deactivate effect
       classes: { list: 'toc-list',
