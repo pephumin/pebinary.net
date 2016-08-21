@@ -11,7 +11,8 @@ search: exclude
       "section"  : "{{ mm.section }}",
       "category" : "{{ mm.category | join: ', ' }}",
       "tags"     : "{{ mm.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ mm.url }}"
+      "url"      : "{{ site.baseurl }}{{ mm.url }}",
+      "content"  : "{{ mm.content | strip_html | strip_newlines }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
@@ -21,7 +22,8 @@ search: exclude
       "section"  : "{{ cc.section }}",
       "category" : "{{ cc.category | join: ', ' }}",
       "tags"     : "{{ cc.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ cc.url }}"
+      "url"      : "{{ site.baseurl }}{{ cc.url }}",
+      "content"  : "{{ mm.content | strip_html | strip_newlines }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
