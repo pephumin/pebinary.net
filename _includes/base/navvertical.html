@@ -1,5 +1,5 @@
           <nav class="menulist">
-          {% for entry in site.data.navigation[include.section] %}
+          {% for entry in site.data.nav[include.section] %}
             <p>{% if entry.icon %}<i class="pe-{{ entry.icon }} pe-fw"></i> {% endif %}{{ entry.title }}
               <ul class="vertical">
               {% for item in entry.items %}

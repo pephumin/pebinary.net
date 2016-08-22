@@ -1,0 +1,21 @@
+        <header>
+          <h2>{{ page.title }}</h2>
+          {% if page.question %}<p class="post-question">{{ page.question }}</p>{% endif %}
+          <p class="post-meta">
+            <i class="pe-{{ page.icon }} pe-lg m-icon pull-right"></i>
+            <span class="m-section">Section:&nbsp;{{ page.section | capitalize }}</span><br>
+          {% if page.categories %}
+            <span class="m-cat">Category:&nbsp;
+            {% for category in page.categories %}
+              <i class="pe-folder-open-o pe-fw"></i> {{ category }}
+            {% endfor %}</span>
+          {% endif %}
+          <br>
+          {% if page.tags %}
+            <span class="m-tag">Tag:&nbsp;
+            {% for tag in page.tags %}
+              <i class="pe-tag pe-fw"></i> {{ tag | slugify }}
+            {% endfor %}</span>
+          {% endif %}
+          </p>
+        </header>

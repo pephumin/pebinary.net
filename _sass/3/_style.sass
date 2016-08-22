@@ -128,12 +128,12 @@ span.pe-stack.active
 
 div#toc
   float: right
-  width: 250px
+  width: 200px
   padding: 10px
-  margin-top: 50px
+  margin-top: 0px
   //display: inline-block !important
   background-color: aliceblue
-  font-size: 1rem
+  font-size: 0.85rem
   line-height: 1.5
   border: 1px dotted $grey
   border-radius: 4px
@@ -217,20 +217,27 @@ div.h-none
 
 // main article
 
+.post-excerpt
+  color: $grey
+
 .post-meta
-  color: $lightgrey
-  font-size: 0.95rem
   padding: 9px 14px
-  margin-top: 30px
+  margin-top: 20px
+  margin-bottom: 40px
   background-color: mintcream
   border: 1px solid $silver
   border-radius: 4px
 
-  a
+  .m-section, .m-cat, .m-tag
     color: $lightgrey
-    text-decoration: underline
-    &:hover
-      color: $darkindigo
+    font-size: 0.8rem
+    line-height: 1.0
 
-  .post-icon
+    a
+      color: $lightgrey
+      text-decoration: underline
+      &:hover
+        color: $darkindigo
+
+  .m-icon
     color: $darkgreen

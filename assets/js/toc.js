@@ -4,7 +4,7 @@
       noBackToTopLinks: true,
       title: '<i class="pe-list-alt pe-2x"></i><p>Contents</p>',
       minimumHeaders: 3,
-      headers: 'h2, h3',
+      headers: 'h4',
       listType: 'ol', // values: [ol|ul]
       showEffect: 'none', // values: [show|slideDown|fadeIn|none]
       showSpeed: 'slow', // set to 0 to deactivate effect
