@@ -24,3 +24,10 @@ anchors.options = {
     visible: 'hover'
 };
 anchors.add('h2, h3, h4');
+
+
+// search box
+
+$('#SS').on('shown.bs.modal', function () {
+  $('#search-input').focus()
+})

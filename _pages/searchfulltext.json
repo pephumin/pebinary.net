@@ -1,6 +1,6 @@
 ---
-title: "Search the website"
-permalink: /search.json
+title: "Full text search the website"
+permalink: /searchfulltext.json
 layout:
 search: exclude
 ---
