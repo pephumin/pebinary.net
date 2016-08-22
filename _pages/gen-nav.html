@@ -1,0 +1,167 @@
+---
+title: "Navigation generator"
+section:
+permalink: /gen-nav.html
+layout:
+---
+
+############################################################################
+# HEADER NAVIGATION
+############################################################################
+
+header:
+
+- title: "Home"
+  icon: home
+  host: support-en
+  url: "/"
+  section: "home"
+  description: "The front page of our support website"
+
+- title: "Members"
+  icon: user
+  host: support-en
+  url: "/members/"
+  section: "members"
+  description: "Supports for members"
+
+- title: "Clients"
+  icon: briefcase
+  host: support-en
+  url: "/clients/"
+  section: "clients"
+  description: "Supports for clients"
+
+- title: "Search"
+  icon: search
+  host: support-en
+  url:
+  section: "search"
+  description: "Search this website"
+
+# - title: "Back"
+#   icon: reply
+#   host: main-en
+#   url:
+#   section: "back"
+#   description: "Back to the main website"
+
+
+
+############################################################################
+# FOOTER NAVIGATION
+############################################################################
+
+footer:
+
+- title: "Privacy policy"
+  stitle: "Privacy"
+  icon: lock
+  host: main-en
+  url: "/about/privacy.html"
+  disable: false
+
+- title: "Terms of services"
+  stitle: "TOS"
+  icon: gavel
+  host: main-en
+  url: "/about/tos.html"
+  disable: false
+
+- title: "Terms & conditions"
+  stitle: "Terms"
+  icon: balance-scale
+  host: main-en
+  url: "/about/terms.html"
+  disable: false
+
+- title: "Sitemap"
+  stitle: "Sitemap"
+  icon: sitemap
+  host: main-en
+  url: "/about/sitemap.html"
+  disable: false
+
+
+
+############################################################################
+# MEMBER DOCUMENT MENU
+############################################################################
+
+members:
+
+- title: "Members"
+  icon: question-circle-o
+  size: {{ site.members.size }}
+  label: false
+  label-color: false
+  disable: false
+  items:
+
+{% for entry in site.members %}
+    - title: "{{ entry.title }}"
+      url: "{{ entry.url | prepend: site.baseurl }}"
+      section: "{{ entry.section }}"
+      category: "{% if entry.categories %}{% for category in entry.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}"
+      tags: "{% if entry.tags %}{% for tag in entry.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}"
+      icon: {% if entry.icon %}{{ entry.icon }}{% endif %}
+      label: false
+      label-color: false
+      disable: false
+{% endfor %}
+
+
+
+############################################################################
+# CLIENT DOCUMENT MENU
+############################################################################
+
+clients:
+
+- title: "Clients"
+  icon: question-circle-o
+  size: {{ site.clients.size }}
+  label: false
+  label-color: false
+  disable: false
+  items:
+
+{% for entry in site.clients %}
+    - title: "{{ entry.title }}"
+      url: "{{ entry.url | prepend: site.baseurl }}"
+      section: "{{ entry.section }}"
+      category: "{% if entry.categories %}{% for category in entry.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}"
+      tags: "{% if entry.tags %}{% for tag in entry.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}"
+      icon: {% if entry.icon %}{{ entry.icon }}{% endif %}
+      label: false
+      label-color: false
+      disable: false
+{% endfor %}
+
+
+
+############################################################################
+# COMBINED DOCUMENT MENU (MEMBER/CLIENT)
+############################################################################
+
+all:
+
+- title: "All"
+  icon: question-circle-o
+  size: {{ site.documents.size }}
+  label: false
+  label-color: false
+  disable: false
+  items:
+
+{% for entry in site.documents %}
+    - title: "{{ entry.title }}"
+      url: "{{ entry.url | prepend: site.baseurl }}"
+      section: "{{ entry.section }}"
+      category: "{% if entry.categories %}{% for category in entry.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}"
+      tags: "{% if entry.tags %}{% for tag in entry.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}"
+      icon: {% if entry.icon %}{{ entry.icon }}{% endif %}
+      label: false
+      label-color: false
+      disable: false
+{% endfor %}
