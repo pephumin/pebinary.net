@@ -4,6 +4,7 @@ section: "clients"
 permalink: /clients/A/2.html
 category: [clients, new-survey]
 tags: [create]
+icon: pencil-square-o
 ---
 
 Enter the text of your question (i.e. What is your favorite color?) in the question box.

@@ -4,9 +4,8 @@ section: "clients"
 permalink: /clients/C/1.html
 category: [clients, monitor]
 tags: [progress]
+icon: line-chart
 ---
-
-### Survey statistics
 
 While completing surveys, various access statistics are collected for administrative review. These statistics, described in the table further below, allow you to better understand how your respondents interact with the surveys you create.
 

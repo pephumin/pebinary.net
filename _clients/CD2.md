@@ -4,9 +4,9 @@ section: "clients"
 permalink: /clients/D/2.html
 category: [clients, results]
 tags: [analysis]
+icon: table
 ---
 
-### Exporting results
 
 By choosing to export to CSV, you are selected to dump all the survey result data into a text file seperate by comma's, which then has the ability to be opened with most spreadsheet programs.
 

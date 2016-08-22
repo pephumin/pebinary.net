@@ -4,8 +4,8 @@ section: "members"
 permalink: /members/B/1.html
 category: [members, dashboard]
 tags: [my-surveys, survey]
+icon: cog
 ---
-
 
 These are the surveys that you can take. These surveys can be private to you, or a group you're in, or they can be public surveys.
 

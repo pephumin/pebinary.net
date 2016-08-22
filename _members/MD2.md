@@ -4,8 +4,8 @@ section: "members"
 permalink: /members/A/5.html
 category: [members, general]
 tags: [public, survey, info]
+icon: universal-access
 ---
-
 
 If your survey administrator has created public surveys (which do not require you to log in to take) and wants them to be shown, then they are available in the box labeled `Public Surveys`.
 

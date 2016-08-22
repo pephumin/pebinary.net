@@ -4,6 +4,7 @@ section: "clients"
 permalink: /clients/A/1.html
 category: [clients, new-survey]
 tags: [create]
+icon: info-circle
 ---
 
 Enter a name for the survey in the name field. Do not use spaces in this name, think of this as a filename. Underscore's are acceptable.

@@ -4,6 +4,7 @@ section: "clients"
 permalink: /clients/A/6.html
 category: [clients, new-survey]
 tags: [create]
+icon: flag-checkered
 ---
 
 Shows you the block of PHP code that you need to paste into the HTML of your webpage to embed the survey.

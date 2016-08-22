@@ -4,8 +4,8 @@ section: "members"
 permalink: /members/B/3.html
 category: [members, dashboard]
 tags: [my-tools]
+icon: wrench
 ---
-
 
 In this area, you'll find links to get help as well as logout. Your survey administrator may also have given you access to these tools:
 

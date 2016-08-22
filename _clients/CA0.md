@@ -4,6 +4,7 @@ section: "clients"
 permalink: /clients/A/0.html
 category: [clients, new-survey]
 tags: [create]
+icon: file-o
 ---
 
 Clients can simply create a new survey with our system by following the below steps.

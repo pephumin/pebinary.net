@@ -4,6 +4,7 @@ section: "clients"
 permalink: /clients/E/1.html
 category: [clients, account]
 tags: [admin]
+icon: cogs
 ---
 
 ### Batch Account Creation

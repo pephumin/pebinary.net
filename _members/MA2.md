@@ -4,8 +4,8 @@ section: "members"
 permalink: /members/A/2.html
 category: [members, general]
 tags: [registration, users]
+icon: user-plus
 ---
-
 
 You can create a new membership account by clicking on the `Sign up` menu.
 

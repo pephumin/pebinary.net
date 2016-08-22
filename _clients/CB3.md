@@ -4,9 +4,10 @@ section: "clients"
 permalink: /clients/B/3.html
 category: [clients, your-survey]
 tags: [create]
+icon: check-square
 ---
 
-Once you have created/edited a survey, and are ready to make it available online you must activate it. Go to the Management Interface, click Change the Status of a Survey. Find the survey you want to activate. Make note of the survey ID(SID) and the name(SURVEYNAME).
+Once you have created/edited a survey, and are ready to make it available online you must activate it. Go to the Management Interface, click Change the Status of a Survey. Find the survey you want to activate. Make note of the `survey ID (SID)` and the `name (SURVEYNAME)`.
 
 NOTE: At this point you must activate the survey. This is a one way operation. After it has been activated, you can no longer edit or test this survey. All results gathered in testing mode (if any) will be cleared by activating it.
 
@@ -17,4 +18,4 @@ To insert the survey into an existing page you must place a PHP tag in the HTML 
 NOTE:
 - This code was also given to you on the Finish tab of the survey design.
 - To access an active survey, go to http://$PATH/public/survey.php?name=SURVEYNAME
-- To embed an active survey within another php document, add this code: <?php $sid=SID; $results=1; include('/$PATH/public/handler.php'); ?>
+- To embed an active survey within another php document, add this code: `<?php $sid=SID; $results=1; include('/$PATH/public/handler.php'); ?>`
