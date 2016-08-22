@@ -1,92 +1,137 @@
 ---
-title: "Category"
-section: home
-permalink: /cat.html
+title: "The main page of website"
+section: "home"
+permalink: /
 layout: index-en
 homepage: true
 ---
+
+
+<section class="container home">
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <h1>Both collection</h1>
+      <div class="listing">
+        <h3>Total documents: {{ site.documents.size }}</h3>
+        <div class="listing-group">
+          {% for p in site.documents %}
+          <div class="listing-item">
+            <strong><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></strong> ({{ p.section }})
+            <br>
+            <small>
+            {% if p.categories %}
+              {% for category in p.categories %}
+                <i class="pe-folder-open-o pe-fw"></i> <a href="/members/{{ category | slugify | prepend: site.baseurl }}">{{ category }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            <br>
+            {% if p.tags %}
+              {% for tag in p.tags %}
+                <i class="pe-tag pe-fw"></i> <a href="/members/{{ tag | slugify | prepend: site.baseurl }}">{{ tag }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            </small>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <h1>Both collection</h1>
+      <div class="listing">
+        <h3>Just testing</h3>
+        <div class="listing-group">
+
+          {% for collection in site.collections %}
+          {% for p in collection.docs %}
+          {% assign sorted_sections = p.section[0] %}
+          <div class="listing-item">
+            <strong><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></strong> ({{ p.section }})
+            <br>
+            <small>
+            {% if p.categories %}
+              {% for category in p.categories %}
+                <i class="pe-folder-open-o pe-fw"></i> <a href="/members/{{ category | slugify | prepend: site.baseurl }}">{{ category }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            <br>
+            {% if p.tags %}
+              {% for tag in p.tags %}
+                <i class="pe-tag pe-fw"></i> <a href="/members/{{ tag | slugify | prepend: site.baseurl }}">{{ tag }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            </small>
+          </div>
+          {% endfor %}
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="container home">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <h1>Member section</h1>
       <div class="listing">
-        <h3>General</h3>
-        {% assign mm = site.members | where: "category", "general" %}
+        <h3>Total of {{ site.members.size }} documents</h3>
         <div class="listing-group">
-          {% for entry in mm %}
-          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+
+          {% for entry in site.members %}
+          <div class="listing-item">
+            <strong><a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a></strong>
+            <br>
+            <small>
+            {% if entry.categories %}
+              {% for category in entry.categories %}
+                <i class="pe-folder-open-o pe-fw"></i> <a href="/members/{{ category | slugify | prepend: site.baseurl }}">{{ category }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            <br>
+            {% if entry.tags %}
+              {% for tag in entry.tags %}
+                <i class="pe-tag pe-fw"></i> <a href="/members/{{ tag | slugify | prepend: site.baseurl }}">{{ tag }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            </small>
+          </div>
           {% endfor %}
-        </div>
-      </div>
-      <div class="listing">
-        <h3>Dashboard</h3>
-        {% assign mm = site.members | where: "category", "dashboard" %}
-        <div class="listing-group">
-          {% for entry in mm %}
-          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="listing">
-        <h3>Participation</h3>
-        {% assign mm = site.members | where: "category", "participation" %}
-        <div class="listing-group">
-          {% for entry in mm %}
-          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
-          {% endfor %}
+
         </div>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <h1>Client section</h1>
       <div class="listing">
-        <h3>Create a survey</h3>
-        {% assign mm = site.clients | where: "category", "Create a survey" %}
+        <h3>Total of {{ site.clients.size }} documents</h3>
         <div class="listing-group">
-          {% for entry in mm %}
-          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="listing">
-        <h3>Managing surveys</h3>
-        {% assign mm = site.clients | where: "category", "Managing surveys" %}
-        <div class="listing-group">
-          {% for entry in mm %}
-          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="listing">
-        <h3>Customise surveys</h3>
-        {% assign mm = site.clients | where: "category", "Customise surveys" %}
-        <div class="listing-group">
-          {% for entry in mm %}
-          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="listing">
-        <h3>Survey results</h3>
-        {% assign mm = site.clients | where: "category", "Survey results" %}
-        <div class="listing-group">
-          {% for entry in mm %}
-          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="listing">
-        <h3>Appendix</h3>
-        {% assign mm = site.clients | where: "category", "Appendix" %}
-        <div class="listing-group">
-          {% for entry in mm %}
-          <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
-          {% endfor %}
-        </div>
-      </div>
 
+          {% for entry in site.clients %}
+          <div class="listing-item">
+            <strong><a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a></strong>
+            <br>
+            <small>
+            {% if entry.categories %}
+              {% for category in entry.categories %}
+                <i class="pe-folder-open-o pe-fw"></i> <a href="/members/{{ category | slugify | prepend: site.baseurl }}">{{ category }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            <br>
+            {% if entry.tags %}
+              {% for tag in entry.tags %}
+                <i class="pe-tag pe-fw"></i> <a href="/members/{{ tag | slugify | prepend: site.baseurl }}">{{ tag }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+            </small>
+          </div>
+          {% endfor %}
 
+        </div>
+      </div>
     </div>
   </div>
 </section>
