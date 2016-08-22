@@ -123,13 +123,11 @@ defaults:
     values:
       layout:         "main-en"
       section:        "members"
-      nav:            "members"
-      icon:           ""
-      pageformat:     ""
       toc:            false
       published:      true
       author:         "helpdesk"
       author-email:   "support@pebinary.com"
+      format:         "layout-left"
   -
     scope:
       path:           ""
@@ -137,13 +135,11 @@ defaults:
     values:
       layout:         "main-en"
       section:        "clients"
-      nav:            "clients"
-      icon:           ""
-      pageformat:     ""
       toc:            false
       published:      true
       author:         "helpdesk"
       author-email:   "support@pebinary.com"
+      format:         "layout-left"
   -
     scope:
       path:           "_pages"
