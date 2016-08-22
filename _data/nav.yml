@@ -1,0 +1,669 @@
+############################################################################
+# HEADER NAVIGATION
+############################################################################
+
+header:
+
+- title: "Home"
+  icon: home
+  host: support-en
+  url: "/"
+  section: "home"
+  description: "The front page of our support website"
+
+- title: "Members"
+  icon: user
+  host: support-en
+  url: "/members/"
+  section: "members"
+  description: "Supports for members"
+
+- title: "Clients"
+  icon: briefcase
+  host: support-en
+  url: "/clients/"
+  section: "clients"
+  description: "Supports for clients"
+
+- title: "Search"
+  icon: search
+  host: support-en
+  url:
+  section: "search"
+  description: "Search this website"
+
+# - title: "Back"
+#   icon: reply
+#   host: main-en
+#   url:
+#   section: "back"
+#   description: "Back to the main website"
+
+
+
+############################################################################
+# FOOTER NAVIGATION
+############################################################################
+
+footer:
+
+- title: "Privacy policy"
+  stitle: "Privacy"
+  icon: lock
+  host: main-en
+  url: "/about/privacy.html"
+  disable: false
+
+- title: "Terms of services"
+  stitle: "TOS"
+  icon: gavel
+  host: main-en
+  url: "/about/tos.html"
+  disable: false
+
+- title: "Terms & conditions"
+  stitle: "Terms"
+  icon: balance-scale
+  host: main-en
+  url: "/about/terms.html"
+  disable: false
+
+- title: "Sitemap"
+  stitle: "Sitemap"
+  icon: sitemap
+  host: main-en
+  url: "/about/sitemap.html"
+  disable: false
+
+
+
+############################################################################
+# MEMBER DOCUMENT MENU
+############################################################################
+
+members:
+
+- title: "Members"
+  icon: question-circle-o
+  size: 11
+  label: false
+  label-color: false
+  disable: false
+  items:
+
+
+    - title: "General information"
+      url: "/members/A/1.html"
+      section: "members"
+      category: "member, general"
+      tags: "info"
+      icon: university
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Member registration"
+      url: "/members/A/2.html"
+      section: "members"
+      category: "members, general"
+      tags: "registration, users"
+      icon: user-plus
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Login"
+      url: "/members/A/3.html"
+      section: "members"
+      category: "members, general"
+      tags: "login, users"
+      icon: sign-in
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "My surveys"
+      url: "/members/B/1.html"
+      section: "members"
+      category: "members, dashboard"
+      tags: "my-surveys, survey"
+      icon: cog
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "My history"
+      url: "/members/B/2.html"
+      section: "members"
+      category: "members, dashboard"
+      tags: "history, survey"
+      icon: history
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "My tools"
+      url: "/members/B/3.html"
+      section: "members"
+      category: "members, dashboard"
+      tags: "my-tools"
+      icon: wrench
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Conduct a survey"
+      url: "/members/C/1.html"
+      section: "members"
+      category: "members, participation"
+      tags: "conduct, survey"
+      icon: pencil
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Saving for later"
+      url: "/members/C/2.html"
+      section: "members"
+      category: "members, participation"
+      tags: "save, survey"
+      icon: save
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Submit the completed survey"
+      url: "/members/C/3.html"
+      section: "members"
+      category: "members, participation"
+      tags: "submit, survey"
+      icon: paperclip
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Getting help"
+      url: "/members/A/4.html"
+      section: "members"
+      category: "appendix, general"
+      tags: "help, info, users, survey"
+      icon: flag-o
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Public surveys"
+      url: "/members/A/5.html"
+      section: "members"
+      category: "members, general"
+      tags: "public, survey, info"
+      icon: universal-access
+      label: false
+      label-color: false
+      disable: false
+
+
+
+
+############################################################################
+# CLIENT DOCUMENT MENU
+############################################################################
+
+clients:
+
+- title: "Clients"
+  icon: question-circle-o
+  size: 16
+  label: false
+  label-color: false
+  disable: false
+  items:
+
+
+    - title: "Create a new survey"
+      url: "/clients/A/0.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: file-o
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Add survey information"
+      url: "/clients/A/1.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: info-circle
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Add new questions"
+      url: "/clients/A/2.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: pencil-square-o
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Ordering questions"
+      url: "/clients/A/3.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: list-ol
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Setting question flows"
+      url: "/clients/A/4.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: exchange
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Preview your survey"
+      url: "/clients/A/5.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: eye
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Finishing your survey"
+      url: "/clients/A/6.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: flag-checkered
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Editing your existing survey"
+      url: "/clients/B/1.html"
+      section: "clients"
+      category: "clients, your-survey"
+      tags: "create"
+      icon: edit
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Testing your survey"
+      url: "/clients/B/2.html"
+      section: "clients"
+      category: "clients, your-survey"
+      tags: "create"
+      icon: paper-plane-o
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Publishing your survey"
+      url: "/clients/B/3.html"
+      section: "clients"
+      category: "clients, your-survey"
+      tags: "create"
+      icon: check-square
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Themes"
+      url: "/clients/B/4.html"
+      section: "clients"
+      category: "clients, your-survey"
+      tags: "create"
+      icon: paint-brush
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Strike rate"
+      url: "/clients/C/1.html"
+      section: "clients"
+      category: "clients, monitor"
+      tags: "progress"
+      icon: line-chart
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Survey results"
+      url: "/clients/D/1.html"
+      section: "clients"
+      category: "clients, results"
+      tags: "analysis"
+      icon: pie-chart
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Exporting results"
+      url: "/clients/D/2.html"
+      section: "clients"
+      category: "clients, results"
+      tags: "analysis"
+      icon: table
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Administration"
+      url: "/clients/E/1.html"
+      section: "clients"
+      category: "clients, account"
+      tags: "admin"
+      icon: cogs
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Different type of response"
+      url: "/clients/F/1.html"
+      section: "clients"
+      category: "clients, knowledge"
+      tags: "appendix"
+      icon: university
+      label: false
+      label-color: false
+      disable: false
+
+
+
+
+############################################################################
+# COMBINED DOCUMENT MENU (MEMBER/CLIENT)
+############################################################################
+
+all:
+
+- title: "All"
+  icon: question-circle-o
+  size: 27
+  label: false
+  label-color: false
+  disable: false
+  items:
+
+
+    - title: "General information"
+      url: "/members/A/1.html"
+      section: "members"
+      category: "member, general"
+      tags: "info"
+      icon: university
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Member registration"
+      url: "/members/A/2.html"
+      section: "members"
+      category: "members, general"
+      tags: "registration, users"
+      icon: user-plus
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Login"
+      url: "/members/A/3.html"
+      section: "members"
+      category: "members, general"
+      tags: "login, users"
+      icon: sign-in
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "My surveys"
+      url: "/members/B/1.html"
+      section: "members"
+      category: "members, dashboard"
+      tags: "my-surveys, survey"
+      icon: cog
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "My history"
+      url: "/members/B/2.html"
+      section: "members"
+      category: "members, dashboard"
+      tags: "history, survey"
+      icon: history
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "My tools"
+      url: "/members/B/3.html"
+      section: "members"
+      category: "members, dashboard"
+      tags: "my-tools"
+      icon: wrench
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Conduct a survey"
+      url: "/members/C/1.html"
+      section: "members"
+      category: "members, participation"
+      tags: "conduct, survey"
+      icon: pencil
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Saving for later"
+      url: "/members/C/2.html"
+      section: "members"
+      category: "members, participation"
+      tags: "save, survey"
+      icon: save
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Submit the completed survey"
+      url: "/members/C/3.html"
+      section: "members"
+      category: "members, participation"
+      tags: "submit, survey"
+      icon: paperclip
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Getting help"
+      url: "/members/A/4.html"
+      section: "members"
+      category: "appendix, general"
+      tags: "help, info, users, survey"
+      icon: flag-o
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Public surveys"
+      url: "/members/A/5.html"
+      section: "members"
+      category: "members, general"
+      tags: "public, survey, info"
+      icon: universal-access
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Create a new survey"
+      url: "/clients/A/0.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: file-o
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Add survey information"
+      url: "/clients/A/1.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: info-circle
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Add new questions"
+      url: "/clients/A/2.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: pencil-square-o
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Ordering questions"
+      url: "/clients/A/3.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: list-ol
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Setting question flows"
+      url: "/clients/A/4.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: exchange
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Preview your survey"
+      url: "/clients/A/5.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: eye
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Finishing your survey"
+      url: "/clients/A/6.html"
+      section: "clients"
+      category: "clients, new-survey"
+      tags: "create"
+      icon: flag-checkered
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Editing your existing survey"
+      url: "/clients/B/1.html"
+      section: "clients"
+      category: "clients, your-survey"
+      tags: "create"
+      icon: edit
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Testing your survey"
+      url: "/clients/B/2.html"
+      section: "clients"
+      category: "clients, your-survey"
+      tags: "create"
+      icon: paper-plane-o
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Publishing your survey"
+      url: "/clients/B/3.html"
+      section: "clients"
+      category: "clients, your-survey"
+      tags: "create"
+      icon: check-square
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Themes"
+      url: "/clients/B/4.html"
+      section: "clients"
+      category: "clients, your-survey"
+      tags: "create"
+      icon: paint-brush
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Strike rate"
+      url: "/clients/C/1.html"
+      section: "clients"
+      category: "clients, monitor"
+      tags: "progress"
+      icon: line-chart
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Survey results"
+      url: "/clients/D/1.html"
+      section: "clients"
+      category: "clients, results"
+      tags: "analysis"
+      icon: pie-chart
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Exporting results"
+      url: "/clients/D/2.html"
+      section: "clients"
+      category: "clients, results"
+      tags: "analysis"
+      icon: table
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Administration"
+      url: "/clients/E/1.html"
+      section: "clients"
+      category: "clients, account"
+      tags: "admin"
+      icon: cogs
+      label: false
+      label-color: false
+      disable: false
+
+    - title: "Different type of response"
+      url: "/clients/F/1.html"
+      section: "clients"
+      category: "clients, knowledge"
+      tags: "appendix"
+      icon: university
+      label: false
+      label-color: false
+      disable: false
