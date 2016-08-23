@@ -1,8 +1,8 @@
 ---
 title: "Publishing your survey"
 section: "clients"
-permalink: /clients/B/3.html
-category: [clients, your-survey]
+permalink: /clients/your-survey/3.html
+category: your-survey
 tags: [create]
 icon: check-square
 ---

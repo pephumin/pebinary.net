@@ -1,8 +1,8 @@
 ---
 title: "Public surveys"
 section: "members"
-permalink: /members/A/5.html
-category: [members, general]
+permalink: /members/survey/4.html
+category: survey
 tags: [public, survey, info]
 icon: universal-access
 ---

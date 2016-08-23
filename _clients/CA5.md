@@ -1,8 +1,8 @@
 ---
 title: "Preview your survey"
 section: "clients"
-permalink: /clients/A/5.html
-category: [clients, new-survey]
+permalink: /clients/new-survey/5.html
+category: new-survey
 tags: [create]
 icon: eye
 ---

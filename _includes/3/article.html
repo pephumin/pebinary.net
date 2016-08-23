@@ -1,16 +1,10 @@
         <header>
           <h2>{{ page.title }}</h2>
-          {% if page.question %}<p class="post-question">{{ page.question }}</p>{% endif %}
+          {% if page.question %}<blockquote><i class="pe-quote-left"></i> {{ page.question }} <i class="pe-quote-right"></i></blockquote>{% endif %}
           <p class="post-meta">
             <i class="pe-{{ page.icon }} pe-lg m-icon pull-right"></i>
             <span class="m-section">Section:&nbsp;{{ page.section | capitalize }}</span><br>
-          {% if page.categories %}
-            <span class="m-cat">Category:&nbsp;
-            {% for category in page.categories %}
-              <i class="pe-folder-open-o pe-fw"></i> {{ category }}
-            {% endfor %}</span>
-          {% endif %}
-          <br>
+            <span class="m-cat">Category:&nbsp;<i class="pe-folder-open-o pe-fw"></i> {{ page.category }}</span><br>
           {% if page.tags %}
             <span class="m-tag">Tag:&nbsp;
             {% for tag in page.tags %}

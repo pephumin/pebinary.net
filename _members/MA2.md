@@ -1,8 +1,8 @@
 ---
 title: "Member registration"
 section: "members"
-permalink: /members/A/2.html
-category: [members, general]
+permalink: /members/general/2.html
+category: general
 tags: [registration, users]
 icon: user-plus
 ---

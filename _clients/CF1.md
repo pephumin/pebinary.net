@@ -1,11 +1,11 @@
 ---
 title: "Different type of response"
 section: "clients"
-permalink: /clients/F/1.html
-category: [clients, knowledge]
+permalink: /clients/knowledge/1.html
+category: knowledge
 tags: [appendix]
 icon: university
-question: This document explains the difference between different type of response. This will be useful for questionnaire designer as it will directly impact on how to use our system.
+question: "This document explains the difference between different type of response. This will be useful for questionnaire designer as it will directly impact on how to use our system."
 toc: true
 ---
 
@@ -78,7 +78,7 @@ Example:
 #### Numeric
 
 Explanation:
-Use this for questions which you will only want a numeric answer. Note: All non-numeric responses are disgarded. The length determines the max number of digits that can be used, the precision field adds extra size for the numbers begind the comma. This is not very precise yet, so just use the length field for now.
+Use this for questions which you will only want a numeric answer. Note: All non-numeric responses are discarded. The length determines the max number of digits that can be used, the precision field adds extra size for the numbers begin the comma. This is not very precise yet, so just use the length field for now.
 Example:
 
 #### Session text

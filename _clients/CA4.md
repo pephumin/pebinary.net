@@ -1,8 +1,8 @@
 ---
 title: "Setting question flows"
 section: "clients"
-permalink: /clients/A/4.html
-category: [clients, new-survey]
+permalink: /clients/new-survey/4.html
+category: new-survey
 tags: [create]
 icon: exchange
 ---

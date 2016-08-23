@@ -1,11 +1,17 @@
 ---
 title: "Add survey information"
 section: "clients"
-permalink: /clients/A/1.html
-category: [clients, new-survey]
+permalink: /clients/new-survey/1.html
+category: new-survey
 tags: [create]
 icon: info-circle
 ---
+
+### The answer
+
+Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
+
+#### Give your survey a proper information
 
 Enter a name for the survey in the name field. Do not use spaces in this name, think of this as a filename. Underscore's are acceptable.
 

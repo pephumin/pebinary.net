@@ -123,6 +123,10 @@ defaults:
     values:
       layout:         "main-en"
       section:        "members"
+      nav:           "members"
+      label:          false
+      label-color:    false
+      disable:        false
       toc:            false
       published:      true
       author:         "helpdesk"
@@ -135,6 +139,10 @@ defaults:
     values:
       layout:         "main-en"
       section:        "clients"
+      nav:            "clients"
+      label:          false
+      label-color:    false
+      disable:        false
       toc:            false
       published:      true
       author:         "helpdesk"

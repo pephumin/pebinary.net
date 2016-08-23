@@ -1,11 +1,15 @@
 ---
 title: "Themes"
 section: "clients"
-permalink: /clients/B/4.html
-category: [clients, your-survey]
+permalink: /clients/your-survey/4.html
+category: your-survey
 tags: [create]
 icon: paint-brush
 ---
+
+### The answer
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
 
 #### Creating themes
 

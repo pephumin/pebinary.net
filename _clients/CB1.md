@@ -1,8 +1,8 @@
 ---
 title: "Editing your existing survey"
 section: "clients"
-permalink: /clients/B/1.html
-category: [clients, your-survey]
+permalink: /clients/your-survey/1.html
+category: your-survey
 tags: [create]
 icon: edit
 ---

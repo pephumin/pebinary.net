@@ -1,8 +1,8 @@
 ---
 title: "My tools"
 section: "members"
-permalink: /members/B/3.html
-category: [members, dashboard]
+permalink: /members/dashboard/3.html
+category: dashboard
 tags: [my-tools]
 icon: wrench
 ---

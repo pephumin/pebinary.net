@@ -1,8 +1,8 @@
 ---
 title: "Login"
 section: "members"
-permalink: /members/A/3.html
-category: [members, general]
+permalink: /members/general/3.html
+category: general
 tags: [login, users]
 icon: sign-in
 ---

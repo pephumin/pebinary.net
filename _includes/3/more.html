@@ -1,17 +1,19 @@
 <section class="feedback">
   <h3>Others</h3>
   <div class="row">
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 helpful">
-      <h4>Was it helpful?</h4>
-      <div class="h-yes">Yes</div>
-      <div class="h-none"></div>
-      <div class="h-no">No</div>
+    <div class="col-xs-5 col-sm-4 col-md-4 col-lg-4">
+      <h6>Was it helpful?</h6>
+      <div class="helpful">
+        <div class="h-yes">Yes</div>
+        <div class="h-none"></div>
+        <div class="h-no">No</div>
+      </div>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 related-listing">
-      <h4>Similar topics</h4>
-      <div class="listing-group">
+    <div class="col-xs-7 col-sm-8 col-md-8 col-lg-8">
+      <h6>Similar topics</h6>
+      <div class="listtopics-group">
       {% for entry in site.[page.section] | limit: 5 %}
-        <a class="listing-item" href="{{ entry.url }}">{{ entry.title }}</a>
+        <a class="listtopics-item" href="{{ entry.url }}">{{ entry.title }}</a>
       {% endfor %}
       </div>
     </div>

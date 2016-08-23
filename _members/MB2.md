@@ -1,8 +1,8 @@
 ---
 title: "My history"
 section: "members"
-permalink: /members/B/2.html
-category: [members, dashboard]
+permalink: /members/dashboard/2.html
+category: dashboard
 tags: [history, survey]
 icon: history
 ---

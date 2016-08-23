@@ -1,8 +1,8 @@
 ---
 title: "Add new questions"
 section: "clients"
-permalink: /clients/A/2.html
-category: [clients, new-survey]
+permalink: /clients/new-survey/2.html
+category: new-survey
 tags: [create]
 icon: pencil-square-o
 ---

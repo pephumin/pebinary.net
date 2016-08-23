@@ -1,8 +1,8 @@
 ---
 title: "Getting help"
 section: "members"
-permalink: /members/A/4.html
-category: [appendix, general]
+permalink: /members/others/4.html
+category: others
 tags: [help, info, users, survey]
 icon: flag-o
 ---

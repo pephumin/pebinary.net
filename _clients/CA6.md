@@ -1,8 +1,8 @@
 ---
 title: "Finishing your survey"
 section: "clients"
-permalink: /clients/A/6.html
-category: [clients, new-survey]
+permalink: /clients/new-survey/6.html
+category: new-survey
 tags: [create]
 icon: flag-checkered
 ---

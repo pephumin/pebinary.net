@@ -1,8 +1,8 @@
 ---
 title: "Submit the completed survey"
 section: "members"
-permalink: /members/C/3.html
-category: [members, participation]
+permalink: /members/survey/3.html
+category: survey
 tags: [submit, survey]
 icon: paperclip
 ---

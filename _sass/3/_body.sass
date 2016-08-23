@@ -30,186 +30,36 @@ hr
 
 del
   color: $lightgrey
-//
-// input,
-// textarea,
-// select,
-// fieldset
-//   margin-bottom: 1.5rem
-//
-// pre,
-// blockquote,
-// dl,
-// figure,
-// table,
-// p,
-// ul,
-// ol,
-// form
-//   margin-bottom: 2.5rem
-
-.button,
-button
-  display: inline-block
-  height: 38px
-  padding: 0 30px
-  margin-bottom: 1rem
-  color: $grey
-  background-color: transparent
-  border: 1px solid $grey
-  border-radius: 4px
-  text-align: center
-  font-size: 11px
-  font-weight: 600
-  line-height: 38px
-  letter-spacing: .1rem
-  text-transform: uppercase
-  text-decoration: none
-  white-space: nowrap
-  cursor: pointer
-  box-sizing: border-box
-  -webkit-transition: all 0.15s ease-out 0s
-  transition: all 0.15s ease-out 0s
-
-.button:hover,
-.button:focus,
-button:hover,
-button:focus
-  color: $white
-  background-color: $lightgrey
-  border: 1px solid $lightgrey
-  border-color: transparent
-  outline: 0
-  text-decoration: none
-
-.button-x
-  display: inline-block
-  height: 38px
-  padding: 0 30px
-  color: $white
-  background-color: $lightgrey
-  border: 1px solid $lightgrey
-  border-radius: 4px
-  text-align: center
-  font-size: 11px
-  font-weight: 600
-  line-height: 38px
-  letter-spacing: .1rem
-  text-transform: uppercase
-  text-decoration: none
-  white-space: nowrap
-  cursor: pointer
-  box-sizing: border-box
-  -webkit-transition: all 0.15s ease-out 0s
-  transition: all 0.15s ease-out 0s
-
-.button-x:hover,
-.button-x:focus
-  color: $grey
-  background-color: transparent
-  border: 1px solid $grey
-  border-color: transparent
-  outline: 0
-  text-decoration: none
-
-.button-p
-  display: inline-block
-  height: 38px
-  padding: 0 30px
-  color: $indigo
-  background-color: transparent
-  border: 1px solid $indigo
-  border-radius: 4px
-  text-align: center
-  font-size: 11px
-  font-weight: 600
-  line-height: 38px
-  letter-spacing: .1rem
-  text-transform: uppercase
-  text-decoration: none
-  white-space: nowrap
-  cursor: pointer
-  box-sizing: border-box
-  -webkit-transition: all 0.15s ease-out 0s
-  transition: all 0.15s ease-out 0s
-
-.button-p:hover,
-.button-p:focus
-  color: $white
-  background-color: $indigo
-  border: 1px solid $indigo
-  border-color: transparent
-  outline: 0
-  text-decoration: none
+  text-decoration: line-through
 
 input
   &[type="submit"],
-  &[type="reset"],
-  &[type="button"]
-    display: inline-block
-    height: 38px
-    padding: 0 30px
+  &[type="reset"]
+    font-size: 0.55rem
     color: $grey
     background-color: transparent
     border: 1px solid $grey
-    border-radius: 4px
     text-align: center
-    font-size: 11px
-    font-weight: 600
-    line-height: 38px
-    letter-spacing: .1rem
+    letter-spacing: 0.1rem
     text-transform: uppercase
     text-decoration: none
+    display: inline-block
+    height: 30px
+    line-height: 30px
+    padding: 0 15px
     white-space: nowrap
+    border-radius: 4px
     cursor: pointer
     box-sizing: border-box
+    -webkit-transition: all 0.15s ease-out 0s
+    transition: all 0.15s ease-out 0s
 
-input
-  &[type="submit"]:hover,
-  &[type="submit"]:focus,
-  &[type="reset"]:hover,
-  &[type="reset"]:focus,
-  &[type="button"]:hover,
-  &[type="button"]:focus
+    &:hover,
+    &:active,
+    &:focus
     color: $white
     background-color: $lightgrey
     border: 1px solid $lightgrey
-    border-color: transparent
-    outline: 0
-    text-decoration: none
-
-input
-  &[type="submit"].button-p,
-  &[type="reset"].button-p,
-  &[type="button"].button-p
-    display: inline-block
-    height: 38px
-    padding: 0 30px
-    color: $indigo
-    background-color: transparent
-    border: 1px solid $indigo
-    border-radius: 4px
-    text-align: center
-    font-size: 11px
-    font-weight: 600
-    line-height: 38px
-    letter-spacing: .1rem
-    text-transform: uppercase
-    text-decoration: none
-    white-space: nowrap
-    cursor: pointer
-    box-sizing: border-box
-
-input
-  &[type="submit"].button-p:hover,
-  &[type="submit"].button-p:focus,
-  &[type="reset"].button-p:hover,
-  &[type="reset"].button-p:focus,
-  &[type="button"].button-p:hover,
-  &[type="button"].button-p:focus
-    color: $white
-    background-color: $indigo
-    border: 1px solid $indigo
     border-color: transparent
     outline: 0
     text-decoration: none
@@ -279,43 +129,43 @@ label > .label-body
   margin-left: .5rem
   font-weight: normal
 
-ul
-  list-style: circle inside
-  padding-left: 0
-  margin-top: 0
-
-ol
-  list-style: decimal inside
-  padding-left: 0
-  margin-top: 0
-
-ul
-  padding-left: 0
-  margin-top: 0
-  ul, ol
-    margin: 1.0rem 0 1.0rem 2.0rem
-    font-size: 85%
-
-ol
-  ol, ul
-    margin: 1.0rem 0 1.0rem 2.0rem
-    font-size: 85%
-
-dl
-  margin: 0 0 15px 0
-
-  dt
-    font-weight: bold
-    margin-top: 10px
-
-  dd
-    margin-left: 0
-    padding-left: 0
-    font-style: italic
-
-  p
-    padding-left: 20px
-    font-style: italic
+// ul
+//   list-style: circle inside
+//   padding-left: 0
+//   margin-top: 0
+//
+// ol
+//   list-style: decimal inside
+//   padding-left: 0
+//   margin-top: 0
+//
+// ul
+//   padding-left: 0
+//   margin-top: 0
+//   ul, ol
+//     margin: 1.0rem 0 1.0rem 2.0rem
+//     font-size: 85%
+//
+// ol
+//   ol, ul
+//     margin: 1.0rem 0 1.0rem 2.0rem
+//     font-size: 85%
+//
+// dl
+//   margin: 0 0 15px 0
+//
+//   dt
+//     font-weight: bold
+//     margin-top: 10px
+//
+//   dd
+//     margin-left: 0
+//     padding-left: 0
+//     font-style: italic
+//
+//   p
+//     padding-left: 20px
+//     font-style: italic
 
 code
   padding: 2px 4px
@@ -331,12 +181,6 @@ kbd
   background-color: $black
   border-radius: 3px
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25)
-
-  // kbd
-  //   padding: 0
-  //   font-size: 100%
-  //   font-weight: bold
-  //   box-shadow: none
 
 pre
   display: block
@@ -358,24 +202,69 @@ pre
     border-radius: 0
 
 blockquote
-  color: $darkgrey
+  color: $lightgrey
   margin: 0 0 20px 2px
-  padding: 0px 20px
-  border-left: 3px solid $lightgrey
+  padding: 10px 20px
+  //border-left: 3px solid $lightgrey
   font-style: italic
-  background-color: $white-shadow
+  //background-color: $white-shadow
 
-// table
-//   //width: 100%
-//   margin-bottom: 20px
-//   text-align: left
-//
-// th
-//   padding: 10px 12px
-//   background: $grey
-//   color: $white
-//   border-bottom: 1px solid $silver
-//
-// td
-//   padding: 12px 15px
-//   border-bottom: 1px solid $silver
+.button
+  font-family: "ubuntu"
+  font-size: 10px
+  color: $indigo
+  background-color: transparent
+  border: 1px solid $indigo
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $white
+    background-color: $indigo
+    border: 1px solid $indigo
+    outline: 0
+    text-decoration: none
+
+.button-x
+  font-family: "ubuntu"
+  font-size: 10px
+  color: $white
+  background-color: $indigo
+  border: 1px solid $indigo
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $indigo
+    background-color: transparent
+    border: 1px solid $indigo
+    outline: 0
+    text-decoration: none

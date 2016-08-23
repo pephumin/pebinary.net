@@ -1,8 +1,8 @@
 ---
 title: "Saving for later"
 section: "members"
-permalink: /members/C/2.html
-category: [members, participation]
+permalink: /members/survey/2.html
+category: survey
 tags: [save, survey]
 icon: save
 ---

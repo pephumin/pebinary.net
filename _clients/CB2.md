@@ -1,8 +1,8 @@
 ---
 title: "Testing your survey"
 section: "clients"
-permalink: /clients/B/2.html
-category: [clients, your-survey]
+permalink: /clients/your-survey/2.html
+category: your-survey
 tags: [create]
 icon: paper-plane-o
 ---

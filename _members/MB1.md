@@ -1,8 +1,8 @@
 ---
 title: "My surveys"
 section: "members"
-permalink: /members/B/1.html
-category: [members, dashboard]
+permalink: /members/dashboard/1.html
+category: dashboard
 tags: [my-surveys, survey]
 icon: cog
 ---

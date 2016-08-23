@@ -1,8 +1,8 @@
 ---
 title: "Conduct a survey"
 section: "members"
-permalink: /members/C/1.html
-category: [members, participation]
+permalink: /members/survey/1.html
+category: survey
 tags: [conduct, survey]
 icon: pencil
 ---
