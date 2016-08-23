@@ -1,6 +1,6 @@
 ---
 title: "humans.txt"
-section: home
+section: "home"
 permalink: /humans.txt
 layout:
 ---
@@ -9,19 +9,21 @@ layout:
 
 /* TEAM */
 
-	Wed designer and programming: Phumin Chesdmethee
-	Contact: phumin [at] sawasdee.org
-	Twitter: @pephumin
-	Location: Bangkok, THAILAND
+  Wed designer and programming: Phumin Chesdmethee
+  Contact: phumin [at] sawasdee.org
+  Twitter: @pephumin
+  Location: Bangkok, THAILAND
 
 /* THANKS */
 
-
+  Executive advisor on graphic design: Benjawan Puttarugsa
+  Contact: benjy.p [at] gmail.com
+  Location: Bangkok, THAILAND
 
 
 /* SITE */
 
-	Last update: 2016/08/05
-	Language: English / Thai
-	Doctype: HTML5
-	IDE: Atom, Flow, Photoshop
+  Last update: 2016/08/23
+  Language: English / Thai
+  Doctype: HTML5
+  IDE: Atom, Flow, Photoshop

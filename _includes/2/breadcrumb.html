@@ -4,7 +4,7 @@
         {% assign crumbs = page.url | split: '/' %}
         {% for crumb in crumbs offset: 1 %}
         {% if forloop.last %}
-        <li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ page.url | prepend: site.baseurl }}" itemprop="item"><span itemprop="name">{{ page.title }}</span></a></li>
+        <li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">{{ page.title }}</span></li>
         {% else %}
         {% assign crumb_limit = forloop.index | plus: 1 %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: "/" | prepend: site.baseurl }}{% endfor %}" itemprop="item"><span itemprop="name">{{ crumb | replace:'-',' ' | capitalize }}</span></a></li>

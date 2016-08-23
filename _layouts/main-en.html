@@ -5,47 +5,47 @@ layout: index-en
 <main class="container">
   <div class="row">
     {% if page.format == "layout-left" %}
-    <div class="col-md-3 col-lg-3">
+    <div class="col-md-3 col-lg-3 bg-info">
       <aside class="menu">
-        {% include base/navvertical.html section = page.section %}
+        {% include 2/side.html section = page.section %}
       </aside>
     </div>
     <div class="col-md-9 col-lg-9">
       <article>
-        {% include base/article-header.html %}
+        {% include 3/article.html %}
         {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
         <body>
           {{ content }}
         </body>
       </article>
-      {% include base/more.html %}
+      {% include 3/more.html %}
     </div>
     {% elsif page.format == "layout-right" %}
     <div class="col-md-9 col-lg-9">
       <article>
-        {% include base/article-header.html %}
+        {% include 3/article.html %}
         {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
         <body>
           {{ content }}
         </body>
       </article>
-      {% include base/more.html %}
+      {% include 3/more.html %}
     </div>
-    <div class="col-md-3 col-lg-3">
+    <div class="col-md-3 col-lg-3 bg-info">
       <aside class="menu">
-        {% include base/navvertical.html section = page.section %}
+        {% include 2/side.html section = page.section %}
       </aside>
     </div>
     {% else %}
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <article>
-        {% include base/article-header.html %}
+        {% include 3/article.html %}
         {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
         <body>
           {{ content }}
         </body>
       </article>
-      {% include base/more.html %}
+      {% include 3/more.html %}
     {% endif %}
   </div>
 </main>
