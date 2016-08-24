@@ -2,5 +2,6 @@ _site
 .jekyll-metadata
 .DS_Store
 .sass-cache
+README.md
 Icon?
 run
