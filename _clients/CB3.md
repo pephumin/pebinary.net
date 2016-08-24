@@ -9,7 +9,7 @@ icon: check-square
 
 Once you have created/edited a survey, and are ready to make it available online you must activate it. Go to the Management Interface, click Change the Status of a Survey. Find the survey you want to activate. Make note of the `survey ID (SID)` and the `name (SURVEYNAME)`.
 
-NOTE: At this point you must activate the survey. This is a one way operation. After it has been activated, you can no longer edit or test this survey. All results gathered in testing mode (if any) will be cleared by activating it.
+{% include 1/alert.html type = "pe" close = "yes" icon = "exclamation-triangle" intro = "Note" msg = "At this point you must activate the survey. This is a one way operation. After it has been activated, you can no longer edit or test this survey. All results gathered in testing mode (if any) will be cleared by activating it." %}
 
 Click on the Activate link for your survey. At this point your survey is active.
 

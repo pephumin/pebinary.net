@@ -5,7 +5,10 @@ permalink: /clients/new-survey/2.html
 category: new-survey
 tags: [create]
 icon: pencil-square-o
+question: "How do I add new questions to my new survey"
 ---
+
+### The answer
 
 Enter the text of your question (i.e. What is your favorite color?) in the question box.
 
@@ -14,6 +17,8 @@ Optionally enter a field name for this question, if you leave it blank one will 
 If you would like to require the user to respond to this question, select `Yes` in the required field.
 
 Choose the type of response for this question.[Click here to see Examples.]
+
+{% include 1/alert.html type = "danger" close = "yes" icon = "exclamation-triangle" intro = "Note" msg = "To insert the survey into an existing page you must place a PHP tag in the HTML for the page." %}
 
 Different types may have parameters to change how they behave, consult the chart below for the use of the length and precision fields.
 
