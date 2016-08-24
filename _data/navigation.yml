@@ -78,7 +78,7 @@ members:
 
 - title: "General"
   name: general
-  icon: question-circle-o
+  icon: star
   size: 3
   label: false
   label-color: false
@@ -221,8 +221,6 @@ members:
     label: false
     label-color: false
     disable: false
-
-
 
 
 ############################################################################
@@ -444,7 +442,6 @@ clients:
     label: false
     label-color: false
     disable: false
-
 
 
 ############################################################################

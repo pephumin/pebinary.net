@@ -3,6 +3,7 @@ title: "Navigation generator"
 section: "home"
 permalink: /gen-nav.html
 layout:
+search: exclude
 ---
 
 ############################################################################
@@ -82,18 +83,16 @@ footer:
 ############################################################################
 
 members:
-
 {% assign groups = site.members | group_by: "category" %}{% for group in groups %}
 - title: "{{ group.name | replace: "-", " " | capitalize }}"
   name: {{ group.name }}
-  icon: {% if group.name == "general" %}question-circle-o{% elsif group.name == "dashboard" %}dashboard{% elsif group.name == "survey" %}pencil-square-o{% elsif group.name == "others" %}flask{% endif %}
+  icon: {% if group.name == "general" %}star{% elsif group.name == "dashboard" %}dashboard{% elsif group.name == "survey" %}pencil-square-o{% elsif group.name == "others" %}flask{% endif %}
   size: {{ group.size }}
   label: false
   label-color: false
   disable: false
   items:
-
-  {% for entry in group.items %}
+{% for entry in group.items %}
   - title: "{{ entry.title }}"
     url: "{{ entry.url }}"
     section: "{{ entry.section }}"
@@ -103,16 +102,13 @@ members:
     label: false
     label-color: false
     disable: false
-  {% endfor %}
-{%endfor%}
-
+{% endfor %}{%endfor%}
 
 ############################################################################
 # CLIENT DOCUMENT MENU
 ############################################################################
 
 clients:
-
 {% assign groups = site.clients | group_by: "category" %}{% for group in groups %}
 - title: "{{ group.name | replace: "-", " " | capitalize }}"
   name: {{ group.name }}
@@ -122,8 +118,7 @@ clients:
   label-color: false
   disable: false
   items:
-
-  {% for entry in group.items %}
+{% for entry in group.items %}
   - title: "{{ entry.title }}"
     url: "{{ entry.url }}"
     section: "{{ entry.section }}"
@@ -133,16 +128,13 @@ clients:
     label: false
     label-color: false
     disable: false
-  {% endfor %}
-{%endfor%}
-
+{% endfor %}{%endfor%}
 
 ############################################################################
 # COMBINED DOCUMENT MENU (MEMBER/CLIENT)
 ############################################################################
 
 all:
-
 {% assign groups = site.documents | group_by: "category" %}{% for group in groups %}
 - title: "{{ group.name | replace: "-", " " | capitalize }}"
   name: {{ group.name }}
@@ -152,8 +144,7 @@ all:
   label-color: false
   disable: false
   items:
-
-  {% for entry in group.items %}
+{% for entry in group.items %}
   - title: "{{ entry.title }}"
     url: "{{ entry.url }}"
     section: "{{ entry.section }}"
@@ -163,5 +154,4 @@ all:
     label: false
     label-color: false
     disable: false
-  {% endfor %}
-{%endfor%}
+{% endfor %}{%endfor%}
