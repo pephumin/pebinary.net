@@ -60,6 +60,9 @@ exclude:
   - Icon?
   - Gemfile
   - Gemfile.lock
+  - database.rules.json
+  - .firebaserc
+  - firebase.json
 
 gems:
   - jekyll-paginate

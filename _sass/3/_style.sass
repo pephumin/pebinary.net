@@ -80,8 +80,10 @@ span.pe-stack
   color: $grey
 
   &:hover
-    //color: $blue
-    color: $green
+    @if $themeblue
+      color: $blue
+    @else
+      color: $green
     -webkit-animation: shake 0.7s ease-in-out
     -moz-animation: shake 0.7s ease-in-out
     -ms-animation: shake 0.7s ease-in-out
@@ -118,8 +120,10 @@ span.pe-stack
     transform: translate3d(4px, 0, 0)
 
 span.pe-stack.active
-  //color: $darkblue
-  color: $deepgreen
+  @if $themeblue
+    color: $darkblue
+  @else
+    color: $deepgreen
 
 // scroll to top
 
@@ -143,7 +147,10 @@ span.pe-stack.active
   -o-transition: background-color 0.3s linear
   transition: background-color 0.3s linear
   &:hover
-    background: $darkgreen
+    @if $themeblue
+      background: $darkblue
+    @else
+      background: $darkgreen
     opacity: 0.8
 
 // table of content (TOC)
@@ -153,26 +160,61 @@ div#toc
   width: 180px
   padding: 10px
   margin: 0px 0px 10px 10px
-  background-color: aliceblue
+  color: $grey
+  @if $themeblue
+    background-color: aliceblue
+  @else
+    background-color: mintcream
   font-size: 0.8rem
   line-height: 1.8
-  border: 1px dotted $grey
+  @if $themeblue
+    border: 1px dotted $darkblue
+  @else
+    border: 1px dotted $darkgreen
   border-radius: 4px
   //box-shadow: inset -4px -4px 0 transparentize($black, 0.5)
 
-  p
+  .toc-head
     font-weight: bold
 
-  ul.toc-list
-    margin-bottom: 1rem
-    margin-top: 0.5rem
+  ul.toc-list, ol.toc-list
+    margin-top: 10px
 
-    li.toc-item
-      padding-left: -15px
+  li
+    list-style-type: none
 
-i.pe-list-alt
-  color: $blue
-  float: right
+  li:before
+    font-family: "pe"
+    content: "\f101"
+    display: inline-block
+    margin: auto 5px auto -35px
+
+  a
+    color: $grey
+    &:hover
+      text-decoration: underline
+      @if $themeblue
+        color: $darkblue
+      @else
+        color: $darkgreen
+
+  button#hide, button#show
+    float: right
+    background-color: transparent
+    //border: none
+    border: 1px dotted $silver
+    font-size: 0.5rem
+    color: $grey
+    padding: 2px
+    margin: 3px
+    //background-color: $grey
+    width: 20px
+
+  i.pe-list-alt
+    @if $themeblue
+      color: $darkblue
+    @else
+      color: $darkgreen
 
 // topic listing
 
@@ -205,7 +247,10 @@ i.pe-list-alt
     border-bottom-right-radius: 4px
     border-bottom-left-radius: 4px
   &:hover
-    background-color: aliceblue
+    @if $themeblue
+      background-color: aliceblue
+    @else
+      background-color: mintcream
 
 // main article
 
@@ -235,40 +280,3 @@ i.pe-list-alt
 
   .m-icon
     padding: 5px
-
-
-// .alert-success {
-//   background-color: #dff0d8;
-//   border-color: #d6e9c6;
-//   color: #3c763d; }
-//   .alert-success hr {
-//     border-top-color: #c9e2b3; }
-//   .alert-success .alert-link {
-//     color: #2b542c; }
-//
-// .alert-info {
-//   background-color: #d9edf7;
-//   border-color: #bce8f1;
-//   color: #31708f; }
-//   .alert-info hr {
-//     border-top-color: #a6e1ec; }
-//   .alert-info .alert-link {
-//     color: #245269; }
-//
-// .alert-warning {
-//   background-color: #fcf8e3;
-//   border-color: #faebcc;
-//   color: #8a6d3b; }
-//   .alert-warning hr {
-//     border-top-color: #f7e1b5; }
-//   .alert-warning .alert-link {
-//     color: #66512c; }
-//
-// .alert-danger {
-//   background-color: #f2dede;
-//   border-color: #ebccd1;
-//   color: #a94442; }
-//   .alert-danger hr {
-//     border-top-color: #e4b9c0; }
-//   .alert-danger .alert-link {
-//     color: #843534; }
