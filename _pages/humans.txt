@@ -3,20 +3,22 @@ title: "humans.txt"
 section: "home"
 permalink: /humans.txt
 layout:
+search: exclude
 ---
 
 # humanstxt.org
 
 /* TEAM */
 
-  Wed designer and programming: Phumin Chesdmethee
+  Wed Designer and Programming: Phumin Chesdmethee
   Contact: phumin [at] sawasdee.org
   Twitter: @pephumin
   Location: Bangkok, THAILAND
 
+
 /* THANKS */
 
-  Executive advisor on graphic design: Benjawan Puttarugsa
+  Executive Advisor on Graphic Design: Benjawan Puttarugsa
   Contact: benjy.p [at] gmail.com
   Location: Bangkok, THAILAND
 
