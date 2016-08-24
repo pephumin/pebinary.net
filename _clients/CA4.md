@@ -4,7 +4,7 @@ section: "clients"
 permalink: /clients/new-survey/4.html
 category: new-survey
 tags: [create]
-icon: exchange
+icon: random
 ---
 
 On this tab, you can change define conditions on questions, so a question is only shown when a condition is met.
