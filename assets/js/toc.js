@@ -2,14 +2,14 @@
   $.fn.toc = function(options) {
     var defaults = {
       noBackToTopLinks: true,
-      title: '<i class="pe-list-alt pe-2x"></i><p>Contents</p>',
+      title: '<div class="toc-head"><i class="pe-list-alt pe-lg"></i>&nbsp;Contents <button id="hide"><i class="pe-chevron-up"></i></button> <button id="show"><i class="pe-chevron-down"></i></button></div>',
       minimumHeaders: 3,
       headers: 'h4',
-      listType: 'ol', // values: [ol|ul]
+      listType: 'ul', // values: [ol|ul]
       showEffect: 'none', // values: [show|slideDown|fadeIn|none]
       showSpeed: 'slow', // set to 0 to deactivate effect
       classes: { list: 'toc-list',
-                 item: 'toc-item'
+                 item: ''
                }
     },
     settings = $.extend(defaults, options);
