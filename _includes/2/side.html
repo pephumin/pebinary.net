@@ -1,9 +1,9 @@
           <nav class="menulist">
           {% for entry in site.data.navigation[include.section] %}
-            <h6>{% if entry.icon %}<i class="pe-{{ entry.icon }} pe-fw"></i> {% endif %}{{ entry.title }}</h6>
+            <h6>{% if entry.icon %}<i class="pe-{{ entry.icon }} pe-fw"></i> {% endif %}<a href="{{ entry.name | append: "/" | prepend: "/" | prepend: include.section | prepend: "/" | prepend: site.baseurl }}" title="Category: {{ entry.title }}">{{ entry.title }}</a></h6>
             <ul class="vertical">
             {% for item in entry.items %}
-              {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.disable %}{{ item.title }}{% elsif item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</li>
+              {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.disable %}{{ item.title }}{% elsif item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | prepend: site.baseurl }}" title="{{ item.title }}">{{ item.title }}</a>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</li>
             {% endfor %}
             </ul>
           {% endfor %}

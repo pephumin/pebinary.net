@@ -3,8 +3,8 @@
           {% if page.question %}<blockquote><i class="pe-quote-left"></i> {{ page.question }} <i class="pe-quote-right"></i></blockquote>{% endif %}
           <p class="post-meta">
             <i class="pe-{{ page.icon }} pe-lg m-icon pull-right"></i>
-            <span class="m-section">Section:&nbsp;{{ page.section | capitalize }}</span><br>
-            <span class="m-cat">Category:&nbsp;<i class="pe-folder-open-o pe-fw"></i> {{ page.category }}</span><br>
+            <span class="m-section">Section:&nbsp;<i class="pe-archive pe-fw"></i> <a href="{{ page.section | append: "/" | prepend: "/" | prepend: site.baseurl }}" title="Section: {{ page.section | capitalize }}">{{ page.section | capitalize }}</a></span><br>
+            <span class="m-cat">Category:&nbsp;<i class="pe-folder-open pe-fw"></i> <a href="{{ page.category | append: "/" | prepend: "/" | prepend: page.section | prepend: "/" | prepend: site.baseurl }}" title="Category: {{ page.category }}">{{ page.category }}</a></span><br>
           {% if page.tags %}
             <span class="m-tag">Tag:&nbsp;
             {% for tag in page.tags %}

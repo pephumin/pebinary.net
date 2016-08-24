@@ -78,6 +78,8 @@ members:
 
 - title: "General"
   name: general
+  url: "/members/general/"
+  section: "members"
   icon: star
   size: 3
   label: false
@@ -117,6 +119,8 @@ members:
 
 - title: "Dashboard"
   name: dashboard
+  url: "/members/dashboard/"
+  section: "members"
   icon: dashboard
   size: 3
   label: false
@@ -156,6 +160,8 @@ members:
 
 - title: "Survey"
   name: survey
+  url: "/members/survey/"
+  section: "members"
   icon: pencil-square-o
   size: 4
   label: false
@@ -205,6 +211,8 @@ members:
 
 - title: "Others"
   name: others
+  url: "/members/others/"
+  section: "members"
   icon: flask
   size: 1
   label: false
@@ -231,7 +239,9 @@ clients:
 
 - title: "New survey"
   name: new-survey
-  icon: file-o
+  url: "/clients/new-survey/"
+  section: "clients"
+  icon: file-text
   size: 7
   label: false
   label-color: false
@@ -283,7 +293,7 @@ clients:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: exchange
+    icon: random
     label: false
     label-color: false
     disable: false
@@ -310,6 +320,8 @@ clients:
 
 - title: "Your survey"
   name: your-survey
+  url: "/clients/your-survey/"
+  section: "clients"
   icon: list
   size: 4
   label: false
@@ -359,6 +371,8 @@ clients:
 
 - title: "Monitor"
   name: monitor
+  url: "/clients/monitor/"
+  section: "clients"
   icon: line-chart
   size: 1
   label: false
@@ -378,6 +392,8 @@ clients:
 
 - title: "Results"
   name: results
+  url: "/clients/results/"
+  section: "clients"
   icon: pie-chart
   size: 2
   label: false
@@ -407,6 +423,8 @@ clients:
 
 - title: "Account"
   name: account
+  url: "/clients/account/"
+  section: "clients"
   icon: cogs
   size: 1
   label: false
@@ -426,6 +444,8 @@ clients:
 
 - title: "Knowledge"
   name: knowledge
+  url: "/clients/knowledge/"
+  section: "clients"
   icon: university
   size: 1
   label: false
@@ -452,7 +472,9 @@ all:
 
 - title: "General"
   name: general
-  icon: question-circle-o
+  url: "/members/general/"
+  section: "members"
+  icon: star
   size: 3
   label: false
   label-color: false
@@ -491,6 +513,8 @@ all:
 
 - title: "Dashboard"
   name: dashboard
+  url: "/members/dashboard/"
+  section: "members"
   icon: dashboard
   size: 3
   label: false
@@ -530,6 +554,8 @@ all:
 
 - title: "Survey"
   name: survey
+  url: "/members/survey/"
+  section: "members"
   icon: pencil-square-o
   size: 4
   label: false
@@ -579,6 +605,8 @@ all:
 
 - title: "Others"
   name: others
+  url: "/members/others/"
+  section: "members"
   icon: flask
   size: 1
   label: false
@@ -598,7 +626,9 @@ all:
 
 - title: "New survey"
   name: new-survey
-  icon: file-o
+  url: "/clients/new-survey/"
+  section: "clients"
+  icon: file-text
   size: 7
   label: false
   label-color: false
@@ -650,7 +680,7 @@ all:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: exchange
+    icon: random
     label: false
     label-color: false
     disable: false
@@ -677,6 +707,8 @@ all:
 
 - title: "Your survey"
   name: your-survey
+  url: "/clients/your-survey/"
+  section: "clients"
   icon: list
   size: 4
   label: false
@@ -726,6 +758,8 @@ all:
 
 - title: "Monitor"
   name: monitor
+  url: "/clients/monitor/"
+  section: "clients"
   icon: line-chart
   size: 1
   label: false
@@ -745,6 +779,8 @@ all:
 
 - title: "Results"
   name: results
+  url: "/clients/results/"
+  section: "clients"
   icon: pie-chart
   size: 2
   label: false
@@ -774,6 +810,8 @@ all:
 
 - title: "Account"
   name: account
+  url: "/clients/account/"
+  section: "clients"
   icon: cogs
   size: 1
   label: false
@@ -793,6 +831,8 @@ all:
 
 - title: "Knowledge"
   name: knowledge
+  url: "/clients/knowledge/"
+  section: "clients"
   icon: university
   size: 1
   label: false

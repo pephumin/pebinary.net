@@ -8,14 +8,13 @@
 
       {% for mm in ww %}
       <div class="listtopics">
-        <h4><i class="pe-{{ mm.icon }} pe-fw"></i> {{ mm.title }} <small>({{ mm.size }} {% if mm.size == 1 %}document{% else %}documents{% endif %})</small></h4>
+        <h4><i class="pe-{{ mm.icon }} pe-fw"></i> <a href="{{ mm.url | prepend: site.baseurl }}" title="Category: {{ m.title }}">{{ mm.title }}</a> <small>({{ mm.size }} {% if mm.size == 1 %}document{% else %}documents{% endif %})</small></h4>
         <div class="listtopics-group">
           {% for entry in mm.items %}
           <div class="listtopics-item">
             <a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a>
             -
             <small>
-            {% if entry.category %}<i class="pe-folder-open-o pe-fw"></i> {{ entry.category }}{% endif %}
             {% if entry.tags %}{% assign tagss = entry.tags | split: ', ' %}
               {% for tag in tagss %}
                 <i class="pe-tag pe-fw"></i> {{ tag }}

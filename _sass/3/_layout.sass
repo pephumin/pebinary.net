@@ -144,8 +144,12 @@ nav.menulist
   margin: 0px
   padding: 0px
 
-  h4
+  h6
     margin: 0px auto 15px auto
+    a
+      color: $grey
+      &:hover
+        color: $indigo
 
   ul.vertical
     list-style: none
@@ -184,6 +188,7 @@ section
   margin: 50px auto
 
 section.feedback
+
   .helpful
     width: 150px
     height: 80px
@@ -196,20 +201,23 @@ section.feedback
       top: 0px
       left: 0px
       text-align: center
-      text-transform: uppercase
-      font-size: 0.7rem
-      font-weight: bold
-      color: $lightgrey
 
     div.h-no
       position: absolute
       top: 5px
       left: 100px
       text-align: center
+
+    .tlabel
       text-transform: uppercase
       font-size: 0.7rem
       font-weight: bold
       color: $lightgrey
+      cursor: pointer
+
+  .helpfulnote
+    font-size: 0.8rem
+    color: $lightplum
 
 
 @media (max-width: 992px)
