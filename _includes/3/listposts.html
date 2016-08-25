@@ -1,12 +1,12 @@
 
-<h2>Topics in {{ include.category }}</h2>
+<h2>Topics in {{ include.section | capitalize }}: {{ include.category | capitalize }}</h2>
 {% assign topics = site.[include.section] | where: "category", include.category %}
 {% capture tsize %}{{ topics | size }}{% endcapture %}
 <div class="listposts">
-  <h4>{{ include.section | capitalize }}: {{ include.category | capitalize }} <small>({{ tsize }} {% if tsize == "1" %}document{% else %}documents{% endif %})</small></h4>
+  <!-- <h5>{{ include.section | capitalize }}: {{ include.category | capitalize }} <small>({{ tsize }} {% if tsize == "1" %}document{% else %}documents{% endif %})</small></h5> -->
   <div class="row">
     {% for entry in topics %}
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listposts-item">
       <article>
         <header>
           <h3>{{ entry.title }}</h3>
@@ -14,10 +14,9 @@
         <body>
           {% if entry.question %}<p class="post-question">{{ entry.question }}</p>{% endif %}
         </body>
-        <p class="pull-right"><a href="{{ entry.url | prepend: site.baseurl }}" class="button">Read more <i class="pe-map-o pe-fw"></i></a></p>
+        <a href="{{ entry.url | prepend: site.baseurl }}" class="button pull-right">Read <i class="pe-map-o pe-fw"></i></a>
       </article>
     </div>
     {% endfor %}
-
   </div>
 </div>

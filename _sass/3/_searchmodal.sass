@@ -50,7 +50,10 @@
   bottom: 0
   left: 0
   z-index: 1040
-  background-color: $deepgreen
+  @if $themeblue
+    background-color: $navy
+  @else
+    background-color: $deepgreen
 
   &.fade
     opacity: 0

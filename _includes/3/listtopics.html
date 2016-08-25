@@ -7,8 +7,8 @@
       {% endif %}
 
       {% for mm in ww %}
-      <div class="listtopics">
-        <h4><i class="pe-{{ mm.icon }} pe-fw"></i> <a href="{{ mm.url | prepend: site.baseurl }}" title="Category: {{ mm.title }}">{{ mm.title }}</a> <small>({{ mm.size }} {% if mm.size == 1 %}document{% else %}documents{% endif %})</small></h4>
+      <section class="listtopics">
+        <h5><i class="pe-{{ mm.icon }} pe-fw"></i> <a href="{{ mm.url | prepend: site.baseurl }}" title="Category: {{ mm.title }}">{{ mm.title }}</a> <small>({{ mm.size }} {% if mm.size == 1 %}document{% else %}documents{% endif %})</small></h5>
         <div class="listtopics-group">
           {% for entry in mm.items %}
           <div class="listtopics-item">
@@ -24,5 +24,5 @@
           </div>
           {% endfor %}
         </div>
-      </div>
+      </section>
       {% endfor %}

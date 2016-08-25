@@ -15,6 +15,10 @@ header
         line-height: 1
         a
           color: $white
+          text-decoration: none
+          &:hover
+            color: $white
+            text-decoration: none
 
       .sub-brand
         padding: 4px 7px 6px 5px
@@ -73,9 +77,18 @@ header
 nav.subnav
   font-family: "ubuntu"
   font-size: 0.75rem
+  color: $darkgrey
   margin: 0px
   padding: 0px
   text-transform: uppercase
+
+  a
+    color: $darkgrey
+    &:hover
+      @if $themeblue
+        color: $blue
+      @else
+        color: $green
 
   .breadcrumb
     list-style: none
@@ -83,19 +96,15 @@ nav.subnav
     padding: 7px 15px
     background-color: $silver
 
-    ol
-      // nothing
-    >
-      li
-        display: inline-block
-        color: $grey
-        &:not(:last-child):after
-          content: "\00a0\00BB"
-          padding: 0 3px
-          color: $grey
-      .active
-        color: $darkgrey
-        font-weight: bold
+  li
+    display: inline-block
+    color: $grey
+    &:not(:last-child):after
+      content: "\00a0\00BB"
+      padding: 0 3px
+      color: $grey
+  .active
+    font-weight: bold
 
 footer
   margin: 60px auto 0px auto
@@ -124,13 +133,15 @@ footer
       color: $white
       text-decoration: none
       &:hover
+        color: $white
         text-decoration: underline
 
     .footerlogo
+      color: $white
       text-decoration: none
       &:hover
+        color: $white
         text-decoration: none
-        color: inherit
 
 nav.footer
   text-align: center
@@ -151,13 +162,14 @@ nav.footer
 nav.menulist
   margin: 0px
   padding: 0px
+  a
+    color: $grey
+    &:hover
+      color: $orange
 
-  h6
+  h5
     margin: 0px auto 15px auto
-    a
-      color: $grey
-      &:hover
-        color: $indigo
+    color: $grey
 
   ul.vertical
     list-style: none
@@ -171,8 +183,11 @@ nav.menulist
       font-size: 0.9rem
 
     li.active
-      background-color: $yellow
-      color: $black
+      @if $themeblue
+        background-color: $lightblue
+      @else
+        background-color: $lightgreen
+      color: $darkgrey
 
     li.disabled
       color: $silver
@@ -220,13 +235,41 @@ section.feedback
       text-transform: uppercase
       font-size: 0.7rem
       font-weight: bold
-      color: $lightgrey
+      color: $grey
       cursor: pointer
 
   .helpfulnote
     font-size: 0.8rem
-    color: $lightplum
+    @if $themeblue
+      color: $blue
+    @else
+      color: $green
 
+article
+  padding: 30px auto
+  margin: 0px auto
+
+  blockquote
+    @if $themeblue
+      color: $blue
+    @else
+      color: $green
+    margin: 0 0 20px 2px
+    font-style: italic
+
+  ul
+    list-style: none
+    margin-bottom: 25px
+    padding-left: 10px
+    display: block
+
+    li
+      list-style: none
+      line-height: 1.666
+
+    li:before
+      content: "\00BB\00a0"
+      color: inherit
 
 @media (max-width: 992px)
 
