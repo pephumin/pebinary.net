@@ -4,7 +4,7 @@ section: "clients"
 permalink: /clients/your-survey/2.html
 category: your-survey
 tags: [create]
-icon: paper-plane-o
+icon: paper-plane
 ---
 
 After you have created a survey you can put it into testing mode. This allows you to access a live copy of it from the Management Interface. You can fill out the survey, and view the results by choosing Test a Survey. In order to test a survey it must be set to test mode from the Status section.

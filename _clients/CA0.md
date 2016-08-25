@@ -4,7 +4,7 @@ section: "clients"
 permalink: /clients/new-survey/0.html
 category: new-survey
 tags: [create]
-icon: file-o
+icon: file-text
 question: "How do I create a new survey? Please show me a step-by-step instruction in details so I can follow it very precisely."
 ---
 

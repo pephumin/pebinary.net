@@ -88,7 +88,7 @@ members:
   name: {{ group.name }}
   url: "/members/{{ group.name }}/"
   section: "members"
-  icon: {% if group.name == "general" %}star{% elsif group.name == "dashboard" %}dashboard{% elsif group.name == "survey" %}pencil-square-o{% elsif group.name == "others" %}flask{% endif %}
+  icon: {% if group.name == "general" %}info-circle{% elsif group.name == "dashboard" %}dashboard{% elsif group.name == "survey" %}pencil-square{% elsif group.name == "others" %}flask{% endif %}
   size: {{ group.size }}
   label: false
   label-color: false
@@ -116,7 +116,7 @@ clients:
   name: {{ group.name }}
   url: "/clients/{{ group.name }}/"
   section: "clients"
-  icon: {% if group.name == "new-survey" %}file-text{% elsif group.name == "your-survey" %}list{% elsif group.name == "monitor" %}line-chart{% elsif group.name == "results" %}pie-chart{% elsif group.name == "account" %}cogs{% elsif group.name == "knowledge" %}university{% endif %}
+  icon: {% if group.name == "new-survey" %}file-text{% elsif group.name == "your-survey" %}list{% elsif group.name == "monitor" %}line-chart{% elsif group.name == "results" %}bar-chart{% elsif group.name == "account" %}cogs{% elsif group.name == "knowledge" %}graduation-cap{% endif %}
   size: {{ group.size }}
   label: false
   label-color: false
@@ -144,7 +144,7 @@ all:
   name: {{ group.name }}
   url: "/{% if group.name == "general" %}members{% elsif group.name == "dashboard" %}members{% elsif group.name == "survey" %}members{% elsif group.name == "others" %}members{% elsif group.name == "new-survey" %}clients{% elsif group.name == "your-survey" %}clients{% elsif group.name == "monitor" %}clients{% elsif group.name == "results" %}clients{% elsif group.name == "account" %}clients{% elsif group.name == "knowledge" %}clients{% endif %}/{{ group.name }}/"
   section: "{% if group.name == "general" %}members{% elsif group.name == "dashboard" %}members{% elsif group.name == "survey" %}members{% elsif group.name == "others" %}members{% elsif group.name == "new-survey" %}clients{% elsif group.name == "your-survey" %}clients{% elsif group.name == "monitor" %}clients{% elsif group.name == "results" %}clients{% elsif group.name == "account" %}clients{% elsif group.name == "knowledge" %}clients{% endif %}"
-  icon: {% if group.name == "general" %}star{% elsif group.name == "dashboard" %}dashboard{% elsif group.name == "survey" %}pencil-square-o{% elsif group.name == "others" %}flask{% elsif group.name == "new-survey" %}file-text{% elsif group.name == "your-survey" %}list{% elsif group.name == "monitor" %}line-chart{% elsif group.name == "results" %}pie-chart{% elsif group.name == "account" %}cogs{% elsif group.name == "knowledge" %}university{% endif %}
+  icon: {% if group.name == "general" %}info-circle{% elsif group.name == "dashboard" %}dashboard{% elsif group.name == "survey" %}pencil-square{% elsif group.name == "others" %}flask{% elsif group.name == "new-survey" %}file-text{% elsif group.name == "your-survey" %}list{% elsif group.name == "monitor" %}line-chart{% elsif group.name == "results" %}bar-chart{% elsif group.name == "account" %}cogs{% elsif group.name == "knowledge" %}graduation-cap{% endif %}
   size: {{ group.size }}
   label: false
   label-color: false

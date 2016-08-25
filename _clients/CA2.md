@@ -4,7 +4,7 @@ section: "clients"
 permalink: /clients/new-survey/2.html
 category: new-survey
 tags: [create]
-icon: pencil-square-o
+icon: pencil-square
 question: "How do I add new questions to my new survey"
 ---
 
@@ -25,7 +25,7 @@ Different types may have parameters to change how they behave, consult the chart
 
 <table class="table table-hover">
   <thead>
-    <tr class="bg-info">
+    <tr class="bg-primary">
       <th>Type</th>
       <th>Length</th>
       <th>Precision</th>

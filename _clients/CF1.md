@@ -4,7 +4,7 @@ section: "clients"
 permalink: /clients/knowledge/1.html
 category: knowledge
 tags: [appendix]
-icon: university
+icon: object-group
 question: "This document explains the difference between different type of response. This will be useful for questionnaire designer as it will directly impact on how to use our system."
 toc: true
 ---

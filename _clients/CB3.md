@@ -4,7 +4,7 @@ section: "clients"
 permalink: /clients/your-survey/3.html
 category: your-survey
 tags: [create]
-icon: check-square
+icon: graduation-cap
 ---
 
 Once you have created/edited a survey, and are ready to make it available online you must activate it. Go to the Management Interface, click Change the Status of a Survey. Find the survey you want to activate. Make note of the `survey ID (SID)` and the `name (SURVEYNAME)`.

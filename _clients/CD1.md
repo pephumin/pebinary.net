@@ -4,7 +4,7 @@ section: "clients"
 permalink: /clients/results/1.html
 category: results
 tags: [analysis]
-icon: pie-chart
+icon: bar-chart
 ---
 
 ### The answer

@@ -80,7 +80,7 @@ members:
   name: general
   url: "/members/general/"
   section: "members"
-  icon: star
+  icon: info-circle
   size: 3
   label: false
   label-color: false
@@ -133,7 +133,7 @@ members:
     section: "members"
     category: "dashboard"
     tags: "my-surveys, survey"
-    icon: cog
+    icon: clip-board
     label: false
     label-color: false
     disable: false
@@ -162,7 +162,7 @@ members:
   name: survey
   url: "/members/survey/"
   section: "members"
-  icon: pencil-square-o
+  icon: pencil-square
   size: 4
   label: false
   label-color: false
@@ -179,7 +179,7 @@ members:
     label-color: false
     disable: false
 
-  - title: "Saving for later"
+  - title: "Save a survey"
     url: "/members/survey/2.html"
     section: "members"
     category: "survey"
@@ -189,7 +189,7 @@ members:
     label-color: false
     disable: false
 
-  - title: "Submit the completed survey"
+  - title: "Submit a survey"
     url: "/members/survey/3.html"
     section: "members"
     category: "survey"
@@ -204,7 +204,7 @@ members:
     section: "members"
     category: "survey"
     tags: "public, survey, info"
-    icon: universal-access
+    icon: flag
     label: false
     label-color: false
     disable: false
@@ -224,8 +224,8 @@ members:
     url: "/members/others/4.html"
     section: "members"
     category: "others"
-    tags: "help, info, users, survey"
-    icon: flag-o
+    tags: "help, info"
+    icon: question-circle
     label: false
     label-color: false
     disable: false
@@ -253,7 +253,7 @@ clients:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: file-o
+    icon: file-text
     label: false
     label-color: false
     disable: false
@@ -273,7 +273,7 @@ clients:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: pencil-square-o
+    icon: pencil-square
     label: false
     label-color: false
     disable: false
@@ -283,7 +283,7 @@ clients:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: list-ol
+    icon: th-list
     label: false
     label-color: false
     disable: false
@@ -303,7 +303,7 @@ clients:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: eye
+    icon: image
     label: false
     label-color: false
     disable: false
@@ -334,7 +334,7 @@ clients:
     section: "clients"
     category: "your-survey"
     tags: "create"
-    icon: edit
+    icon: wrench
     label: false
     label-color: false
     disable: false
@@ -344,7 +344,7 @@ clients:
     section: "clients"
     category: "your-survey"
     tags: "create"
-    icon: paper-plane-o
+    icon: paper-plane
     label: false
     label-color: false
     disable: false
@@ -354,7 +354,7 @@ clients:
     section: "clients"
     category: "your-survey"
     tags: "create"
-    icon: check-square
+    icon: graduation-cap
     label: false
     label-color: false
     disable: false
@@ -394,7 +394,7 @@ clients:
   name: results
   url: "/clients/results/"
   section: "clients"
-  icon: pie-chart
+  icon: bar-chart
   size: 2
   label: false
   label-color: false
@@ -406,7 +406,7 @@ clients:
     section: "clients"
     category: "results"
     tags: "analysis"
-    icon: pie-chart
+    icon: bar-chart
     label: false
     label-color: false
     disable: false
@@ -446,7 +446,7 @@ clients:
   name: knowledge
   url: "/clients/knowledge/"
   section: "clients"
-  icon: university
+  icon: graduation-cap
   size: 1
   label: false
   label-color: false
@@ -458,7 +458,7 @@ clients:
     section: "clients"
     category: "knowledge"
     tags: "appendix"
-    icon: university
+    icon: object-group
     label: false
     label-color: false
     disable: false
@@ -474,7 +474,7 @@ all:
   name: general
   url: "/members/general/"
   section: "members"
-  icon: star
+  icon: info-circle
   size: 3
   label: false
   label-color: false
@@ -527,7 +527,7 @@ all:
     section: "members"
     category: "dashboard"
     tags: "my-surveys, survey"
-    icon: cog
+    icon: clip-board
     label: false
     label-color: false
     disable: false
@@ -556,7 +556,7 @@ all:
   name: survey
   url: "/members/survey/"
   section: "members"
-  icon: pencil-square-o
+  icon: pencil-square
   size: 4
   label: false
   label-color: false
@@ -573,7 +573,7 @@ all:
     label-color: false
     disable: false
 
-  - title: "Saving for later"
+  - title: "Save a survey"
     url: "/members/survey/2.html"
     section: "members"
     category: "survey"
@@ -583,7 +583,7 @@ all:
     label-color: false
     disable: false
 
-  - title: "Submit the completed survey"
+  - title: "Submit a survey"
     url: "/members/survey/3.html"
     section: "members"
     category: "survey"
@@ -598,7 +598,7 @@ all:
     section: "members"
     category: "survey"
     tags: "public, survey, info"
-    icon: universal-access
+    icon: flag
     label: false
     label-color: false
     disable: false
@@ -618,8 +618,8 @@ all:
     url: "/members/others/4.html"
     section: "members"
     category: "others"
-    tags: "help, info, users, survey"
-    icon: flag-o
+    tags: "help, info"
+    icon: question-circle
     label: false
     label-color: false
     disable: false
@@ -640,7 +640,7 @@ all:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: file-o
+    icon: file-text
     label: false
     label-color: false
     disable: false
@@ -660,7 +660,7 @@ all:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: pencil-square-o
+    icon: pencil-square
     label: false
     label-color: false
     disable: false
@@ -670,7 +670,7 @@ all:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: list-ol
+    icon: th-list
     label: false
     label-color: false
     disable: false
@@ -690,7 +690,7 @@ all:
     section: "clients"
     category: "new-survey"
     tags: "create"
-    icon: eye
+    icon: image
     label: false
     label-color: false
     disable: false
@@ -721,7 +721,7 @@ all:
     section: "clients"
     category: "your-survey"
     tags: "create"
-    icon: edit
+    icon: wrench
     label: false
     label-color: false
     disable: false
@@ -731,7 +731,7 @@ all:
     section: "clients"
     category: "your-survey"
     tags: "create"
-    icon: paper-plane-o
+    icon: paper-plane
     label: false
     label-color: false
     disable: false
@@ -741,7 +741,7 @@ all:
     section: "clients"
     category: "your-survey"
     tags: "create"
-    icon: check-square
+    icon: graduation-cap
     label: false
     label-color: false
     disable: false
@@ -781,7 +781,7 @@ all:
   name: results
   url: "/clients/results/"
   section: "clients"
-  icon: pie-chart
+  icon: bar-chart
   size: 2
   label: false
   label-color: false
@@ -793,7 +793,7 @@ all:
     section: "clients"
     category: "results"
     tags: "analysis"
-    icon: pie-chart
+    icon: bar-chart
     label: false
     label-color: false
     disable: false
@@ -833,7 +833,7 @@ all:
   name: knowledge
   url: "/clients/knowledge/"
   section: "clients"
-  icon: university
+  icon: graduation-cap
   size: 1
   label: false
   label-color: false
@@ -845,7 +845,7 @@ all:
     section: "clients"
     category: "knowledge"
     tags: "appendix"
-    icon: university
+    icon: object-group
     label: false
     label-color: false
     disable: false

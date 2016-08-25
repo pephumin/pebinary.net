@@ -1,5 +1,5 @@
 ---
-title: "Submit the completed survey"
+title: "Submit a survey"
 section: "members"
 permalink: /members/survey/3.html
 category: survey
