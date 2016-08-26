@@ -2,50 +2,50 @@
 layout: index-en
 ---
 
-<main class="container">
+<div class="container">
   <div class="row">
-    {% if page.format == "layout-left" %}
+{% if page.format == "layout-left" %}
     <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
       <aside class="menu">
-        {% include 2/side.html section = page.section %}
+{% include 2/side.html section = page.section %}
       </aside>
     </div>
     <div class="col-sm-9 col-md-9 col-lg-9">
       <article>
-        {% include 3/article.html %}
-        {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
+{% include 3/article.html %}
+{% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
         <body>
-          {{ content }}
+{{ content }}
         </body>
       </article>
-      {% include 3/more.html %}
+{% include 3/more.html %}
     </div>
-    {% elsif page.format == "layout-right" %}
+{% elsif page.format == "layout-right" %}
     <div class="col-sm-9 col-md-9 col-lg-9">
       <article>
-        {% include 3/article.html %}
-        {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
+{% include 3/article.html %}
+{% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
         <body>
-          {{ content }}
+{{ content }}
         </body>
       </article>
-      {% include 3/more.html %}
+{% include 3/more.html %}
     </div>
     <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
       <aside class="menu">
-        {% include 2/side.html section = page.section %}
+{% include 2/side.html section = page.section %}
       </aside>
     </div>
-    {% else %}
+{% else %}
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <article>
-        {% include 3/article.html %}
-        {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
+{% include 3/article.html %}
+{% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
         <body>
-          {{ content }}
+{{ content }}
         </body>
       </article>
-      {% include 3/more.html %}
-    {% endif %}
+{% include 3/more.html %}
+{% endif %}
   </div>
-</main>
+</div>
