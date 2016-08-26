@@ -1,4 +1,3 @@
-
 <div class="scroll-to-top"><i class="pe-arrow-up pe-lg"></i></div>
 {% include 1/firebase.html %}
 {% if site.google_analytics %}{% include 1/google_analytics.html %}{% endif %}
@@ -12,7 +11,7 @@
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results'),
-    json: '/search.json',
+    json: '{{ "/search.json" | prepend: site.baseurl }}',
     fuzzy: true,
     searchResultTemplate: '<p><span class="s-title"><a href="{url}" title="{title}">{title}</a></span><br><span class="s-section">Section: <a href="/{section}">{section}</a></span><br><span class="s-category"><i class="pe-folder-open-o pe-fw"></i> Category: {category}</span> <span class="s-tags"><i class="pe-tag pe-fw"></i> Tags: {tags}</span></p><hr class="s-hr">',
   })
@@ -20,15 +19,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
   $('#toc').toc();
-});
-</script>
-<script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $(".toc-list").hide();
-  });
-  $("#show").click(function(){
-    $(".toc-list").show();
-  });
+  $("#hide").click(function(){ $(".toc-list").hide(); });
+  $("#show").click(function(){ $(".toc-list").show(); });
 });
 </script>
