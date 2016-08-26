@@ -2,7 +2,7 @@
 layout: index-en
 ---
 
-<div class="container">
+<section class="container">
   <div class="row">
 {% if page.format == "layout-left" %}
     <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
@@ -10,7 +10,7 @@ layout: index-en
 {% include 2/side.html section = page.section %}
       </aside>
     </div>
-    <div class="col-sm-9 col-md-9 col-lg-9">
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
       <article>
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
@@ -21,7 +21,7 @@ layout: index-en
 {% include 3/more.html %}
     </div>
 {% elsif page.format == "layout-right" %}
-    <div class="col-sm-9 col-md-9 col-lg-9">
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
       <article>
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
@@ -46,6 +46,7 @@ layout: index-en
         </body>
       </article>
 {% include 3/more.html %}
+    </div>
 {% endif %}
   </div>
-</div>
+</section>
