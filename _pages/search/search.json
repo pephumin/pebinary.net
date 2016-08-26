@@ -1,0 +1,32 @@
+---
+title: "Search index by section using title search"
+permalink: /search/search.json
+layout:
+search: exclude
+---
+
+[
+  {% for mm in site.members %}
+    {
+      "title"       : "{{ mm.title | escape }}",
+      "section"     : "{{ mm.section }}",
+      "sectionurl"  : "{{ mm.section | append: '/' | prepend: '/' | prepend: site.baseurl }}",
+      "category"    : "{{ mm.category }}",
+      "categoryurl" : "{{ mm.category | append: '/' | prepend: '/' | prepend: mm.section | prepend: '/' | prepend: site.baseurl }}",
+      "tags"        : "{{ mm.tags | join: ', ' }}",
+      "url"         : "{{ site.baseurl }}{{ mm.url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for cc in site.clients %}
+    {
+      "title"       : "{{ cc.title | escape }}",
+      "section"     : "{{ cc.section }}",
+      "sectionurl"  : "{{ cc.section | append: '/' | prepend: '/' | prepend: site.baseurl }}",
+      "category"    : "{{ cc.category }}",
+      "categoryurl" : "{{ cc.category | append: '/' | prepend: '/' | prepend: cc.section | prepend: '/' | prepend: site.baseurl }}",
+      "tags"        : "{{ cc.tags | join: ', ' }}",
+      "url"         : "{{ site.baseurl }}{{ cc.url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

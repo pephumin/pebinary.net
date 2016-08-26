@@ -1,0 +1,24 @@
+---
+title: "Search index using title search"
+permalink: /search/search-B.json
+layout:
+search: exclude
+---
+
+[
+{% for collection in site.collections %}
+  {% for item in collection.docs %}
+    {% unless first %},{% endunless %}
+      {
+      "title"       : "{{ item.title | escape }}",
+      "section"     : "{{ item.section }}",
+      "sectionurl"  : "{{ item.section | append: '/' | prepend: '/' | prepend: site.baseurl }}",
+      "category"    : "{{ item.category }}",
+      "categoryurl" : "{{ item.category | append: '/' | prepend: '/' | prepend: item.section | prepend: '/' | prepend: site.baseurl }}",
+      "tags"        : "{{ item.tags | join: ', ' }}",
+      "url"         : "{{ item.url | prepend: site.baseurl }}"
+      }
+    {% assign first = false %}
+  {% endfor %}
+{% endfor %}
+]
