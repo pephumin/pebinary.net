@@ -1,28 +1,9 @@
-      {% if include.section == "all" %}
-      <h2>All support topics</h2>
-      {% assign ww = site.data.navigation.all %}
-      {% else %}
-      <h2>Support topics for {{ include.section }}</h2>
-      {% assign ww = site.data.navigation[include.section] %}
-      {% endif %}
-
+      {% if include.section == "all" %}<h2>All support topics</h2>{% assign ww = site.data.navigation.all %}{% else %}<h2>Support topics for {{ include.section }}</h2>{% assign ww = site.data.navigation[include.section] %}{% endif %}
       {% for mm in ww %}
-      <section class="listtopics">
-        <h5><i class="pe-{{ mm.icon }} pe-fw"></i> <a href="{{ mm.url | prepend: site.baseurl }}" title="Category: {{ mm.title }}">{{ mm.title }}</a> <small>({{ mm.size }} {% if mm.size == 1 %}document{% else %}documents{% endif %})</small></h5>
-        <div class="listtopics-group">
-          {% for entry in mm.items %}
-          <div class="listtopics-item">
-            <a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a>
-            -
-            <small>
-            {% if entry.tags %}{% assign tagss = entry.tags | split: ', ' %}
-              {% for tag in tagss %}
-                <i class="pe-tag pe-fw"></i> {{ tag }}
-              {% endfor %}
-            {% endif %}
-            </small>
-          </div>
-          {% endfor %}
-        </div>
-      </section>
+      <h5 class="topics"><i class="pe-{{ mm.icon }} pe-fw"></i> <a href="{{ mm.url | prepend: site.baseurl }}" title="Category: {{ mm.title }}">{{ mm.title }}</a> <small>({{ mm.size }} {% if mm.size == 1 %}document{% else %}documents{% endif %})</small></h5>
+      <ul class="listtopics">
+        {% for entry in mm.items %}
+        <li class="listtopics-item"><a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a> - <small>{% if entry.tags %}{% assign tagss = entry.tags | split: ', ' %}{% for tag in tagss %}<i class="pe-tag pe-fw"></i> {{ tag }}{% endfor %}{% endif %}</small></li>
+        {% endfor %}
+      </ul>
       {% endfor %}
