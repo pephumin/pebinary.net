@@ -8,7 +8,6 @@
 ############################################################
 
 
-#title:               "PE BINARY CO., LTD."
 title:                "PEB SUPPORT"
 thaititle:            "บริษัท พีอี ไบนารี่ จำกัด"
 email:                support@pebinary.com
@@ -20,18 +19,15 @@ host:                 localhost
 port:                 3000
 #url:                 http://pephumin.github.io
 baseurl:              /support.pebinary.com
-#paginate:            5
-#paginate_path:       /blog/:num/
-#permalink:           /blog/:year/:month/:day/:title
 quiet:                false
 verbose:              true
 encoding:             utf-8
 timezone:             Asia/Bangkok
 google_analytics:     UA-82554411-2
+themeblue:            true
 
 markdown:             kramdown
 highlighter:          rouge
-#highlighter:         pygments
 kramdown:
   input:              GFM
   auto_ids:           true
@@ -41,6 +37,9 @@ kramdown:
   smart_quotes:       lsquo,rsquo,ldquo,rdquo
   hard_wrap:          false
   footnote_nr:        1
+# sass:
+#   sass_dir:           _sass
+#   style:              compressed
 
 domains:
   main-en:            http://www.pebinary.com

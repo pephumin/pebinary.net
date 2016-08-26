@@ -52,41 +52,58 @@ h1
 
 h2
   font-size: 1.9rem
-  line-height: 0.789
+  line-height: 0.78947
   letter-spacing: -0.1rem
   color: $black
 
 h3
   font-size: 1.7rem
-  line-height: 0.88
+  line-height: 0.88235
   letter-spacing: -0.08rem
   color: $black
-  padding-bottom: 5px
-  border-bottom: 1px dotted $lightgrey
+  padding: 10px 0 10px 10px
+  color: $white
+  background-size: 100%
+  @if $themeblue
+    background-image: linear-gradient(to right, $darkblue, rgba(0, 0, 0, 0))
+  @else
+    background-image: linear-gradient(to right, $darkgreen, rgba(0, 0, 0, 0))
+
 
 h4
-  font-size: 1.25rem
+  font-size: 1.4rem
   //font-weight: bold
-  line-height: 1.304
+  line-height: 1.0714
   letter-spacing: -0.06rem
   text-transform: uppercase
+  padding-top: 30px
   @if $themeblue
     color: $darkblue
   @else
     color: $darkgreen
 
+h4:before
+  content: " "
+  display: block
+  border-top: 1px dotted $silver
+  padding-top: 20px
+
 h5
+  font-family: "ubuntu"
   font-size: 1.1rem
   font-weight: bold
-  line-height: 1.304
+  line-height: 1.3636
   letter-spacing: -0.06rem
   text-transform: uppercase
   color: $grey
 
 h6
-  font-size: 1rem
-  line-height: 1.428571429
-  letter-spacing: -0.05rem
+  font-size: 1.05rem
+  font-weight: bold
+  line-height: 1.42857
+  letter-spacing: -0.06rem
+  text-transform: uppercase
+  color: $grey
 
 p
   font-size: 1rem

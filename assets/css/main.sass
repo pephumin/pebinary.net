@@ -4,7 +4,11 @@ section: "assets"
 search: exclude
 ---
 
+{% if site.themeblue %}
+$themeblue: true !default
+{% else %}
 $themeblue: false !default
+{% endif %}
 
 // Base
 @import '1/vars'
