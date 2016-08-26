@@ -7,7 +7,7 @@ tags: [conduct, survey]
 icon: pencil
 ---
 
-Every survey has a title. In the image above, the title is "Sample Survey." A survey may also have a sub-title and instructions, both of which are found below the title.
+Every survey has a title. In the image above, the title is `Sample Survey`. A survey may also have a sub-title and instructions, both of which are found below the title.
 
 
 ![Survey sample #1][survey-sample1]
@@ -29,7 +29,7 @@ Checkboxes allow you to choose multiple options from a list. Click in the square
 
 Drop-downs allow you to choose one item from a list of items; in this way, they are very much like radio buttons. Click the down arrow on the right of the drop-down, then select one of the items from the list that appears. Your selection will appear to the left of the down arrow.
 
-A rating scale (technically called a "Likert scale") is a special kind of radio button answer, where you indicate your degree of agreement with the presented statement. You may choose one out of the five possible options.
+A rating scale is a special kind of radio button answer, where you indicate your degree of agreement with the presented statement. You may choose one out of the five possible options.
 
 A date entry field looks like a text field, but requires that you enter a value that can be understood to be a date. For example, "21/09/2003" for September 21, 2003.
 

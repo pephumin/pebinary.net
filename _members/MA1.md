@@ -17,9 +17,6 @@ And once the registration is completed, each member will gain the access to our 
 All registered members are automatically granted to enter the reward program.
 
 
-
-
-
 #### Key benefits
 
 We have listed out some of the key benefits for our members as follows.
@@ -32,8 +29,8 @@ We have listed out some of the key benefits for our members as follows.
 
 
 
-
-
 #### Access surveys
+
+
 
 #### Control panel

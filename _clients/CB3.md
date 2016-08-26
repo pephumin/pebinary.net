@@ -17,5 +17,5 @@ To insert the survey into an existing page you must place a PHP tag in the HTML 
 
 NOTE:
 - This code was also given to you on the Finish tab of the survey design.
-- To access an active survey, go to http://$PATH/public/survey.php?name=SURVEYNAME
+- To access an active survey, go to `http://$PATH/public/survey.php?name=SURVEYNAME`
 - To embed an active survey within another php document, add this code: `<?php $sid=SID; $results=1; include('/$PATH/public/handler.php'); ?>`

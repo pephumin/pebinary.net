@@ -11,7 +11,6 @@ icon: line-chart
 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
 
-
 #### Strike rate
 
 While completing surveys, various access statistics are collected for administrative review. These statistics, described in the table further below, allow you to better understand how your respondents interact with the surveys you create.
@@ -23,7 +22,7 @@ Are respondents moving through surveys, or are they abandoning them prematurely?
 What percentage of survey attempts have resulted in a complete survey?
 
 <table class="table table-hover">
-  <tr class="active">
+  <tr class="bg-primary">
     <th>Wording</th>
     <th>Meaning</th>
   </tr>
@@ -65,10 +64,10 @@ High number of suspended, and low number of completed, surveys.
 
 #### Refreshing Statistics
 
-As respondents complete surveys, the statistics will change. You may update the statistics page to show the most recent values by clicking the "Refresh Statistics" button.
+As respondents complete surveys, the statistics will change. You may update the statistics page to show the most recent values by clicking the `Refresh Statistics` button.
 
 #### Reseting Statistics
 
 Occasionally, you may need to reset survey statistics. For example, if you held a "trial run" survey phase before the actual deployment, you would need to delete all the responses and reset the statistics for the "actual run."
 
-To reset statistics for a survey, place a check in the "Reset" column on the row containing the survey you want to reset, then click the "Reset Statistics" button. You may reset more than one survey by placing a check beside every survey you want to reset, then clicking the "Reset Statistics" button. You will be prompted to confirm the reset action each time you click the "Reset Statistics" button; answer "Ok" to reset, or "Cancel" to skip the reset.
+To reset statistics for a survey, place a check in the "Reset" column on the row containing the survey you want to reset, then click the `Reset Statistics` button. You may reset more than one survey by placing a check beside every survey you want to reset, then clicking the "Reset Statistics" button. You will be prompted to confirm the reset action each time you click the "Reset Statistics" button; answer "Ok" to reset, or "Cancel" to skip the reset.

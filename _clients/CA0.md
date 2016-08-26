@@ -35,6 +35,15 @@ Next is where you can make sure your survey has been developed with the right qu
 
 #### Step four
 
+Testing a responsive VDO using bootstrap.
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HYoqN0jkYLE"></iframe>
+</div>
+
+
 #### Step five
+
+
 
 #### Step six
