@@ -1,14 +1,8 @@
     <nav class="subnav">
       <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ "/" | prepend: site.baseurl }}" itemprop="item" title="{{ "home" | upcase }}"><i class="pe-home pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">Home</span></a></li>
-        {% assign crumbs = page.url | split: '/' %}
-        {% for crumb in crumbs offset: 1 %}
-        {% if forloop.last %}
-        <li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">{{ page.title }}</span></li>
-        {% else %}
-        {% assign crumb_limit = forloop.index | plus: 1 %}
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: "/" | prepend: site.baseurl }}{% endfor %}" itemprop="item" title="{{ crumb | replace: "-", " " | upcase }}"><span itemprop="name">{{ crumb | replace: "-", " " | capitalize }}</span></a></li>
-        {% endif %}
-        {% endfor %}
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ "/" | prepend: site.baseurl }}" itemprop="item" title="{{ "home" | upcase }}"><i class="pe-home pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">Home</span></a><meta itemprop="position" content="1" /></li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ page.section | append: "/" | prepend: "/" | prepend: site.baseurl }}" itemprop="item" title="{{ page.section | upcase }}"><i class="pe-archive pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.section | capitalize }}</span></a><meta itemprop="position" content="2" /></li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ page.category | append: "/" | prepend: "/" | prepend: page.section | prepend: "/" | prepend: site.baseurl }}" itemprop="item" title="{{ page.category | upcase }}"><i class="pe-folder-open pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.category | capitalize }}</span></a><meta itemprop="position" content="3" /></li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active" ><span itemprop="name">{{ page.title }}</span><meta itemprop="position" content="4" /></li>
       </ol>
     </nav>
