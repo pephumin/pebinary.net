@@ -61,12 +61,12 @@ footer:
   url: "/about/terms.html"
   disable: false
 
-- title: "Sitemap"
-  stitle: "Sitemap"
-  icon: sitemap
-  host: main-en
-  url: "/about/sitemap.html"
-  disable: false
+# - title: "Sitemap"
+#   stitle: "Sitemap"
+#   icon: sitemap
+#   host: main-en
+#   url: "/about/sitemap.html"
+#   disable: false
 
 
 
