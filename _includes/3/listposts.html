@@ -1,25 +1,16 @@
 
-<h2>Topics in {{ include.section | capitalize }}: {{ include.category | capitalize }}</h2>
+<h2>Topics in {{ include.category | capitalize }} <small>(Section: {{ include.section | capitalize }})</small></h2>
 {% assign topics = site.[include.section] | where: "category", include.category %}
 {% capture tsize %}{{ topics | size }}{% endcapture %}
 <div class="row">
   {% for entry in topics %}
-  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listposts-border">
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listposts-border-space">
     <div class="listposts">
-      <article>
-        <header>
-          <i class="pe-{{ entry.icon }} pe-lg p-icon pull-right"></i>
-          <h5><a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a></h5>
-          <p class="post-meta">
-            <span class="m-cat"><i class="pe-folder-open m-icon pe-fw"></i> <a href="{{ entry.category | append: "/" | prepend: "/" | prepend: entry.section | prepend: "/" | prepend: site.baseurl }}" title="Category: {{ entry.category }}">{{ entry.category }}</a></span>&nbsp;
-            {% if entry.tags %}<span class="m-tag">{% for tag in entry.tags %}<i class="pe-tag m-icon pe-fw"></i> {{ tag | slugify }}{% endfor %}</span>{% endif %}&nbsp;
-          </p>
-        </header>
-        <body>
-          {% if entry.question %}<blockquote><i class="pe-quote-left"></i> {{ entry.question }} <i class="pe-quote-right"></i></blockquote>{% endif %}
-          <p class="listposts-readmore"><a href="{{ entry.url | prepend: site.baseurl }}" class="button">Read <i class="pe-map-o pe-fw"></i></a></p>
-        </body>
-      </article>
+      <i class="pe-{{ entry.icon }} pe-lg p-icon"></i>
+      <h5 class="listposts-head"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}">{{ entry.title }}</a></h5>
+      <h6 class="listposts-sub">You ask:</h6>
+      <p class="listposts-body">{{ entry.question }}</p>
+      <p class="listposts-footer"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}" class="button">read <i class="pe-map-o"></i></a></p>
     </div>
   </div>
   {% endfor %}

@@ -1,9 +1,17 @@
-      {% if include.section == "all" %}<h2>All support topics</h2>{% assign ww = site.data.navigation.all %}{% else %}<h2>Support topics for {{ include.section }}</h2>{% assign ww = site.data.navigation[include.section] %}{% endif %}
-      {% for mm in ww %}
-      <h5 class="topics"><i class="pe-{{ mm.icon }} pe-fw"></i> <a href="{{ mm.url | prepend: site.baseurl }}" title="Category: {{ mm.title }}">{{ mm.title }}</a> <small>({{ mm.size }} {% if mm.size == 1 %}document{% else %}documents{% endif %})</small></h5>
-      <ul class="listtopics">
+{% if include.section == "all" %}<h2>All support topics</h2>{% assign ww = site.data.navigation.all %}{% else %}<h2>Support topics for {{ include.section }}</h2>{% assign ww = site.data.navigation[include.section] %}{% endif %}
+<div class="row">
+  {% for mm in ww %}
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listtopics-border-space">
+    <div class="listtopics">
+      <i class="pe-{{ mm.icon }} t-icon"></i>
+      <h3 class="listtopics-head"><a href="{{ mm.url | prepend: site.baseurl }}" title="{{ mm.title }}">{{ mm.title }}</a></h3>
+      <h6 class="listtopics-sub">Details:</h6>
+      <ul class="listtopics-body">
         {% for entry in mm.items %}
         <li class="listtopics-item"><a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a> - <small>{% if entry.tags %}{% assign tagss = entry.tags | split: ', ' %}{% for tag in tagss %}<i class="pe-tag pe-fw"></i> {{ tag }}{% endfor %}{% endif %}</small></li>
         {% endfor %}
       </ul>
-      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
