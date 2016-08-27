@@ -13,9 +13,7 @@
       </div>
     </div>
   </div>
-{% unless page.section == "home" %}
   <div class="header-2">
-{% include 2/breadcrumb.html %}
+{% include 2/breadcrumb.html section = page.section %}
   </div>
-{% endunless %}
 </header>

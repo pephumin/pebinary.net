@@ -1,8 +1,23 @@
     <nav class="subnav">
       <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+  {% assign crumbs = page.url | split: '/' %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ "/" | prepend: site.baseurl }}" itemprop="item" title="{{ "home" | upcase }}"><i class="pe-home pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">Home</span></a><meta itemprop="position" content="1" /></li>
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ page.section | append: "/" | prepend: "/" | prepend: site.baseurl }}" itemprop="item" title="{{ page.section | upcase }}"><i class="pe-archive pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.section | capitalize }}</span></a><meta itemprop="position" content="2" /></li>
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ page.category | append: "/" | prepend: "/" | prepend: page.section | prepend: "/" | prepend: site.baseurl }}" itemprop="item" title="{{ page.category | upcase }}"><i class="pe-folder-open pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.category | capitalize }}</span></a><meta itemprop="position" content="3" /></li>
+  {% for crumb in crumbs offset: 1 %}
+    {% if forloop.last %}
+        {% if crumb contains ".html" %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active"><i class="pe-anchor pe-fw"></i> <span itemprop="name">{{ page.title }}</span><meta itemprop="position" content="4" /></li>
+        {% elsif crumb == page.category %}
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active"><i class="pe-folder-open pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.category | capitalize }}</span><meta itemprop="position" content="3" /></li>
+        {% elsif crumb == page.nav %}
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active"><i class="pe-archive pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.nav | capitalize }}</span><meta itemprop="position" content="2" /></li>
+        {% endif %}
+    {% else %}
+        {% if crumb == page.category %}
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | prepend: site.baseurl }}{% endfor %}" itemprop="item" title="{{ page.category | upcase }}"><i class="pe-folder-open pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.category | capitalize }}</span></a><meta itemprop="position" content="3" /></li>
+        {% elsif crumb == page.nav %}
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | prepend: site.baseurl }}{% endfor %}" itemprop="item" title="{{ page.nav | upcase }}"><i class="pe-archive pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.nav | capitalize }}</span></a><meta itemprop="position" content="2" /></li>
+        {% endif %}
+    {% endif %}
+  {% endfor %}
       </ol>
     </nav>
