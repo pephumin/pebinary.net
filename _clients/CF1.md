@@ -43,16 +43,13 @@ Use this for questions that require a one line answer. Note: the size of the tex
 
 <form class="form-inline">
   <div class="form-group">
-    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
     <div class="input-group">
-      <div class="input-group-addon">$</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-      <div class="input-group-addon">.00</div>
+      <div class="input-group-addon">Insert text:</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Type in here...">
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Transfer cash</button>
+  <button type="submit" class="button-x">Done</button>
 </form>
-
 
 
 #### Essay
@@ -188,16 +185,12 @@ Use this for responses that require uses to submit back a date. Configure the da
   <div class="form-group">
     <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
     <div class="input-group">
-      <div class="input-group-addon">$</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-      <div class="input-group-addon">.00</div>
+      <div class="input-group-addon">Insert date:</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Format: 21/09/2016">
     </div>
   </div>
-  <button type="submit" class="button-x">Transfer cash</button>
+  <button type="submit" class="button-x">Done</button>
 </form>
-
-(e.g. 21/09/2003)
-
 
 
 #### Numeric

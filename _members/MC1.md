@@ -4,7 +4,7 @@ section: "members"
 permalink: /members/survey/1.html
 category: survey
 tags: [conduct, survey]
-icon: pencil
+icon: pencil-square-o
 ---
 
 Every survey has a title. In the image above, the title is `Sample Survey`. A survey may also have a sub-title and instructions, both of which are found below the title.

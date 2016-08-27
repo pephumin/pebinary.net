@@ -4,7 +4,7 @@ section: "members"
 permalink: /members/dashboard/1.html
 category: dashboard
 tags: [my-surveys, survey]
-icon: clip-board
+icon: clipboard
 ---
 
 These are the surveys that you can take. These surveys can be private to you, or a group you're in, or they can be public surveys.
