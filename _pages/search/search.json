@@ -1,5 +1,5 @@
 ---
-title: "Search index by section using title search"
+title: "Search index for all documents using fulltext search"
 permalink: /search/search.json
 layout:
 search: exclude
@@ -12,9 +12,10 @@ search: exclude
       "section"     : "{{ mm.section }}",
       "sectionurl"  : "{{ mm.section | append: '/' | prepend: '/' | prepend: site.baseurl }}",
       "category"    : "{{ mm.category }}",
-      "categoryurl" : "{{ mm.category | append: '/' | prepend: '/' | prepend: mm.section | prepend: '/' | prepend: site.baseurl }}",
+      "categoryurl" : "{{ mm.category | append: '/' | prepend: '/' | prepend:  mm.section | prepend: '/' | prepend: site.baseurl }}",
       "tags"        : "{{ mm.tags | join: ', ' }}",
-      "url"         : "{{ site.baseurl }}{{ mm.url }}"
+      "url"         : "{{ site.baseurl }}{{ mm.url }}",
+      "content"     : {{ mm.content | markdownify | strip_html | strip_newlines | remove_chars | smartify | escape | xml_escape | jsonify }}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
@@ -24,9 +25,10 @@ search: exclude
       "section"     : "{{ cc.section }}",
       "sectionurl"  : "{{ cc.section | append: '/' | prepend: '/' | prepend: site.baseurl }}",
       "category"    : "{{ cc.category }}",
-      "categoryurl" : "{{ cc.category | append: '/' | prepend: '/' | prepend: cc.section | prepend: '/' | prepend: site.baseurl }}",
+      "categoryurl" : "{{ cc.category | append: '/' | prepend: '/' | prepend:  cc.section | prepend: '/' | prepend: site.baseurl }}",
       "tags"        : "{{ cc.tags | join: ', ' }}",
-      "url"         : "{{ site.baseurl }}{{ cc.url }}"
+      "url"         : "{{ site.baseurl }}{{ cc.url }}",
+      "content"     : {{ cc.content | markdownify | strip_html | strip_newlines | remove_chars | smartify | escape | xml_escape | jsonify }}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

@@ -1,0 +1,21 @@
+---
+title: "Search index for member documents using fulltext search"
+permalink: /search/searchmembers.json
+layout:
+search: exclude
+---
+
+[
+  {% for mm in site.members %}
+    {
+      "title"       : "{{ mm.title | escape }}",
+      "section"     : "{{ mm.section }}",
+      "sectionurl"  : "{{ mm.section | append: '/' | prepend: '/' | prepend: site.baseurl }}",
+      "category"    : "{{ mm.category }}",
+      "categoryurl" : "{{ mm.category | append: '/' | prepend: '/' | prepend:  mm.section | prepend: '/' | prepend: site.baseurl }}",
+      "tags"        : "{{ mm.tags | join: ', ' }}",
+      "url"         : "{{ site.baseurl }}{{ mm.url }}",
+      "content"     : {{ mm.content | markdownify | strip_html | strip_newlines | remove_chars | smartify | escape | xml_escape | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

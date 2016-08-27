@@ -149,27 +149,33 @@ div#search-results
   color: $white
   margin-top: 60px
 
-  a
-    color: $white
-    &:hover, &:focus
-      color: $orange
-
-  .s-section
-    font-size: 0.9rem
-    text-transform: uppercase
-    font-weight: bold
-
   .s-title
     font-size: 1.6rem
+    font-weight: bold
     color: $white
+    a
+      color: $white
+      &:hover, &:focus
+        color: $orange
 
-  .s-category
-    font-size: 0.75rem
-    color: $lightgrey
+  .s-section
+    font-family: "ubuntu"
+    font-size: 0.85rem
+    text-transform: uppercase
+    font-weight: bold
+    color: $orange
+    a
+      color: $orange
+      &:hover, &:focus
+        color: $white
 
-  .s-tags
+  .s-category, .s-tags
     font-size: 0.75rem
-    color: $lightgrey
+    color: $grey
+    a
+      color: $grey
+      &:hover, &:focus
+        color: $orange
 
   .s-hr
     width: 30%
