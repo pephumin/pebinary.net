@@ -6,7 +6,7 @@
           <a data-dismiss="modal" aria-hidden="true"><i class="pe-times pe-lg"></i></a>
         </div>
         <div class="modal-title">
-          <h2>Search our documents</h2>
+          {% if page.url contains "/members/" %}<h2>Search documents for members</h2>{% elsif page.url contains "/clients/" %}<h2>Search documents for clients</h2>{% else %}<h2>Search all documents</h2>{% endif %}
         </div>
         <div class="modal-body">
           <div id="search-container">
