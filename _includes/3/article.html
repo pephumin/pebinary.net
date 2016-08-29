@@ -1,6 +1,12 @@
         <header>
           <h2>{{ page.title }}</h2>
-          {% if page.question %}<blockquote><i class="pe-quote-left"></i> {{ page.question }} <i class="pe-quote-right"></i></blockquote>{% endif %}
+          {% if page.question %}
+          <!-- <h3><i class="pe-bullhorn pe-fw"></i> You ask</h3> -->
+          <div class="questionbox">
+            <img src="{{ "/assets/img/article.svg" | prepend: site.baseurl }}" alt="You ask and we answer" class="img-responsive article-svg">
+            <blockquote><i class="pe-quote-left"></i> {{ page.question }} <i class="pe-quote-right"></i></blockquote>
+          </div>
+          {% endif %}
           <p class="post-meta">
             <i class="pe-{{ page.icon }} pe-2x m-icon m-icon-lg"></i>
             <span class="m-section">Section:&nbsp;<i class="pe-archive m-icon pe-fw"></i> <a href="{{ page.section | append: "/" | prepend: "/" | prepend: site.baseurl }}" title="Section: {{ page.section | capitalize }}">{{ page.section | capitalize }}</a></span><br>
