@@ -5,7 +5,7 @@ permalink: /clients/new-survey/0.html
 category: new-survey
 tags: [create]
 icon: file-text
-question: "How do I create a new survey? Please show me a step-by-step instruction in details so I can follow it very precisely."
+question: "What are the key steps I need to take when I want to create a new survey?"
 ---
 
 ### The answer

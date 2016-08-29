@@ -5,7 +5,7 @@ permalink: /clients/knowledge/1.html
 category: knowledge
 tags: [appendix]
 icon: object-group
-question: "This document explains the difference between different type of response. This will be useful for questionnaire designer as it will directly impact on how to use our system."
+question: "What is the key difference between different type of response? How do I use them differently when creating a new survey?"
 toc: true
 ---
 
