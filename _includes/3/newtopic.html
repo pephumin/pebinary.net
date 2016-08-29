@@ -7,16 +7,7 @@
           </div>
           <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <form>
-              <div class="form-inline">
-                <h6>Post a new topic in: &nbsp;
-                  <select class="form-control">
-                  {% for entry in site.data.navigation[include.section] %}
-                    <option>{{ entry.title }}</option>
-                  {% endfor %}
-                  <option>Others</option>
-                  </select>
-                </h6>
-              </div>
+              <h6>Ask us a question...</h6>
               <textarea class="form-control" rows="5" id="newquestion" placeholder="Type your question here..."></textarea><br>
               <button type="submit" class="button-x">submit a new question <i class="pe-check-circle-o"></i></button>
             </form>
