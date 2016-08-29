@@ -1,0 +1,25 @@
+      <div class="newquestion">
+        <div class="row">
+          <h5 class="h5index"><i class="pe-question-circle pe-fw"></i> Cannot find what you are looking for?</h3>
+          <p>For any topics that are not available in our library, you can let us know by submitting your question using the below form. We will try our best to address your question as quickly as possible, plus we will make sure your question will be included in our library moving forward.</p>
+          <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
+            <img src="{{ "/assets/img/f-newtopic.svg" | prepend: site.baseurl }}" alt="New Topic" class="img-responsive newtopic-svg">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            <form>
+              <div class="form-inline">
+                <h6>Post a new topic in: &nbsp;
+                  <select class="form-control">
+                  {% for entry in site.data.navigation[include.section] %}
+                    <option>{{ entry.title }}</option>
+                  {% endfor %}
+                  <option>Others</option>
+                  </select>
+                </h6>
+              </div>
+              <textarea class="form-control" rows="5" id="newquestion" placeholder="Type your question here..."></textarea><br>
+              <button type="submit" class="button-x">submit a new question <i class="pe-check-circle-o"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>

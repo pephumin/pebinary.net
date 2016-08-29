@@ -1,31 +1,42 @@
 {% if include.section == "all" %}
-<div>
-  <h2>All support topics</h2>
-</div>
+
+{% capture imgsvglink1 %}/assets/img/f-members.svg{% endcapture %}
+{% capture imgsvglink2 %}/assets/img/f-clients.svg{% endcapture %}
+{% capture imgsvg1 %}<img src="{{ imgsvglink1 | prepend: site.baseurl }}" alt="Support for members" class="img-responsive listtopics-svg">{% endcapture %}
+{% capture imgsvg2 %}<img src="{{ imgsvglink2 | prepend: site.baseurl }}" alt="Support for clients" class="img-responsive listtopics-svg">{% endcapture %}
+      {{ imgsvg1 }}{{ imgsvg2 }}
+      <h2>All support topics for both members and clients</h2>
+      <p>Documents which are collectively arranged for our members and clients in different categories (and sub-categories) specicically on <strong>how-to</strong> use our survey system.</p>
 {% assign ww = site.data.navigation.all %}
 
 {% else %}
+
 {% capture imgsvglink %}/assets/img/f-{{ include.section }}.svg{% endcapture %}
 {% capture imgsvg %}<img src="{{ imgsvglink | prepend: site.baseurl }}" alt="Support for {{ include.section }}" class="img-responsive listtopics-svg">{% endcapture %}
-    {{ imgsvg }}
-    <h2>Support topics for {{ include.section }}</h2>
-    <p>Documents which are collectively arranged for our {{ include.section }} in different categories (and sub-categories) specicically on <strong>how-to</strong> use our survey system.</p>
+      {{ imgsvg }}
+      <h2>Support topics for {{ include.section }}</h2>
+      <p>Documents which are collectively arranged for our {{ include.section }} in different categories (and sub-categories) specicically on <strong>how-to</strong> use our survey system.</p>
 {% assign ww = site.data.navigation[include.section] %}
+
 {% endif %}
 
-<div class="row">
-  {% for mm in ww %}
-  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listtopics-border-space">
-    <div class="listtopics">
-      <i class="pe-{{ mm.icon }} t-icon"></i>
-      <h3 class="listtopics-head"><a href="{{ mm.url | prepend: site.baseurl }}" title="{{ mm.title }}">{{ mm.title }}</a></h3>
-      <h6 class="listtopics-sub">Details:</h6>
-      <ul class="listtopics-body">
-        {% for entry in mm.items %}
-        <li class="listtopics-item"><a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a> <span class="m-tag">{% if entry.tags %}{% assign tagss = entry.tags | split: ', ' %}{% for tag in tagss %}<i class="pe-tag pe-fw"></i> {{ tag }}{% endfor %}{% endif %}</span></li>
+      <h5 class="h5index"><i class="pe-list-ul pe-fw"></i> Support topics</h5>
+
+      <div class="row">
+        {% for mm in ww %}
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listtopics-border-space">
+          <div class="listtopics">
+            <i class="pe-{{ mm.icon }} t-icon"></i>
+            <h3 class="listtopics-head"><a href="{{ mm.url | prepend: site.baseurl }}" title="{{ mm.title }}">{{ mm.title }}</a></h3>
+            <h6 class="listtopics-sub">Details:</h6>
+            <ul class="listtopics-body">
+              {% for entry in mm.items %}
+              <li class="listtopics-item"><a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a> <span class="m-tag">{% if entry.tags %}{% assign tagss = entry.tags | split: ', ' %}{% for tag in tagss %}<i class="pe-tag pe-fw"></i> {{ tag }}{% endfor %}{% endif %}</span></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
         {% endfor %}
-      </ul>
-    </div>
-  </div>
-  {% endfor %}
-</div>
+      </div>
+
+{% include 3/newtopic.html section = include.section %}

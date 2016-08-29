@@ -1,18 +1,26 @@
-
-<h2>Topics in {{ include.category | capitalize }} <small>(Section: {{ include.section | capitalize }})</small></h2>
+{% capture imgsvglink %}/assets/img/f-{{ include.section }}.svg{% endcapture %}
+{% capture imgsvg %}<img src="{{ imgsvglink | prepend: site.baseurl }}" alt="Support for {{ include.section }}" class="img-responsive listtopics-svg">{% endcapture %}
+      {{ imgsvg }}
+      <h2>Support topics for {{ include.section }} in "{{ include.category | capitalize }}"</h2>
+      <p>Documents which are collectively arranged for our {{ include.section }} in different categories (and sub-categories) specicically on <strong>how-to</strong> use our survey system.</p>
 {% assign topics = site.[include.section] | where: "category", include.category %}
 {% capture tsize %}{{ topics | size }}{% endcapture %}
-<div class="row">
-  {% for entry in topics %}
-  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listposts-border-space">
-    <div class="listposts">
-      <i class="pe-{{ entry.icon }} pe-lg p-icon"></i>
-      <h5 class="listposts-head"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}">{{ entry.title }}</a></h5>
-      {% if entry.tags %}<p class="p-tag">{% for tag in entry.tags %}<i class="pe-tag m-icon pe-fw"></i> {{ tag | slugify }}{% endfor %}</p>{% endif %}
-      <h6 class="listposts-sub">You ask:</h6>
-      <p class="listposts-body"><blockquote><i class="pe-quote-left"></i> {{ entry.question }} <i class="pe-quote-right"></i></blockquote></p>
-      <p class="listposts-footer"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}" class="button">read <i class="pe-map-o"></i></a></p>
-    </div>
-  </div>
-  {% endfor %}
-</div>
+
+      <h5 class="h5index"><i class="pe-list-ul pe-fw"></i> Support topics</h5>
+
+      <div class="row">
+{% for entry in topics %}
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listposts-border-space">
+          <div class="listposts">
+            <i class="pe-{{ entry.icon }} pe-lg p-icon"></i>
+            <h5 class="listposts-head"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}">{{ entry.title }}</a></h5>
+            {% if entry.tags %}<p class="p-tag">{% for tag in entry.tags %}<i class="pe-tag m-icon pe-fw"></i> {{ tag | slugify }}{% endfor %}</p>{% endif %}
+            <h6 class="listposts-sub">You ask:</h6>
+            <p class="listposts-body"><blockquote><i class="pe-quote-left"></i> {{ entry.question }} <i class="pe-quote-right"></i></blockquote></p>
+            <p class="listposts-footer"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}" class="button">read <i class="pe-map-o"></i></a></p>
+          </div>
+        </div>
+{% endfor %}
+      </div>
+
+{% include 3/newtopic.html section = include.section %}
