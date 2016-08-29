@@ -13,18 +13,17 @@ thaititle:            "บริษัท พีอี ไบนารี่ จ
 email:                support@pebinary.com
 description:          "A support website dedicated to our members and clients"
 locale:               en-GB
-permalink:            pretty
+# permalink:            date
 excerpt_separator:    <!--more-->
 host:                 localhost
 port:                 3000
-#url:                 http://pephumin.github.io
-baseurl:              /support.pebinary.com
+# url:                  http://pephumin.github.io
+# baseurl:              /pebinary.net
 quiet:                false
 verbose:              true
 encoding:             utf-8
 timezone:             Asia/Bangkok
 google_analytics:     UA-82554411-2
-themeblue:            true
 
 markdown:             kramdown
 highlighter:          rouge
@@ -37,16 +36,16 @@ kramdown:
   smart_quotes:       lsquo,rsquo,ldquo,rdquo
   hard_wrap:          false
   footnote_nr:        1
-# sass:
-#   sass_dir:           _sass
-#   style:              compressed
+sass:
+  sass_dir:           _sass
+  style:              compressed
 
 domains:
   main-en:            http://www.pebinary.com
   main-th:            http://www.pebinary.co.th
   support:            http://www.pebinary.net
   member:             http://www.siamsquare.org
-  client:             http://www.siamsquare.net
+  client:             http://www.siamsquare.org/admin
 
 include:
   - _pages
@@ -59,24 +58,14 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - database.rules.json
-  - .firebaserc
   - firebase.json
+  - .firebaserc
 
 gems:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-timeago
-  - jekyll-archives
 
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout:           archive
-  permalinks:
-    category:       /:collection/category/:name/
-    tag:            /:collection/tag/:name/
-  limit:              5
+themeblue:            true
 
 compress_html:
   clippings:          []
