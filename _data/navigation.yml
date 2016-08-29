@@ -5,7 +5,7 @@
 header:
 
 - title: "Home"
-  icon: home
+  icon: university
   host: support
   url: "/"
   section: "home"
@@ -61,12 +61,12 @@ footer:
   url: "/about/terms.html"
   disable: false
 
-#- title: "Sitemap"
-#  stitle: "Sitemap"
-#  icon: sitemap
-#  host: main-en
-#  url: "/about/sitemap.html"
-#  disable: false
+- title: "Back to main website"
+  stitle: "Main"
+  icon: arrow-circle-left
+  host: main-en
+  url: "/"
+  disable: false
 
 
 
