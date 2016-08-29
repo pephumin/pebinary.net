@@ -161,7 +161,7 @@ div#toc
   float: right
   width: 180px
   padding: 10px
-  margin: 0px 0px 10px 10px
+  margin: 75px 0px 10px 10px
   color: $grey
   @if $themeblue
     background-color: $lightblue
@@ -251,10 +251,7 @@ div#toc
 
 .helpfulnote
   font-size: 0.8rem
-  @if $themeblue
-    color: $blue
-  @else
-    color: $green
+  color: $lightgrey
 
 
 // post listing
@@ -275,36 +272,50 @@ div#toc
   @else
     background-color: transparentize($lightgreen, 0.5)
 
-  .p-icon
-    float: right
-    color: $white
-    margin-top: 10px
-    margin-right: 15px
-    text-shadow: 0 1px 1px $silver
-
   h5
     height: 40px
     width: 100%
     margin: 0px
     padding: 8px 15px
-    color: $white
+    // color: $white
     @if $themeblue
-      background-color: $darkblue
+      background-color: transparentize($darkblue, 0.25)
     @else
-      background-color: $darkgreen
+      background-color: transparentize($darkgreen, 0.25)
     a
       color: $white
       &:hover
         color: $orange
 
+  blockquote
+    margin: 0px 0px 20px 2px
+    font-style: italic
+    color: $darkgrey
 
-  h6, .listposts-body, .listposts-footer
+  .p-icon
+    float: right
+    color: $white
+    font-size: 150%
+    margin-top: 10px
+    margin-right: 15px
+    text-shadow: 0 1px 1px $darkgrey
+
+  .p-tag
     margin: 0px
     padding: 10px 15px
+    text-align: right
+    font-size: 0.75rem
+    color: $grey
+    a
+      color: $grey
+      &:hover
+        color: $orange
 
-  .listposts-sub
+  h6.listposts-sub
     font-size: 0.9rem
     font-weight: bold
+    margin: 0px
+    padding: 0px 15px
     @if $themeblue
       color: $darkblue
     @else
@@ -312,11 +323,18 @@ div#toc
 
   .listposts-footer
     text-align: right
+    padding: 10px 15px
     margin-bottom: 10px
 
 
-
 // topic listing
+
+.listtopics-svg
+  width: 150px
+  height: 120px
+  float: right
+  top: 0px
+  right: 0px
 
 .listtopics-border-space
   border: 2px dotted transparent
@@ -330,8 +348,12 @@ div#toc
   box-shadow: 0 4px 6px $lightgrey
 
   h3.listtopics-head
-    padding-left: 15px
-    padding-top: 10px
+    padding-left: 10px
+    padding-top: 7px
+    @if $themeblue
+      background-image: linear-gradient(to right, $darkblue, rgba(0, 0, 0, 0))
+    @else
+      background-image: linear-gradient(to right, $darkgreen, rgba(0, 0, 0, 0))
     a
       color: $white
       &:hover
@@ -339,29 +361,39 @@ div#toc
 
   .t-icon
     float: right
-    font-size: 170%
+    font-size: 150%
     @if $themeblue
       color: $darkblue
     @else
       color: $darkgreen
     margin-top: 10px
     margin-right: 15px
-    text-shadow: 0 1px 1px $silver
+    text-shadow: 0 1px 1px $white
 
-  h6, .listtopics-body
-    margin: 0px
-    padding: 10px 15px
+  h6.listtopics-sub
+    font-size: 0.9rem
+    font-weight: bold
+    padding: 0px 15px
     @if $themeblue
       color: $darkblue
     @else
       color: $darkgreen
 
-  .listtopics-sub
-    font-size: 0.9rem
-    font-weight: bold
-    padding-top: 0px
+  .listtopics-body
+    margin: 0px
+    padding: 0px 15px
 
-ul.listtopics
+  .m-tag
+    font-size: 0.75rem
+    color: $grey
+    text-align: right
+    a
+      color: $grey
+      &:hover
+        color: $orange
+
+ul.lists
+  width: 100%
   margin-bottom: 35px
 
 li.listtopics-item
@@ -385,6 +417,44 @@ li.listtopics-item
       background-color: $lightblue
     @else
       background-color: $lightgreen
+
+
+// more
+
+.moretopics
+  position: relative
+  margin: 0px
+
+  .moremore
+    margin: 0px auto
+
+    ul.lists
+      width: 100%
+      margin-bottom: 35px
+      padding: 0px
+
+    li.listtopics-item
+      color: $lightgrey
+      display: block
+      padding: 5px 10px
+      margin-bottom: -1px
+      margin-left: 0px
+      width: 100%
+      border: 1px solid $silver
+      a
+        color: $darkgrey
+      &:first-child
+        border-top-right-radius: 4px
+        border-top-left-radius: 4px
+      &:last-child
+        margin-bottom: 0
+        border-bottom-right-radius: 4px
+        border-bottom-left-radius: 4px
+      &:hover
+        @if $themeblue
+          background-color: $lightblue
+        @else
+          background-color: $lightgreen
 
 
 // main article
@@ -421,37 +491,75 @@ li.listtopics-item
     padding: 5px
 
 
-// more
+// front page
 
-.contact-border
+.index
+  text-align: center
 
-  .contact
-    //position: absolute
-    //width: 80%
-    // top: 10%
-    // right: 10%
-    //padding: 5% 15%
+  h2
+    font-size: 1.9rem
 
-    // label
-    //   color: $white
+  p
+    font-size: 1.25rem
+    line-height: 1.1428571432
 
+  .index-border
+    border: 2px dotted transparent
+    margin-bottom: 20px
+    a
+      color: $grey
+      text-decoration: none
+      &:hover
+        color: $grey
+        text-decoration: none
+
+  .indexbox
+    box-shadow: 0 4px 6px $lightgrey
+    border: 1px solid $grey
+    box-shadow: 0 1px 2px $lightgrey, 0 5px 10px $silver
+    -webkit-transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out
+    transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out
+
+    &:hover
+      text-decoration: none
+      border-color: $grey
+      box-shadow: 0 1px 3px $grey, 0 8px 15px $grey
+
+    h3
+      font-size: 1.3rem
+      margin-top: 0px
+      @if $themeblue
+        background-color: $darkblue
+      @else
+        background-color: $darkgreen
+      a
+        color: $white
+        &:hover
+          color: $orange
+
+    p
+      font-size: 1rem
+      padding: 20px
+
+    .front-svg
+      margin: 20px auto
+      width: 350px
+      height: 280px
 
 @media (max-width: 768px)
 
-  .contact-border
-    position: relative
+  .index
 
-    .contact
-      font-size: 80%
-      position: absolute
-      top: 20px
+    h2
+      font-size: 1.6rem
 
-@media (max-width: 480px)
+    p
+      font-size: 1.05rem
 
-  .contact-border
-    position: relative
+    .indexbox
 
-    .contact
-      font-size: 80%
-      position: absolute
-      top: 5px
+      h3
+        font-size: 1.2rem
+
+      p
+        font-size: 0.9rem

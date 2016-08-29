@@ -7,10 +7,27 @@ nav: "home"
 homepage: true
 ---
 
-<section class="container">
+<section class="container index">
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      {% include 3/listtopics.html section = "all" %}
+    <h2>Choose between these two sections...</h2>
+    <p>We have collectively arranged all support documents into sections and categories in order to help users browsing them with ease. This dedicate website has been set up specificlly for this therefore make sure you use it to its maximum value.</p>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center index-border">
+      <a href="{{ "/members/" | prepend: site.baseurl }}" title="Support documents for members">
+        <div class="indexbox">
+          <h3><i class="pe-user pe-fw"></i> Member</h3>
+          <img src="{{ "/assets/img/f-members.svg" | prepend: site.baseurl }}" alt="Support for members" class="img-responsive front-svg">
+          <p>Support topics for our members specicically on <strong>how-to</strong> use our survey system.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center index-border">
+      <a href="{{ "/clients/" | prepend: site.baseurl }}" title="Support documents for clients">
+        <div class="indexbox">
+          <h3><i class="pe-briefcase pe-fw"></i> Clients</h3>
+          <img src="{{ "/assets/img/f-clients.svg" | prepend: site.baseurl }}" alt="Support for clients" class="img-responsive front-svg">
+          <p>Support topics for our clients specicically on <strong>how-to</strong> use the backend of our survey system.</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>

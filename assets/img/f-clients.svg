@@ -1,0 +1,64 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+  .st0{fill:#08446D;}
+  .st1{fill:#00233F;}
+  .st2{fill:#22EFAB;}
+  .st3{fill:#0DD396;}
+  .st4{fill:#C6640C;}
+  .st5{fill:#5A8CA8;}
+</style>
+<g>
+  <g>
+    <polygon class="st0" points="422,499 14,499 14,389.4 74,331 422,331     "/>
+    <rect x="174" y="3" class="st0" width="56" height="48"/>
+  </g>
+  <polyline class="st1" points="174,3 230,3 230,51   "/>
+  <rect x="126" y="19" class="st0" width="152" height="160"/>
+  <g>
+    <polyline class="st1" points="126,19 278,19 278,179     "/>
+    <rect x="94" y="75" class="st1" width="216" height="424"/>
+  </g>
+  <rect x="182" y="115" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="222,115 222,155 182,155   "/>
+  <rect x="182" y="171" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="222,171 222,211 182,211   "/>
+  <rect x="182" y="227" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="222,227 222,267 182,267   "/>
+  <rect x="182" y="283" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="222,283 222,323 182,323   "/>
+  <rect x="182" y="339" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="222,339 222,379 182,379   "/>
+  <rect x="126" y="171" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="166,171 166,211 126,211   "/>
+  <rect x="126" y="227" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="166,227 166,267 126,267   "/>
+  <rect x="126" y="283" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="166,283 166,323 126,323   "/>
+  <rect x="126" y="339" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="166,339 166,379 126,379   "/>
+  <rect x="126" y="115" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="166,115 166,155 126,155   "/>
+  <rect x="238" y="115" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="278,115 278,155 238,155   "/>
+  <rect x="238" y="171" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="278,171 278,211 238,211   "/>
+  <rect x="238" y="227" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="278,227 278,267 238,267   "/>
+  <rect x="238" y="283" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="278,283 278,323 238,323   "/>
+  <rect x="238" y="339" class="st2" width="40" height="40"/>
+  <polyline class="st3" points="278,339 278,379 238,379   "/>
+  <path class="st4" d="M230,491v-63.2c0-5.6-5.6-8.8-11.2-8.8h-34.4c-5.6,0-10.4,4-10.4,8.8V491H230z"/>
+  <g>
+    <rect x="334" y="203" class="st0" width="152" height="296"/>
+    <rect x="358" y="155" class="st0" width="104" height="112"/>
+    <rect x="382" y="99" class="st0" width="56" height="104"/>
+    <polygon class="st0" points="378,208.6 410,13.4 442,208.6 410,240.6     "/>
+  </g>
+  <g>
+    <rect x="366" y="235" class="st5" width="8" height="232"/>
+    <rect x="406" y="235" class="st5" width="8" height="232"/>
+    <rect x="438" y="235" class="st5" width="8" height="232"/>
+  </g>
+</g>
+</svg>

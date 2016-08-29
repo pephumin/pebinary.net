@@ -1,0 +1,43 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+  .st0{fill:#680B09;}
+  .st1{fill:#C43D27;}
+  .st2{fill:#207700;}
+  .st3{fill:#239B02;}
+  .st4{fill:#FFFFFF;}
+  .st5{fill:#E8F9FC;}
+  .st6{fill:#FCA12A;}
+  .st7{fill:#E58613;}
+  .st8{fill:#DB5435;}
+  .st9{fill:#0E75AF;}
+  .st10{fill:#1EA4C4;}
+  .st11{fill:#AA1E0F;}
+</style>
+<g>
+  <rect x="362.6" y="50.7" class="st0" width="80.1" height="152.3"/>
+  <rect x="354.6" y="34.7" class="st1" width="96.2" height="16"/>
+  <g>
+    <rect x="2" y="435.4" class="st2" width="488.9" height="32.1"/>
+    <polygon class="st2" points="58.1,365.6 74.1,357.6 90.2,365.6 90.2,452.2 74.1,460.2 58.1,452.2     "/>
+    <polygon class="st2" points="2,365.6 18,357.6 34.1,365.6 34.1,452.2 18,460.2 2,452.2     "/>
+  </g>
+  <rect x="18" y="395.3" class="st3" width="56.1" height="16"/>
+  <rect x="114.2" y="227" class="st4" width="328.6" height="224.4"/>
+  <polyline class="st5" points="114.2,227 442.8,227 442.8,451.4   "/>
+  <path class="st6" d="M258.4,435.4V285.5c0-7.2-2.4-10.4-9.6-10.4h-74.5c-7.2,0-12,4-12,10.4v149.9H258.4z"/>
+  <path class="st7" d="M258.4,363.2v-77.7c0-7.2-2.4-10.4-9.6-10.4h-74.5c-7.2,0-12,4-12,10.4"/>
+  <path class="st8" d="M248.8,356c0,7.2-5.6,13.6-13.6,13.6c-7.2,0-13.6-5.6-13.6-13.6c0-7.2,5.6-13.6,13.6-13.6
+    C242.4,342.4,248.8,348,248.8,356z"/>
+  <path class="st1" d="M244.8,346.4c5.6,4.8,4.8,13.6,0,19.2s-13.6,4.8-19.2,0"/>
+  <path class="st9" d="M346.6,315.1h48.1v-29.7c0-7.2-8-10.4-15.2-10.4h-32.9V315.1z"/>
+  <path class="st10" d="M338.6,315.1v-40.1h-36.1c-7.2,0-12,4-12,10.4v29.7H338.6z"/>
+  <path class="st9" d="M338.6,323.2h-48.1v31.3c0,7.2,4.8,8.8,12,8.8h36.1V323.2z"/>
+  <path class="st10" d="M346.6,323.2v40.1h32.9c7.2,0,15.2-1.6,15.2-8.8v-31.3H346.6z"/>
+  <polygon class="st1" points="498.1,227 278.5,55.5 59.7,227   "/>
+  <polygon class="st11" points="498.1,227 278.5,55.5 167.1,227   "/>
+  <g>
+    <polygon class="st1" points="121.4,178.9 436.4,178.9 416.3,162.9 141.4,162.9     "/>
+    <polygon class="st1" points="192.7,122.8 365,122.8 354.6,114.8 203.1,114.8     "/>
+  </g>
+</g>
+</svg>
