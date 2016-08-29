@@ -1,8 +1,9 @@
+{% capture newtopiclink %}/{{ include.section }}/{{ include.category }}/#ask-your-question{% endcapture %}
 {% capture imgsvglink %}/assets/img/f-{{ include.section }}.svg{% endcapture %}
 {% capture imgsvg %}<img src="{{ imgsvglink | prepend: site.baseurl }}" alt="Support for {{ include.section }}" class="img-responsive listtopics-svg">{% endcapture %}
       {{ imgsvg }}
-      <h2>Support topics for {{ include.section }} in "{{ include.category | capitalize }}"</h2>
-      <p>Documents which are collectively arranged for our {{ include.section }} in different categories (and sub-categories) specicically on <strong>how-to</strong> use our survey system.</p>
+      <h2>Topics in “{{ include.category | capitalize }}” under “{{ include.section | capitalize }}”</h2>
+      <p class="grey">All help documents are collectively arranged by category (and sub-category, if any), users can quickly find specific topic by using our quick search function. And if the topic you are looking for is not available, please submit your question using the form at the end of this page below (<a href="{{ newtopiclink | prepend: site.baseurl }}" title="Go to the new topic submission section"><i class="pe-chevron-circle-down pe-fw"></i></a>).</p>
 {% assign topics = site.[include.section] | where: "category", include.category %}
 {% capture tsize %}{{ topics | size }}{% endcapture %}
 

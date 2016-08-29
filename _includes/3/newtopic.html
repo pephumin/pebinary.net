@@ -1,14 +1,18 @@
       <div class="newquestion">
         <div class="row">
-          <h5 class="h5index"><i class="pe-question-circle pe-fw"></i> Cannot find what you are looking for?</h3>
-          <p>For any topics that are not available in our library, you can let us know by submitting your question using the below form. We will try our best to address your question as quickly as possible, plus we will make sure your question will be included in our library moving forward.</p>
+          <h5 class="h5index"><i class="pe-question-circle pe-fw"></i> Still cannot find what you are looking for?</h5>
+          <p class="grey">For topics that are currently not available in this website, please let us know by submitting a new question using the form below. For any questions submitted, we will make sure we address it for you as quickly as possible. And we will also consider adding such topics into this website accordingly.</p>
           <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
-            <img src="{{ "/assets/img/f-newtopic.svg" | prepend: site.baseurl }}" alt="New Topic" class="img-responsive newtopic-svg">
+            <img src="/assets/img/f-newtopic.svg" alt="New Topic" class="img-responsive newtopic-svg">
           </div>
           <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-            <form>
-              <h6>Ask us a question...</h6>
-              <textarea class="form-control" rows="5" id="newquestion" placeholder="Type your question here..."></textarea><br>
+            <form name="commentform" method="post" action="/newquestion.php">
+              <h3>Ask your question</h3>
+              <div class="form-group has-feedback">
+                <label for="InputName">Question</label> <span class="label">required</span>
+                <textarea class="form-control" rows="5" id="newquestion" placeholder="Type your question here..."></textarea><br>
+                <i class="pe-commenting-o f-icon form-control-feedback"></i>
+              </div>
               <button type="submit" class="button-x">submit a new question <i class="pe-check-circle-o"></i></button>
             </form>
           </div>
