@@ -61,12 +61,12 @@ footer:
   url: "/about/terms.html"
   disable: false
 
-# - title: "Sitemap"
-#   stitle: "Sitemap"
-#   icon: sitemap
-#   host: main-en
-#   url: "/about/sitemap.html"
-#   disable: false
+#- title: "Sitemap"
+#  stitle: "Sitemap"
+#  icon: sitemap
+#  host: main-en
+#  url: "/about/sitemap.html"
+#  disable: false
 
 
 
@@ -92,7 +92,7 @@ members:
     section: "members"
     category: "general"
     tags: "info"
-    icon: university
+    icon: graduation-cap
     label: false
     label-color: false
     disable: false
@@ -133,7 +133,7 @@ members:
     section: "members"
     category: "dashboard"
     tags: "my-surveys, survey"
-    icon: clip-board
+    icon: clipboard
     label: false
     label-color: false
     disable: false
@@ -174,7 +174,7 @@ members:
     section: "members"
     category: "survey"
     tags: "conduct, survey"
-    icon: pencil
+    icon: pencil-square-o
     label: false
     label-color: false
     disable: false
@@ -225,7 +225,7 @@ members:
     section: "members"
     category: "others"
     tags: "help, info"
-    icon: question-circle
+    icon: ambulance
     label: false
     label-color: false
     disable: false
@@ -486,7 +486,7 @@ all:
     section: "members"
     category: "general"
     tags: "info"
-    icon: university
+    icon: graduation-cap
     label: false
     label-color: false
     disable: false
@@ -527,7 +527,7 @@ all:
     section: "members"
     category: "dashboard"
     tags: "my-surveys, survey"
-    icon: clip-board
+    icon: clipboard
     label: false
     label-color: false
     disable: false
@@ -568,7 +568,7 @@ all:
     section: "members"
     category: "survey"
     tags: "conduct, survey"
-    icon: pencil
+    icon: pencil-square-o
     label: false
     label-color: false
     disable: false
@@ -619,7 +619,7 @@ all:
     section: "members"
     category: "others"
     tags: "help, info"
-    icon: question-circle
+    icon: ambulance
     label: false
     label-color: false
     disable: false
