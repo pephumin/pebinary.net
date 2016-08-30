@@ -32,6 +32,13 @@ header:
   section: "search"
   description: "Search this website"
 
+- title: "Back"
+  icon: undo
+  host: main-en
+  url:
+  section: "back"
+  description: "Back to the main website"
+
 
 
 ############################################################################
@@ -54,19 +61,20 @@ footer:
   url: "/about/tos.html"
   disable: false
 
-- title: "Terms & conditions"
+- title: "Terms &amp; conditions"
   stitle: "Terms"
   icon: balance-scale
   host: main-en
   url: "/about/terms.html"
   disable: false
 
-- title: "Back to main website"
-  stitle: "Main"
+- title: "Back to the main website"
+  stitle: "The main website"
   icon: arrow-circle-left
   host: main-en
   url: "/"
   disable: false
+
 
 
 

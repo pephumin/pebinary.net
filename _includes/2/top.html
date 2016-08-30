@@ -7,11 +7,17 @@
                 {% capture top %}{{ entry.url | prepend: site.data.domains.[entry.host] | prepend: site.baseurl }}{% endcapture %}
                 {% endif %}
               {% if entry.section == "search" %}
+                {% unless page.nav == "home" %}
               <li><a class="modal-link" data-toggle="modal" data-target="#SS" data-keyboard="true">{% capture stack1 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description %}{% endcapture %}{% capture stack2 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "lg" inverse = "true" title = entry.description %}{% endcapture %}<span class="hidden-xs">{{ stack1 | rstrip }}</span><span class="hidden-sm hidden-md hidden-lg">{{ stack2 | rstrip }}</span><br><span class="topnav-item hidden-xs" itemprop="name">{{ entry.title }}</span></a></li>
+                {% endunless %}
+              {% elsif entry.section == "back" %}
+                {% if page.nav == "home" %}
+              <li><a href="{{ top }}" title="{{ entry.description }}" itemprop="url">{% capture stack1 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description %}{% endcapture %}{% capture stack2 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "lg" inverse = "true" title = entry.description %}{% endcapture %}<span class="hidden-xs">{{ stack1 | rstrip }}</span><span class="hidden-sm hidden-md hidden-lg">{{ stack2 | rstrip }}</span><br><span class="topnav-item hidden-xs" itemprop="name">{{ entry.title }}</span></a></li>
+                {% endif %}
               {% elsif entry.section == page.nav %}
               <li><a href="{{ top }}" title="{{ entry.description }}" itemprop="url">{% capture stack1 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description active = "true" %}{% endcapture %}{% capture stack2 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "lg" inverse = "true" title = entry.description active = "true" %}{% endcapture %}<span class="hidden-xs">{{ stack1 | rstrip }}</span><span class="hidden-sm hidden-md hidden-lg">{{ stack2 | rstrip }}</span><br><span class="topnav-item hidden-xs" itemprop="name">{{ entry.title }}</span></a></li>
               {% else %}
-              <li><a href="{{ top  }}" title="{{ entry.description }}" itemprop="url">{% capture stack1 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description %}{% endcapture %}{% capture stack2 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "lg" inverse = "true" title = entry.description %}{% endcapture %}<span class="hidden-xs">{{ stack1 | rstrip }}</span><span class="hidden-sm hidden-md hidden-lg">{{ stack2 | rstrip }}</span><br><span class="topnav-item hidden-xs" itemprop="name">{{ entry.title }}</span></a></li>
+              <li><a href="{{ top }}" title="{{ entry.description }}" itemprop="url">{% capture stack1 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "2" inverse = "true" title = entry.description %}{% endcapture %}{% capture stack2 %}{% include 1/stack.html icon = entry.icon shape = "circle" size = "lg" inverse = "true" title = entry.description %}{% endcapture %}<span class="hidden-xs">{{ stack1 | rstrip }}</span><span class="hidden-sm hidden-md hidden-lg">{{ stack2 | rstrip }}</span><br><span class="topnav-item hidden-xs" itemprop="name">{{ entry.title }}</span></a></li>
               {% endif %}
               {% endfor %}
             </ul>
