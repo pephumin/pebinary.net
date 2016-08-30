@@ -1,6 +1,6 @@
       <div class="newquestion">
         <div class="row">
-          <h5 class="h5index"><i class="pe-frown-o pe-fw"></i> Still cannot find it?</h5>
+          <h5 class="h5index"><i class="pe-frown-o pe-fw"></i> Cannot find the answer? Just ask</h5>
           <p class="grey">You can always submit new questions when you think the topic you are looking for is not currently available in this website. Submitting a new question can easily be done by using the form below. And for every question that is submitted, we will make sure we address it for you as soon as possible. And these new topics may be added to this website afterwards.</p>
           <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
             <img src="/assets/img/f-newtopic.svg" alt="New Topic" class="img-responsive newtopic-svg">
@@ -9,10 +9,11 @@
             <form name="commentform" method="post" action="/newquestion.php">
               <h3>Ask your question</h3>
               <div class="form-group has-feedback">
-                <label for="InputName">Question</label> <span class="label">required</span>
-                <textarea class="form-control" rows="5" id="newquestion" placeholder="Type your question here..."></textarea><br>
+                <!-- <label for="InputName">Question</label> <span class="label">required</span> -->
+                <textarea class="form-control" rows="4" id="newquestion" placeholder="Type your question here..."></textarea><br>
                 <i class="pe-commenting-o f-icon form-control-feedback"></i>
               </div>
+              <input type="hidden" name="section" value="{{ include.section}}">
               <button type="submit" class="button-x">submit a new question <i class="pe-check-circle-o"></i></button>
             </form>
           </div>

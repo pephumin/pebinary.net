@@ -2,7 +2,7 @@
 layout: index-en
 ---
 
-<section class="container">
+<main class="container maincontent">
   <div class="row">
 {% if page.format == "layout-left" %}
     <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
@@ -14,9 +14,7 @@ layout: index-en
       <article>
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
-        <body>
 {{ content | tidy | replace: 'The answer', '<i class="pe-anchor pe-fw"></i> The answer' | replace: '<img src', '<img class="img-responsive" src' }}
-        </body>
       </article>
 {% include 3/more.html %}
     </div>
@@ -25,9 +23,7 @@ layout: index-en
       <article>
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
-        <body>
 {{ content | tidy | replace: 'The answer', '<i class="pe-anchor pe-fw"></i> The answer' | replace: '<img src', '<img class="img-responsive" src' }}
-        </body>
       </article>
 {% include 3/more.html %}
     </div>
@@ -41,12 +37,10 @@ layout: index-en
       <article>
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
-        <body>
 {{ content | tidy | replace: 'The answer', '<i class="pe-anchor pe-fw"></i> The answer' | replace: '<img src', '<img class="img-responsive" src' }}
-        </body>
       </article>
 {% include 3/more.html %}
     </div>
 {% endif %}
   </div>
-</section>
+</main>

@@ -17,7 +17,7 @@
             <h5 class="listposts-head"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}">{{ entry.title }}</a></h5>
             {% if entry.tags %}<p class="p-tag">{% for tag in entry.tags %}<i class="pe-tag m-icon pe-fw"></i> {{ tag | slugify }}{% endfor %}</p>{% endif %}
             <h6 class="listposts-sub">You ask:</h6>
-            <p class="listposts-body"><blockquote><i class="pe-quote-left"></i> {{ entry.question }} <i class="pe-quote-right"></i></blockquote></p>
+            <blockquote><i class="pe-quote-left"></i> {{ entry.question }} <i class="pe-quote-right"></i></blockquote>
             <p class="listposts-footer"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}" class="button">read <i class="pe-map-o"></i></a></p>
           </div>
         </div>
