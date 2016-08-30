@@ -12,7 +12,7 @@ search: exclude
   <p class="big">Are you sure you have entered the web address (URL) correctly?</p>
   <p class="small">
     <a href="{{ "/" | prepend: site.baseurl }}">Click here</a> to go back to the front page <i class="pe-home pe-fw"></i> or
-    <a href="{{ "/contact/" | prepend: site.baseurl }}">contact us</a> <i class="pe-envelope-o pe-fw"></i> to report this problem.
+    <a href="{{ "/contact/" | prepend: site.data.domains.main-en }}">contact us</a> <i class="pe-envelope-o pe-fw"></i> to report this problem.
   </p>
   <p class="text-center">{% capture logo %}{% include 1/logo.html %}{% endcapture %}{{ logo | rstrip }}</p>
 </section>
