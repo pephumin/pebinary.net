@@ -2,12 +2,12 @@
   url: "/members/"
   title: "Support documents for our members"
   icon: user
-  svg: "/assets/img/f-members.svg"
+  svg: "/assets/img/0/f-members.svg"
   description: "Support topics for our members specicically on <strong>how-to use</strong> our survey system."
 
 - section: "clients"
   url: "/clients/"
   title: "Support documents for our clients"
   icon: briefcase
-  svg: "/assets/img/f-clients.svg"
+  svg: "/assets/img/0/f-clients.svg"
   description: "Support topics for our clients specicically on <strong>how-to use</strong> the backend of our survey system."
