@@ -120,7 +120,7 @@ defaults:
       disable:        false
       toc:            false
       published:      true
-      author:         "helpdesk"
+      author:         "PEB support"
       author-email:   "support@pebinary.com"
       format:         "layout-left"
   -
@@ -136,7 +136,7 @@ defaults:
       disable:        false
       toc:            false
       published:      true
-      author:         "helpdesk"
+      author:         "PEB support"
       author-email:   "support@pebinary.com"
       format:         "layout-right"
   -
