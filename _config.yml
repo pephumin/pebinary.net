@@ -64,6 +64,8 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-timeago
+  # - jekyll-tagging
+  # - jekyll-tagging-related_posts
 
 themeblue:            true
 
@@ -122,7 +124,7 @@ defaults:
       path:           ""
       type:           "members"
     values:
-      layout:         "main-en"
+      layout:         "main"
       section:        "members"
       nav:            "members"
       label:          false
@@ -138,7 +140,7 @@ defaults:
       path:           ""
       type:           "clients"
     values:
-      layout:         "main-en"
+      layout:         "main"
       section:        "clients"
       nav:            "clients"
       label:          false
@@ -186,7 +188,7 @@ defaults:
       path:           "_pages"
       type:           "pages"
     values:
-      layout:         "index-en"
+      layout:         "index"
       icon:           "university"
       pageformat:     ""
       published:      true
