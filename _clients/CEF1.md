@@ -1,11 +1,13 @@
 ---
-title: "Different type of response"
+title: "Common question types"
 section: "clients"
 permalink: /clients/knowledge/1.html
 category: knowledge
 tags: [appendix]
 icon: object-group
 question: "What is the key difference between different type of response? How do I use them differently when creating a new survey?"
+language: en
+reference: CF1
 toc: true
 ---
 

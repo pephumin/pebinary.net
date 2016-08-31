@@ -76,166 +76,167 @@ footer:
   disable: false
 
 
-  ############################################################################
-  # MEMBER DOCUMENT MENU
-  ############################################################################
 
-  members:
 
-  - title: "General"
-    name: general
-    url: "/clients/general/"
-    section: "clients"
-    icon:
-    size: 3
+############################################################################
+# MEMBER DOCUMENT MENU
+############################################################################
+
+members:
+
+- title: "General"
+  name: general
+  url: "/members/general/"
+  section: "members"
+  icon: info-circle
+  size: 3
+  label: false
+  label-color: false
+  disable: false
+  items:
+
+  - title: "General information"
+    url: "/members/general/1.html"
+    section: "members"
+    category: "general"
+    tags: "info"
+    icon: graduation-cap
     label: false
     label-color: false
     disable: false
-    items:
 
-    - title: "General information"
-      url: "/members/general/1.html"
-      section: "members"
-      category: "general"
-      tags: "info"
-      icon: graduation-cap
-      label: false
-      label-color: false
-      disable: false
-
-    - title: "Member registration"
-      url: "/members/general/2.html"
-      section: "members"
-      category: "general"
-      tags: "registration, users"
-      icon: user-plus
-      label: false
-      label-color: false
-      disable: false
-
-    - title: "Login"
-      url: "/members/general/3.html"
-      section: "members"
-      category: "general"
-      tags: "login, users"
-      icon: sign-in
-      label: false
-      label-color: false
-      disable: false
-
-  - title: "Dashboard"
-    name: dashboard
-    url: "/clients/dashboard/"
-    section: "clients"
-    icon:
-    size: 3
+  - title: "Member registration"
+    url: "/members/general/2.html"
+    section: "members"
+    category: "general"
+    tags: "registration, users"
+    icon: user-plus
     label: false
     label-color: false
     disable: false
-    items:
 
-    - title: "My surveys"
-      url: "/members/dashboard/1.html"
-      section: "members"
-      category: "dashboard"
-      tags: "my-surveys, survey"
-      icon: clipboard
-      label: false
-      label-color: false
-      disable: false
-
-    - title: "My history"
-      url: "/members/dashboard/2.html"
-      section: "members"
-      category: "dashboard"
-      tags: "history, survey"
-      icon: history
-      label: false
-      label-color: false
-      disable: false
-
-    - title: "My tools"
-      url: "/members/dashboard/3.html"
-      section: "members"
-      category: "dashboard"
-      tags: "my-tools"
-      icon: wrench
-      label: false
-      label-color: false
-      disable: false
-
-  - title: "Survey"
-    name: survey
-    url: "/clients/survey/"
-    section: "clients"
-    icon:
-    size: 4
+  - title: "Login"
+    url: "/members/general/3.html"
+    section: "members"
+    category: "general"
+    tags: "login, users"
+    icon: sign-in
     label: false
     label-color: false
     disable: false
-    items:
 
-    - title: "Conduct a survey"
-      url: "/members/survey/1.html"
-      section: "members"
-      category: "survey"
-      tags: "conduct, survey"
-      icon: pencil-square-o
-      label: false
-      label-color: false
-      disable: false
+- title: "Dashboard"
+  name: dashboard
+  url: "/members/dashboard/"
+  section: "members"
+  icon: dashboard
+  size: 3
+  label: false
+  label-color: false
+  disable: false
+  items:
 
-    - title: "Save a survey"
-      url: "/members/survey/2.html"
-      section: "members"
-      category: "survey"
-      tags: "save, survey"
-      icon: save
-      label: false
-      label-color: false
-      disable: false
-
-    - title: "Submit a survey"
-      url: "/members/survey/3.html"
-      section: "members"
-      category: "survey"
-      tags: "submit, survey"
-      icon: paperclip
-      label: false
-      label-color: false
-      disable: false
-
-    - title: "Public surveys"
-      url: "/members/survey/4.html"
-      section: "members"
-      category: "survey"
-      tags: "public, survey, info"
-      icon: flag
-      label: false
-      label-color: false
-      disable: false
-
-  - title: "Others"
-    name: others
-    url: "/clients/others/"
-    section: "clients"
-    icon:
-    size: 1
+  - title: "My surveys"
+    url: "/members/dashboard/1.html"
+    section: "members"
+    category: "dashboard"
+    tags: "my-surveys, survey"
+    icon: clipboard
     label: false
     label-color: false
     disable: false
-    items:
 
-    - title: "Getting help"
-      url: "/members/others/4.html"
-      section: "members"
-      category: "others"
-      tags: "help, info"
-      icon: ambulance
-      label: false
-      label-color: false
-      disable: false
+  - title: "My history"
+    url: "/members/dashboard/2.html"
+    section: "members"
+    category: "dashboard"
+    tags: "history, survey"
+    icon: history
+    label: false
+    label-color: false
+    disable: false
 
+  - title: "My tools"
+    url: "/members/dashboard/3.html"
+    section: "members"
+    category: "dashboard"
+    tags: "my-tools"
+    icon: wrench
+    label: false
+    label-color: false
+    disable: false
+
+- title: "Survey"
+  name: survey
+  url: "/members/survey/"
+  section: "members"
+  icon: pencil-square
+  size: 4
+  label: false
+  label-color: false
+  disable: false
+  items:
+
+  - title: "Conduct a survey"
+    url: "/members/survey/1.html"
+    section: "members"
+    category: "survey"
+    tags: "conduct, survey"
+    icon: pencil-square-o
+    label: false
+    label-color: false
+    disable: false
+
+  - title: "Save a survey"
+    url: "/members/survey/2.html"
+    section: "members"
+    category: "survey"
+    tags: "save, survey"
+    icon: save
+    label: false
+    label-color: false
+    disable: false
+
+  - title: "Submit a survey"
+    url: "/members/survey/3.html"
+    section: "members"
+    category: "survey"
+    tags: "submit, survey"
+    icon: paperclip
+    label: false
+    label-color: false
+    disable: false
+
+  - title: "Public surveys"
+    url: "/members/survey/4.html"
+    section: "members"
+    category: "survey"
+    tags: "public, survey, info"
+    icon: flag
+    label: false
+    label-color: false
+    disable: false
+
+- title: "Others"
+  name: others
+  url: "/members/others/"
+  section: "members"
+  icon: flask
+  size: 1
+  label: false
+  label-color: false
+  disable: false
+  items:
+
+  - title: "Getting help"
+    url: "/members/others/4.html"
+    section: "members"
+    category: "others"
+    tags: "help, info"
+    icon: ambulance
+    label: false
+    label-color: false
+    disable: false
 
 
 ############################################################################
@@ -489,7 +490,7 @@ clients:
   disable: false
   items:
 
-  - title: "Client account overview"
+  - title: "Overview of account management"
     url: "/clients/account/1.html"
     section: "clients"
     category: "account"
@@ -549,7 +550,6 @@ clients:
     label: false
     label-color: false
     disable: false
-
 
 
 ############################################################################
@@ -957,7 +957,7 @@ all:
   disable: false
   items:
 
-  - title: "Client account overview"
+  - title: "Overview of account management"
     url: "/clients/account/1.html"
     section: "clients"
     category: "account"

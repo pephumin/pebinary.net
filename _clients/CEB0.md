@@ -1,10 +1,13 @@
 ---
 title: "Preview your survey"
 section: "clients"
-permalink: /clients/new-survey/5.html
-category: new-survey
-tags: [create]
+permalink: /clients/your-survey/0.html
+category: your-survey
+tags: [design, preview, question]
 icon: image
+question: "While I am designing my survey, will there be a way that I can also preview it from the view of respondent rather than survey designer?"
+language: en
+reference: CB0
 ---
 
 Shows a preview of your survey. You can switch to this tab at any time to see what your survey will look like. If you would like to make changes, go back to the appropriate tab and make the changes. If you are satisfied with the survey, click the Finish tab or button at the bottom of the page.

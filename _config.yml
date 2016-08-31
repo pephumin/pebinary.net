@@ -106,6 +106,16 @@ collections:
     permalink:        /:collection/:path.html
     title:            "Support for clients"
 
+  # clientsEN:
+  #   output:           true
+  #   permalink:        /:collection/:path.html
+  #   title:            "Support for clients"
+  #
+  # clientsTH:
+  #   output:           true
+  #   permalink:        /:collection/:path.html
+  #   title:            "บทความช่วยเหลือสำหรับกลุ่มลูกค้า"
+
 defaults:
   -
     scope:
@@ -139,6 +149,38 @@ defaults:
       author:         "PEB support"
       author-email:   "support@pebinary.com"
       format:         "layout-right"
+  # -
+  #   scope:
+  #     path:           ""
+  #     type:           "clientsEN"
+  #   values:
+  #     layout:         "main-en"
+  #     section:        "clients"
+  #     nav:            "clients"
+  #     label:          false
+  #     label-color:    false
+  #     disable:        false
+  #     toc:            false
+  #     published:      true
+  #     author:         "PEB support"
+  #     author-email:   "support@pebinary.com"
+  #     format:         "layout-right"
+  # -
+  #   scope:
+  #     path:           ""
+  #     type:           "clientsTH"
+  #   values:
+  #     layout:         "main-en"
+  #     section:        "clients"
+  #     nav:            "clients"
+  #     label:          false
+  #     label-color:    false
+  #     disable:        false
+  #     toc:            false
+  #     published:      true
+  #     author:         "PEB support"
+  #     author-email:   "support@pebinary.com"
+  #     format:         "layout-right"
   -
     scope:
       path:           "_pages"

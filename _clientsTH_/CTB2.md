@@ -3,8 +3,11 @@ title: "Testing your survey"
 section: "clients"
 permalink: /clients/your-survey/2.html
 category: your-survey
-tags: [create]
+tags: [design, testing]
 icon: paper-plane
+question: "What is the testing mode? Is it similar to pilot test in the traditional research? Will my survey be tested with the real consumers / respondents?"
+language: th
+reference: CB2
 ---
 
 After you have created a survey you can put it into testing mode. This allows you to access a live copy of it from the Management Interface. You can fill out the survey, and view the results by choosing Test a Survey. In order to test a survey it must be set to test mode from the Status section.

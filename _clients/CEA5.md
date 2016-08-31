@@ -1,10 +1,13 @@
 ---
-title: "Themes"
+title: "Setting survey colour"
 section: "clients"
-permalink: /clients/your-survey/4.html
-category: your-survey
-tags: [create]
+permalink: /clients/new-survey/5.html
+category: new-survey
+tags: [design, colour]
 icon: paint-brush
+question: "Why would I need to change the colour for my survey? Can I choose my own colour apart from what they are currently available?"
+language: en
+reference: CA5
 ---
 
 ### The answer

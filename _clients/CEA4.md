@@ -1,10 +1,13 @@
 ---
-title: "Setting question flows"
+title: "Setting question routing"
 section: "clients"
 permalink: /clients/new-survey/4.html
 category: new-survey
-tags: [create]
+tags: [design, question, route]
 icon: random
+question: "Is it possible to set up the question routing (e.g. continue if answered yes, or skip to the next section if answered no)?"
+language: en
+reference: CA4
 ---
 
 On this tab, you can change define conditions on questions, so a question is only shown when a condition is met.

@@ -1,10 +1,13 @@
 ---
-title: "Administration"
+title: "Client group account"
 section: "clients"
-permalink: /clients/account/1.html
+permalink: /clients/account/2.html
 category: account
-tags: [admin]
-icon: cogs
+tags: [admin, group]
+icon: user
+question: "How does the client group account work? How many login accounts do you normally provide for a client?"
+language: en
+reference: CE2
 ---
 
 ### The answer

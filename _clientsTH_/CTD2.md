@@ -1,10 +1,13 @@
 ---
-title: "Survey results"
+title: "Type of survey results"
 section: "clients"
-permalink: /clients/results/1.html
+permalink: /clients/results/2.html
 category: results
-tags: [analysis]
-icon: bar-chart
+tags: [analysis, output, type]
+icon: area-chart
+question: "How many types of survey results do you provide? Will I get results in charting format as well as data in tabulation format?"
+language: th
+reference: CD2
 ---
 
 ### The answer

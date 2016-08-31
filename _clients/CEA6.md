@@ -3,8 +3,11 @@ title: "Finishing your survey"
 section: "clients"
 permalink: /clients/new-survey/6.html
 category: new-survey
-tags: [create]
+tags: [design, final]
 icon: flag-checkered
+question: "What should I do once I have finished designing my survey? Can I start the next step of data collection right away?"
+language: en
+reference: CA6
 ---
 
 Shows you the block of PHP code that you need to paste into the HTML of your webpage to embed the survey.
