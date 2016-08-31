@@ -1,11 +1,11 @@
 ---
-title: "Editing your existing survey"
+title: "Editing your survey"
 section: "clients"
 permalink: /clients/your-survey/1.html
 category: your-survey
 tags: [design, edit, question]
 icon: wrench
-question: "Although I have finished designing my survey, I realise there are some changes I need to make on it. Is it possible to do?"
+question: "Although I have finished designing my survey, I realise there are still some changes I need to make on my survey. Is this something I still can possibly do?"
 language: en
 reference: CB1
 ---

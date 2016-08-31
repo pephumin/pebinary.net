@@ -1,5 +1,5 @@
 ---
-title: "Results in raw data format"
+title: "Raw data"
 section: "clients"
 permalink: /clients/results/5.html
 category: results
@@ -15,8 +15,17 @@ reference: CD5
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
 
 
-#### Export the results
+#### The availability of raw data
 
-By choosing to export to CSV, you are selected to dump all the survey result data into a text file seperate by comma's, which then has the ability to be opened with most spreadsheet programs.
+Similar to traditional research, we also provide you with the raw data which you can then use for further result analysis on your own. Raw data  can be made available in a few different formats of your choice including:
 
-From the Management Interface, select Export Data to CSV to view all the active or archived surveys. Simply click the download link listed behind the desired survey to obtain the CSV file
+* Tab delimited format
+* Comma delimited format
+
+##### Tab delimited format
+
+Tab delimited format or as commonly known as ASCII format in which each field of text in the data file is separated by using the <kbd>[TAB]</kbd> character.
+
+##### Comma delimited format
+
+Comma delimited format or as commonly known as CSV format in which each field of text in the data file is separated by using the comma character <kbd>[,]</kbd>.

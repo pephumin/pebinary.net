@@ -1,5 +1,5 @@
 ---
-title: "Activating the survey"
+title: "Survey activation"
 section: "clients"
 permalink: /clients/your-survey/3.html
 category: your-survey

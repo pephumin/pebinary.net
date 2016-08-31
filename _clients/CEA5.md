@@ -1,11 +1,11 @@
 ---
-title: "Setting survey colour"
+title: "Using a colour template"
 section: "clients"
 permalink: /clients/new-survey/5.html
 category: new-survey
 tags: [design, colour]
 icon: paint-brush
-question: "Why would I need to change the colour for my survey? Can I choose my own colour apart from what they are currently available?"
+question: "What is the survey template? What does the survey template really do? Will there be any custom colour to be chosen from?"
 language: en
 reference: CA5
 ---

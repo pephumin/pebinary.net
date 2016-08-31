@@ -4,7 +4,7 @@ section: "clients"
 permalink: /clients/results/1.html
 category: results
 tags: [analysis, output]
-icon: area-chart
+icon: calendar-check-o
 question: "When will I be able to see the survey results? How long does it normally take for a typical survey? Will you provide interim/ topline results too?"
 language: th
 reference: CD1

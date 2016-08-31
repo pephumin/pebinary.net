@@ -5,7 +5,7 @@ permalink: /clients/account/1.html
 category: account
 tags: [admin]
 icon: cogs
-question: "How do I get an access to your survey system? And how does it work in terms of managing client accounts from your system?"
+question: "How do I access to the survey system? And how do I actually manage my client accounts?"
 language: en
 reference: CE1
 ---

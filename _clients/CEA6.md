@@ -1,5 +1,5 @@
 ---
-title: "Finishing your survey"
+title: "Finalising your new survey"
 section: "clients"
 permalink: /clients/new-survey/6.html
 category: new-survey

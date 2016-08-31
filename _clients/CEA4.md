@@ -1,5 +1,5 @@
 ---
-title: "Setting question routing"
+title: "Condition setting"
 section: "clients"
 permalink: /clients/new-survey/4.html
 category: new-survey
