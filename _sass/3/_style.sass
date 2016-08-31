@@ -262,6 +262,17 @@ div#toc
 
 // post listing
 
+.lposts
+
+  p.lead
+    font-family: "snippet"
+    font-size: 1.3rem
+    color: $grey
+
+  p
+    font-size: 1.05rem
+    padding: auto 10px
+
 .listposts-border-space
   border: 2px dotted transparent
   margin-bottom: 20px
@@ -271,12 +282,13 @@ div#toc
   height: auto
   margin: 0px
   padding: 0px
-  box-shadow: 0 4px 6px $lightgrey
+  //box-shadow: 0 4px 6px $lightgrey
+  box-shadow: 5px 5px 5px $silver
   border: 1px solid $grey
   @if $themeblue
-    background-color: transparentize($lightblue, 0.5)
+    background: transparentize($lightblue, 0.5)
   @else
-    background-color: transparentize($lightgreen, 0.5)
+    background: transparentize($lightgreen, 0.5)
 
   h5
     height: 40px
