@@ -13,6 +13,7 @@
           <div class="listtopics">
             <i class="pe-{{ mm.icon }} t-icon"></i>
             <h3 class="listtopics-head"><a href="{{ mm.url | prepend: site.baseurl }}" title="{{ mm.title }}">{{ mm.title }}</a></h3>
+            <div class="listtopics-size">{{ mm.size }} {% if mm.size == 1 %}topic{% else %}topics{% endif %}</div>
             <h6 class="listtopics-sub">Details:</h6>
             <ul class="listtopics-body">
               {% for entry in mm.items %}

@@ -11,6 +11,6 @@
             <i class="pe-{{ page.icon }} pe-2x m-icon m-icon-lg"></i>
             <span class="m-section">Section:&nbsp;<i class="pe-archive m-icon pe-fw"></i> <a href="{{ page.section | append: "/" | prepend: "/" | prepend: site.baseurl }}" title="Section: {{ page.section | capitalize }}">{{ page.section | capitalize }}</a></span><br>
             <span class="m-cat">Category:&nbsp;<i class="pe-folder-open m-icon pe-fw"></i> <a href="{{ page.category | append: "/" | prepend: "/" | prepend: page.section | prepend: "/" | prepend: site.baseurl }}" title="Category: {{ page.category }}">{{ page.category }}</a></span><br>
-          {% if page.tags %}<span class="m-tag">Tag:&nbsp;{% for tag in page.tags %}<i class="pe-tag m-icon pe-fw"></i> {{ tag | slugify }}{% endfor %}</span>{% endif %}
+          {% if page.tags %}<span class="m-tag">Tag:&nbsp;{% for tag in page.tags | split: "-" %}<i class="pe-tag m-icon pe-fw"></i> {{ tag | slugify }}{% endfor %}</span>{% endif %}
           </p>
         </header>
