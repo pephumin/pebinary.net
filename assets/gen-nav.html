@@ -84,33 +84,33 @@ footer:
   disable: false
 
 
-  ############################################################################
-  # MEMBER DOCUMENT MENU
-  ############################################################################
+############################################################################
+# MEMBER DOCUMENT MENU
+############################################################################
 
-  members:
-  {% assign groups = site.members | group_by: "category" %}{% for group in groups %}
-  - title: "{{ group.name | replace: "-", " " | capitalize }}"
-    name: {{ group.name }}
-    url: "/clients/{{ group.name }}/"
-    section: "clients"
-    icon: {% if group.name == "new-survey" %}file-text{% elsif group.name == "your-survey" %}list{% elsif group.name == "monitor" %}line-chart{% elsif group.name == "results" %}bar-chart{% elsif group.name == "account" %}cogs{% elsif group.name == "knowledge" %}graduation-cap{% endif %}
-    size: {{ group.size }}
+members:
+{% assign groups = site.members | group_by: "category" %}{% for group in groups %}
+- title: "{{ group.name | replace: "-", " " | capitalize }}"
+  name: {{ group.name }}
+  url: "/members/{{ group.name }}/"
+  section: "members"
+  icon: {% if group.name == "general" %}info-circle{% elsif group.name == "dashboard" %}dashboard{% elsif group.name == "survey" %}pencil-square{% elsif group.name == "others" %}flask{% endif %}
+  label: false
+  label-color: false
+  disable: false
+  size: {{ group.size }}
+  items:
+{% for entry in group.items %}
+  - title: "{{ entry.title }}"
+    url: "{{ entry.url }}"
+    section: "{{ entry.section }}"
+    category: "{{ entry.category }}"
+    tags: "{% if entry.tags %}{% for tag in entry.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}"
+    icon: {% if entry.icon %}{{ entry.icon }}{% endif %}
     label: false
     label-color: false
     disable: false
-    items:
-  {% for entry in group.items %}
-    - title: "{{ entry.title }}"
-      url: "{{ entry.url }}"
-      section: "{{ entry.section }}"
-      category: "{{ entry.category }}"
-      tags: "{% if entry.tags %}{% for tag in entry.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}"
-      icon: {% if entry.icon %}{{ entry.icon }}{% endif %}
-      label: false
-      label-color: false
-      disable: false
-  {% endfor %}{%endfor%}
+{% endfor %}{%endfor%}
 
 
 ############################################################################
@@ -124,10 +124,10 @@ clients:
   url: "/clients/{{ group.name }}/"
   section: "clients"
   icon: {% if group.name == "new-survey" %}file-text{% elsif group.name == "your-survey" %}list{% elsif group.name == "monitor" %}line-chart{% elsif group.name == "results" %}bar-chart{% elsif group.name == "account" %}cogs{% elsif group.name == "knowledge" %}graduation-cap{% endif %}
-  size: {{ group.size }}
   label: false
   label-color: false
   disable: false
+  size: {{ group.size }}
   items:
 {% for entry in group.items %}
   - title: "{{ entry.title }}"
@@ -153,10 +153,10 @@ all:
   url: "/{% if group.name == "general" %}members{% elsif group.name == "dashboard" %}members{% elsif group.name == "survey" %}members{% elsif group.name == "others" %}members{% elsif group.name == "new-survey" %}clients{% elsif group.name == "your-survey" %}clients{% elsif group.name == "monitor" %}clients{% elsif group.name == "results" %}clients{% elsif group.name == "account" %}clients{% elsif group.name == "knowledge" %}clients{% endif %}/{{ group.name }}/"
   section: "{% if group.name == "general" %}members{% elsif group.name == "dashboard" %}members{% elsif group.name == "survey" %}members{% elsif group.name == "others" %}members{% elsif group.name == "new-survey" %}clients{% elsif group.name == "your-survey" %}clients{% elsif group.name == "monitor" %}clients{% elsif group.name == "results" %}clients{% elsif group.name == "account" %}clients{% elsif group.name == "knowledge" %}clients{% endif %}"
   icon: {% if group.name == "general" %}info-circle{% elsif group.name == "dashboard" %}dashboard{% elsif group.name == "survey" %}pencil-square{% elsif group.name == "others" %}flask{% elsif group.name == "new-survey" %}file-text{% elsif group.name == "your-survey" %}list{% elsif group.name == "monitor" %}line-chart{% elsif group.name == "results" %}bar-chart{% elsif group.name == "account" %}cogs{% elsif group.name == "knowledge" %}graduation-cap{% endif %}
-  size: {{ group.size }}
   label: false
   label-color: false
   disable: false
+  size: {{ group.size }}
   items:
 {% for entry in group.items %}
   - title: "{{ entry.title }}"
