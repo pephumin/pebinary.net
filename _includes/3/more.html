@@ -10,12 +10,18 @@
             <p class="helpfulnote"><i class="pe-bullhorn pe-fw"></i> 56 people also found this helpful. Have you shared your thought?</p>
           </div>
           <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 moretopics">
-            <h5>Similar topics</h5>
+            <h5>Other topics in this category</h5>
             <div class="moremore">
               <ul class="lists">
-                {% for entry in site.[page.section] | limit: 5 %}
+                {% for mm in site.data.navigation[page.section] %}
+                {% if mm.name == page.category %}
+                {% for entry in mm.items %}
+                {% if page.url contains entry.url %}
+                <li class="listtopics-item disabled">{{ entry.title }}</li>
+                {% else %}
                 <li class="listtopics-item"><a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a></li>
-                {% endfor %}
+                {% endif %}
+                {% endfor %}{% endif %}{% endfor %}
               </ul>
             </div>
           </div>
