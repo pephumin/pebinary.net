@@ -2,7 +2,7 @@
 title: "Submit a survey"
 section: "members"
 permalink: /members/survey/3.html
-category: survey
+category: "survey"
 tags: [submit, survey]
 icon: paperclip
 ---

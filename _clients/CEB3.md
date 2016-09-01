@@ -2,7 +2,7 @@
 title: "Survey activation"
 section: "clients"
 permalink: /clients/your-survey/3.html
-category: your-survey
+category: "your-survey"
 tags: [design, activating, live]
 icon: graduation-cap
 question: "How do you progress from the survey after finished designing to the actual data collection? Can I activate the survey by myself?"

@@ -2,7 +2,7 @@
 title: "Using a colour template"
 section: "clients"
 permalink: /clients/new-survey/5.html
-category: new-survey
+category: "new-survey"
 tags: [design, colour]
 icon: paint-brush
 question: "What is the survey template? What does the survey template really do? Will there be any custom colour to be chosen from?"

@@ -2,7 +2,7 @@
 title: "Conduct a survey"
 section: "members"
 permalink: /members/survey/1.html
-category: survey
+category: "survey"
 tags: [conduct, survey]
 icon: pencil-square-o
 ---

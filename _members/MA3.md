@@ -2,7 +2,7 @@
 title: "Login"
 section: "members"
 permalink: /members/general/3.html
-category: general
+category: "general"
 tags: [login, users]
 icon: sign-in
 ---

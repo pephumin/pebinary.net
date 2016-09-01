@@ -2,7 +2,7 @@
 title: "Add survey information"
 section: "clients"
 permalink: /clients/new-survey/1.html
-category: new-survey
+category: "new-survey"
 tags: [design, add, info]
 icon: info-circle
 question: "How do I add information to my newly created survey? Is it really important to include such information? Can I just simply leave them blank?"

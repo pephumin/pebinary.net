@@ -2,7 +2,7 @@
 title: "My tools"
 section: "members"
 permalink: /members/dashboard/3.html
-category: dashboard
+category: "dashboard"
 tags: [my-tools]
 icon: wrench
 ---

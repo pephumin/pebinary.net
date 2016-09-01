@@ -2,7 +2,7 @@
 title: "Member registration"
 section: "members"
 permalink: /members/general/2.html
-category: general
+category: "general"
 tags: [registration, users]
 icon: user-plus
 ---

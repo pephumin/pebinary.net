@@ -2,7 +2,7 @@
 title: "Save a survey"
 section: "members"
 permalink: /members/survey/2.html
-category: survey
+category: "survey"
 tags: [save, survey]
 icon: save
 ---

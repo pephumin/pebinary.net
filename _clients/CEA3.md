@@ -2,7 +2,7 @@
 title: "Sequencing questions"
 section: "clients"
 permalink: /clients/new-survey/3.html
-category: new-survey
+category: "new-survey"
 tags: [design, question, flow]
 icon: list-ol
 question: "How can I swap the sequence of questions that I have designed? Is it possible for me to rearrange the order of questions within my survey?"

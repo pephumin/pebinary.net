@@ -2,7 +2,7 @@
 title: "Finalising your new survey"
 section: "clients"
 permalink: /clients/new-survey/6.html
-category: new-survey
+category: "new-survey"
 tags: [design, final]
 icon: flag-checkered
 question: "What should I do once I have finished designing my survey? Can I start the next step of data collection right away?"

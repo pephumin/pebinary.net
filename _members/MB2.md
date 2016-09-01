@@ -2,7 +2,7 @@
 title: "My history"
 section: "members"
 permalink: /members/dashboard/2.html
-category: dashboard
+category: "dashboard"
 tags: [history, survey]
 icon: history
 ---

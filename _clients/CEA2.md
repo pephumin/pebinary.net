@@ -2,7 +2,7 @@
 title: "Add new questions"
 section: "clients"
 permalink: /clients/new-survey/2.html
-category: new-survey
+category: "new-survey"
 tags: [design, add, question]
 icon: pencil-square
 question: "How do I add new questions to my newly created survey? Will there be different types of questions for me to use (e.g. close vs. open-ended)?"

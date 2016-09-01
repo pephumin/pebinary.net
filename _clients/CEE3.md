@@ -2,7 +2,7 @@
 title: "Client group hierarchy"
 section: "clients"
 permalink: /clients/account/3.html
-category: account
+category: "account"
 tags: [admin, group]
 icon: universal-access
 question: "Can you explain in details on the group hierarchy? How do I manage my own group according to this?"

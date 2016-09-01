@@ -2,7 +2,7 @@
 title: "My surveys"
 section: "members"
 permalink: /members/dashboard/1.html
-category: dashboard
+category: "dashboard"
 tags: [my-surveys, survey]
 icon: clipboard
 ---

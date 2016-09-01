@@ -2,7 +2,7 @@
 title: "Public surveys"
 section: "members"
 permalink: /members/survey/4.html
-category: survey
+category: "survey"
 tags: [public, survey, info]
 icon: flag
 ---

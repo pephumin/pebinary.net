@@ -2,7 +2,7 @@
 title: "Participant rate"
 section: "clients"
 permalink: /clients/monitor/2.html
-category: monitor
+category: "monitor"
 tags: [progress, update]
 icon: bar-chart
 question: "What sort of information do you provide in terms of respondent's participation to my survey? And how often such information is updated from time to time?"

@@ -2,7 +2,7 @@
 title: "Getting help"
 section: "members"
 permalink: /members/others/4.html
-category: others
+category: "others"
 tags: [help, info]
 icon: ambulance
 ---

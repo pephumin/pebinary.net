@@ -2,7 +2,7 @@
 title: "Users in group account"
 section: "clients"
 permalink: /clients/account/4.html
-category: account
+category: "account"
 tags: [admin, users]
 icon: user-plus
 question: "Is it possible that I get several users in my group account? And is it possible to set different access permissions to each of them?"

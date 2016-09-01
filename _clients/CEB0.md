@@ -2,7 +2,7 @@
 title: "Preview your survey"
 section: "clients"
 permalink: /clients/your-survey/0.html
-category: your-survey
+category: "your-survey"
 tags: [design, preview, question]
 icon: image
 question: "While I am designing my survey, will there be a way that I can also preview it from the view of respondent rather than survey designer?"

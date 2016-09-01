@@ -2,7 +2,7 @@
 title: "Client account overview"
 section: "clients"
 permalink: /clients/account/1.html
-category: account
+category: "account"
 tags: [admin]
 icon: cogs
 question: "How do I access to the survey system? And how do I actually manage my client accounts?"

@@ -2,7 +2,7 @@
 title: "Condition setting"
 section: "clients"
 permalink: /clients/new-survey/4.html
-category: new-survey
+category: "new-survey"
 tags: [design, question, route]
 icon: random
 question: "Is it possible to set up the question routing (e.g. continue if answered yes, or skip to the next section if answered no)?"

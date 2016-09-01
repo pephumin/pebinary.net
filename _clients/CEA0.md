@@ -2,7 +2,7 @@
 title: "Create a new survey"
 section: "clients"
 permalink: /clients/new-survey/0.html
-category: new-survey
+category: "new-survey"
 tags: [design]
 icon: file-text
 question: "What are the key steps I need to take when I want to create a new survey?"

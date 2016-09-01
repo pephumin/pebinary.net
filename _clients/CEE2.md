@@ -2,7 +2,7 @@
 title: "Client group account"
 section: "clients"
 permalink: /clients/account/2.html
-category: account
+category: "account"
 tags: [admin, group]
 icon: user
 question: "How does the client group account work? How many login accounts do you normally provide for a client?"

@@ -2,7 +2,7 @@
 title: "Raw data"
 section: "clients"
 permalink: /clients/results/5.html
-category: results
+category: "results"
 tags: [analysis, output, raw]
 icon: database
 question: "Do you provide raw data for my survey results? Can you show me the example of how the raw data looks like?"
