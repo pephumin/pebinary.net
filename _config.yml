@@ -12,13 +12,13 @@ title:                "PEB SUPPORT"
 thaititle:            "บริษัท พีอี ไบนารี่ จำกัด"
 email:                support@pebinary.com
 description:          "A support website dedicated to our members and clients"
-locale:               en-GB
-# permalink:            date
+locale:               en
+permalink:            date
 excerpt_separator:    <!--more-->
 host:                 localhost
 port:                 3000
-# url:                  http://pephumin.github.io
-# baseurl:              /pebinary.net
+url:                  http://pephumin.github.io
+baseurl:              /pebinary.net
 quiet:                false
 verbose:              true
 encoding:             utf-8
