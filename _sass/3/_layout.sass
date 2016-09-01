@@ -3,24 +3,25 @@ header
   .header-0
     text-align: right
 
-    a, img
-      //color: $white
-      text-decoration: none
-      cursor: pointer
-      // box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.3)
-      transition: all 200ms cubic-bezier(0.25, 0.39, 0.39, 2.01)
-
-      &:hover
-        //color: $white
-        text-decoration: none
-        transform: scale(0.9)
-        // transform: rotateX(10deg)
-        // transform: rotate(45deg)
-
     img
       width: 30px
       margin-bottom: -20px
+      margin-right: -5px
+      text-decoration: none
+      cursor: pointer
+      transition: all 200ms cubic-bezier(0.25, 0.39, 0.39, 2.01)
+      transform-origin: bottom
 
+      &:hover
+        text-decoration: none
+        transform: scale(0.8)
+
+    img.active
+      transform: scale(0.8)
+
+      &:hover
+        text-decoration: none
+        //transform: scale(0.8)
 
   .header-1
 
