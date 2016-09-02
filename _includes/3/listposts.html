@@ -7,9 +7,7 @@
       <p>And if the topic you are looking for is not available, please submit your question using the form at the end of this page below (<a href="{{ newtopiclink | prepend: site.baseurl }}" title="Go to the new topic submission section"><i class="pe-chevron-circle-down pe-fw"></i></a>).</p>
 {% assign topics = site.[include.section] | where: "category", include.category %}
 {% capture tsize %}{{ topics | size }}{% endcapture %}
-
       <h5 class="h5index"><i class="pe-list-ol pe-fw"></i> Showing all questions in this category</h5>
-
       <div class="row">
 {% for entry in topics %}
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listposts-border-space">

@@ -13,15 +13,18 @@
             <h5>Other topics in this category</h5>
             <div class="moremore">
               <ul class="lists">
-                {% for mm in site.data.navigation[page.section] %}
-                {% if mm.name == page.category %}
-                {% for entry in mm.items %}
-                {% if page.url contains entry.url %}
+                {% assign groups = site.[include.section] | group_by: "category" %}
+                {% for group in groups %}
+                  {% if group.name == page.category %}
+                    {% for entry in group.items %}
+                      {% if page.url contains entry.url %}
                 <li class="listtopics-item disabled">{{ entry.title }}</li>
-                {% else %}
+                      {% else %}
                 <li class="listtopics-item"><a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a></li>
-                {% endif %}
-                {% endfor %}{% endif %}{% endfor %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                {% endfor %}
               </ul>
             </div>
           </div>
