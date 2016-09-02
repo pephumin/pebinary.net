@@ -1,13 +1,13 @@
 ---
-title: "Sequence questions"
+title: "Finalise the survey"
 section: "clients"
-permalink: /clients/new-survey/4.html
+permalink: /clients/new-survey/7.html
 category: "new-survey"
-tags: [design, question, flow]
-icon: list-ol
-question: "How can I swap the sequence of questions that I have designed? Is it possible for me to rearrange the order of questions within my survey?"
+tags: [design, final]
+icon: flag-checkered
+question: "What should I do once I have finished designing my survey? Can I start the next step of data collection right away?"
 lang: en
-reference: CA3
+reference: CA6
 ---
 
 ### The answer
@@ -27,28 +27,28 @@ reference: CA3
       Add questions
     </span>
   </li>
-  <li class="progress-step is-active">
+  <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
       <h5 class="progress-title">Step 3</h5>
       Sequence questions
     </span>
   </li>
-  <li class="progress-step">
+  <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
       <h5 class="progress-title">Step 4</h5>
       Set question condition
     </span>
   </li>
-  <li class="progress-step">
+  <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
       <h5 class="progress-title">Step 5</h5>
       Set survey theme
     </span>
   </li>
-  <li class="progress-step">
+  <li class="progress-step is-active">
     <span class="progress-marker"></span>
     <span class="progress-text">
       <h5 class="progress-title">Step 6</h5>
@@ -57,5 +57,6 @@ reference: CA3
   </li>
 </ul>
 
+Shows you the block of PHP code that you need to paste into the HTML of your webpage to embed the survey.
 
-On this tab, you can change the order of the questions, delete questions, and insert section breaks. A section break divides your survey into multiple pages (good for long surveys).
+Once a survey is finished, you may return to editing it by choosing Edit a survey from the Management Interface. When all final edits are done, you need to change the survey status from new to test or active mode. You can change the status by choosing Change the Status of an Existing Survey from the Management Interface.

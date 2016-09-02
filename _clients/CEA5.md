@@ -1,34 +1,67 @@
 ---
-title: "Using a colour template"
+title: "Set question condition"
 section: "clients"
 permalink: /clients/new-survey/5.html
 category: "new-survey"
-tags: [design, colour]
-icon: paint-brush
-question: "What is the survey template? What does the survey template really do? Will there be any custom colour to be chosen from?"
-language: en
-reference: CA5
+tags: [design, question, route]
+icon: random
+question: "Is it possible to set up the question routing (e.g. continue if answered yes, or skip to the next section if answered no)?"
+lang: en
+reference: CA4
 ---
 
-### The answer
+### The answered
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
+<ul class="progress-tracker progress-tracker--text progress-tracker--center">
+  <li class="progress-step is-completed">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 1</h5>
+      Add survey information
+    </span>
+  </li>
+  <li class="progress-step is-completed">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 2</h5>
+      Add questions
+    </span>
+  </li>
+  <li class="progress-step is-completed">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 3</h5>
+      Sequence questions
+    </span>
+  </li>
+  <li class="progress-step is-active">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 4</h5>
+      Set question condition
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 5</h5>
+      Set survey theme
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 6</h5>
+      Finalise the survey
+    </span>
+  </li>
+</ul>
 
-#### Creating themes
 
-To download a template to create your own css style sheet, click here.
+On this tab, you can change define conditions on questions, so a question is only shown when a condition is met.
 
-An example page outlining where css classes are applied is available here.
+All conditions are "OR" conditions, so if one conditions is fulfilled, the question is shown.
 
-All themes (css style sheets) are contained within the css directory which is, by default, located in the public directory of this package (and its path is definable in the config file).
+A question that has a condition must be on the next page than the question/value that is used to compare it with. Use the "Order tab" to insert a section break where wanted (this is NOT done automatically).
 
-Please ensure that all your css files are contained within this directory. In this directory you will find the template.css.
-
-To create a new theme simply copy the template.css file and edit the class definitions. Do not alter the class names. Greater style flexibility is assured by not redefining html tags but rather by assigning classes to these tags. Click here to see what these classes actually define.
-
-Once you've saved your new theme it will become available for selection from the dropdown list that is found on the general tab page.
-
-
-#### Assigning themes
-
-Themes can be assigned either when you create a new survey, or when you edit an existing survey. Select the General Tab, navigate to the drop down box near the bottom of the page, and select the appropiate theme you wish to use.
+Tip: a Yes/No question can only be compared using the values `Yes` or `No`.
