@@ -13,9 +13,9 @@
         {% endif %}
     {% else %}
         {% if crumb == page.category %}
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | prepend: site.baseurl }}{% endfor %}" itemprop="item" title="{{ page.category | replace: "-", " " | upcase }}"><i class="pe-folder-open pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.category | replace: "-", " " | capitalize }}</span></a><meta itemprop="position" content="3" /></li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: "/" }}{% endfor %}" itemprop="item" title="{{ page.category | replace: "-", " " | upcase }}"><i class="pe-folder-open pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.category | replace: "-", " " | capitalize }}</span></a><meta itemprop="position" content="3" /></li>
         {% elsif crumb == page.nav %}
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | prepend: site.baseurl }}{% endfor %}" itemprop="item" title="{{ page.nav | upcase }}"><i class="pe-archive pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.nav | capitalize }}</span></a><meta itemprop="position" content="2" /></li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: "/" }}{% endfor %}" itemprop="item" title="{{ page.nav | upcase }}"><i class="pe-archive pe-fw"></i> <span itemprop="name" class="hidden-xs hidden-sm">{{ page.nav | capitalize }}</span></a><meta itemprop="position" content="2" /></li>
         {% endif %}
     {% endif %}
   {% endfor %}
