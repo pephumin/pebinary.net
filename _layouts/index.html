@@ -3,7 +3,7 @@ layout: brew
 ---
 
 <!doctype html>
-<html lang="{{ site.locale }}">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.locale }}{% endif %}">
 <head>
 {% include 1/meta.html %}
 </head>

@@ -3,7 +3,7 @@ layout: brew
 ---
 
 <!doctype html>
-<html lang="{{ site.locale }}">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.locale }}{% endif %}">
 <head>
   <meta charset="{{ site.encoding }}">
   <title>{% if page.homepage == true %}{{ page.title }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>

@@ -1,0 +1,33 @@
+en:
+  home:
+    name: "Home"
+    url: "/"
+  members:
+    name: "Members"
+    url: "/members/"
+  clients:
+    name: "Clients"
+    url: "/clients/"
+  back:
+    name: "Back"
+    url: "http://www.pebinary.com"
+  search:
+    name:
+    url:
+
+th:
+  home:
+    name: "หน้าแรก"
+    url: "/"
+  members:
+    name: "สมาชิก"
+    url: "/members/"
+  clients:
+    name: "ลูกค้า"
+    url: "/clients/"
+  back:
+    name: "กลับ"
+    url: "http://www.pebinary.com"
+  search:
+    name:
+    url:
