@@ -20,25 +20,25 @@ This section shows the summary of points you have collected so far. It shows the
       Log in
     </span>
   </li>
-  <li class="progress-step">
-    <span class="progress-marker is-completed"></span>
+  <li class="progress-step is-completed">
+    <span class="progress-marker"></span>
     <span class="progress-text">
       <h5 class="progress-title">Step 2</h5>
-      Dashboard: Surveys
+      Dashboard:<br>Surveys
     </span>
   </li>
-  <li class="progress-step">
-    <span class="progress-marker is-active"></span>
+  <li class="progress-step is-active">
+    <span class="progress-marker"></span>
     <span class="progress-text">
       <h5 class="progress-title">Step 3</h5>
-      Dashboard: Points
+      Dashboard:<br>Points
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
       <h5 class="progress-title">Step 4</h5>
-      Dashboard: Setting
+      Dashboard:<br>Setting
     </span>
   </li>
   <li class="progress-step">
