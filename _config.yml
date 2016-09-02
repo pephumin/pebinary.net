@@ -16,7 +16,7 @@ locale:               en
 permalink:            date
 excerpt_separator:    <!--more-->
 host:                 localhost
-port:                 3000
+port:                 5000
 url:                  http://pephumin.github.io
 baseurl:              /pebinary.net
 quiet:                false
@@ -110,12 +110,12 @@ collections:
 
   # clientsEN:
   #   output:           true
-  #   permalink:        /:collection/:path.html
+  #   permalink:        /:collection/en/:path.html
   #   title:            "Support for clients"
   #
   # clientsTH:
   #   output:           true
-  #   permalink:        /:collection/:path.html
+  #   permalink:        /:collection/th/:path.html
   #   title:            "บทความช่วยเหลือสำหรับกลุ่มลูกค้า"
 
 defaults:
@@ -132,7 +132,7 @@ defaults:
       disable:        false
       toc:            false
       published:      true
-      author:         "PEB support"
+      author:         "PEB Support"
       author-email:   "support@pebinary.com"
       format:         "layout-left"
   -
@@ -148,7 +148,7 @@ defaults:
       disable:        false
       toc:            false
       published:      true
-      author:         "PEB support"
+      author:         "PEB Support"
       author-email:   "support@pebinary.com"
       format:         "layout-right"
   # -
@@ -156,7 +156,7 @@ defaults:
   #     path:           ""
   #     type:           "clientsEN"
   #   values:
-  #     layout:         "main-en"
+  #     layout:         "main"
   #     section:        "clients"
   #     nav:            "clients"
   #     label:          false
@@ -172,7 +172,7 @@ defaults:
   #     path:           ""
   #     type:           "clientsTH"
   #   values:
-  #     layout:         "main-en"
+  #     layout:         "main-"
   #     section:        "clients"
   #     nav:            "clients"
   #     label:          false
