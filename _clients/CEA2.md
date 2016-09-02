@@ -1,16 +1,14 @@
 ---
 title: "Add survey information"
 section: "clients"
-permalink: /clients/new-survey/2.html
 category: "new-survey"
+permalink: /clients/new-survey/2.html
 tags: [design, add, info]
 icon: info-circle
 question: "How do I add information to my newly created survey? Is it really important to include such information? Can I just simply leave them blank?"
-lang: en
-reference: CA1
 ---
 
-### The answer
+### <i class="pe-anchor pe-fw"></i> The answer
 
 This is the very first step of survey designing process. And it is one of the most important steps which survey designers must complete this step very carefully. Without filling in all required information, you will not be able to move to the next step.
 

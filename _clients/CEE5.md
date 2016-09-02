@@ -1,16 +1,14 @@
 ---
-title: "Users in group account"
+title: "Team members"
 section: "clients"
-permalink: /clients/account/4.html
-category: account
-tags: [admin, users]
+category: "account"
+permalink: /clients/account/5.html
+tags: [admin, users, team]
 icon: user-plus
-question: "Is it possible that I get several users in my group account? And is it possible to set different access permissions to each of them?"
-language: th
-reference: CE4
+question: "Can I get several logins for each member in my team? Can I set a different access permission to each of the team members too?"
 ---
 
-### The answer
+### <i class="pe-anchor pe-fw"></i> The answer
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
 

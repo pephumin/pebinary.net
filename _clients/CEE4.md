@@ -1,61 +1,45 @@
 ---
-title: "Users in group account"
+title: "Client group hierarchy"
 section: "clients"
-permalink: /clients/account/4.html
 category: "account"
-tags: [admin, users]
-icon: user-plus
-question: "Is it possible that I get several users in my group account? And is it possible to set different access permissions to each of them?"
-language: en
-reference: CE4
+permalink: /clients/account/4.html
+tags: [admin, group, permission]
+icon: universal-access
+question: "Can you explain in details on the group hierarchy? How do I manage my own group according to this?"
 ---
 
-### The answer
+### <i class="pe-anchor pe-fw"></i> The answer
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
 
 
-#### Batch Account Creation
+#### Different user levels
 
-On either the Respondent or Designer Management Interfaces, click Bulk Upload. You will be presented with a form asking for File Type and File to Upload. From the File Type dropdown, select the file type you wish to upload. From the File to Upload browse your local filesystem to find the specific file you are uploading.
+In our system, we classify users in different levels as listed out below.
 
-tab Delimited, Data File Format: The tab delimited file should contain rows of text, terminated by a newline character <kbd>[Enter]</kbd>, with each field in the rows delimited by the tab character <kbd>[tab]</kbd>. Each of the examples below should be a single row.
+* Account leader
+* Questionnaire designer
+* Data processing (DP) person
 
-
-##### Respondent Format
-
-**Username**, **Password** and **Group** are required fields
-
-- Field Order:
-```
-username [tab] password [tab] group [tab] fname [tab] lname [tab]  email [tab] expiration [tab] disabled [Enter]
-```
-
-- Example Row:
-```
-looser [tab] secret [tab] editors [tab] John [tab] Smith [tab]  smith@yahoo.com [tab] 20011122 [tab] N [Enter]
-```
+Each of these users will have a different authority within our system.
 
 
-##### Designer Format
+##### Account leader
 
-Username, Password and Group are required fields
+For each of our clients, we will provide an access as Account leader only for `one login`. Ideally this should be used by the lead person in client team.
 
-- Field Order:
-```
-username [tab] password [tab] group [tab] fname [tab] lname [tab] email [tab] design [tab] status [tab] export [tab] groupedit [tab] groupadmin [tab] grouprespondents [tab]  expiration [tab] disabled
-```
+Account leader holds the highest authority compared with other user type. And it is also the only user that has an ability to add or remove users from the client account.
 
-- Example Row:
-```
-looser [tab] secret [tab] editors [tab] John [tab] Smith [tab] smith@yahoo.com [tab] Y [tab] N [tab] Y [tab] N [tab] N [tab] 20031122 [tab] Y [Enter]
-```
+This user also can view and edit all projects that are belonged to the client group account.
 
 
-##### CSV, Data File Format
+##### Questionnaire designer
 
-Not yet implemented
+Within one client account, there can be as many Questionnaire designers as needed. This user will be created, edited or removed only by the Account leader.
 
-##### XML, Data File Format
+Please note that Questionnaire designer will be assigned specifically to a project (or several projects). It means that each Questionnaire designer will only be able to access projects that he/she has been assigned to.
 
-Not yet implemented
+
+##### Data processing (DP) person
+
+Similar to Questionnaire designer, a DP person will also be created, edited or removed only by the Account leader. And there can be as many DP persons as needed for one client account. Each of the DP persons will also be assigned specifically to a project (or several projects) so access will be limited to the assigned projects only.

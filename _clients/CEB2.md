@@ -1,16 +1,15 @@
 ---
-title: "Testing your survey"
+title: "Preview your survey"
 section: "clients"
-permalink: /clients/your-survey/2.html
 category: "your-survey"
-tags: [design, testing]
-icon: paper-plane
-question: "What is the testing mode? Is it similar to pilot test in the traditional research? Will my survey be tested with the real consumers / respondents?"
-language: en
-reference: CB2
+permalink: /clients/your-survey/2.html
+tags: [design, preview, question]
+icon: image
+question: "While I am designing my survey, will there be a way that I can also preview it from the view of respondent rather than survey designer?"
 ---
 
-After you have created a survey you can put it into testing mode. This allows you to access a live copy of it from the Management Interface. You can fill out the survey, and view the results by choosing Test a Survey. In order to test a survey it must be set to test mode from the Status section.
+### <i class="pe-anchor pe-fw"></i> The answer
 
+Shows a preview of your survey. You can switch to this tab at any time to see what your survey will look like. If you would like to make changes, go back to the appropriate tab and make the changes. If you are satisfied with the survey, click the Finish tab or button at the bottom of the page.
 
-{% include 1/alert.html type = "danger" close = "yes" icon = "exclamation-triangle" intro = "Importance" msg = "Once a survey is moved from new designation to test you can no longer make changes. If you just want to see how it will look, not test functionality, please use the preview option available in when editing or creating a survey." %}
+{% include 1/alert.html type = "pe" close = "yes" icon = "exclamation-triangle" intro = "Note" msg = "The Next Page and Submit Survey buttons are inactive in the preview mode." %}

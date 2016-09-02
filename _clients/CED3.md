@@ -1,16 +1,15 @@
 ---
 title: "Chart and graph"
 section: "clients"
-permalink: /clients/results/3.html
 category: "results"
+permalink: /clients/results/3.html
 tags: [analysis, output, charting]
 icon: pie-chart
 question: "Do you provide results in charting format? Can you show me some examples on how the actual charting will look like?"
-language: en
-reference: CD3
+toc: true
 ---
 
-### The answer
+### <i class="pe-anchor pe-fw"></i> The answer
 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
 

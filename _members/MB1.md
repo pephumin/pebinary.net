@@ -1,28 +1,69 @@
 ---
-title: "My surveys"
+title: "Log in"
 section: "members"
-permalink: /members/dashboard/1.html
 category: "dashboard"
-tags: [my-surveys, survey]
-icon: clipboard
+permalink: /members/dashboard/1.html
+tags: [sign-in, dashboard]
+icon: sign-in
+question: "Okay, I have completed the registration process. What's next?"
 ---
 
-These are the surveys that you can take. These surveys can be private to you, or a group you're in, or they can be public surveys.
+### <i class="pe-anchor pe-fw"></i> The answer
 
-If you have at least one survey available, you'll see a table listing the title, status, and last access data for all your available surveys. If you do not have any surveys available, you'll see a message indicating such.
+Once the registration has been completed. A user must log in to our system to start using our system. By clicking the `Log in` button on the top of the navigation menu, you will be prompted to fill-in your login and password (or no password required if log in with a social media account).
 
-The survey title is a link: follow those links to take each survey. The survey status indicates how you have, so far, interacted with the survey:
+<ul class="progress-tracker progress-tracker--text progress-tracker--center">
+  <li class="progress-step is-active">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 1</h5>
+      Log in
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 2</h5>
+      Dashboard: Surveys
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 3</h5>
+      Dashboard: Points
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 4</h5>
+      Dashboard: Setting
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 5</h5>
+      Log out
+    </span>
+  </li>
+</ul>
 
-![Dashboard Screen][dashboard-screen]
+If your survey administrator has given you an account, enter your User ID and Password in the corresponding fields within the box labeled `Login`. When done, click the Login button.
 
-1. Not Started: You have not yet submitted a response to this survey. You may have looked at the survey, but you haven't submitted any responses. You may start this survey at any time.
+Please remember that the User ID and Password are case sensitive, so pay special attention to your typing. For your security, your password is not shown while you type it; instead, your browser obscures each letter with an asterisk character instead.
 
-2. Started, but Incomplete: You have started this survey, but left early and saved your responses. You may return to this survey at any time. This status is only available if the survey administrator allows you to save your responses to return to later.
+![Login Screen][login-screen]
 
-3. Some Finished, some Incomplete: You have submitted at least one complete response, but have saved another for later. This status is only available for surveys that allow you to respond multiple times.
 
-4. Finished: You have submitted at least one complete response to this survey.
+#### Errors
 
-The last access column indicates when you last visited the survey.
+If your User ID and Password aren't recognized, one of the following errors will be displayed:
 
-[dashboard-screen]: {{ "/assets/img/M/MB.png" | prepend: site.baseurl }} "Dashboard Screen"
+**Incorrect User ID or Password, or your account has been disabled/expired.**
+
+If you receive an error, first try retyping your User ID and Password (check your caps lock key, as well). If you are absolutely certain you are typing your information correctly, contact your survey administrator for assistance.
+
+
+[login-screen]: {{ "/assets/img/M/MA.png" | prepend: site.baseurl }} "Login Screen"

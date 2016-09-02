@@ -1,18 +1,14 @@
 ---
 title: "Create a new survey"
-thtitle: "ขั้นตอนการสร้างแบบสอบถามชุดใหม่"
 section: "clients"
-permalink: /clients/new-survey/1.html
 category: "new-survey"
+permalink: /clients/new-survey/1.html
 tags: [design]
 icon: file-text
 question: "What are the key steps I need to take when I want to create a new survey?"
-thquestion: "ขั้นตอนในการสร้างแบบสอบถามชุดใหม่เป็นอย่างไร จะต้องทำอย่างไรบ้าง"
-lang: en
-reference: CA0
 ---
 
-### The answer
+### <i class="pe-anchor pe-fw"></i> The answer
 
 Clients can simply create a new survey with our system by following these steps. Please be noted to fill-in the information as much as possible in order to easily track down your projects in the future.
 

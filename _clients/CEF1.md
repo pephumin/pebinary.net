@@ -1,17 +1,15 @@
 ---
 title: "Common question types"
 section: "clients"
-permalink: /clients/knowledge/1.html
 category: "knowledge"
+permalink: /clients/knowledge/1.html
 tags: [appendix]
 icon: object-group
 question: "What is the key difference between different type of response? How do I use them differently when creating a new survey?"
-language: en
-reference: CF1
 toc: true
 ---
 
-### The answer
+### <i class="pe-anchor pe-fw"></i> The answer
 
 There are several types of responses ranging from single answer, multiple answer, and open-ended. We have listed out the key types below including the actual example and how to use them.
 

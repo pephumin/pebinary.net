@@ -1,11 +1,11 @@
 ---
-title: "Member registration"
+title: "Password recovery"
 section: "members"
 category: "general"
-permalink: /members/general/2.html
-tags: [registration, users]
-icon: user-plus
-question: "How can I become a member? What does it take to register as a member? Do I need to pay an entry fee?"
+permalink: /members/general/4.html
+tags: [registration, password, recovery]
+icon: key
+question: "I am a member but I lost my password. How can I get my login account recovered?"
 ---
 
 ### <i class="pe-anchor pe-fw"></i> The answer

@@ -1,14 +1,14 @@
 ---
-title: "Activating the survey"
+title: "Survey activation"
 section: "clients"
-permalink: /clients/your-survey/3.html
-category: your-survey
-tags: [design, activating, live]
+category: "your-survey"
+permalink: /clients/your-survey/4.html
+tags: [design, activation, live]
 icon: graduation-cap
 question: "How do you progress from the survey after finished designing to the actual data collection? Can I activate the survey by myself?"
-language: th
-reference: CB3
 ---
+
+### <i class="pe-anchor pe-fw"></i> The answer
 
 Once you have created/edited a survey, and are ready to make it available online you must activate it. Go to the Management Interface, click Change the Status of a Survey. Find the survey you want to activate. Make note of the `survey ID (SID)` and the `name (SURVEYNAME)`.
 

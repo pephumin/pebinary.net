@@ -1,14 +1,14 @@
 ---
-title: "General information"
+title: "Overview of membership"
 section: "members"
-permalink: /members/general/1.html
 category: "general"
-tags: [info]
+permalink: /members/general/1.html
+tags: [info, members]
 icon: graduation-cap
-question: "The general information for members. This includes key benefits of being a member, ability to access different surveys - both public and private ones, and how to use the dashboard to control all possible functions in our system."
+question: "Why should I want to become a member? What are the key differences between being or not being a member?"
 ---
 
-### The answer
+### <i class="pe-anchor pe-fw"></i> The answer
 
 We only allow authorised access therefore all members are required to complete the `member registration process`.
 

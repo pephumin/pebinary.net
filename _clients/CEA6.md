@@ -1,16 +1,14 @@
 ---
 title: "Set survey theme"
 section: "clients"
-permalink: /clients/new-survey/6.html
 category: "new-survey"
+permalink: /clients/new-survey/6.html
 tags: [design, colour]
 icon: paint-brush
 question: "What is the survey template? What does the survey template really do? Will there be any custom colour to be chosen from?"
-lang: en
-reference: CA5
 ---
 
-### The answer
+### <i class="pe-anchor pe-fw"></i> The answer
 
 <ul class="progress-tracker progress-tracker--text progress-tracker--center">
   <li class="progress-step is-completed">

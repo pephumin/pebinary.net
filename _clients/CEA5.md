@@ -1,16 +1,14 @@
 ---
 title: "Set question condition"
 section: "clients"
-permalink: /clients/new-survey/5.html
 category: "new-survey"
+permalink: /clients/new-survey/5.html
 tags: [design, question, route]
 icon: random
 question: "Is it possible to set up the question routing (e.g. continue if answered yes, or skip to the next section if answered no)?"
-lang: en
-reference: CA4
 ---
 
-### The answered
+### <i class="pe-anchor pe-fw"></i> The answer
 
 <ul class="progress-tracker progress-tracker--text progress-tracker--center">
   <li class="progress-step is-completed">

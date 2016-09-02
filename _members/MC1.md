@@ -1,11 +1,14 @@
 ---
-title: "Conduct a survey"
+title: "Participate a survey"
 section: "members"
 permalink: /members/survey/1.html
 category: "survey"
 tags: [conduct, survey]
 icon: pencil-square-o
+question: "Can you please show me how to participate with a survey?"
 ---
+
+### <i class="pe-anchor pe-fw"></i> The answer
 
 Every survey has a title. In the image above, the title is `Sample Survey`. A survey may also have a sub-title and instructions, both of which are found below the title.
 

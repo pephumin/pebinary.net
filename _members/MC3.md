@@ -5,7 +5,10 @@ permalink: /members/survey/3.html
 category: "survey"
 tags: [submit, survey]
 icon: paperclip
+question: "What do I do once I have completed a survey?"
 ---
+
+### <i class="pe-anchor pe-fw"></i> The answer
 
 When you have finished taking the survey, click the Submit Survey button. Your responses will be saved and you will be taken to a thank you page.
 
