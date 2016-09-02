@@ -2,7 +2,7 @@
 title: "Set question condition"
 section: "clients"
 category: "new-survey"
-permalink: /clients/new-survey/5.html
+permalink: /en/clients/new-survey/5.html
 tags: [design, question, route]
 icon: random
 question: "Is it possible to set up the question routing (e.g. continue if answered yes, or skip to the next section if answered no)?"

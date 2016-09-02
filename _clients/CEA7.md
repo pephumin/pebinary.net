@@ -2,7 +2,7 @@
 title: "Finalise the survey"
 section: "clients"
 category: "new-survey"
-permalink: /clients/new-survey/7.html
+permalink: /en/clients/new-survey/7.html
 tags: [design, final]
 icon: flag-checkered
 question: "What should I do once I have finished designing my survey? Can I start the next step of data collection right away?"

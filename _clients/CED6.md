@@ -2,7 +2,7 @@
 title: "Exporting results"
 section: "clients"
 category: "results"
-permalink: /clients/results/6.html
+permalink: /en/clients/results/6.html
 tags: [analysis, output, export]
 icon: cloud-download
 question: "How can I export my survey results? Can I download all outputs for my survey from the system?"

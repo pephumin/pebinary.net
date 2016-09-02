@@ -2,7 +2,7 @@
 title: "Chart and graph"
 section: "clients"
 category: "results"
-permalink: /clients/results/3.html
+permalink: /en/clients/results/3.html
 tags: [analysis, output, charting]
 icon: pie-chart
 question: "Do you provide results in charting format? Can you show me some examples on how the actual charting will look like?"

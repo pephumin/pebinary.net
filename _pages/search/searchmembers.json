@@ -7,15 +7,30 @@ search: exclude
 
 [
   {% for mm in site.members %}
+  {% if mm.url contains "/en/" %}{% assign plocale = "en" %}{% elsif mm.url contains "/th/" %}{% assign plocale = "th" %}{% endif %}
     {
       "title"       : "{{ mm.title | escape }}",
       "section"     : "{{ mm.section }}",
-      "sectionurl"  : "{{ mm.section | append: '/' | prepend: '/' | prepend: site.baseurl }}",
+      "sectionurl"  : "{{ site.baseurl }}/{{ plocale }}/{{ mm.section }}/",
       "category"    : "{{ mm.category }}",
-      "categoryurl" : "{{ mm.category | append: '/' | prepend: '/' | prepend:  mm.section | prepend: '/' | prepend: site.baseurl }}",
+      "categoryurl" : "{{ site.baseurl }}/{{ plocale }}/{{ mm.section }}/{{ mm.category }}/",
       "tags"        : "{{ mm.tags | join: ', ' }}",
       "url"         : "{{ site.baseurl }}{{ mm.url }}",
       "content"     : {{ mm.content | markdownify | strip_html | strip_newlines | remove_chars | smartify | escape | xml_escape | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for uu in site.membersTH %}
+  {% if uu.url contains "/en/" %}{% assign plocale = "en" %}{% elsif uu.url contains "/th/" %}{% assign plocale = "th" %}{% endif %}
+    {
+      "title"       : "{{ uu.title | escape }}",
+      "section"     : "{{ uu.section }}",
+      "sectionurl"  : "{{ site.baseurl }}/{{ plocale }}/{{ uu.section }}/",
+      "category"    : "{{ uu.category }}",
+      "categoryurl" : "{{ site.baseurl }}/{{ plocale }}/{{ uu.section }}/{{ uu.category }}/",
+      "tags"        : "{{ uu.tags | join: ', ' }}",
+      "url"         : "{{ site.baseurl }}{{ uu.url }}",
+      "content"     : {{ uu.content | markdownify | strip_html | strip_newlines | remove_chars | smartify | escape | xml_escape | jsonify }}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

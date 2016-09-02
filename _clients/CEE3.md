@@ -2,7 +2,7 @@
 title: "Client group account"
 section: "clients"
 category: "account"
-permalink: /clients/account/3.html
+permalink: /en/clients/account/3.html
 tags: [admin, group, manage]
 icon: user
 question: "How does the client group account work? How many login accounts do you normally provide for a client?"

@@ -2,7 +2,11 @@
             <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
               {% for entry in site.data.navigation.header %}
                 {% if entry.host == "support" %}
+                  {% if page.locale %}
+                {% capture top %}{{ entry.url | prepend: page.locale | prepend: "/" | prepend: site.baseurl }}{% endcapture %}
+                  {% else %}
                 {% capture top %}{{ entry.url | prepend: site.baseurl }}{% endcapture %}
+                  {% endif %}
                 {% else %}
                 {% capture top %}{{ entry.url | prepend: site.data.domains.[entry.host] | prepend: site.baseurl }}{% endcapture %}
                 {% endif %}

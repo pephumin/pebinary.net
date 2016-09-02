@@ -2,7 +2,7 @@
 title: "Editing your survey"
 section: "clients"
 category: "your-survey"
-permalink: /clients/your-survey/1.html
+permalink: /en/clients/your-survey/1.html
 tags: [design, edit, question]
 icon: wrench
 question: "Although I have finished designing my survey, I realise there are still some changes I need to make on my survey. Is this something I still can possibly do?"

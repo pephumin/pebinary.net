@@ -2,7 +2,7 @@
 title: "Common question types"
 section: "clients"
 category: "knowledge"
-permalink: /clients/knowledge/1.html
+permalink: /en/clients/knowledge/1.html
 tags: [appendix]
 icon: object-group
 question: "What is the key difference between different type of response? How do I use them differently when creating a new survey?"

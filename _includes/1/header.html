@@ -1,8 +1,13 @@
 <header>
   <div class="header-0">
     <div class="container">
-      <img src="{{ "/assets/img/0/lang-uk.svg" | prepend: site.baseurl }}" alt="Switch to English language" title="Switch to English language"{% if site.locale == "en" %} class="active"{% endif %}>
-      <img src="{{ "/assets/img/0/lang-th.svg" | prepend: site.baseurl }}" alt="Switch to Thai language" title="Switch to Thai language"{% if site.locale == "th" %} class="active"{% endif %}>
+      {% if page.locale == "en" %}
+      <img src="{{ "/assets/img/0/lang-uk.svg" | prepend: site.baseurl }}" alt="Switch to English language" title="Switch to English language" class="active">
+      <a href="{{ page.url | replace: "/en/", "/th/" }}" title="Switch to Thai language"><img src="{{ "/assets/img/0/lang-th.svg" | prepend: site.baseurl }}" alt="Switch to Thai language" title="Switch to Thai language"></a>
+      {% elsif page.locale == "th" %}
+      <a href="{{ page.url | replace: "/th/", "/en/" }}" title="Switch to English language"><img src="{{ "/assets/img/0/lang-uk.svg" | prepend: site.baseurl }}" alt="Switch to English language" title="Switch to English language"></a>
+      <img src="{{ "/assets/img/0/lang-th.svg" | prepend: site.baseurl }}" alt="Switch to Thai language" title="Switch to Thai language" class="active">
+      {% endif %}
     </div>
   </div>
   <div class="header-1">

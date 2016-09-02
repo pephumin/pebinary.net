@@ -2,7 +2,7 @@
 title: "Type of survey results"
 section: "clients"
 category: "results"
-permalink: /clients/results/2.html
+permalink: /en/clients/results/2.html
 tags: [analysis, output, type]
 icon: area-chart
 question: "How many types of survey results do you provide from the survey system? Will I get results in charting format as well as data in tabulation format?"

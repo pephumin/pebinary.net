@@ -2,8 +2,10 @@
 layout: brew
 ---
 
+{% unless page.local %}{% assign page.local = site.locale %}{% endunless %}
+
 <!doctype html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.locale }}{% endif %}">
+<html lang="{{ page.locale }}">
 <head>
 {% include 1/meta.html %}
 </head>

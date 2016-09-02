@@ -2,7 +2,7 @@
 title: "Create a new survey"
 section: "clients"
 category: "new-survey"
-permalink: /clients/new-survey/1.html
+permalink: /en/clients/new-survey/1.html
 tags: [design]
 icon: file-text
 question: "What are the key steps I need to take when I want to create a new survey?"

@@ -2,7 +2,7 @@
 title: "Request for client account"
 section: "clients"
 category: "account"
-permalink: /clients/account/2.html
+permalink: /en/clients/account/2.html
 tags: [admin, manage]
 icon: cogs
 question: "How can I get the client account for my company? What do I have to do in order to get such access?"

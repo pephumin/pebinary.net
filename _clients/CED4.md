@@ -2,7 +2,7 @@
 title: "Tabulation"
 section: "clients"
 category: "results"
-permalink: /clients/results/4.html
+permalink: /en/clients/results/4.html
 tags: [analysis, output, tables]
 icon: table
 question: "Do you provide data tabulation? What format of data do you provide? Can you show me the example of tabulation?"

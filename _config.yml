@@ -64,8 +64,6 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-timeago
-  # - jekyll-tagging
-  # - jekyll-tagging-related_posts
 
 themeblue:            true
 
@@ -100,23 +98,19 @@ collections:
 
   members:
     output:           true
-    permalink:        /:collection/:path.html
     title:            "Support for members"
+
+  membersTH:
+    output:           true
+    title:            "ข้อมูลการใช้งานสำหรับสมาชิก"
 
   clients:
     output:           true
-    permalink:        /:collection/:path.html
     title:            "Support for clients"
 
-  # clientsEN:
-  #   output:           true
-  #   permalink:        /:collection/en/:path.html
-  #   title:            "Support for clients"
-  #
-  # clientsTH:
-  #   output:           true
-  #   permalink:        /:collection/th/:path.html
-  #   title:            "บทความช่วยเหลือสำหรับกลุ่มลูกค้า"
+  clientsTH:
+    output:           true
+    title:            "ข้อมูลการใช้งานสำหรับลูกค้า"
 
 defaults:
   -
@@ -132,9 +126,27 @@ defaults:
       disable:        false
       toc:            false
       published:      true
+      locale:         "en"
       author:         "PEB Support"
       author-email:   "support@pebinary.com"
       format:         "layout-left"
+  -
+    scope:
+      path:           ""
+      type:           "membersTH"
+    values:
+      layout:         "main"
+      section:        "members"
+      nav:            "members"
+      label:          false
+      label-color:    false
+      disable:        false
+      toc:            false
+      published:      true
+      locale:         "th"
+      author:         "PEB Support"
+      author-email:   "support@pebinary.com"
+      format:         "layout-right"
   -
     scope:
       path:           ""
@@ -148,41 +160,27 @@ defaults:
       disable:        false
       toc:            false
       published:      true
+      locale:         "en"
       author:         "PEB Support"
       author-email:   "support@pebinary.com"
       format:         "layout-right"
-  # -
-  #   scope:
-  #     path:           ""
-  #     type:           "clientsEN"
-  #   values:
-  #     layout:         "main"
-  #     section:        "clients"
-  #     nav:            "clients"
-  #     label:          false
-  #     label-color:    false
-  #     disable:        false
-  #     toc:            false
-  #     published:      true
-  #     author:         "PEB support"
-  #     author-email:   "support@pebinary.com"
-  #     format:         "layout-right"
-  # -
-  #   scope:
-  #     path:           ""
-  #     type:           "clientsTH"
-  #   values:
-  #     layout:         "main-"
-  #     section:        "clients"
-  #     nav:            "clients"
-  #     label:          false
-  #     label-color:    false
-  #     disable:        false
-  #     toc:            false
-  #     published:      true
-  #     author:         "PEB support"
-  #     author-email:   "support@pebinary.com"
-  #     format:         "layout-right"
+  -
+    scope:
+      path:           ""
+      type:           "clientsTH"
+    values:
+      layout:         "main"
+      section:        "clients"
+      nav:            "clients"
+      label:          false
+      label-color:    false
+      disable:        false
+      toc:            false
+      published:      true
+      locale:         "th"
+      author:         "PEB Support"
+      author-email:   "support@pebinary.com"
+      format:         "layout-left"
   -
     scope:
       path:           "_pages"

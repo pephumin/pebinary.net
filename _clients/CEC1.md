@@ -2,7 +2,7 @@
 title: "Strike rate"
 section: "clients"
 category: "monitor"
-permalink: /clients/monitor/1.html
+permalink: /en/clients/monitor/1.html
 tags: [progress, update]
 icon: line-chart
 question: "What is the strike rate? Why do I need to monitor it once my survey has gone into the actual data collection process?"

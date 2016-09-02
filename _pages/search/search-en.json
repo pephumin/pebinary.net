@@ -1,0 +1,36 @@
+---
+title: "Search index for all documents using fulltext search"
+permalink: /search/search-en.json
+layout:
+search: exclude
+---
+
+[
+  {% for mm in site.members %}
+  {% if mm.url contains "/en/" %}{% assign plocale = "en" %}{% elsif mm.url contains "/th/" %}{% assign plocale = "th" %}{% endif %}
+    {
+      "title"       : "{{ mm.title | escape }}",
+      "section"     : "{{ mm.section }}",
+      "sectionurl"  : "{{ site.baseurl }}/{{ plocale }}/{{ mm.section }}/",
+      "category"    : "{{ mm.category }}",
+      "categoryurl" : "{{ site.baseurl }}/{{ plocale }}/{{ mm.section }}/{{ mm.category }}/",
+      "tags"        : "{{ mm.tags | join: ', ' }}",
+      "url"         : "{{ site.baseurl }}{{ mm.url }}",
+      "content"     : {{ mm.content | markdownify | strip_html | strip_newlines | remove_chars | smartify | escape | xml_escape | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for cc in site.clients %}
+  {% if cc.url contains "/en/" %}{% assign plocale = "en" %}{% elsif cc.url contains "/th/" %}{% assign plocale = "th" %}{% endif %}
+    {
+      "title"       : "{{ cc.title | escape }}",
+      "section"     : "{{ cc.section }}",
+      "sectionurl"  : "{{ site.baseurl }}/{{ plocale }}/{{ cc.section }}/",
+      "category"    : "{{ cc.category }}",
+      "categoryurl" : "{{ site.baseurl }}/{{ plocale }}/{{ cc.section }}/{{ cc.category }}/",
+      "tags"        : "{{ cc.tags | join: ', ' }}",
+      "url"         : "{{ site.baseurl }}{{ cc.url }}",
+      "content"     : {{ cc.content | markdownify | strip_html | strip_newlines | remove_chars | smartify | escape | xml_escape | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

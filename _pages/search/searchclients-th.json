@@ -1,0 +1,22 @@
+---
+title: "Search index for client documents using fulltext search"
+permalink: /search/searchclients-th.json
+layout:
+search: exclude
+---
+
+[
+  {% for zz in site.clientsTH %}
+  {% if zz.url contains "/en/" %}{% assign plocale = "en" %}{% elsif zz.url contains "/th/" %}{% assign plocale = "th" %}{% endif %}
+    {
+      "title"       : "{{ zz.title | escape }}",
+      "section"     : "{{ zz.section }}",
+      "sectionurl"  : "{{ site.baseurl }}/{{ plocale }}/{{ zz.section }}/",
+      "category"    : "{{ zz.category }}",
+      "categoryurl" : "{{ site.baseurl }}/{{ plocale }}/{{ zz.section }}/{{ zz.category }}/",
+      "tags"        : "{{ zz.tags | join: ', ' }}",
+      "url"         : "{{ site.baseurl }}{{ zz.url }}",
+      "content"     : {{ zz.content | markdownify | strip_html | strip_newlines | remove_chars | smartify | escape | xml_escape | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

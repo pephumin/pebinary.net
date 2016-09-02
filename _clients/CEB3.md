@@ -2,7 +2,7 @@
 title: "Testing your survey"
 section: "clients"
 category: "your-survey"
-permalink: /clients/your-survey/3.html
+permalink: /en/clients/your-survey/3.html
 tags: [design, testing]
 icon: paper-plane
 question: "What is the testing mode? Is it similar to pilot test in the traditional research? Will my survey be tested with the real consumers / respondents?"

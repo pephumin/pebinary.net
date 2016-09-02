@@ -2,7 +2,7 @@
 title: "Team members"
 section: "clients"
 category: "account"
-permalink: /clients/account/5.html
+permalink: /en/clients/account/5.html
 tags: [admin, users, team]
 icon: user-plus
 question: "Can I get several logins for each member in my team? Can I set a different access permission to each of the team members too?"
