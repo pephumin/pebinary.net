@@ -3,9 +3,9 @@
     <div class="container">
       {% if page.locale == "en" %}
       <img src="{{ "/assets/img/0/lang-uk.svg" | prepend: site.baseurl }}" alt="Switch to English language" title="Switch to English language" class="active">
-      <a href="{{ page.url | replace: "/en/", "/th/" }}" title="Switch to Thai language"><img src="{{ "/assets/img/0/lang-th.svg" | prepend: site.baseurl }}" alt="Switch to Thai language" title="Switch to Thai language"></a>
+      <a href="{{ page.url | replace: "/en/", "/th/" | prepend: site.baseurl }}" title="Switch to Thai language"><img src="{{ "/assets/img/0/lang-th.svg" | prepend: site.baseurl }}" alt="Switch to Thai language" title="Switch to Thai language"></a>
       {% elsif page.locale == "th" %}
-      <a href="{{ page.url | replace: "/th/", "/en/" }}" title="Switch to English language"><img src="{{ "/assets/img/0/lang-uk.svg" | prepend: site.baseurl }}" alt="Switch to English language" title="Switch to English language"></a>
+      <a href="{{ page.url | replace: "/th/", "/en/" | prepend: site.baseurl }}" title="Switch to English language"><img src="{{ "/assets/img/0/lang-uk.svg" | prepend: site.baseurl }}" alt="Switch to English language" title="Switch to English language"></a>
       <img src="{{ "/assets/img/0/lang-th.svg" | prepend: site.baseurl }}" alt="Switch to Thai language" title="Switch to Thai language" class="active">
       {% endif %}
     </div>
