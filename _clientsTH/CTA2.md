@@ -1,5 +1,5 @@
 ---
-title: "Add survey information"
+title: "เพิ่มข้อมูลแบบสอบถาม"
 section: "clients"
 category: "new-survey"
 permalink: /th/clients/new-survey/2.html
@@ -8,7 +8,7 @@ icon: info-circle
 question: "How do I add information to my newly created survey? Is it really important to include such information? Can I just simply leave them blank?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 This is the very first step of survey designing process. And it is one of the most important steps which survey designers must complete this step very carefully. Without filling in all required information, you will not be able to move to the next step.
 

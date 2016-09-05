@@ -4,6 +4,7 @@ layout: index
 
 {% if page.locale == "en" %}{% assign sect = page.section %}
 {% elsif page.locale == "th" %}{% assign sect = page.section | append: "TH" %}
+{% elsif page.locale == "" %}{% assign page.locale = site.locale %}
 {% endif %}
 
 <main class="container maincontent">
@@ -15,19 +16,27 @@ layout: index
       </aside>
     </div>
     <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-      <article>
+      {% if page.locale == "th" %}<article class="th">{% else %}<article>{% endif %}
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
+  {% if page.locale == "th" %}
+{{ content | replace: '<h3', '<h3 class="th"' | replace: '<h4', '<h4 class="th"' | replace: '<h5', '<h5 class="th"' | replace: '<h6', '<h6 class="th"' | replace: '<p>', '<p class="th">' | replace: '<span class="panel-title">', '<span class="panel-title-th">' }}
+  {% else %}
 {{ content }}
+  {% endif %}
       </article>
 {% include 3/more.html section = sect %}
     </div>
 {% elsif page.format == "layout-right" %}
     <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-      <article>
+      {% if page.locale == "th" %}<article class="th">{% else %}<article>{% endif %}
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
+  {% if page.locale == "th" %}
+{{ content | replace: '<h3', '<h3 class="th"' | replace: '<h4', '<h4 class="th"' | replace: '<h5', '<h5 class="th"' | replace: '<h6', '<h6 class="th"' | replace: '<p>', '<p class="th">' | replace: '<span class="panel-title">', '<span class="panel-title-th">' }}
+  {% else %}
 {{ content }}
+  {% endif %}
       </article>
 {% include 3/more.html section = sect %}
     </div>
@@ -38,10 +47,14 @@ layout: index
     </div>
 {% else %}
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <article>
+      {% if page.locale == "th" %}<article class="th">{% else %}<article>{% endif %}
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
+  {% if page.locale == "th" %}
+{{ content | replace: '<h3', '<h3 class="th"' | replace: '<h4', '<h4 class="th"' | replace: '<h5', '<h5 class="th"' | replace: '<h6', '<h6 class="th"' | replace: '<p>', '<p class="th">' | replace: '<span class="panel-title">', '<span class="panel-title-th">' }}
+  {% else %}
 {{ content }}
+  {% endif %}
       </article>
 {% include 3/more.html section = sect %}
     </div>

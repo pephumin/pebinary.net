@@ -1,0 +1,110 @@
+members:
+
+-  slug: general
+   name: "General"
+   nameth: "ข้อมูลทั่วไป"
+   icon: info-circle
+
+-  slug: dashboard
+   name: "Dashboard"
+   nameth: "แผงควบคุม"
+   icon: dashboard
+
+-  slug: survey
+   name: "Survey"
+   nameth: "เข้าร่วมงานวิจัย"
+   icon: pencil-square
+
+-  slug: others
+   name: "Others"
+   nameth: "อื่นๆ"
+   icon: flask
+
+
+membersTH:
+
+-  slug: general
+   name: "General"
+   nameth: "ข้อมูลทั่วไป"
+   icon: info-circle
+
+-  slug: dashboard
+   name: "Dashboard"
+   nameth: "แผงควบคุม"
+   icon: dashboard
+
+-  slug: survey
+   name: "Survey"
+   nameth: "เข้าร่วมงานวิจัย"
+   icon: pencil-square
+
+-  slug: others
+   name: "Others"
+   nameth: "อื่นๆ"
+   icon: flask
+
+
+clients:
+
+-  slug: new-survey
+   name: "New survey"
+   nameth: "งานวิจัยใหม่"
+   icon: file-text
+
+-  slug: your-survey
+   name: "Your survey"
+   nameth: "งานวิจัยปัจจุบัน"
+   icon: list
+
+-  slug: monitor
+   name: "Monitor"
+   nameth: "ความคืบหน้า"
+   icon: line-chart
+
+-  slug: results
+   name: "Results"
+   nameth: "ผลวิจัย"
+   icon: bar-chart
+
+-  slug: account
+   name: "Account"
+   nameth: "บัญชีของคุณ"
+   icon: cogs
+
+-  slug: knowledge
+   name: "Knowledge"
+   nameth: "ความรู้ด้านวิจัย"
+   icon: graduation-cap
+
+
+clientsTH:
+
+-  slug: new-survey
+   name: "New survey"
+   nameth: "งานวิจัยใหม่"
+   icon: file-text
+
+-  slug: your-survey
+   name: "Your survey"
+   nameth: "งานวิจัยปัจจุบัน"
+   icon: list
+
+-  slug: monitor
+   name: "Monitor"
+   nameth: "ความคืบหน้า"
+   icon: line-chart
+
+-  slug: results
+   name: "Results"
+   nameth: "ผลวิจัย"
+   icon: bar-chart
+
+-  slug: account
+   name: "Account"
+   nameth: "บัญชีของคุณ"
+   icon: cogs
+
+-  slug: knowledge
+   name: "Knowledge"
+   nameth: "ความรู้ด้านวิจัย"
+   icon: graduation-cap

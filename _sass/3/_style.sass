@@ -58,15 +58,26 @@
   background-color: $blue
 
 .alert
-  box-shadow: 2px 2px 2px $grey
+  // font-size: 0.8rem
+  box-shadow: inset 0 0 2px $grey
 
   p
-    margin-top: 10px
-    font-size: 0.8rem
+    font-size: 0.75rem
+
+  p.th
+    font-size: 0.9rem
 
 .alert-pe
+  // font-size: 0.8rem
   color: $black
   background-color: $yellow
+  box-shadow: inset 0 0 2px $grey
+
+  p
+    font-size: 0.75rem
+
+  p.th
+    font-size: 0.9rem
 
 .close
   color: $darkgrey
@@ -163,61 +174,111 @@ span.pe-stack.active
 // table of content (TOC)
 
 div#toc
+  position: relative
   float: right
-  width: 180px
+  width: 250px
   padding: 10px
   margin: 65px 0px 10px 10px
   color: $grey
+  overflow: hidden
   @if $themeblue
     background-color: $lightblue
+    box-shadow: inset 0 0 5px $blue
   @else
     background-color: $lightgreen
-  font-size: 0.75rem
-  line-height: 2
+    box-shadow: inset 0 0 5px $green
   text-transform: uppercase
-  border-radius: 4px
-  @if $themeblue
-    border: 1px dotted $darkblue
-  @else
-    border: 1px dotted $darkgreen
+  &:before
+    content: ""
+    position: absolute
+    top: 0px
+    right: 0px
+    border-width: 0px 16px 16px 0px
+    border-style: solid
+    @if $themeblue
+      border-color: $white $white $darkblue $darkblue
+      background: $darkblue
+    @else
+      border-color: $white $white $darkgreen $darkgreen
+      background: $darkgreen
+    box-shadow: 0 1px 1px $grey, -1px 1px 1px $grey
+    display: block
+    width: 0
 
   .toc-head
+    font-family: "ubuntu"
+    font-size: 0.75rem
     font-weight: bold
 
-  ul.toc-list, ol.toc-list
-    margin: 10px auto 0px auto
-    font-size: 0.7rem
+  .toc-head-th
+    font-family: "boon"
+    font-size: 0.85rem
+    font-weight: bold
 
-  li
-    list-style-type: none
-    line-height: 2.1428
+  ul.toc-list, ol.toc-list,
+  ul.toc-list-th, ol.toc-list-th
+    margin: 10px auto 10px auto
 
-  li:before
-    font-family: "pe"
-    content: "\f101"
-    display: inline-block
-    margin: auto 5px auto 0px
+    li.toc-list-item
+      list-style-type: none
+      font-family: "ubuntu"
+      font-size: 0.75rem
+      line-height: 2.2
+
+    li.toc-list-item:before
+      font-family: "pe"
+      content: "\f101"
+      display: inline-block
+      margin: auto 5px auto 0px
+
+    li.toc-list-item-th
+      list-style-type: none
+      font-family: "boon"
+      font-size: 0.85rem
+      line-height: 2.0
+
+    li.toc-list-item-th:before
+      font-family: "pe"
+      content: "\f101"
+      display: inline-block
+      margin: auto 5px auto 0px
+
+    ul.toc-list, ol.toc-list,
+    ul.toc-list-th, ol.toc-list-th
+      margin: 10px auto 10px auto
+      font-style: italic
+
+      li.toc-list-item
+        list-style-type: none
+        font-family: "ubuntu"
+        font-size: 0.7rem
+        font-style: italic
+        line-height: 2.0
+
+      li.toc-list-item:before
+        font-family: "pe"
+        content: "\f0da"
+        display: inline-block
+        margin: auto 5px auto 0px
+
+      li.toc-list-item-th
+        list-style-type: none
+        font-family: "boon"
+        font-size: 0.8rem
+        font-style: italic
+        line-height: 1.8
+
+      li.toc-list-item-th:before
+        font-family: "pe"
+        content: "\f0da"
+        display: inline-block
+        margin: auto 5px auto 0px
 
   a
     color: $grey
     &:hover
       text-decoration: underline
-      @if $themeblue
-        color: $darkblue
-      @else
-        color: $darkgreen
-
-  button#hide, button#show
-    float: right
-    background-color: transparent
-    //border: none
-    border: 1px dotted $silver
-    font-size: 0.5rem
-    color: $grey
-    padding: 2px
-    margin: 3px
-    //background-color: $grey
-    width: 22px
+      color: $orange
 
   i.pe-list-alt
     padding-right: 3px
@@ -225,6 +286,12 @@ div#toc
       color: $blue
     @else
       color: $green
+
+  a#hide, a#show
+    font-size: 100%
+    color: $grey
+    &:hover
+      color: $orange
 
 
 // more.html
@@ -255,23 +322,25 @@ div#toc
     color: $grey
     cursor: pointer
 
+  .tlabelth
+    text-transform: uppercase
+    font-family: "boon"
+    font-size: 0.75rem
+    font-weight: bold
+    color: $grey
+    cursor: pointer
+
 .helpfulnote
   font-size: 0.8rem
   color: $lightgrey
 
+.helpfulnote-th
+  font-family: "boon"
+  font-size: 0.9rem
+  color: $lightgrey
+
 
 // post listing
-
-.lposts
-
-  p.lead
-    font-family: "snippet"
-    font-size: 1.3rem
-    color: $grey
-
-  p
-    font-size: 1.05rem
-    padding: auto 10px
 
 .listposts-border-space
   border: 2px dotted transparent
@@ -290,7 +359,7 @@ div#toc
   @else
     background: transparentize($lightgreen, 0.5)
 
-  h5
+  h5.listposts-head
     height: 40px
     width: 100%
     margin: 0px
@@ -305,11 +374,22 @@ div#toc
       &:hover
         color: $orange
 
-  blockquote
-    margin: 0px 5px 20px 5px
-    font-family: "snippet"
-    font-size: 1.25rem
-    color: $darkgrey
+  h5.listposts-headth
+    font-family: "boon"
+    font-size: 1.3rem
+    height: 40px
+    width: 100%
+    margin: 0px
+    padding: 5px 15px
+    // color: $white
+    @if $themeblue
+      background-color: transparentize($darkblue, 0.25)
+    @else
+      background-color: transparentize($darkgreen, 0.25)
+    a
+      color: $white
+      &:hover
+        color: $orange
 
   .p-icon
     float: right
@@ -330,34 +410,17 @@ div#toc
       &:hover
         color: $orange
 
-  h6.listposts-sub
-    font-size: 0.9rem
-    font-weight: bold
-    margin: 0px auto 10px auto
-    padding: 0px 20px
-    @if $themeblue
-      color: $darkblue
-    @else
-      color: $darkgreen
 
-  .listposts-footer
+  .listposts-footer, .listposts-footer-th
     text-align: right
     padding: 10px 15px
     margin-bottom: 10px
 
+.h5-icon
+  font-size: 70%
+
 
 // topic listing
-
-.listtops
-
-  p.lead
-    font-family: "snippet"
-    font-size: 1.3rem
-    color: $grey
-
-  p
-    font-size: 1.05rem
-    padding: auto 10px
 
 .listtopics-svg
   width: 150px
@@ -377,21 +440,23 @@ div#toc
   padding: 0px 0px 20px 0px
   box-shadow: 0 4px 6px $lightgrey
 
-  h3.listtopics-head
-    padding-left: 10px
-    padding-top: 7px
-    @if $themeblue
-      background-image: linear-gradient(to right, $darkblue, rgba(0, 0, 0, 0))
-    @else
-      background-image: linear-gradient(to right, $darkgreen, rgba(0, 0, 0, 0))
-    a
-      color: $white
-      &:hover
-        color: $orange
+  a
+    color: $white
+    &:hover
+      color: $orange
+
 
   .listtopics-size
     float: right
     font-size: 0.7rem
+    margin-right: 20px
+    color: $orange
+    font-weight: bold
+
+  .listtopics-size-th
+    font-family: "boon"
+    float: right
+    font-size: 0.85rem
     margin-right: 20px
     color: $orange
     font-weight: bold
@@ -407,16 +472,13 @@ div#toc
     margin-right: 15px
     text-shadow: 0 1px 1px $white
 
-  h6.listtopics-sub
-    font-size: 0.9rem
-    font-weight: bold
-    padding: 0px 15px
-    @if $themeblue
-      color: $darkblue
-    @else
-      color: $darkgreen
-
   .listtopics-body
+    margin: 0px
+    padding: 0px 15px 20px 15px
+
+  .listtopics-body-th
+    font-family: "boon"
+    font-size: 1.05rem
     margin: 0px
     padding: 0px 15px 20px 15px
 
@@ -454,6 +516,33 @@ li.listtopics-item
     @else
       background-color: $lightgreen
 
+ul.liststh
+  width: 100%
+  font-family: "boon"
+
+li.listtopics-item-th
+  color: $lightgrey
+  display: block
+  padding: 5px 10px
+  margin-bottom: -1px
+  margin-left: 0px
+  border: 1px solid $silver
+  font-family: "boon"
+  font-size: 1.05rem
+  a
+    color: $darkgrey
+  &:first-child
+    border-top-right-radius: 4px
+    border-top-left-radius: 4px
+  &:last-child
+    margin-bottom: 0
+    border-bottom-right-radius: 4px
+    border-bottom-left-radius: 4px
+  &:hover
+    @if $themeblue
+      background-color: $lightblue
+    @else
+      background-color: $lightgreen
 
 // more
 
@@ -497,19 +586,38 @@ li.listtopics-item
       color: $lightgrey
       cursor: not-allowed
 
+    ul.liststh
+      width: 100%
+      margin-bottom: 35px
+      padding: 0px
 
-// contact us
+    li.listtopics-item-th
+      color: $lightgrey
+      display: block
+      padding: 5px 10px
+      margin-bottom: -1px
+      margin-left: 0px
+      width: 100%
+      border: 1px solid $silver
+      a
+        color: $darkgrey
+      &:first-child
+        border-top-right-radius: 4px
+        border-top-left-radius: 4px
+      &:last-child
+        margin-bottom: 0
+        border-bottom-right-radius: 4px
+        border-bottom-left-radius: 4px
+      &:hover
+        @if $themeblue
+          background-color: $lightblue
+        @else
+          background-color: $lightgreen
 
-.contactus
-
-  p.lead
-    font-family: "snippet"
-    font-size: 1.3rem
-    color: $grey
-
-  p
-    font-size: 1.05rem
-    padding: auto 10px
+    li.listtopics-item-th.disabled
+      background-color: #eee
+      color: $lightgrey
+      cursor: not-allowed
 
 // main article
 
@@ -522,7 +630,8 @@ li.listtopics-item
   font-family: "ubuntu"
   color: $lightgrey
   background-color: transparentize($silver, 0.3)
-  box-shadow: 0 2px 3px 0 $silver inset
+  //box-shadow: 0 2px 3px 0 $silver inset
+  box-shadow: inset 0 0 2px $grey
 
   .m-section, .m-cat, .m-tag
     font-size: 0.8rem
@@ -557,20 +666,8 @@ li.listtopics-item
 .index
   text-align: center
 
-  h2
-    font-size: 1.9rem
-
   .h2logo
-    font-size: 65%
-
-  p.lead
-    font-family: "snippet"
-    font-size: 1.3rem
-    color: $grey
-
-  p
-    font-size: 1.05rem
-    padding: auto 10px
+    font-size: 60%
 
   .index-border
     border: 2px dotted transparent
@@ -606,9 +703,16 @@ li.listtopics-item
         &:hover
           color: $orange
 
-    p
+    p.indexp
+      padding: 20px 30px
+      //font-family: ""
       font-size: 1rem
-      padding: 20px
+
+    p.indexp-th
+      padding: 20px 30px
+      font-family: "boon"
+      font-size: 1.2rem
+      letter-spacing: -0.03rem
 
     .front-svg
       margin: 20px auto
@@ -619,12 +723,6 @@ li.listtopics-item
 @media (max-width: 768px)
 
   .index
-
-    h2
-      font-size: 1.5rem
-
-    p
-      font-size: 1.05rem
 
     .indexbox
 
@@ -641,15 +739,6 @@ li.listtopics-item
   width: 100%
   margin: 10px auto
   padding: 20px 10px
-
-  p.lead
-    font-family: "snippet"
-    font-size: 1.3rem
-    color: $grey
-
-  p
-    font-size: 1.05rem
-    padding: auto 10px
 
   h3
     color: $darkgrey
@@ -690,5 +779,65 @@ li.listtopics-item
     .pe-commenting-o
       font-size: 175%
 
-  .lead
-    font-size: 1.05rem
+// panel
+
+.panel
+  margin-bottom: 30px
+  background-color: $white
+  border: 1px solid $silver
+  border-radius: 4px
+
+  .panel-heading
+    padding: 10px 15px
+    border-bottom: 1px solid transparent
+    border-top-right-radius: 3px
+    border-top-left-radius: 3px
+    @if $themeblue
+      background-color: $lightblue
+    @else
+      background-color: $lightgreen
+
+  span.panel-title
+    letter-spacing: -0.01rem
+    font-family: "ubuntu" !important
+    font-size: 0.85rem !important
+    font-weight: bold
+    text-transform: uppercase
+    margin: 0px
+    padding: 0px
+    color: $grey
+    >
+      a, small, .small, small > a, .small > a
+        color: inherit
+
+  span.panel-title-th
+    letter-spacing: -0.01rem
+    font-family: "boon" !important
+    font-size: 0.95rem !important
+    font-weight: bold
+    text-transform: uppercase
+    margin: 0px
+    padding: 0px
+    color: $grey
+    >
+      a, small, .small, small > a, .small > a
+        color: inherit
+
+  .panel-body
+    padding: 15px
+    color: $black
+    &:before
+      content: " "
+      display: table
+    &:after
+      content: " "
+      display: table
+      clear: both
+
+    p, label, input, textarea, table, .input-group
+      font-family: "ubuntu" !important
+      font-size: 0.85rem !important
+
+    p.th
+      font-family: "boon" !important
+      font-size: 1.05rem !important

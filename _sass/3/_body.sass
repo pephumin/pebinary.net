@@ -55,6 +55,46 @@ del
       background-color: $darkgreen
       border: 1px solid $darkgreen
 
+.button-th
+  font-family: "boon"
+  font-size: 0.9rem
+  font-weight: bold
+  text-align: center
+  letter-spacing: 0.05rem
+  text-transform: uppercase
+  text-decoration: none
+  background-color: transparent
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 5px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+  color: $white
+  @if $themeblue
+    background-color: $darkblue
+    border: 1px solid $darkblue
+  @else
+    background-color: $darkgreen
+    border: 1px solid $darkgreen
+
+  &:hover,
+  &:active,
+  &:focus
+    background-color: transparent
+    outline: 0
+    text-decoration: none
+    @if $themeblue
+      color: $darkblue
+      border: 1px solid $darkblue
+    @else
+      color: $darkgreen
+      border: 1px solid $darkgreen
+
 .button-x
   font-family: "ubuntu"
   font-size: 0.7rem
@@ -93,7 +133,72 @@ del
       color: $darkgreen
       border: 1px solid $darkgreen
 
+.button-x-th
+  font-family: "boon"
+  font-size: 0.9rem
+  font-weight: bold
+  text-align: center
+  letter-spacing: 0.05rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 5px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+  color: $white
+  @if $themeblue
+    background-color: $darkblue
+    border: 1px solid $darkblue
+  @else
+    background-color: $darkgreen
+    border: 1px solid $darkgreen
+
+  &:hover,
+  &:active,
+  &:focus
+    background-color: transparent
+    outline: 0
+    text-decoration: none
+    @if $themeblue
+      color: $darkblue
+      border: 1px solid $darkblue
+    @else
+      color: $darkgreen
+      border: 1px solid $darkgreen
+
 .f-icon
+  margin-top: 0px
+  font-size: 120%
+  @if $themeblue
+    color: $blue
+  @else
+    color: $green
+
+.f-icon-th
+  margin-top: 7px
+  font-size: 120%
+  @if $themeblue
+    color: $blue
+  @else
+    color: $green
+
+.f-icon2
+  margin-top: -5px
+  font-size: 150%
+  @if $themeblue
+    color: $blue
+  @else
+    color: $green
+
+.f-icon-th2
+  margin-top: -5px
+  font-size: 150%
   @if $themeblue
     color: $blue
   @else
@@ -107,6 +212,17 @@ del
   font-size: 70%
   color: $lightgrey
 
-.en:lang(en),
-.th:lang(th)
-  font-weight: bold
+label
+  font-size: 1rem
+
+label.th
+  font-family: "boon"
+  font-size: 1.2rem
+
+textarea.th
+  font-family: "boon"
+  font-size: 1rem
+
+input.th
+  font-family: "boon"
+  font-size: 1rem

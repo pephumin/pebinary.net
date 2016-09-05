@@ -64,6 +64,7 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-timeago
+  # - jekyll-redirect-from
 
 themeblue:            true
 

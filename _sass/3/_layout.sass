@@ -84,8 +84,8 @@ header
             text-align: center
 
         .topnav-item
-          font-family: "ubuntu"
-          font-size: 0.9rem
+          font-family: "boon"
+          font-size: 0.95rem
           color: $white
           text-decoration: none
           text-align: center
@@ -103,9 +103,11 @@ nav.subnav
   margin: 0px
   padding: 0px
   text-transform: uppercase
+  white-space: nowrap
 
   a
     color: $darkgrey
+    white-space: nowrap
     &:hover
       @if $themeblue
         color: $blue
@@ -117,16 +119,53 @@ nav.subnav
     margin: 0px
     padding: 7px 15px
     background-color: $silver
+    white-space: nowrap
 
   li
     display: inline-block
     color: $darkgrey
+    white-space: nowrap
     &:not(:last-child):after
       content: "\00a0\00BB"
       padding: 0 3px
       color: $grey
-  .active
-    font-weight: bold
+      white-space: nowrap
+
+nav.subnavth
+  font-family: "boon"
+  font-size: 0.85rem
+  color: $darkgrey
+  margin: 0px
+  padding: 0px
+  text-transform: uppercase
+  white-space: nowrap
+
+  a
+    color: $darkgrey
+    white-space: nowrap
+    &:hover
+      @if $themeblue
+        color: $blue
+      @else
+        color: $green
+
+  .breadcrumb
+    list-style: none
+    margin: 0px
+    padding: 7px 15px
+    background-color: $silver
+    white-space: nowrap
+
+  li
+    display: inline-block
+    color: $darkgrey
+    white-space: nowrap
+    &:not(:last-child):after
+      content: "\00a0\00BB"
+      padding: 0 3px
+      color: $grey
+      white-space: nowrap
+
 
 footer
   margin: 60px auto 0px auto
@@ -184,6 +223,7 @@ nav.footer
 nav.menulist
   margin: 0px
   padding: 0px
+
   a
     color: $grey
     &:hover
@@ -200,9 +240,50 @@ nav.menulist
     display: block
 
     li
+      font-size: 0.95rem
       list-style: none
-      line-height: 1.7
+      line-height: 1.6
       font-size: 0.9rem
+
+    li.active
+      @if $themeblue
+        background-color: $lightblue
+      @else
+        background-color: $lightgreen
+      color: $darkgrey
+
+    li.disabled
+      color: $silver
+      background-color: transparent
+
+    li:before
+      content: "\00BB\00a0"
+      color: inherit
+
+nav.menulistth
+  margin: 0px
+  padding: 0px
+
+  a
+    color: $grey
+    &:hover
+      color: $orange
+
+  h5
+    margin: 0px auto 15px auto
+    color: $darkgrey
+
+  ul.verticalth
+    list-style: none
+    margin-bottom: 25px
+    padding-left: 0
+    display: block
+
+    li.th
+      font-family: "boon"
+      font-size: 1rem
+      list-style: none
+      line-height: 1.42857142857
 
     li.active
       @if $themeblue
@@ -236,12 +317,6 @@ article
   padding: 30px auto
   margin: 0px auto
 
-  blockquote
-    margin: 0 0 20px 2px
-    font-family: "snippet"
-    font-size: 1.25rem
-    color: $grey
-
   ul
     list-style: none
     margin-bottom: 25px
@@ -255,6 +330,29 @@ article
     li:before
       content: "\00BB\00a0"
       color: inherit
+
+article.th
+  font-family: "boon"
+  padding: 30px auto
+  margin: 0px auto
+
+  ul.th
+    font-family: "boon"
+    list-style: none
+    margin-bottom: 25px
+    padding-left: 10px
+    display: block
+
+    li.th
+      font-family: "boon"
+      font-size: 1.2rem
+      list-style: none
+      line-height: 1.666
+
+    li:before
+      content: "\00BB\00a0"
+      color: inherit
+  
 
 @media (max-width: 992px)
 

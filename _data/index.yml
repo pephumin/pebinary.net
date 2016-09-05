@@ -1,13 +1,19 @@
 - section: "members"
+  sectionth: "สมาชิก"
   url: "/members/"
   title: "Support documents for our members"
+  titleth: "บทความและข้อมูลการใช้งานสำหรับสมาชิก"
   icon: user
   svg: "/assets/img/0/f-members.svg"
-  description: "Support topics for our members specicically on <strong>how-to use</strong> our survey system."
+  description: "Support documents which are collectively arranged for our members. It is the main source for supporting <strong>how-to use</strong> our survey system in details."
+  descriptionth: "บทความและข้อมูลการใช้งานต่างๆที่จัดเตรียมไว้ให้สำหรับสมาชิก เป็นแหล่งข้อมูลหลักที่ใช้เพื่อส่งเสริมและสนันสนุน <strong>วิธีการใช้งานระบบของเรา</strong> ในทุกรายละเอียด"
 
 - section: "clients"
+  sectionth: "ลูกค้า"
   url: "/clients/"
   title: "Support documents for our clients"
+  titleth: "บทความและข้อมูลการใช้งานสำหรับลูกค้า"
   icon: briefcase
   svg: "/assets/img/0/f-clients.svg"
-  description: "Support topics for our clients specicically on <strong>how-to use</strong> the backend of our survey system."
+  description: "Support documents which are collectively arranged for our clients. It is the main source for supporting <strong>how-to use</strong> our backend survey system in details."
+  descriptionth: "บทความและข้อมูลการใช้งานต่างๆที่จัดเตรียมไว้ให้สำหรับลูกค้า เป็นแหล่งข้อมูลหลักที่ใช้เพื่อส่งเสริมและสนันสนุน <strong>วิธีการใช้งานระบบหลังบ้านของเรา</strong> ในทุกรายละเอียด"

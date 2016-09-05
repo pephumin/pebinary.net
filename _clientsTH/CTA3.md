@@ -1,5 +1,5 @@
 ---
-title: "Add questions"
+title: "เพิ่มคำถาม"
 section: "clients"
 category: "new-survey"
 permalink: /th/clients/new-survey/3.html
@@ -8,7 +8,7 @@ icon: pencil-square
 question: "How do I add new questions to my newly created survey? Will there be different types of questions for me to use (e.g. close vs. open-ended)?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 
 <ul class="progress-tracker progress-tracker--text progress-tracker--center">

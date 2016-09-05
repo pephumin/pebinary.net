@@ -14,6 +14,45 @@ We provide our users with an easy-to-use interface.
 
 All important information is summarised in one page dashboard. And more details for each of the dashboard component can be explored further by clicking into its section..
 
+<ul class="progress-tracker progress-tracker--text progress-tracker--center">
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 1</h5>
+      Log in
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 2</h5>
+      Dashboard:<br>Surveys
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 3</h5>
+      Dashboard:<br>Points
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 4</h5>
+      Dashboard:<br>Setting
+    </span>
+  </li>
+  <li class="progress-step">
+    <span class="progress-marker"></span>
+    <span class="progress-text">
+      <h5 class="progress-title">Step 5</h5>
+      Log out
+    </span>
+  </li>
+</ul>
+
+
 Within the dashboard, there are some key functions shown in separate sections for a ease of navigation as follows.
 
 - Log in

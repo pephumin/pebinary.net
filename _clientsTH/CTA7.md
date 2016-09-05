@@ -1,5 +1,5 @@
 ---
-title: "Finalise the survey"
+title: "ยืนยันแบบสอบถาม"
 section: "clients"
 category: "new-survey"
 permalink: /th/clients/new-survey/7.html
@@ -8,7 +8,7 @@ icon: flag-checkered
 question: "What should I do once I have finished designing my survey? Can I start the next step of data collection right away?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 <ul class="progress-tracker progress-tracker--text progress-tracker--center">
   <li class="progress-step is-completed">

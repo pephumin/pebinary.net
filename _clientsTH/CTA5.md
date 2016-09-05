@@ -1,5 +1,5 @@
 ---
-title: "Set question condition"
+title: "วิธีข้ามบางคำถาม"
 section: "clients"
 category: "new-survey"
 permalink: /th/clients/new-survey/5.html
@@ -8,7 +8,7 @@ icon: random
 question: "Is it possible to set up the question routing (e.g. continue if answered yes, or skip to the next section if answered no)?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 <ul class="progress-tracker progress-tracker--text progress-tracker--center">
   <li class="progress-step is-completed">

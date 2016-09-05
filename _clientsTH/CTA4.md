@@ -1,5 +1,5 @@
 ---
-title: "Sequence questions"
+title: "เรียงลำดับคำถาม"
 section: "clients"
 category: "new-survey"
 permalink: /th/clients/new-survey/4.html
@@ -8,7 +8,7 @@ icon: list-ol
 question: "How can I swap the sequence of questions that I have designed? Is it possible for me to rearrange the order of questions within my survey?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 <ul class="progress-tracker progress-tracker--text progress-tracker--center">
   <li class="progress-step is-completed">

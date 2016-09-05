@@ -1,7 +1,7 @@
 ---
 title: "The main page of website"
 section: "home"
-permalink: /en/
+permalink: /
 layout: index
 nav: "home"
 locale: "en"
@@ -15,11 +15,11 @@ homepage: true
     <p>Please start browsing our website by selecting one of these sections below...</p>
     {% for entry in site.data.index %}
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center index-border">
-      <a href="{{ entry.url | prepend: page.locale | prepend: "/" | prepend: site.baseurl }}" title="{{ entry.title }}">
+      <a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}">
         <div class="indexbox">
           <h3><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.section | capitalize }}</h3>
           <img src="{{ entry.svg | prepend: site.baseurl }}" alt="{{ entry.title }}" title="{{ entry.title }}" class="img-responsive front-svg">
-          <p class="indexp">{{ entry.description }}</p>
+          <p>{{ entry.description }}</p>
         </div>
       </a>
     </div>

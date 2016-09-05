@@ -11,206 +11,265 @@ toc: true
 
 ### <i class="pe-anchor pe-fw"></i> The answer
 
-There are several types of responses ranging from single answer, multiple answer, and open-ended. We have listed out the key types below including the actual example and how to use them.
+There are several types of responses ranging from `single answer`, `multiple answer`, `open-ended`, `and rating scale`.
+
+In this article we only cover for *the common types that are popularly used in the mainstream research business*. Please see each of them with description as well as the real examples below.
+
+Should you look for some other types which are not listed here, please do not hesitate to let us know.
 
 
+#### Close-ended question: Single answer
 
-#### Yes/No
+A closed-ended question is a question format that limits respondents with a list of answer choices from which they must choose to answer the question.
 
-Explanation: Use this for questions that will require a basic yes/no answer.
+Commonly these types of questions are in the form of multiple choices and specifically for the single answer type, `only one answer is needed`.
 
-##### Example
-
-<div class="radio">
-  <label>
-    <input type="radio" name="yesno" id="E1" value="yes" checked> Yes
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="yesno" id="E1" value="no"> No
-  </label>
-</div>
+This can be a simple yes/no question, or question in scale format where respondent should decide to rate the situation in along the scale continuum.
 
 
+##### Yes/No question
 
-#### Text Box
-
-Explanation:
-Use this for questions that require a one line answer. Note: the size of the textbox can be set using the length field, he maximum length of the textbox can be set using the precision field.
-
-##### Example
-
-<form class="form-inline">
-  <div class="form-group">
-    <div class="input-group">
-      <div class="input-group-addon">Insert text:</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Type in here...">
-    </div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of Yes/No question</span>
   </div>
-  <button type="submit" class="button-x">Done</button>
-</form>
-
-
-#### Essay
-
-Explanation:
-Use this for questions in requiring an answer in essay format. Note: The col and row width of the essay area can be set be using the length and precision fields.
-
-##### Example
-
-<textarea class="form-control" rows="5"></textarea>
-
-
-
-#### Radio Buttons
-
-Explanation:
-Use radio buttons for questions that have a set of possible answers, but only one can be selected.
-
-##### Example
-
-<div class="radio">
-  <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Option 1
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option 2
-  </label>
-</div>
-
-
-
-#### Check Boxes
-
-Explanation:
-Use check boxes for questions that have a set of possible answers out of which multiple can be selected.
-
-##### Example
-
- <div class="checkbox">
-   <label>
-     <input type="checkbox" value="">
-     Option one is this and that&mdash;be sure to include why it's great
-   </label>
- </div>
- <div class="checkbox disabled">
-   <label>
-     <input type="checkbox" value="" disabled>
-     Option two is disabled
-   </label>
- </div>
-
-
-
-#### Dropdown Box
-
-Explanation:
-Use this to drop down a list of possible selections. For example, what state are you from? The drop down menu would then produce the list of states.
-
-##### Example
-
-<select class="form-control">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-</select>
-
-
-
-#### Rate (scale 1..N)
-
-Explanation:
-Use this for questions that require a rating. You can have a rating scale of 1 to N, set by the length field. Multiple options can also be added to the rating block as you see below. To show an extra column “N/A“, set the precision field to 1.
-
-##### Example
-
-<table class="table table-hover">
-  <thead>
-    <tr class="bg-primary">
-      <th> </th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-      <th>N/A</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Option 1</td>
-      <td><input type="radio" name="optionsRadios" id="A1" value="option1"></td>
-      <td><input type="radio" name="optionsRadios" id="A1" value="option2"></td>
-      <td><input type="radio" name="optionsRadios" id="A1" value="option3"></td>
-      <td><input type="radio" name="optionsRadios" id="A1" value="option4"></td>
-      <td><input type="radio" name="optionsRadios" id="A1" value="option5"></td>
-      <td><input type="radio" name="optionsRadios" id="A1" value="option6"></td>
-    </tr>
-    <tr>
-      <td>Option 2</td>
-      <td><input type="radio" name="optionsRadios" id="A2" value="option1"></td>
-      <td><input type="radio" name="optionsRadios" id="A2" value="option2"></td>
-      <td><input type="radio" name="optionsRadios" id="A2" value="option3"></td>
-      <td><input type="radio" name="optionsRadios" id="A2" value="option4"></td>
-      <td><input type="radio" name="optionsRadios" id="A2" value="option5"></td>
-      <td><input type="radio" name="optionsRadios" id="A2" value="option6"></td>
-    </tr>
-    <tr>
-      <td>Option 3</td>
-      <td><input type="radio" name="optionsRadios" id="A3" value="option1"></td>
-      <td><input type="radio" name="optionsRadios" id="A3" value="option2"></td>
-      <td><input type="radio" name="optionsRadios" id="A3" value="option3"></td>
-      <td><input type="radio" name="optionsRadios" id="A3" value="option4"></td>
-      <td><input type="radio" name="optionsRadios" id="A3" value="option5"></td>
-      <td><input type="radio" name="optionsRadios" id="A3" value="option6"></td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-#### Date
-
-Explanation:
-Use this for responses that require uses to submit back a date. Configure the date format in the ini file.
-
-##### Example
-
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-    <div class="input-group">
-      <div class="input-group-addon">Insert date:</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Format: 21/09/2016">
-    </div>
+  <div class="panel-body">
+    <p><strong><i class="pe-microphone pe-fw"></i> Have you been to Paris?</strong></p>
+    <p><em>Note: Only one answer allowed</em></p>
+    <div class="radio"><label><input type="radio" name="yesno" id="E1" value="yes" /> Yes I have</label></div>
+    <div class="radio"><label><input type="radio" name="yesno" id="E1" value="no" /> No I have not</label></div>
+    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
   </div>
-  <button type="submit" class="button-x">Done</button>
-</form>
+</div>
 
 
-#### Numeric
+##### Scale rating
 
-Explanation:
-Use this for questions which you will only want a numeric answer. Note: All non-numeric responses are discarded. The length determines the max number of digits that can be used, the precision field adds extra size for the numbers begin the comma. This is not very precise yet, so just use the length field for now.
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of Scale rating</span>
+  </div>
+  <div class="panel-body">
+    <p><strong><i class="pe-microphone pe-fw"></i> How would you rate your overall satisfaction to the service of this car dealer? Please use scale from 1 to 5 where 1 means I am not satisfied at all, and 5 means I am extremely satisfied.</strong></p>
+    <p><em>Note: Only one answer allowed</em></p>
+    <div class="radio"><label><input type="radio" name="cussat" id="F1" value="5" /> Extremely satisfied (+5)</label></div>
+    <div class="radio"><label><input type="radio" name="cussat" id="F1" value="4" /> Satisfied (+4)</label></div>
+    <div class="radio"><label><input type="radio" name="cussat" id="F1" value="3" /> Neither satisfied nor dissatisfied (+3)</label></div>
+    <div class="radio"><label><input type="radio" name="cussat" id="F1" value="2" /> Dissatisfied (+2)</label></div>
+    <div class="radio"><label><input type="radio" name="cussat" id="F1" value="1" /> Not at all satisfied (+1)</label></div>
+    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+  </div>
+</div>
 
-##### Example
 
-<select class="form-control">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-</select>
+##### Numeric
+
+This is a question type that `only deals with numeric answers` (answers in numbers).
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of a numeric question</span>
+  </div>
+  <div class="panel-body">
+    <p><strong><i class="pe-microphone pe-fw"></i> Please select the year of your vehicle registration from the provided dropdown menu below.</strong></p>
+    <p><em>Note: Only one answer allowed</em></p>
+    <form class="form-inline">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon">Vehicle registration:</div>
+          <select class="form-control">
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="button-x">Done <i class="pe-check-circle-o"></i></button>
+    </form>
+  </div>
+</div>
 
 
+#### Close-ended question: Multiple answer
 
-#### Session text
+Similar to the single anwer close ended question as described earlier, the key difference is on the fact that `it accepts several answers within one single question`.
 
-Explanation:
-Use this to add some text to you survey (like a disclaimer before sending on submit). This is in fact no question a user can answer to.
+
+##### Multiple choices
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of Multiple answer</span>
+  </div>
+  <div class="panel-body">
+    <p><strong><i class="pe-microphone pe-fw"></i> Which of these devices do you currently own?</strong></p>
+    <p><em>Note: Several answers allowed</em></p>
+    <div class="checkbox"><label><input type="checkbox" name="device" id="S7" value="Smartphone" /> Smartphone</label></div>
+    <div class="checkbox"><label><input type="checkbox" name="device" id="S7" value="Tablet" /> Tablet</label></div>
+    <div class="checkbox"><label><input type="checkbox" name="device" id="S7" value="Laptop" /> Laptop computer</label></div>
+    <div class="checkbox"><label><input type="checkbox" name="device" id="S7" value="Desktop" /> Desktop computer</label></div>
+    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+  </div>
+</div>
+
+
+#### Open-ended question
+
+An open-ended contrasts with a closed-ended question as it _cannot_ be answered with a simple "yes" or "no", or with a specific piece of information, and which gives the person answering the question scope to give the information that seems to them to be appropriate.
+
+This type of questions is sometimes phrased as `a statement which requires a response`.
+
+
+##### Date
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of a date question</span>
+  </div>
+  <div class="panel-body">
+    <p><strong><i class="pe-microphone pe-fw"></i> Please enter your date of birth in the box below.</strong></p>
+    <p><em>Note: Please fill in following this format: 21/09/2016</em></p>
+    <form class="form-inline">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon">Country:</div>
+          <input type="text" class="form-control" id="country" placeholder="Type in here..." />
+        </div>
+      </div>
+      <button type="submit" class="button-x">Done <i class="pe-check-circle-o"></i></button>
+    </form>
+  </div>
+</div>
+
+
+##### Short answer
+
+It is typically a maximum of `one-line answer box to fill in`.
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of a short open-ended question</span>
+  </div>
+  <div class="panel-body">
+    <p><strong><i class="pe-microphone pe-fw"></i> Which country are you from?</strong></p>
+    <p><em>Note: Please fill in your answer in the box</em></p>
+    <form class="form-inline">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon">Insert date:</div>
+          <input type="text" class="form-control" id="exampleInputAmount" placeholder="Format: 21/09/2016">
+        </div>
+      </div>
+      <button type="submit" class="button-x">Done <i class="pe-check-circle-o"></i></button>
+    </form>
+  </div>
+</div>
+
+
+##### Long answer
+
+For the long answer, it normally comes in a `text area format which can be written as long as needed`.
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of a long open-ended question</span>
+  </div>
+  <div class="panel-body">
+    <p><strong><i class="pe-microphone pe-fw"></i> Please describe your feeling/ how you feel about your new house?</strong></p>
+    <p><em>Note: Please write in the box below as much as you like</em></p>
+    <form>
+      <textarea class="form-control" rows="5"></textarea>
+      <br>
+      <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+    </form>
+  </div>
+</div>
+
+
+#### Rating scale
+
+This question type is more complex than those described earlier.
+
+A rating scale is a set of categories designed to elicit information about an attribute. In the social sciences, particularly psychology, `the common examples are the scaling response scale which can be 1-5, 1-7, 1-9 or 1-10 rating scales` in which a respondent would be asked to select the number which is considered to reflect the perceived quality of a product.
+
+
+##### Product attribute rating
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of attribute rating scale</span>
+  </div>
+  <div class="panel-body">
+    <p><strong><i class="pe-microphone pe-fw"></i> How do you like your television in each of these aspects? Please rate each of them by using a rating scale from 1 to 5 where 1 means not good at all, and 5 means very good.</strong></p>
+    <p><em>Note: Only one answer allowed for each aspect</em></p>
+    <table class="table table-hover">
+      <thead>
+        <tr class="bg-warning">
+          <th width="25%"> </th>
+          <th width="15%">Not good at all</th>
+          <th width="15%">Not good</th>
+          <th width="15%">So so</th>
+          <th width="15%">Good</th>
+          <th width="15%">Very good</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Screen size</td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option1"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option2"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option3"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option4"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option5"></td>
+        </tr>
+        <tr>
+          <td>Build quality</td>
+          <td><input type="radio" name="optionsRadios" id="A2" value="option1"></td>
+          <td><input type="radio" name="optionsRadios" id="A2" value="option2"></td>
+          <td><input type="radio" name="optionsRadios" id="A2" value="option3"></td>
+          <td><input type="radio" name="optionsRadios" id="A2" value="option4"></td>
+          <td><input type="radio" name="optionsRadios" id="A2" value="option5"></td>
+        </tr>
+        <tr>
+          <td>Remote controller</td>
+          <td><input type="radio" name="optionsRadios" id="A3" value="option1"></td>
+          <td><input type="radio" name="optionsRadios" id="A3" value="option2"></td>
+          <td><input type="radio" name="optionsRadios" id="A3" value="option3"></td>
+          <td><input type="radio" name="optionsRadios" id="A3" value="option4"></td>
+          <td><input type="radio" name="optionsRadios" id="A3" value="option5"></td>
+        </tr>
+        <tr>
+          <td>Packaging</td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option1"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option2"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option3"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option4"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option5"></td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option1"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option2"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option3"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option4"></td>
+          <td><input type="radio" name="optionsRadios" id="A1" value="option5"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+  </div>
+</div>
+
+
+#### Other types of question
+
+There are still other types of question which are not very common. And hence we have not covered them in this article. However, it does not mean that we will not be able to include them into our system.
+
+Should you need a specific type of question in particular, please let us know, and we will address your needs accordingly.
