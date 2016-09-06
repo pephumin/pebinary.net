@@ -199,12 +199,14 @@ This question type is more complex than those described earlier.
 A rating scale is a set of categories designed to elicit information about an attribute. In the social sciences, particularly psychology, `the common examples are the scaling response scale which can be 1-5, 1-7, 1-9 or 1-10 rating scales` in which a respondent would be asked to select the number which is considered to reflect the perceived quality of a product.
 
 
-##### การให้คะแนนผลิตภัณฑ์ในแง่มุมต่างๆ
+##### แบบที่ไม่มีตัวเลือก N/A
+
+This type of rating scale _will not include_ an option of N/A therefore it is necessary that respondent would be required to answer each of the aspect with one of the available choices.
 
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of attribute rating scale</span>
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of attribute rating without N/A</span>
   </div>
   <div class="panel-body">
     <p><strong><i class="pe-microphone pe-fw"></i> How do you like your television in each of these aspects?</strong><br> Please rate each of them by using a rating scale from 1 to 5 where 1 means not good at all, and 5 means very good.</p>
@@ -223,43 +225,43 @@ A rating scale is a set of categories designed to elicit information about an at
       <tbody>
         <tr>
           <td>Screen size</td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option1"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option2"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option3"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option4"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option5"></td>
+          <td><input type="radio" name="B1" id="B1" value="option1"></td>
+          <td><input type="radio" name="B1" id="B1" value="option2"></td>
+          <td><input type="radio" name="B1" id="B1" value="option3"></td>
+          <td><input type="radio" name="B1" id="B1" value="option4"></td>
+          <td><input type="radio" name="B1" id="B1" value="option5"></td>
         </tr>
         <tr>
           <td>Build quality</td>
-          <td><input type="radio" name="optionsRadios" id="A2" value="option1"></td>
-          <td><input type="radio" name="optionsRadios" id="A2" value="option2"></td>
-          <td><input type="radio" name="optionsRadios" id="A2" value="option3"></td>
-          <td><input type="radio" name="optionsRadios" id="A2" value="option4"></td>
-          <td><input type="radio" name="optionsRadios" id="A2" value="option5"></td>
+          <td><input type="radio" name="B2" id="B2" value="option1"></td>
+          <td><input type="radio" name="B2" id="B2" value="option2"></td>
+          <td><input type="radio" name="B2" id="B2" value="option3"></td>
+          <td><input type="radio" name="B2" id="B2" value="option4"></td>
+          <td><input type="radio" name="B2" id="B2" value="option5"></td>
         </tr>
         <tr>
           <td>Remote controller</td>
-          <td><input type="radio" name="optionsRadios" id="A3" value="option1"></td>
-          <td><input type="radio" name="optionsRadios" id="A3" value="option2"></td>
-          <td><input type="radio" name="optionsRadios" id="A3" value="option3"></td>
-          <td><input type="radio" name="optionsRadios" id="A3" value="option4"></td>
-          <td><input type="radio" name="optionsRadios" id="A3" value="option5"></td>
+          <td><input type="radio" name="B3" id="B3" value="option1"></td>
+          <td><input type="radio" name="B3" id="B3" value="option2"></td>
+          <td><input type="radio" name="B3" id="B3" value="option3"></td>
+          <td><input type="radio" name="B3" id="B3" value="option4"></td>
+          <td><input type="radio" name="B3" id="B3" value="option5"></td>
         </tr>
         <tr>
           <td>Packaging</td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option1"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option2"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option3"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option4"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option5"></td>
+          <td><input type="radio" name="B4" id="B4" value="option1"></td>
+          <td><input type="radio" name="B4" id="B4" value="option2"></td>
+          <td><input type="radio" name="B4" id="B4" value="option3"></td>
+          <td><input type="radio" name="B4" id="B4" value="option4"></td>
+          <td><input type="radio" name="B4" id="B4" value="option5"></td>
         </tr>
         <tr>
           <td>Price</td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option1"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option2"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option3"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option4"></td>
-          <td><input type="radio" name="optionsRadios" id="A1" value="option5"></td>
+          <td><input type="radio" name="B5" id="B5" value="option1"></td>
+          <td><input type="radio" name="B5" id="B5" value="option2"></td>
+          <td><input type="radio" name="B5" id="B5" value="option3"></td>
+          <td><input type="radio" name="B5" id="B5" value="option4"></td>
+          <td><input type="radio" name="B5" id="B5" value="option5"></td>
         </tr>
       </tbody>
     </table>
@@ -267,6 +269,82 @@ A rating scale is a set of categories designed to elicit information about an at
   </div>
 </div>
 
+
+
+##### แบบที่มีตัวเลือก N/A
+
+Unlike the previous one, this type of rating scale _will include_ an option of N/A allowing respondent to answer N/A if they really cannot give their opinion to that particular aspect.
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of attribute rating with N/A</span>
+  </div>
+  <div class="panel-body">
+    <p><strong><i class="pe-microphone pe-fw"></i> How satisfied are you with each of these service aspects from your mobile operator?</strong><br> Please rate each of them by using a rating scale from 1 to 5 where 1 means not satisfied at all, and 5 means very satisfied. And you can also rate N/A if you have never used such service from your mobile operator.</p>
+    <p><em>Note: Only one answer allowed for each aspect</em></p>
+    <table class="table table-hover">
+      <thead>
+        <tr class="bg-warning">
+          <th width="25%"> </th>
+          <th width="13%">Not satisfied at all</th>
+          <th width="12%">Not satisfied</th>
+          <th width="13%">So so</th>
+          <th width="12%">Satisfied</th>
+          <th width="13%">Very satisfied</th>
+          <th width="12%">N/A</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Signal</td>
+          <td><input type="radio" name="A1" id="A1" value="option1"></td>
+          <td><input type="radio" name="A1" id="A1" value="option2"></td>
+          <td><input type="radio" name="A1" id="A1" value="option3"></td>
+          <td><input type="radio" name="A1" id="A1" value="option4"></td>
+          <td><input type="radio" name="A1" id="A1" value="option5"></td>
+          <td><input type="radio" name="A1" id="A1" value="option6"></td>
+        </tr>
+        <tr>
+          <td>Customer service</td>
+          <td><input type="radio" name="A2" id="A2" value="option1"></td>
+          <td><input type="radio" name="A2" id="A2" value="option2"></td>
+          <td><input type="radio" name="A2" id="A2" value="option3"></td>
+          <td><input type="radio" name="A2" id="A2" value="option4"></td>
+          <td><input type="radio" name="A2" id="A2" value="option5"></td>
+          <td><input type="radio" name="A2" id="A2" value="option6"></td>
+        </tr>
+        <tr>
+          <td>Shops</td>
+          <td><input type="radio" name="A3" id="A3" value="option1"></td>
+          <td><input type="radio" name="A3" id="A3" value="option2"></td>
+          <td><input type="radio" name="A3" id="A3" value="option3"></td>
+          <td><input type="radio" name="A3" id="A3" value="option4"></td>
+          <td><input type="radio" name="A3" id="A3" value="option5"></td>
+          <td><input type="radio" name="A3" id="A3" value="option6"></td>
+        </tr>
+        <tr>
+          <td>Billing</td>
+          <td><input type="radio" name="A4" id="A4" value="option1"></td>
+          <td><input type="radio" name="A4" id="A4" value="option2"></td>
+          <td><input type="radio" name="A4" id="A4" value="option3"></td>
+          <td><input type="radio" name="A4" id="A4" value="option4"></td>
+          <td><input type="radio" name="A4" id="A4" value="option5"></td>
+          <td><input type="radio" name="A4" id="A4" value="option6"></td>
+        </tr>
+        <tr>
+          <td>Call centre</td>
+          <td><input type="radio" name="A5" id="A5" value="option1"></td>
+          <td><input type="radio" name="A5" id="A5" value="option2"></td>
+          <td><input type="radio" name="A5" id="A5" value="option3"></td>
+          <td><input type="radio" name="A5" id="A5" value="option4"></td>
+          <td><input type="radio" name="A5" id="A5" value="option5"></td>
+          <td><input type="radio" name="A5" id="A5" value="option6"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+  </div>
+</div>
 
 #### คำถามประเภทอื่นๆ
 
