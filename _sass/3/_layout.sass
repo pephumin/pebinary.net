@@ -5,14 +5,12 @@ header
   .header-1
     text-align: right
     font-family: "boon"
-    font-size: 0.8rem
+    font-size: 0.85rem
     padding: 5px 0px
+    color: $lightgrey
 
     .pe-language
       color: $black
-      
-    .currentlang
-      color: $silver
 
     a.newlang
       color: $black
@@ -93,14 +91,17 @@ header
 nav.subnav
   font-family: "ubuntu"
   font-size: 0.75rem
-  color: $darkgrey
+  color: $black
   margin: 0px
   padding: 5px 0px
   text-transform: uppercase
   white-space: nowrap
 
+  .pe-fw
+    color: $grey
+
   a
-    color: $darkgrey
+    color: $black
     white-space: nowrap
 
     &:hover
@@ -118,25 +119,28 @@ nav.subnav
 
   li
     display: inline-block
-    color: $darkgrey
+    color: $black
     white-space: nowrap
     &:not(:last-child):after
       content: "\00a0\00BB"
       padding: 0px 3px
-      color: $grey
+      color: $darkgrey
       white-space: nowrap
 
 nav.subnavth
   font-family: "boon"
   font-size: 0.85rem
-  color: $darkgrey
+  color: $black
   margin: 0px
   padding: 5px 0px
   text-transform: uppercase
   white-space: nowrap
 
+  .pe-fw
+    color: $grey
+
   a
-    color: $darkgrey
+    color: $black
     white-space: nowrap
 
     &:hover
@@ -154,12 +158,12 @@ nav.subnavth
 
   li
     display: inline-block
-    color: $darkgrey
+    color: $black
     white-space: nowrap
     &:not(:last-child):after
       content: "\00a0\00BB"
       padding: 0px 3px
-      color: $grey
+      color: $darkgrey
       white-space: nowrap
 
 

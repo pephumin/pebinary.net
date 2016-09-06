@@ -3,8 +3,8 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header-1">
       <div class="container">
         <i class="pe-language pe-fw"></i> &middot;
-        {% if page.locale == "en" %}<span class="currrentlang">English</span> &middot; <a class="newlang" href="{{ page.url | replace: "/en/", "/th/" | prepend: site.baseurl }}" title="เปลี่ยนเป็นภาษาไทย">ไทย</a>
-        {% elsif page.locale == "th" %}<a class="newlang" href="{{ page.url | replace: "/th/", "/en/" | prepend: site.baseurl }}" title="Switch to English language">English</a> &middot; <span class="currrentlang">ไทย</span>
+        {% if page.locale == "en" %}English &middot; <a class="newlang" href="{{ page.url | replace: "/en/", "/th/" | prepend: site.baseurl }}" title="เปลี่ยนเป็นภาษาไทย">ไทย</a>
+        {% elsif page.locale == "th" %}<a class="newlang" href="{{ page.url | replace: "/th/", "/en/" | prepend: site.baseurl }}" title="Switch to English language">English</a> &middot; ไทย
         {% endif %}
       </div>
     </div>

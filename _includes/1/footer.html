@@ -7,7 +7,7 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-2">
       <div class="container">
-        <i class="pe-copyright"></i> {% if page.locale == "th" %}<span class="footerth">ลิขสิทธิ์</span>{% else %}Copyright{% endif %} {{ site.time | date:"%Y" }}&nbsp;
+        <i class="pe-copyright"></i> {% if page.locale == "th" %}<span class="footerth">ลิขสิทธิ์ {{ site.time | date:"%Y" }}</span>{% else %}Copyright {{ site.time | date:"%Y" }}{% endif %}&nbsp;
         <a href="{{ site.data.domains.main-en }}" class="footerlogo" title="PE BINARY CO., LTD.">{% capture logo %}{% include 1/logo.html %}{% endcapture %}{{ logo | rstrip }}</a>
         {% if page.locale == "th" %}<span class="footerth">สงวนลิขสิทธิ์</span>{% else %}All rights reserved.{% endif %}<br>
         <nav class="footer">
