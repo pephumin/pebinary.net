@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><style type="text/css">.st0{fill:#08446D;} .st1{fill:#00233F;} .st2{fill:#22EFAB;} .st3{fill:#0DD396;} .st4{fill:#C6640C;} .st5{fill:#5A8CA8;}</style><path class="st0" d="M422 499h-408v-109.6l60-58.4h348zM174 3h56v48h-56z"/><path class="st1" d="M174 3h56v48"/><path class="st0" d="M126 19h152v160h-152z"/><path class="st1" d="M126 19h152v160"/><path class="st1" d="M94 75h216v424h-216z"/><path class="st2" d="M182 115h40v40h-40z"/><path class="st3" d="M222 115v40h-40"/><path class="st2" d="M182 171h40v40h-40z"/><path class="st3" d="M222 171v40h-40"/><path class="st2" d="M182 227h40v40h-40z"/><path class="st3" d="M222 227v40h-40"/><path class="st2" d="M182 283h40v40h-40z"/><path class="st3" d="M222 283v40h-40"/><path class="st2" d="M182 339h40v40h-40z"/><path class="st3" d="M222 339v40h-40"/><path class="st2" d="M126 171h40v40h-40z"/><path class="st3" d="M166 171v40h-40"/><path class="st2" d="M126 227h40v40h-40z"/><path class="st3" d="M166 227v40h-40"/><path class="st2" d="M126 283h40v40h-40z"/><path class="st3" d="M166 283v40h-40"/><path class="st2" d="M126 339h40v40h-40z"/><path class="st3" d="M166 339v40h-40"/><path class="st2" d="M126 115h40v40h-40z"/><path class="st3" d="M166 115v40h-40"/><path class="st2" d="M238 115h40v40h-40z"/><path class="st3" d="M278 115v40h-40"/><path class="st2" d="M238 171h40v40h-40z"/><path class="st3" d="M278 171v40h-40"/><path class="st2" d="M238 227h40v40h-40z"/><path class="st3" d="M278 227v40h-40"/><path class="st2" d="M238 283h40v40h-40z"/><path class="st3" d="M278 283v40h-40"/><path class="st2" d="M238 339h40v40h-40z"/><path class="st3" d="M278 339v40h-40"/><path class="st4" d="M230 491v-63.2c0-5.6-5.6-8.8-11.2-8.8h-34.4c-5.6 0-10.4 4-10.4 8.8v63.2h56z"/><path class="st0" d="M334 203h152v296h-152zM358 155h104v112h-104zM382 99h56v104h-56zM378 208.6l32-195.2 32 195.2-32 32z"/><path class="st5" d="M366 235h8v232h-8zM406 235h8v232h-8zM438 235h8v232h-8z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <style type="text/css">
+    .st0{fill:#08446D;}
+    .st1{fill:#00233F;}
+    .st2{fill:#22EFAB;}
+    .st3{fill:#0DD396;}
+    .st4{fill:#C6640C;}
+    .st5{fill:#5A8CA8;}
+  </style>
+  <path class="st0" d="M422 499h-408v-109.6l60-58.4h348zm-248-496h56v48h-56z"/>
+  <path class="st1" d="M174 3h56v48"/><path class="st0" d="M126 19h152v160h-152z"/>
+  <path class="st1" d="M126 19h152v160"/><path class="st1" d="M94 75h216v424h-216z"/>
+  <path class="st2" d="M182 115h40v40h-40z"/><path class="st3" d="M222 115v40h-40"/>
+  <path class="st2" d="M182 171h40v40h-40z"/><path class="st3" d="M222 171v40h-40"/>
+  <path class="st2" d="M182 227h40v40h-40z"/><path class="st3" d="M222 227v40h-40"/>
+  <path class="st2" d="M182 283h40v40h-40z"/><path class="st3" d="M222 283v40h-40"/>
+  <path class="st2" d="M182 339h40v40h-40z"/><path class="st3" d="M222 339v40h-40"/>
+  <path class="st2" d="M126 171h40v40h-40z"/><path class="st3" d="M166 171v40h-40"/>
+  <path class="st2" d="M126 227h40v40h-40z"/><path class="st3" d="M166 227v40h-40"/>
+  <path class="st2" d="M126 283h40v40h-40z"/><path class="st3" d="M166 283v40h-40"/>
+  <path class="st2" d="M126 339h40v40h-40z"/><path class="st3" d="M166 339v40h-40"/>
+  <path class="st2" d="M126 115h40v40h-40z"/><path class="st3" d="M166 115v40h-40"/>
+  <path class="st2" d="M238 115h40v40h-40z"/><path class="st3" d="M278 115v40h-40"/>
+  <path class="st2" d="M238 171h40v40h-40z"/><path class="st3" d="M278 171v40h-40"/>
+  <path class="st2" d="M238 227h40v40h-40z"/><path class="st3" d="M278 227v40h-40"/>
+  <path class="st2" d="M238 283h40v40h-40z"/><path class="st3" d="M278 283v40h-40"/>
+  <path class="st2" d="M238 339h40v40h-40z"/><path class="st3" d="M278 339v40h-40"/>
+  <path class="st4" d="M230 491v-63.2c0-5.6-5.6-8.8-11.2-8.8h-34.4c-5.6 0-10.4 4-10.4 8.8v63.2h56z"/>
+  <path class="st0" d="M334 203h152v296h-152zm24-48h104v112h-104zm24-56h56v104h-56zm-4 109.6l32-195.2 32 195.2-32 32z"/>
+  <path class="st5" d="M366 235h8v232h-8zm40 0h8v232h-8zm32 0h8v232h-8z"/>
+</svg>

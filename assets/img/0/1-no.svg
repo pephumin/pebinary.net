@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 0 97.7 98.3"><style>.st0{fill:none;stroke:#D40000;stroke-width:22.7202;}</style><g id="g2159"><path id="path2161" d="M0 0v97.7h97.7v-97.7h-97.7zm16 14h65.8v69.7h-65.8v-69.7z"/><path id="path2163" d="M21.4 91l61-73m-57.4 6.6l55.7 55.6" class="st0"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 0 97.7 98.3">
+  <style>.st0{fill:none;stroke:#D40000;stroke-width:22.7202;}</style>
+  <g id="g2159">
+    <path id="path2161" d="M0 0v97.7h97.7v-97.7h-97.7zm16 14h65.8v69.7h-65.8v-69.7z"/>
+    <path id="path2163" d="M21.4 91l61-73m-57.4 6.6l55.7 55.6" class="st0"/>
+  </g>
+</svg>
