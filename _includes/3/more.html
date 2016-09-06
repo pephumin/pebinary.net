@@ -35,15 +35,14 @@
       <section class="contactus">
         {% if page.locale == "th" %}
         <h3 class="th"><i class="pe-question-circle pe-fw"></i> ยังต้องการความช่วยเหลืออยู่ใช่ไหม</h3>
-        <p class="leadth">หากบทความนี้ยังไม่ตอบโจทย์ของคุณ คุณสามารถส่งคำถามของคุณมายังเราได้เสมอ โดยใช้แบบฟอร์มล่างนี้</p>
-        <p class="th">เราตอบทุกคำตอบอย่างแน่นอน ซึ่งจะใช้เวลาไม่นาน ไม่เกินสองสามวัน หากคำถามของคุณมีประโยชน์ต่อคนอื่นเราจะเอามาลงเพิ่มในเว็บไซต์</p>
+        <p class="leadth">หากคุณคิดว่าเราไม่มีคำตอบสำหรับคำถามของคุณ​ คุณสามารถส่งคำถามใหม่มาที่เราได้ทันที เพียงแค่พิมพ์คำถามลงแบบฟอร์มล่างนี้แล้วกดส่ง</p>
+        <p class="th">เราตอบทุกคำถาม ดังนั้นคุณสามารถมั่นใจได้ว่า คำถามของคุณจะถูกตอบกลับอย่างเร็วที่สุด เท่าที่เราจะทำได้ และถ้าหากเราพบว่าคำถามของคุณน่าสนใจ เราจะเพิ่มลงเข้าในเว็บไซต์นี้ด้วย</p>
         {% else %}
         <h3><i class="pe-question-circle pe-fw"></i> Still need help?</h3>
-        <p class="lead">If this article does not really answer your question, you can always send us your question directly by simply filling in the below form.</p>
+        <p class="lead">You can submit a new question if you believe what you are looking for is not currently available in this website. Please use below form to submit your question.</p>
         <p>We make sure that we answer every single query which would normally take a few working days. And if your question is considered to be valueable to others, we will place it in this website accordingly.</p>
         {% endif %}
         <div class="contact-border">
-          <!-- <img src="{{ "/assets/img/more.jpg" | prepend: site.baseurl }}" class="img-responsive"> -->
           <div class="contact">
             <form name="commentform" method="post" action="{{ "/email.php" | prepend: site.baseurl }}">
               <div class="form-group has-feedback">
@@ -61,7 +60,6 @@
                 <textarea class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" rows="4" name="message" id="message" placeholder="{% if page.locale == 'th' %}พิมพ์คำถามของคุณที่นี่ คุณสามารถพิมพ์ได้มากเท่าที่ต้องการ{% else %}Type your question here. You can type as long as you need.{% endif %}" required></textarea>
                 <i class="pe-commenting-o {% if page.locale == 'th' %}f-icon-th{% else %}f-icon{% endif %} form-control-feedback"></i>
               </div>
-              <!-- <p class="label red"<sup>(*)</sup> = required</span></p> -->
               {% if page.locale == "th" %}<button type="submit" class="button-x-th">ส่งคำถาม{% else %}<button type="submit" class="button-x">send{% endif %} <i class="pe-paper-plane-o"></i></button>
             </form>
           </div>

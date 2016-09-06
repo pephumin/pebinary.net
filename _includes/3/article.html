@@ -1,7 +1,7 @@
         <header>
           {% if page.locale == "th" %}<h2 class="th">{% else %}<h2>{% endif %}{{ page.title }}</h2>
           {% if page.question %}
-          <!-- <h3><i class="pe-bullhorn pe-fw"></i> You ask</h3> -->
+          {% if page.locale == "th" %}<h6 class="th"><i class="pe-bullhorn pe-fw"></i> คำถาม:</h6>{% else %}<h6><i class="pe-bullhorn pe-fw"></i> Question:</h6>{% endif %}
           <div class="questionbox">
             <img src="{{ "/assets/img/0/QA.svg" | prepend: site.baseurl }}" alt="You ask and we answer" class="img-responsive article-svg">
             {% if page.locale == "th" %}<blockquote class="th">{% else %}<blockquote>{% endif %}<i class="pe-quote-left"></i> {{ page.question }} <i class="pe-quote-right"></i></blockquote>
