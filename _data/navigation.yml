@@ -58,28 +58,36 @@ header:
 footer:
 
 - title: "Privacy policy"
+  thtitle: "นโยบายส่วนบุคคล"
   stitle: "Privacy"
+  sthtitle: "นโยบายส่วนบุคคล"
   icon: lock
   host: main-en
   url: "/about/privacy.html"
   disable: false
 
 - title: "Terms of services"
+  thtitle: "ข้อกำหนดในการให้บริการ"
   stitle: "TOS"
+  sthtitle: "ข้อกำหนดการให้บริการ"
   icon: gavel
   host: main-en
   url: "/about/tos.html"
   disable: false
 
 - title: "Terms &amp; conditions"
+  thtitle: "ข้อกำหนดและเงื่อนไขต่างๆ"
   stitle: "Terms"
+  sthtitle: "ข้อกำหนดและเงื่อนไข"
   icon: balance-scale
   host: main-en
   url: "/about/terms.html"
   disable: false
 
 - title: "Back to the main website"
+  thtitle: "กลับไปยังเว็บไซต์หลักของเรา"
   stitle: "The main website"
+  sthtitle: "กลับ"
   icon: arrow-circle-left
   host: main-en
   url: "/"
