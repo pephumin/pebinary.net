@@ -11,7 +11,8 @@
   // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
   // So reset our font and text properties to avoid inheriting weird values.
   @include reset-text;
-  font-size: $font-size-small;
+  //font-size: $font-size-small;
+  font-size: 10px;
 
   @include opacity(0);
 
@@ -25,7 +26,8 @@
 // Wrapper for the tooltip content
 .tooltip-inner {
   max-width: $tooltip-max-width;
-  padding: 3px 8px;
+  //padding: 3px 8px;
+  padding: 2px 5px;
   color: $tooltip-color;
   text-align: center;
   background-color: $tooltip-bg;
