@@ -14,42 +14,42 @@ question: "What is the survey template? What does the survey template really do?
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 1</h5>
+      <span class="progress-title">Step 1</span>
       Add survey information
     </span>
   </li>
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 2</h5>
+      <span class="progress-title">Step 2</span>
       Add questions
     </span>
   </li>
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 3</h5>
+      <span class="progress-title">Step 3</span>
       Sequence questions
     </span>
   </li>
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 4</h5>
+      <span class="progress-title">Step 4</span>
       Set question condition
     </span>
   </li>
   <li class="progress-step is-active">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 5</h5>
+      <span class="progress-title">Step 5</span>
       Set survey theme
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 6</h5>
+      <span class="progress-title">Step 6</span>
       Finalise the survey
     </span>
   </li>

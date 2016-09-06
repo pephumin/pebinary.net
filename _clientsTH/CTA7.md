@@ -14,46 +14,47 @@ question: "What should I do once I have finished designing my survey? Can I star
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 1</h5>
-      Add survey information
+      <span class="progress-title">ขั้นตอนที่ 1</span>
+      เพิ่มข้อมูลแบบสอบถาม
     </span>
   </li>
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 2</h5>
-      Add questions
+      <span class="progress-title">ขั้นตอนที่ 2</span>
+      เพิ่มคำถาม
     </span>
   </li>
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 3</h5>
-      Sequence questions
+      <span class="progress-title">ขั้นตอนที่ 3</span>
+      เรียงลำดับคำถาม
     </span>
   </li>
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 4</h5>
-      Set question condition
+      <span class="progress-title">ขั้นตอนที่ 4</span>
+      วิธีข้ามบางคำถาม
     </span>
   </li>
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 5</h5>
-      Set survey theme
+      <span class="progress-title">ขั้นตอนที่ 5</span>
+      เปลี่ยนสีและธีม
     </span>
   </li>
   <li class="progress-step is-active">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 6</h5>
-      Finalise the survey
+      <span class="progress-title">ขั้นตอนที่ 6</span>
+      ยืนยันแบบสอบถาม
     </span>
   </li>
 </ul>
+
 
 Shows you the block of PHP code that you need to paste into the HTML of your webpage to embed the survey.
 

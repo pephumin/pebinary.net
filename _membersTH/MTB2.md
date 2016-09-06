@@ -1,5 +1,5 @@
 ---
-title: "Log in"
+title: "เข้าสู่ระบบ"
 section: "members"
 category: "dashboard"
 permalink: /th/members/dashboard/2.html
@@ -8,7 +8,7 @@ icon: sign-in
 question: "How do I log in to your system? Will there be a need for any special menu to click?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 Once the registration has been completed. A user must log in to our system to start using our system. By clicking the `Log in` button on the top of the navigation menu, you will be prompted to fill-in your login and password (or no password required if log in with a social media account).
 
@@ -16,36 +16,36 @@ Once the registration has been completed. A user must log in to our system to st
   <li class="progress-step is-active">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 1</h5>
-      Log in
+      <span class="progress-title">ขั้นตอนที่ 1</span>
+      เข้าสู่ระบบ
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 2</h5>
-      Dashboard:<br>Surveys
+      <span class="progress-title">ขั้นตอนที่ 2</span>
+      แผงควบคุม:<br>เข้าร่วมงานวิจัย
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 3</h5>
-      Dashboard:<br>Points
+      <span class="progress-title">ขั้นตอนที่ 3</span>
+      แผงควบคุม:<br>สะสมคะแนน
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 4</h5>
-      Dashboard:<br>Setting
+      <span class="progress-title">ขั้นตอนที่ 4</span>
+      แผงควบคุม:<br>การตั้งค่า
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 5</h5>
-      Log out
+      <span class="progress-title">ขั้นตอนที่ 5</span>
+      ออกจากระบบ
     </span>
   </li>
 </ul>

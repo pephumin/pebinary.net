@@ -1,5 +1,5 @@
 ---
-title: "Setting"
+title: "แผงควบคุม: การตั้งค่า"
 section: "members"
 category: "dashboard"
 permalink: /th/members/dashboard/5.html
@@ -8,7 +8,7 @@ icon: wrench
 question: "How do I change my personal information, or update my password?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 This section has all the settings you need including update your personal information, changing your personal picture, changing password, linking your account with social media accounts, etc.
 
@@ -16,36 +16,36 @@ This section has all the settings you need including update your personal inform
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 1</h5>
-      Log in
+      <span class="progress-title">ขั้นตอนที่ 1</span>
+      เข้าสู่ระบบ
     </span>
   </li>
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 2</h5>
-      Dashboard:<br>Surveys
+      <span class="progress-title">ขั้นตอนที่ 2</span>
+      แผงควบคุม:<br>เข้าร่วมงานวิจัย
     </span>
   </li>
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 3</h5>
-      Dashboard:<br>Points
+      <span class="progress-title">ขั้นตอนที่ 3</span>
+      แผงควบคุม:<br>สะสมคะแนน
     </span>
   </li>
   <li class="progress-step is-active">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 4</h5>
-      Dashboard:<br>Setting
+      <span class="progress-title">ขั้นตอนที่ 4</span>
+      แผงควบคุม:<br>การตั้งค่า
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 5</h5>
-      Log out
+      <span class="progress-title">ขั้นตอนที่ 5</span>
+      ออกจากระบบ
     </span>
   </li>
 </ul>

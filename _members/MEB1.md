@@ -1,5 +1,5 @@
 ---
-title: "Dashboard"
+title: "Overview of dashboard"
 section: "members"
 category: "dashboard"
 permalink: /en/members/dashboard/1.html
@@ -18,35 +18,35 @@ All important information is summarised in one page dashboard. And more details 
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 1</h5>
+      <span class="progress-title">Step 1</span>
       Log in
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 2</h5>
+      <span class="progress-title">Step 2</span>
       Dashboard:<br>Surveys
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 3</h5>
+      <span class="progress-title">Step 3</span>
       Dashboard:<br>Points
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 4</h5>
+      <span class="progress-title">Step 4</span>
       Dashboard:<br>Setting
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 5</h5>
+      <span class="progress-title">Step 5</span>
       Log out
     </span>
   </li>

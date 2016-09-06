@@ -16,35 +16,35 @@ This section shows the list of surveys that are available to you. Within this li
   <li class="progress-step is-completed">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 1</h5>
+      <span class="progress-title">Step 1</span>
       Log in
     </span>
   </li>
   <li class="progress-step is-active">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 2</h5>
+      <span class="progress-title">Step 2</span>
       Dashboard:<br>Surveys
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 3</h5>
+      <span class="progress-title">Step 3</span>
       Dashboard:<br>Points
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 4</h5>
+      <span class="progress-title">Step 4</span>
       Dashboard:<br>Setting
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 5</h5>
+      <span class="progress-title">Step 5</span>
       Log out
     </span>
   </li>

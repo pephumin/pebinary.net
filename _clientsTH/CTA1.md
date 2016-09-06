@@ -5,7 +5,7 @@ category: "new-survey"
 permalink: /th/clients/new-survey/1.html
 tags: [design]
 icon: file-text
-question: "What are the key steps I need to take when I want to create a new survey?"
+question: "ในการสร้างแบบสอบถามชุดใหม่จะต้องทำอย่างไรบ้าง มีทั้งหมดจำนวนกี่ขั้นตอน"
 toc: true
 ---
 
@@ -17,49 +17,49 @@ Clients can simply create a new survey with our system by following these steps.
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 1</h5>
-      Add survey information
+      <span class="progress-title">ขั้นตอนที่ 1</span>
+      เพิ่มข้อมูลแบบสอบถาม
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 2</h5>
-      Add questions
+      <span class="progress-title">ขั้นตอนที่ 2</span>
+      เพิ่มคำถาม
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 3</h5>
-      Sequence questions
+      <span class="progress-title">ขั้นตอนที่ 3</span>
+      เรียงลำดับคำถาม
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 4</h5>
-      Set question condition
+      <span class="progress-title">ขั้นตอนที่ 4</span>
+      วิธีข้ามบางคำถาม
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 5</h5>
-      Set survey theme
+      <span class="progress-title">ขั้นตอนที่ 5</span>
+      เปลี่ยนสีและธีม
     </span>
   </li>
   <li class="progress-step">
     <span class="progress-marker"></span>
     <span class="progress-text">
-      <h5 class="progress-title">Step 6</h5>
-      Finalise the survey
+      <span class="progress-title">ขั้นตอนที่ 6</span>
+      ยืนยันแบบสอบถาม
     </span>
   </li>
 </ul>
 
 
-#### ขั้นตอนที่หนึ่ง
+#### ขั้นตอนที่ 1
 
 Insert the general information regarding to your new survey including below information.
 
@@ -72,15 +72,15 @@ Insert the general information regarding to your new survey including below info
 
 
 
-#### ขั้นตอนที่สอง
+#### ขั้นตอนที่ 2
 
 Then you can start inserting questions to your survey. Each question should be inserted by selecting an appropriate question type.
 
-#### ขั้นตอนที่สาม
+#### ขั้นตอนที่ 3
 
 Next is where you can make sure your survey has been developed with the right question ordering.
 
-#### ขั้นตอนที่สี่
+#### ขั้นตอนที่ 4
 
 Testing a responsive VDO using bootstrap.
 
@@ -89,8 +89,8 @@ Testing a responsive VDO using bootstrap.
 </div>
 
 
-#### ขั้นตอนที่ห้า
+#### ขั้นตอนที่ 5
 
 
 
-#### ขั้นตอนที่หก
+#### ขั้นตอนที่ 6

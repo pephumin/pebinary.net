@@ -73,6 +73,8 @@
   text-overflow: ellipsis
 
 .progress-title
+  display: block
+  font-size: 0.95rem
   margin-top: 0
   color: $lightgrey
 
@@ -83,7 +85,7 @@
   &::after
     background-color: $silver
   .progress-text, .progress-step > a .progress-text
-    color: $grey
+    color: $lightgrey
   &.is-active .progress-marker
     @if $themeblue
       background-color: $darkblue
@@ -99,17 +101,17 @@
   &.is-completed
     .progress-marker
       @if $themeblue
-        background-color: #4f8ed5
+        background-color: $blue
       @else
-        background-color: #75c874
+        background-color: $green
     &::after
       background-color: $silver
   &.is-completed .progress-title,
   &.is-completed .progress-text
     @if $themeblue
-      color: transparentize($blue, 0.5)
+      color: $blue
     @else
-      color: transparentize($green, 0.5)
+      color: $green
 
 .progress-tracker--center
   .progress-step
