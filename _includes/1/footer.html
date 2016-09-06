@@ -1,19 +1,27 @@
 <footer>
-  <div class="footer-1">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-1">
+      <div class="container">
 {% include 2/breadcrumb.html section = page.section %}
-  </div>
-  <div class="footer-2">
-    <div class="container">
-      <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
-      <a href="{{ "/" | prepend: site.baseurl }}" class="footerlogo" title="PE BINARY CO., LTD.">{% capture logo %}{% include 1/logo.html %}{% endcapture %}{{ logo | rstrip }}</a>
-      <span class="hidden-xs hidden-sm">All rights reserved.</span><br>
-      <nav class="footer">
-        <ul class="list-inline" itemscope itemtype="http://schema.org/SiteNavigationElement">
-          {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
-          <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}" title="{{ footer.title }}" itemprop="url"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg" itemprop="name">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm" itemprop="name">{{ footer.title }}</span></a>&nbsp;</li>
-          {% endunless %}{% endfor %}
-        </ul>
-      </nav>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-2">
+      <div class="container">
+        <i class="pe-copyright"></i> {% if page.locale == "th" %}<span class="footerth">ลิขสิทธิ์</span>{% else %}Copyright{% endif %} {{ site.time | date:"%Y" }}&nbsp;
+        <a href="{{ site.data.domains.main-en }}" class="footerlogo" title="PE BINARY CO., LTD.">{% capture logo %}{% include 1/logo.html %}{% endcapture %}{{ logo | rstrip }}</a>
+        {% if page.locale == "th" %}<span class="footerth">สงวนลิขสิทธิ์</span>{% else %}All rights reserved.{% endif %}<br>
+        <nav class="footer">
+          <ul class="list-inline" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
+            {% if page.locale == "th" %}
+            <li class="footerth"><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}" title="{{ footer.thtitle }}" itemprop="url"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg" itemprop="name">{{ footer.sthtitle }}</span><span class="hidden-xs hidden-sm" itemprop="name">{{ footer.thtitle }}</span></a>&nbsp;</li>
+            {% else %}
+            <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}" title="{{ footer.title }}" itemprop="url"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg" itemprop="name">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm" itemprop="name">{{ footer.title }}</span></a>&nbsp;</li>
+            {% endif %}
+            {% endunless %}{% endfor %}
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </footer>
