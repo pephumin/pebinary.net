@@ -1,11 +1,11 @@
 ---
-title: "Member registration"
+title: "ขั้นตอนการสมัครสมาชิก"
 section: "members"
 category: "general"
 permalink: /th/members/general/2.html
 tags: [registration, users]
 icon: user-plus
-question: "How can I become a member? What does it take to register as a member? Do I need to pay an entry fee?"
+question: "ฉันจะสมัครเป็นสมาชิกได้อย่างไร จะต้องทำอย่างไรบ้างถึงจะเป็นสมาชิก สมัครสมาชิกมีค่าใช้จ่ายด้วยหรือไม่"
 ---
 
 ### <i class="pe-anchor pe-fw"></i> คำตอบ

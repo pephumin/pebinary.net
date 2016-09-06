@@ -1,11 +1,11 @@
 ---
-title: "Password recovery"
+title: "ขั้นตอนการกู้รหัสลับ"
 section: "members"
 category: "general"
 permalink: /th/members/general/4.html
 tags: [registration, password, recovery]
 icon: key
-question: "I am a member but I lost my password. How can I get my login account recovered?"
+question: "ฉันเป็นสมาชิก หรือเคยเป็นสมาชิก แต่ลืมหรือทำรหัสลับหาย ฉันจะมีวิธีกู้เอารหัสลับคืนได้อย่างไร"
 ---
 
 ### <i class="pe-anchor pe-fw"></i> คำตอบ

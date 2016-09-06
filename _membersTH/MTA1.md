@@ -1,11 +1,11 @@
 ---
-title: "Overview of membership"
+title: "ภาพรวมการเป็นสมาชิก"
 section: "members"
 category: "general"
 permalink: /th/members/general/1.html
 tags: [info, members]
 icon: graduation-cap
-question: "Why should I want to become a member? What are the key differences between being or not being a member?"
+question: "เพราะอะไรฉันถึงควรจะเข้าร่วมเป็นสมาชิก สำหรับสมาชิกนั้น จะมีข้อแตกต่างใดบ้างเมื่อเปรียบเทียบกับผู้ที่ไม่ได้เป็นสมาชิก"
 ---
 
 ### <i class="pe-anchor pe-fw"></i> คำตอบ

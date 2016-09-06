@@ -1,11 +1,11 @@
 ---
-title: "Registration using Social Media"
+title: "สมัครสมาชิกด้วยโซเชียลมีเดีย"
 section: "members"
 category: "general"
 permalink: /th/members/general/3.html
 tags: [registration, users]
 icon: universal-access
-question: "Do you offer a member registration by using my social media account?"
+question: "ไม่ทราบว่า ทางระบบรองรับการสมัครสมาชิก โดยใช้โซเชียลมีเดียด้วยหรือไม่ แล้วฉันต้องทำอย่างไรบ้าง"
 ---
 
 ### <i class="pe-anchor pe-fw"></i> คำตอบ
