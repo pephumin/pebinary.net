@@ -8,7 +8,7 @@ icon: user-plus
 question: "How can I become a member? What does it take to register as a member? Do I need to pay an entry fee?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 Membership is free. And we welcome everyone who would like to paticipate with our surveys.
 

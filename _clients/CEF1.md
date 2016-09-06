@@ -11,7 +11,7 @@ toc: true
 
 ### <i class="pe-anchor pe-fw"></i> The answer
 
-There are several types of responses ranging from `single answer`, `multiple answer`, `open-ended`, `and rating scale`.
+There are several types of responses ranging from `single answer`, `multiple answer`, `open-ended`, and `rating scale`.
 
 In this article we only cover for *the common types that are popularly used in the mainstream research business*. Please see each of them with description as well as the real examples below.
 
@@ -50,7 +50,7 @@ This can be a simple yes/no question, or question in scale format where responde
     <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of Scale rating</span>
   </div>
   <div class="panel-body">
-    <p><strong><i class="pe-microphone pe-fw"></i> How would you rate your overall satisfaction to the service of this car dealer?</strong> Please use scale from 1 to 5 where 1 means I am not satisfied at all, and 5 means I am extremely satisfied.</p>
+    <p><strong><i class="pe-microphone pe-fw"></i> How would you rate your overall satisfaction to the service of this car dealer?</strong><br> Please use scale from 1 to 5 where 1 means I am not satisfied at all, and 5 means I am extremely satisfied.</p>
     <p><em>Note: Only one answer allowed</em></p>
     <div class="radio"><label><input type="radio" name="cussat" id="F1" value="5" /> Extremely satisfied (+5)</label></div>
     <div class="radio"><label><input type="radio" name="cussat" id="F1" value="4" /> Satisfied (+4)</label></div>
@@ -71,7 +71,7 @@ This is a question type that `only deals with numeric answers` (answers in numbe
     <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of a numeric question</span>
   </div>
   <div class="panel-body">
-    <p><strong><i class="pe-microphone pe-fw"></i> What year is the vehicle registration of your car?</strong> Please choose from the provided dropdown list below.</p>
+    <p><strong><i class="pe-microphone pe-fw"></i> What year is the vehicle registration of your car?</strong><br> Please choose from the provided dropdown list below.</p>
     <p><em>Note: Only one answer allowed</em></p>
     <form class="form-inline">
       <div class="form-group">
@@ -157,7 +157,7 @@ It is typically a maximum of `one-line answer box to fill in`.
     <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of a short open-ended question</span>
   </div>
   <div class="panel-body">
-    <p><strong><i class="pe-microphone pe-fw"></i> Which country are you from?</strong> You can enter your answer in the provided box below.</p>
+    <p><strong><i class="pe-microphone pe-fw"></i> Which country are you from?</strong><br> You can enter your answer in the provided box below.</p>
     <p><em>Note: Please fill in your answer in the box</em></p>
     <form class="form-inline">
       <div class="form-group">
@@ -181,7 +181,7 @@ For the long answer, it normally comes in a `text area format which can be writt
     <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of a long open-ended question</span>
   </div>
   <div class="panel-body">
-    <p><strong><i class="pe-microphone pe-fw"></i> Please describe your feeling/ how you feel about your new house?</strong> Please write in as much detail as possible.</p>
+    <p><strong><i class="pe-microphone pe-fw"></i> Please describe your feeling/ how you feel about your new house?</strong><br> Please write in as much detail as possible.</p>
     <p><em>Note: Please write in the box below as much as you like</em></p>
     <form>
       <textarea class="form-control" rows="5"></textarea>
@@ -207,7 +207,7 @@ A rating scale is a set of categories designed to elicit information about an at
     <span class="panel-title"><i class="pe-cog pe-lg pe-spin pe-fw"></i> Example of attribute rating scale</span>
   </div>
   <div class="panel-body">
-    <p><strong><i class="pe-microphone pe-fw"></i> How do you like your television in each of these aspects?</strong> Please rate each of them by using a rating scale from 1 to 5 where 1 means not good at all, and 5 means very good.</p>
+    <p><strong><i class="pe-microphone pe-fw"></i> How do you like your television in each of these aspects?</strong><br> Please rate each of them by using a rating scale from 1 to 5 where 1 means not good at all, and 5 means very good.</p>
     <p><em>Note: Only one answer allowed for each aspect</em></p>
     <table class="table table-hover">
       <thead>
@@ -270,6 +270,6 @@ A rating scale is a set of categories designed to elicit information about an at
 
 #### Other types of question
 
-There are still other types of question which are not very common. And hence we have not covered them in this article. However, it does not mean that we will not be able to include them into our system.
+There are still other types of question which are not very common and hence we have not covered them in this article. `While currently we do not include other types into our system, it does not mean that we will not include them in the future`.
 
 Should you need a specific type of question in particular, please let us know, and we will address your needs accordingly.

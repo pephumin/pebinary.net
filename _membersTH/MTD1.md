@@ -8,7 +8,7 @@ icon: flag
 question: "What are the key differences between surveys that marked as public vs. private?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 If your survey administrator has created public surveys (which do not require you to log in to take) and wants them to be shown, then they are available in the box labeled `Public Surveys`.
 

@@ -8,7 +8,7 @@ icon: pencil-square-o
 question: "Can you please show me how to participate with a survey?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 Every survey has a title. In the image above, the title is `Sample Survey`. A survey may also have a sub-title and instructions, both of which are found below the title.
 

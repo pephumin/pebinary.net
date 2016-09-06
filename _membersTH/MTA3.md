@@ -8,7 +8,7 @@ icon: universal-access
 question: "Do you offer a member registration by using my social media account?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 Yes we do.
 

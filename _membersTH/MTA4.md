@@ -8,7 +8,7 @@ icon: key
 question: "I am a member but I lost my password. How can I get my login account recovered?"
 ---
 
-### <i class="pe-anchor pe-fw"></i> The answer
+### <i class="pe-anchor pe-fw"></i> คำตอบ
 
 Membership is free. And we welcome everyone who would like to paticipate with our surveys.
 
