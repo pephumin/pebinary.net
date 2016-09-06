@@ -2,7 +2,7 @@
   $.fn.toc = function(options) {
     var defaults = {
       noBackToTopLinks: true,
-      title: '<div id="tochead" class="toc-head"><i class="pe-list-alt pe-lg"></i>&nbsp;Contents &nbsp;[<a id="hide" role="button">hide <i class="pe-chevron-circle-up"></i></a><a id="show" role="button">show <i class="pe-chevron-circle-down"></i></a>]</div>',
+      title: '<div class="toc-head"><i class="pe-list-alt pe-lg"></i>&nbsp;Contents&nbsp;<small>[<a id="hide" role="button">hide <i class="pe-chevron-circle-up"></i></a><a id="show" role="button">show <i class="pe-chevron-circle-down"></i></a>]</small>&nbsp;&nbsp;</div>',
       minimumHeaders: 3,
       headers: 'h4, h5',
       listType: 'ul', // values: [ol|ul]
