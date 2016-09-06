@@ -2,9 +2,9 @@
       <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
   {% assign crumbs = page.url | split: '/' %}
             {% if page.locale == "th" %}
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ "/" | prepend: site.baseurl }}" itemprop="item" data-toggle="tooltip" data-placement="top" title="หน้าแรก"><i class="pe-university pe-fw"></i> <span itemprop="name">หน้าแรก</span></a><meta itemprop="position" content="1" /></li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ "/th/" | prepend: site.baseurl }}" itemprop="item" data-toggle="tooltip" data-placement="top" title="หน้าแรก"><i class="pe-university pe-fw"></i> <span itemprop="name">หน้าแรก</span></a><meta itemprop="position" content="1" /></li>
             {% else %}
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ "/" | prepend: site.baseurl }}" itemprop="item" data-toggle="tooltip" data-placement="top" title="Home"><i class="pe-university pe-fw"></i> <span itemprop="name">Home</span></a><meta itemprop="position" content="1" /></li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ "/en/" | prepend: site.baseurl }}" itemprop="item" data-toggle="tooltip" data-placement="top" title="Home"><i class="pe-university pe-fw"></i> <span itemprop="name">Home</span></a><meta itemprop="position" content="1" /></li>
             {% endif %}
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}

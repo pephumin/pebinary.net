@@ -14,7 +14,7 @@
           </div>
           <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <form name="commentform" method="post" action="/newquestion.php">
-              {% if page.locale == "th" %}<h3 class="th">ถามคำถามใหม่</h3>{% else %}<h3>Ask your new question</h3>{% endif %}
+              {% if page.locale == "th" %}<h3 id="ask-question" class="th">ถามคำถามใหม่</h3>{% else %}<h3 id="ask-question">Ask your new question</h3>{% endif %}
               <div class="form-group has-feedback">
                 <!-- <label for="InputName">Question</label> <span class="label">required</span> -->
                 <textarea class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" rows="5" id="newquestion" placeholder="{% if page.locale == 'th' %}พิมพ์คำถามของคุณในช่องนี้...{% else %}Type your question here...{% endif %}"></textarea><br>
