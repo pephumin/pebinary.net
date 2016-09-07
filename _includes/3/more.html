@@ -47,17 +47,17 @@
             <form name="commentform" method="post" action="{{ "/email.php" | prepend: site.baseurl }}">
               <div class="form-group has-feedback">
                 {% if page.locale == "th" %}<label class="th">ชื่อ</label>{% else %}<label>Name</label>{% endif %} <span class="label">required</span>
-                <input type="text" class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" name="name" id="name" placeholder="{% if page.locale == 'th' %}ชื่อของคุณ{% else %}Your name{% endif %}" required>
+                <input type="text" class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" name="name" placeholder="{% if page.locale == 'th' %}ชื่อของคุณ{% else %}Your name{% endif %}" required>
                 <i class="pe-user {% if page.locale == 'th' %}f-icon-th{% else %}f-icon{% endif %} form-control-feedback"></i>
               </div>
               <div class="form-group has-feedback">
                 {% if page.locale == "th" %}<label class="th">อีเมล์</label>{% else %}<label>Email</label>{% endif %}</label> <span class="label">required</span>
-                <input type="email" class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" name="email" id="email" placeholder="{% if page.locale == 'th' %}อีเมล์@บริษัท.คอม{% else %}email@company.com{% endif %}" required>
+                <input type="email" class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" name="email" placeholder="{% if page.locale == 'th' %}อีเมล์@บริษัท.คอม{% else %}email@company.com{% endif %}" required>
                 <i class="pe-envelope-o {% if page.locale == 'th' %}f-icon-th{% else %}f-icon{% endif %} form-control-feedback"></i>
               </div>
               <div class="form-group has-feedback">
                 {% if page.locale == "th" %}<label class="th">คำถาม</label>{% else %}<label>Question</label>{% endif %}</label> <span class="label">required</span>
-                <textarea class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" rows="4" name="message" id="message" placeholder="{% if page.locale == 'th' %}พิมพ์คำถามของคุณที่นี่ คุณสามารถพิมพ์ได้มากเท่าที่ต้องการ{% else %}Type your question here. You can type as long as you need.{% endif %}" required></textarea>
+                <textarea class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" rows="4" name="message" placeholder="{% if page.locale == 'th' %}พิมพ์คำถามของคุณที่นี่ คุณสามารถพิมพ์ได้มากเท่าที่ต้องการ{% else %}Type your question here. You can type as long as you need.{% endif %}" required></textarea>
                 <i class="pe-commenting-o {% if page.locale == 'th' %}f-icon-th{% else %}f-icon{% endif %} form-control-feedback"></i>
               </div>
               {% if page.locale == "th" %}<button type="submit" class="button-x-th">ส่งคำถาม{% else %}<button type="submit" class="button-x">send{% endif %} <i class="pe-paper-plane-o"></i></button>
