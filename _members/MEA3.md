@@ -43,6 +43,3 @@ You will be prompted for your name, email address, and the desired password. If 
 The process itself is very straightforward, and therefore expect no mistakes for registering new account except on the fact that particular user is already registered in our system. If this is a case, just simply use the `Password recovery` function to reset your password.
 
 {% include 1/alert.html type = "pe" close = "yes" icon = "exclamation-triangle" intro = "Note" msg = "However, please note: your survey administrator may need to give you access to additional surveys after you create your new account. If, after logging in, you don't see the surveys you expect, contact your survey administrator for further assistance." %}
-
-
-#### Email verification
