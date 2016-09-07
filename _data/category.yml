@@ -48,7 +48,7 @@ clients:
 
 -  slug: new-survey
    name: "New survey"
-   nameth: "งานวิจัยใหม่"
+   nameth: "เพิ่มงานวิจัยใหม่"
    icon: file-text
 
 -  slug: your-survey
