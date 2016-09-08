@@ -75,7 +75,7 @@ h2
 
 h2.en
   @extend h2
-  font-family: "ubuntu"
+  font-family: "Lucida Grande"
   font-size: 1.9rem
   line-height: 0.75187969947
   letter-spacing: -0.1rem
@@ -93,13 +93,13 @@ h3
   background-size: 100%
   padding: 7px 0 10px 10px
   @if $themeblue
-    background-image: linear-gradient(to right, $darkblue, rgba(0, 0, 0, 0))
+    background-image: linear-gradient(to right, $darkblue, $white)
   @else
-    background-image: linear-gradient(to right, $darkgreen, rgba(0, 0, 0, 0))
+    background-image: linear-gradient(to right, $darkgreen, $white)
 
 h3.en
   @extend h3
-  font-family: "ubuntu"
+  font-family: "Lucida Grande"
   font-size: 1.3rem
   line-height: 1.09890109923
   letter-spacing: -0.08rem
@@ -126,7 +126,7 @@ h4
 
 h4.en
   @extend h4
-  font-family: "ubuntu"
+  font-family: "Lucida Grande"
   font-size: 1.2rem
   line-height: 1.19047619083
   letter-spacing: -0.03rem
@@ -144,7 +144,7 @@ h5
 
 h5.en
   @extend h5
-  font-family: "ubuntu"
+  font-family: "Lucida Grande"
   font-size: 1.05rem
   line-height: 1.3605442181
   letter-spacing: -0.03rem
@@ -164,7 +164,7 @@ h5.h5index
 
 h5.h5index-en
   @extend h5.h5index
-  font-family: "ubuntu"
+  font-family: "Lucida Grande"
   font-size: 1.25rem
   line-height: 1.1428571432
   letter-spacing: -0.03rem
@@ -187,7 +187,7 @@ h6
 
 h6.en
   @extend h6
-  font-family: "ubuntu"
+  font-family: "Lucida Grande"
   font-size: 1.0rem
   line-height: 1.428571429
   letter-spacing: -0.03rem
@@ -207,14 +207,12 @@ p.en
   @extend p
   font-family: "Lucida Grande"
   font-size: 1rem
-  //line-height: 1.428571429
   letter-spacing: -0.03rem
 
 p.th
   @extend p
   font-family: "boon"
   font-size: 1.2rem
-  //line-height: 1.19047619083
   letter-spacing: -0.03rem
 
 p.lead
@@ -224,14 +222,12 @@ p.lead-en
   @extend p.lead
   font-family: "snippet"
   font-size: 1.3rem
-  //line-height: 1.09890109923
   letter-spacing: -0.01rem
 
 p.lead-th
   @extend p.lead
   font-family: "boon"
   font-size: 1.5rem
-  //line-height: 0.95238095266
   letter-spacing: -0.03rem
 
 blockquote
@@ -242,35 +238,73 @@ blockquote.en
   @extend blockquote
   font-family: "snippet"
   font-size: 1.25rem
-  //line-height: 1.1428571432
 
 blockquote.th
   @extend blockquote
   font-family: "boon"
   font-size: 1.45rem
-  //line-height: 0.98522167517
 
 
 @media (max-width: 768px)
 
-  // h2
-  //   font-size: 1.5rem
 
-  p, p.en
+
+  h1
+    font-size: 1.55rem
+
+  h2.en
+    font-size: 1.7rem
+
+  h2.th
+    font-size: 1.9rem
+
+  h3.en
+    font-size: 1.1rem
+
+  h3.th
+    font-size: 1.25rem
+
+  h4.en
+    font-size: 1.0rem
+
+  h4.th
+    font-size: 1.2rem
+
+  h5.en
+    font-size: 0.9rem
+
+  h5.th
+    font-size: 1.15rem
+
+  h5.h5index-en
     font-size: 1.05rem
-    //line-height: 1.3605442181
+
+  h5.h5index-th
+    font-size: 1.3rem
+
+  h6.en
+    font-size: 0.85rem
+
+  h6.th
+    font-size: 0.95rem
+
+  p.en
+    font-size: 0.8rem
 
   p.th
-    font-size: 1.25rem
-    //line-height: 1.1428571432
+    font-size: 1.0rem
 
-  p.lead, p.lead-en
+  p.lead-en
     font-size: 1.1rem
-    //line-height: 1.29870129909
 
   p.lead-th
     font-size: 1.3rem
-    //line-height: 1.09890109923
+
+  blockquote.en
+    font-size: 1.05rem
+
+  blockquote.th
+    font-size: 1.25rem
 
 
 // color control
