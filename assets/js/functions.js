@@ -58,10 +58,13 @@ $(document).ready(function() {
   });
   var checkLang = document.getElementsByTagName('html')[0].getAttribute('lang');
   if (checkLang == 'th') {
-    $('#tochead').removeClass('toc-head');
     $('#tochead').addClass('toc-head-th');
+    $('#tochead').removeClass('toc-head');
     $('ul.toc-list').addClass('toc-list-th');
+    $('ul.toc-list').removeClass('toc-list');
     $('ol.toc-list').addClass('toc-list-th');
+    $('ol.toc-list').removeClass('toc-list');
     $('li.toc-list-item').addClass('toc-list-item-th');
+    $('li.toc-list-item').removeClass('toc-list-item');
   }
 });
