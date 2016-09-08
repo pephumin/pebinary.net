@@ -59,7 +59,7 @@ Clients can simply create a new survey with our system by following these steps.
 </ul>
 
 
-#### ขั้นตอนที่ 1
+#### ขั้นตอนที่ 1: เพิ่มข้อมูลแบบสอบถาม
 
 Insert the general information regarding to your new survey including below information.
 
@@ -72,15 +72,15 @@ Insert the general information regarding to your new survey including below info
 
 
 
-#### ขั้นตอนที่ 2
+#### ขั้นตอนที่ 2: เพิ่มคำถาม
 
 Then you can start inserting questions to your survey. Each question should be inserted by selecting an appropriate question type.
 
-#### ขั้นตอนที่ 3
+#### ขั้นตอนที่ 3: เรียงลำดับคำถาม
 
 Next is where you can make sure your survey has been developed with the right question ordering.
 
-#### ขั้นตอนที่ 4
+#### ขั้นตอนที่ 4: วิธีข้ามบางคำถาม
 
 Testing a responsive VDO using bootstrap.
 
@@ -89,8 +89,8 @@ Testing a responsive VDO using bootstrap.
 </div>
 
 
-#### ขั้นตอนที่ 5
+#### ขั้นตอนที่ 5: เปลี่ยนสีและธีม
 
 
 
-#### ขั้นตอนที่ 6
+#### ขั้นตอนที่ 6: ยืนยันแบบสอบถาม
