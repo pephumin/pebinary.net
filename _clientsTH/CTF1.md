@@ -38,7 +38,7 @@ This can be a simple yes/no question, or question in scale format where responde
     <p><em>Note: Only one answer allowed</em></p>
     <div class="radio"><label><input type="radio" name="yesno" id="E1" value="yes" /> Yes I have</label></div>
     <div class="radio"><label><input type="radio" name="yesno" id="E1" value="no" /> No I have not</label></div>
-    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+    <button type="submit" class="pressx-en">submit <i class="pe-check-circle-o"></i></button>
   </div>
 </div>
 
@@ -57,7 +57,7 @@ This can be a simple yes/no question, or question in scale format where responde
     <div class="radio"><label><input type="radio" name="cussat" id="F1" value="3" /> Neither satisfied nor dissatisfied (+3)</label></div>
     <div class="radio"><label><input type="radio" name="cussat" id="F1" value="2" /> Dissatisfied (+2)</label></div>
     <div class="radio"><label><input type="radio" name="cussat" id="F1" value="1" /> Not at all satisfied (+1)</label></div>
-    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+    <button type="submit" class="pressx-en">submit <i class="pe-check-circle-o"></i></button>
   </div>
 </div>
 
@@ -90,7 +90,7 @@ This is a question type that `only deals with numeric answers` (answers in numbe
           </select>
         </div>
       </div>
-      <button type="submit" class="button-x">Done <i class="pe-check-circle-o"></i></button>
+      <button type="submit" class="pressx-en">Done <i class="pe-check-circle-o"></i></button>
     </form>
   </div>
 </div>
@@ -114,7 +114,7 @@ Similar to the single anwer close ended question as described earlier, the key d
     <div class="checkbox"><label><input type="checkbox" name="device" id="S7" value="Tablet" /> Tablet</label></div>
     <div class="checkbox"><label><input type="checkbox" name="device" id="S7" value="Laptop" /> Laptop computer</label></div>
     <div class="checkbox"><label><input type="checkbox" name="device" id="S7" value="Desktop" /> Desktop computer</label></div>
-    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+    <button type="submit" class="pressx-en">submit <i class="pe-check-circle-o"></i></button>
   </div>
 </div>
 
@@ -142,7 +142,7 @@ This type of questions is sometimes phrased as `a statement which requires a res
           <input type="text" class="form-control" id="country" placeholder="Type in here..." />
         </div>
       </div>
-      <button type="submit" class="button-x">Done <i class="pe-check-circle-o"></i></button>
+      <button type="submit" class="pressx-en">Done <i class="pe-check-circle-o"></i></button>
     </form>
   </div>
 </div>
@@ -166,7 +166,7 @@ It is typically a maximum of `one-line answer box to fill in`.
           <input type="text" class="form-control" id="exampleInputAmount" placeholder="Format: 21/09/2016">
         </div>
       </div>
-      <button type="submit" class="button-x">Done <i class="pe-check-circle-o"></i></button>
+      <button type="submit" class="pressx-en">Done <i class="pe-check-circle-o"></i></button>
     </form>
   </div>
 </div>
@@ -186,7 +186,7 @@ For the long answer, it normally comes in a `text area format which can be writt
     <form>
       <textarea class="form-control" rows="5"></textarea>
       <br>
-      <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+      <button type="submit" class="pressx-en">submit <i class="pe-check-circle-o"></i></button>
     </form>
   </div>
 </div>
@@ -265,7 +265,7 @@ This type of rating scale _will not include_ an option of N/A therefore it is ne
         </tr>
       </tbody>
     </table>
-    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+    <button type="submit" class="pressx-en">submit <i class="pe-check-circle-o"></i></button>
   </div>
 </div>
 
@@ -342,7 +342,7 @@ Unlike the previous one, this type of rating scale _will include_ an option of N
         </tr>
       </tbody>
     </table>
-    <button type="submit" class="button-x">submit <i class="pe-check-circle-o"></i></button>
+    <button type="submit" class="pressx-en">submit <i class="pe-check-circle-o"></i></button>
   </div>
 </div>
 
