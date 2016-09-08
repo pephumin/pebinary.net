@@ -40,8 +40,6 @@
   position: relative
   background-color: transparent
   margin: 0px
-  //background-clip: padding-box
-  //outline: 0
 
 .modal-backdrop
   position: fixed
@@ -84,6 +82,20 @@
     color: $white
     text-align: center
     margin: auto
+
+  h2.en
+    @extend h2
+    font-family: "ubuntu"
+    font-size: 1.9rem
+    line-height: 0.75187969947
+    letter-spacing: -0.1rem
+
+  h2.th
+    @extend h2
+    font-family: "boon"
+    font-size: 2.1rem
+    line-height: 0.68027210904
+    letter-spacing: -0.03rem
 
 .modal-body
   position: relative
@@ -153,69 +165,77 @@ div#search-results
   margin-top: 60px
 
   .s-question
+    color: $white
+
+  .s-question-en
+    @extend .s-question
     font-size: 1rem
 
   .s-question-th
+    @extend .s-question
     font-family: "boon"
     font-size: 1.2rem
 
   .s-title
-    font-size: 1.6rem
-    font-weight: bold
+    //font-weight: bold
     color: $white
     a
       color: $white
       &:hover, &:focus
         color: $orange
+
+  .s-title-en
+    @extend .s-title
+    font-size: 1.6rem
 
   .s-title-th
+    @extend .s-title
     font-family: "boon"
     font-size: 1.8rem
-    font-weight: bold
-    color: $white
-    a
-      color: $white
-      &:hover, &:focus
-        color: $orange
 
   .s-section
+    text-transform: uppercase
+    font-weight: bold
+    color: $orange
+    a
+      color: $orange
+      &:hover, &:focus
+        color: $white
+
+  .s-section-en
+    @extend .s-section
     font-family: "ubuntu"
     font-size: 0.85rem
-    text-transform: uppercase
-    font-weight: bold
-    color: $orange
-    a
-      color: $orange
-      &:hover, &:focus
-        color: $white
 
   .s-section-th
+    @extend .s-section
     font-family: "boon"
     font-size: 1.05rem
-    text-transform: uppercase
-    font-weight: bold
-    color: $orange
-    a
-      color: $orange
-      &:hover, &:focus
-        color: $white
 
   .s-category, .s-tags
-    font-size: 0.75rem
     color: $grey
     a
       color: $grey
       &:hover, &:focus
         color: $orange
 
-  .s-category-th, .s-tags-th
+  .s-category-en
+    @extend .s-category
+    font-size: 0.75rem
+
+  .s-category-th
+    @extend .s-category
     font-family: "boon"
     font-size: 0.95rem
-    color: $grey
-    a
-      color: $grey
-      &:hover, &:focus
-        color: $orange
+
+  .s-tags-en
+    @extend .s-tags
+    font-size: 0.75rem
+
+  .s-tags-th
+    @extend .s-tags
+    font-family: "boon"
+    font-size: 0.95rem
 
   .s-hr
     width: 30%

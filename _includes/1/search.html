@@ -6,9 +6,9 @@
           <a data-dismiss="modal" aria-hidden="true"><i class="pe-times pe-lg"></i></a>
         </div>
         <div class="modal-title">
-          {% if page.url contains "/members/" %}{% if page.locale == "th" %}<h2 class="th">ค้นหาบทความทั้งหมดสำหรับสมาชิก</h2>{% else %}<h2>Search documents for members</h2>{% endif %}
-          {% elsif page.url contains "/clients/" %}{% if page.locale == "th" %}<h2 class="th">ค้นหาบทความทั้งหมดสำหรับลูกค้า</h2>{% else %}<h2>Search documents for clients</h2>{% endif %}
-          {% else %}{% if page.locale == "th" %}<h2 class="th">ค้นหาบทความทั้งหมด</h2>{% else %}<h2>Search all documents</h2>{% endif %}
+          {% if page.url contains "/members/" %}{% if page.locale %}<h2 class="{{ page.locale }}">{% else %}<h2>{% endif %}{% if page.locale == "th" %}ค้นหาบทความทั้งหมดสำหรับสมาชิก{% else %}Search documents for members{% endif %}</h2>
+          {% elsif page.url contains "/clients/" %}{% if page.locale %}<h2 class="{{ page.locale }}">{% else %}<h2>{% endif %}{% if page.locale == "th" %}ค้นหาบทความทั้งหมดสำหรับลูกค้า{% else %}Search documents for clients{% endif %}</h2>
+          {% else %}{% if page.locale %}<h2 class="{{ page.locale }}">{% else %}<h2>{% endif %}{% if page.locale == "th" %}ค้นหาบทความทั้งหมด{% else %}Search all documents{% endif %}</h2>
           {% endif %}
         </div>
         <div class="modal-body">
@@ -24,7 +24,7 @@
               <input type="text" class="form-control input-lg" id="search-input" placeholder="Type your keyword(s) here...">
               <i class="pe-search pe-lg f-icon form-control-feedback"></i>
             </div>
-            <div id="search-results"><span class="s-question">What are you looking for today?</span></div>
+            <div id="search-results"><span class="s-question-en">What are you looking for today?</span></div>
             {% endif %}
           </div>
         </div>

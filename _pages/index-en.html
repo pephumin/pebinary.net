@@ -10,16 +10,16 @@ homepage: true
 
 <section class="container index">
   <div class="row">
-    <h2>Welcome to <span class="h2logo"><span class="logo1"><i class="pe-logo"></i></span> <span class="logo2">pe</span><span class="logo3">binary</span> <span class="label">support</span></span></h2>
-    <p class="lead">We set up this dedicated website to support our members and clients. Within this website, you will see a lot of help documents arranged in section and category (or even sub-category).</p>
-    <p>Please start browsing our website by selecting one of these sections below...</p>
+    <h2 class="en">Welcome to <span class="h2logo"><span class="logo1"><i class="pe-logo"></i></span> <span class="logo2">pe</span><span class="logo3">binary</span> <span class="label-red">support</span></span></h2>
+    <p class="lead-en">We set up this dedicated website to support our members and clients. Within this website, you will see a lot of help documents arranged in section and category (or even sub-category).</p>
+    <p class="en">Please start browsing our website by selecting one of these sections below...</p>
     {% for entry in site.data.index %}
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center index-border">
       <a href="{{ entry.url | prepend: page.locale | prepend: "/" | prepend: site.baseurl }}" title="{{ entry.title }}">
         <div class="indexbox">
-          <h3><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.section | capitalize }}</h3>
+          <h3 class="en"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.section | capitalize }}</h3>
           <img src="{{ entry.svg | prepend: site.baseurl }}" alt="{{ entry.title }}" title="{{ entry.title }}" class="img-responsive front-svg">
-          <p class="indexp">{{ entry.description }}</p>
+          <p class="indexp-en">{{ entry.description }}</p>
         </div>
       </a>
     </div>

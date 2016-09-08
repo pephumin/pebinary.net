@@ -4,19 +4,19 @@
       {{ imgsvg }}
   {% if page.locale == "th" %}
       <h2 class="th">{% for ww in site.data.category.[include.section] %}{% if ww.slug == include.category %}{{ ww.nameth }}{% endif %}{% endfor %}</h2>
-      <p class="leadth">บทความและข้อมูลการใช้งานต่างๆ ที่ได้ถูกจัดเตรียมไว้อย่างเป็นระเบียบในกลุ่มหมวดหมู่ต่างๆ เพื่อความง่ายสำหรับผู้ใช้ในการค้นหาและเข้าถึง</p>
+      <p class="lead-th">บทความและข้อมูลการใช้งานต่างๆ ที่ได้ถูกจัดเตรียมไว้อย่างเป็นระเบียบในกลุ่มหมวดหมู่ต่างๆ เพื่อความง่ายสำหรับผู้ใช้ในการค้นหาและเข้าถึง</p>
       <p class="th">หากคุณพบว่า หัวข้อใดหรือข้อมูลใดที่ทางเรายังไม่มีหรือทางเราควรจะมีเพิ่มเติม คุณสามารถส่งหัวข้อเหล่านั้นมาที่เราได้ทันทีโดยใช้แบบฟอร์มที่อยู่ด้านล่างในหน้านี้ตามลิ๊งด้านล่าง (<a href="{{ newtopiclink | prepend: site.baseurl }}" title="Go to the new topic submission section"><i class="pe-chevron-circle-down pe-fw"></i></a>)</p>
   {% else %}
-      <h2>{% for ww in site.data.category.[include.section] %}{% if ww.slug == include.category %}{{ ww.name }}{% endif %}{% endfor %}</h2>
-      <p class="lead">All help documents are collectively arranged by category (and sub-category, if any), users can quickly find specific topic by using our quick search function.</p>
-      <p>And if you believe the topic you are looking for is currently not available, please submit your question using the form at the end of this page below (<a href="{{ newtopiclink | prepend: site.baseurl }}" title="Go to the new topic submission section"><i class="pe-chevron-circle-down pe-fw"></i></a>).</p>
+      <h2 class="en">{% for ww in site.data.category.[include.section] %}{% if ww.slug == include.category %}{{ ww.name }}{% endif %}{% endfor %}</h2>
+      <p class="lead-en">All help documents are collectively arranged by category (and sub-category, if any), users can quickly find specific topic by using our quick search function.</p>
+      <p class="en">And if you believe the topic you are looking for is currently not available, please submit your question using the form at the end of this page below (<a href="{{ newtopiclink | prepend: site.baseurl }}" title="Go to the new topic submission section"><i class="pe-chevron-circle-down pe-fw"></i></a>).</p>
   {% endif %}
 {% assign topics = site.[include.section] | where: "category", include.category %}
 {% capture tsize %}{{ topics | size }}{% endcapture %}
   {% if page.locale == "th" %}
-      <h5 class="h5indexth"><i class="pe-list-ol h5-icon pe-fw"></i> แสดงทุกคำถามที่อยู่ในหมวดหมู่นี้</h5>
+      <h5 class="h5index-th"><i class="pe-list-ol h5-icon pe-fw"></i> แสดงทุกคำถามที่อยู่ในหมวดหมู่นี้</h5>
   {% else %}
-      <h5 class="h5index"><i class="pe-list-ol h5-icon pe-fw"></i> Showing all questions in this category</h5>
+      <h5 class="h5index-en"><i class="pe-list-ol h5-icon pe-fw"></i> Showing all questions in this category</h5>
   {% endif %}
       <div class="row">
 {% for entry in topics %}
@@ -24,19 +24,19 @@
           <div class="listposts">
             <i class="pe-{{ entry.icon }} pe-lg p-icon"></i>
   {% if page.locale == "th" %}
-            <h5 class="listposts-headth"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}">{{ entry.title }}</a></h5>
+            <h5 class="listposts-head-th"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}">{{ entry.title }}</a></h5>
   {% else %}
-            <h5 class="listposts-head"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}">{{ entry.title }}</a></h5>
+            <h5 class="listposts-head-en"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}">{{ entry.title }}</a></h5>
   {% endif %}
             {% if entry.tags %}<p class="p-tag">{% for tag in entry.tags %}<i class="pe-tag m-icon pe-fw"></i> {{ tag | slugify }}{% endfor %}</p>{% endif %}
   {% if page.locale == "th" %}
-            <h6 class="th">คำถามของคุณ:</h6>
+            <h6 class="th">คำถาม:</h6>
             <blockquote class="th"><i class="pe-quote-left"></i> {{ entry.question }} <i class="pe-quote-right"></i></blockquote>
-            <p class="listposts-footer-th"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}" class="button-th">อ่าน <i class="pe-map-o"></i></a></p>
+            <p class="listposts-footer-th"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}" class="press-th">อ่าน <i class="pe-map-o"></i></a></p>
   {% else %}
-            <h6 class="listposts-sub">You ask:</h6>
-            <blockquote><i class="pe-quote-left"></i> {{ entry.question }} <i class="pe-quote-right"></i></blockquote>
-            <p class="listposts-footer"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}" class="button">read <i class="pe-map-o"></i></a></p>
+            <h6 class="en">Question:</h6>
+            <blockquote class="en"><i class="pe-quote-left"></i> {{ entry.question }} <i class="pe-quote-right"></i></blockquote>
+            <p class="listposts-footer-en"><a href="{{ entry.url | prepend: site.baseurl }}" title="{{ entry.title }}" class="press-en">read <i class="pe-map-o"></i></a></p>
   {% endif %}
           </div>
         </div>

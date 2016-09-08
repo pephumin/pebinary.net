@@ -1,27 +1,27 @@
       <section class="feedback">
-        {% if page.locale == "th" %}<h3 class="th"><i class="pe-puzzle-piece pe-fw"></i> อื่นๆ</h3>{% else %}<h3><i class="pe-puzzle-piece pe-fw"></i> Others</h3>{% endif %}
+        {% if page.locale %}<h3 class="{{ page.locale }}">{% else %}<h3>{% endif %}<i class="pe-puzzle-piece pe-fw"></i> {% if page.locale == "th" %}อื่นๆ{% else %}Others{% endif %}</h3>
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            {% if page.locale == "th" %}<h5 class="th">บทความนี้ช่วยคุณหรือไม่</h5>{% else %}<h5>Was it helpful?</h5>{% endif %}
+            {% if page.locale %}<h5 class="{{ page.locale }}">{% else %}<h5>{% endif %}{% if page.locale == "th" %}บทความนี้ช่วยคุณหรือไม่{% else %}Was it helpful?{% endif %}</h5>
             <div class="helpful">
-              <div class="h-yes"><img src="{{ "/assets/img/0/1-yes.svg" | prepend: site.baseurl }}" alt="Yes" title="Yes"><br>{% if page.locale == "th" %}<span class="tlabelth">ช่วย</span>{% else %}<span class="tlabel">yes</span>{% endif %}</div>
-              <div class="h-no"><img src="{{ "/assets/img/0/1-no.svg" | prepend: site.baseurl }}" alt="No" title="No"><br>{% if page.locale == "th" %}<span class="tlabelth">ไม่ช่วย</span>{% else %}<span class="tlabel">no</span>{% endif %}</div>
+              <div class="h-yes"><img src="{{ "/assets/img/0/1-yes.svg" | prepend: site.baseurl }}" alt="Yes" title="Yes"><br>{% if page.locale == "th" %}<span class="tlabel-th">ช่วย</span>{% else %}<span class="tlabel-en">yes</span>{% endif %}</div>
+              <div class="h-no"><img src="{{ "/assets/img/0/1-no.svg" | prepend: site.baseurl }}" alt="No" title="No"><br>{% if page.locale == "th" %}<span class="tlabel-th">ไม่ช่วย</span>{% else %}<span class="tlabel-en">no</span>{% endif %}</div>
             </div>
             {% if page.locale == "th" %}<p class="helpfulnote-th"><i class="pe-bullhorn pe-fw"></i> มีผู้ใช้อีก 56 คน ที่บอกว่าบทความนี้มีประโยชน์ แล้วคุณหล่ะคิดอย่างไร</p>
-            {% else %}<p class="helpfulnote"><i class="pe-bullhorn pe-fw"></i> 56 people also found this helpful. How about you?</p>{% endif %}
+            {% else %}<p class="helpfulnote-en"><i class="pe-bullhorn pe-fw"></i> 56 people also found this helpful. How about you?</p>{% endif %}
           </div>
           <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 moretopics">
-            {% if page.locale == "th" %}<h5 class="th">หัวข้ออื่นๆในหมวดหมู่นี้</h5>{% else %}<h5>Other topics in this category</h5>{% endif %}
+            {% if page.locale == "th" %}<h5 class="th">หัวข้ออื่นๆในหมวดหมู่นี้</h5>{% else %}<h5 class="en">Other topics in this category</h5>{% endif %}
             <div class="moremore">
-              {% if page.locale == "th" %}<ul class="liststh">{% else %}<ul class="lists">{% endif %}
+              {% if page.locale == "th" %}<ul class="lists-th">{% else %}<ul class="lists-en">{% endif %}
                 {% assign groups = site.[include.section] | group_by: "category" %}
                 {% for group in groups %}
                   {% if group.name == page.category %}
                     {% for entry in group.items %}
                       {% if page.url contains entry.url %}
-                {% if page.locale == "th" %}<li class="listtopics-item-th disabled">{% else %}<li class="listtopics-item disabled">{% endif %}{{ entry.title }}</li>
+                {% if page.locale == "th" %}<li class="listtopics-item-th disabled">{% else %}<li class="listtopics-item-en disabled">{% endif %}{{ entry.title }}</li>
                       {% else %}
-                {% if page.locale == "th" %}<li class="listtopics-item-th">{% else %}<li class="listtopics-item">{% endif %}<a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a></li>
+                {% if page.locale == "th" %}<li class="listtopics-item-th">{% else %}<li class="listtopics-item-en">{% endif %}<a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a></li>
                       {% endif %}
                     {% endfor %}
                   {% endif %}
@@ -35,32 +35,32 @@
       <section class="contactus">
         {% if page.locale == "th" %}
         <h3 class="th"><i class="pe-question-circle pe-fw"></i> ยังต้องการความช่วยเหลืออยู่ใช่ไหม</h3>
-        <p class="leadth">หากคุณคิดว่าเราไม่มีคำตอบสำหรับคำถามของคุณ​ คุณสามารถส่งคำถามใหม่มาที่เราได้ทันที เพียงแค่พิมพ์คำถามลงแบบฟอร์มล่างนี้แล้วกดส่ง</p>
+        <p class="lead-th">หากคุณคิดว่าเราไม่มีคำตอบสำหรับคำถามของคุณ​ คุณสามารถส่งคำถามใหม่มาที่เราได้ทันที เพียงแค่พิมพ์คำถามลงแบบฟอร์มล่างนี้แล้วกดส่ง</p>
         <p class="th">เราตอบทุกคำถาม ดังนั้นคุณสามารถมั่นใจได้ว่า คำถามของคุณจะถูกตอบกลับอย่างเร็วที่สุด เท่าที่เราจะทำได้ และถ้าหากเราพบว่าคำถามของคุณน่าสนใจ เราจะเพิ่มลงเข้าในเว็บไซต์นี้ด้วย</p>
         {% else %}
-        <h3><i class="pe-question-circle pe-fw"></i> Still need help?</h3>
-        <p class="lead">You can submit a new question if you believe what you are looking for is not currently available in this website. Please use below form to submit your question.</p>
-        <p>We make sure that we answer every single query which would normally take a few working days. And if your question is considered to be valueable to others, we will place it in this website accordingly.</p>
+        <h3 class="en"><i class="pe-question-circle pe-fw"></i> Still need help?</h3>
+        <p class="lead-en">You can submit a new question if you believe what you are looking for is not currently available in this website. Please use below form to submit your question.</p>
+        <p class="en">We make sure that we answer every single query which would normally take a few working days. And if your question is considered to be valueable to others, we will place it in this website accordingly.</p>
         {% endif %}
         <div class="contact-border">
           <div class="contact">
             <form name="commentform" method="post" action="{{ "/email.php" | prepend: site.baseurl }}">
               <div class="form-group has-feedback">
-                {% if page.locale == "th" %}<label class="th">ชื่อ</label>{% else %}<label>Name</label>{% endif %} <span class="label">required</span>
+                {% if page.locale == "th" %}<label class="th">ชื่อ</label>{% else %}<label class="en">Name</label>{% endif %} <span class="label-red">required</span>
                 <input type="text" class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" name="name" placeholder="{% if page.locale == 'th' %}ชื่อของคุณ{% else %}Your name{% endif %}" required>
-                <i class="pe-user {% if page.locale == 'th' %}f-icon-th{% else %}f-icon{% endif %} form-control-feedback"></i>
+                <i class="pe-user {% if page.locale == 'th' %}f-icon-th{% else %}f-icon-en{% endif %} form-control-feedback"></i>
               </div>
               <div class="form-group has-feedback">
-                {% if page.locale == "th" %}<label class="th">อีเมล์</label>{% else %}<label>Email</label>{% endif %}</label> <span class="label">required</span>
+                {% if page.locale == "th" %}<label class="th">อีเมล์</label>{% else %}<label class="en">Email</label>{% endif %}</label> <span class="label-red">required</span>
                 <input type="email" class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" name="email" placeholder="{% if page.locale == 'th' %}อีเมล์@บริษัท.คอม{% else %}email@company.com{% endif %}" required>
-                <i class="pe-envelope-o {% if page.locale == 'th' %}f-icon-th{% else %}f-icon{% endif %} form-control-feedback"></i>
+                <i class="pe-envelope-o {% if page.locale == 'th' %}f-icon-th{% else %}f-icon-en{% endif %} form-control-feedback"></i>
               </div>
               <div class="form-group has-feedback">
-                {% if page.locale == "th" %}<label class="th">คำถาม</label>{% else %}<label>Question</label>{% endif %}</label> <span class="label">required</span>
+                {% if page.locale == "th" %}<label class="th">คำถาม</label>{% else %}<label class="en">Question</label>{% endif %}</label> <span class="label-red">required</span>
                 <textarea class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" rows="4" name="message" placeholder="{% if page.locale == 'th' %}พิมพ์คำถามของคุณที่นี่ คุณสามารถพิมพ์ได้มากเท่าที่ต้องการ{% else %}Type your question here. You can type as long as you need.{% endif %}" required></textarea>
-                <i class="pe-commenting-o {% if page.locale == 'th' %}f-icon-th{% else %}f-icon{% endif %} form-control-feedback"></i>
+                <i class="pe-commenting-o {% if page.locale == 'th' %}f-icon-th{% else %}f-icon-en{% endif %} form-control-feedback"></i>
               </div>
-              {% if page.locale == "th" %}<button type="submit" class="button-x-th">ส่งคำถาม{% else %}<button type="submit" class="button-x">send{% endif %} <i class="pe-paper-plane-o"></i></button>
+              {% if page.locale == "th" %}<button type="submit" class="pressx-th">ส่งคำถาม{% else %}<button type="submit" class="pressx-en">send{% endif %} <i class="pe-paper-plane-o"></i></button>
             </form>
           </div>
         </div>

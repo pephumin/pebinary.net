@@ -17,12 +17,9 @@ del
   color: $silver
   text-decoration: line-through
 
-.button
-  font-family: "ubuntu"
-  font-size: 0.7rem
+.press
   background-color: transparent
   text-align: center
-  letter-spacing: 0.1rem
   text-transform: uppercase
   text-decoration: none
   display: inline-block
@@ -43,10 +40,7 @@ del
   @else
     color: $darkgreen
     border: 1px solid $darkgreen
-
-  &:hover,
-  &:active,
-  &:focus
+  &:hover, &:active, &:focus
     color: $white
     outline: 0
     text-decoration: none
@@ -57,96 +51,21 @@ del
       background-color: $darkgreen
       border: 1px solid $darkgreen
 
-.button-th
-  font-family: "boon"
-  font-size: 0.9rem
-  font-weight: bold
-  text-align: center
-  letter-spacing: 0.05rem
-  text-transform: uppercase
-  text-decoration: none
-  background-color: transparent
-  display: inline-block
-  height: 30px
-  line-height: 30px
-  padding: 0 15px
-  white-space: nowrap
-  border-radius: 5px
-  cursor: pointer
-  box-sizing: border-box
-  -webkit-transition: all 0.15s ease-out 0s
-  -moz-transition: all 0.15s ease-out 0s
-  -ms-transition: all 0.15s ease-out 0s
-  -o-transition: all 0.15s ease-out 0s
-  transition: all 0.15s ease-out 0s
-  color: $white
-  @if $themeblue
-    background-color: $darkblue
-    border: 1px solid $darkblue
-  @else
-    background-color: $darkgreen
-    border: 1px solid $darkgreen
-
-  &:hover,
-  &:active,
-  &:focus
-    background-color: transparent
-    outline: 0
-    text-decoration: none
-    @if $themeblue
-      color: $darkblue
-      border: 1px solid $darkblue
-    @else
-      color: $darkgreen
-      border: 1px solid $darkgreen
-
-.button-x
+.press-en
+  @extend .press
   font-family: "ubuntu"
   font-size: 0.7rem
-  text-align: center
   letter-spacing: 0.1rem
-  text-transform: uppercase
-  text-decoration: none
-  display: inline-block
-  height: 30px
-  line-height: 30px
-  padding: 0 15px
-  white-space: nowrap
-  border-radius: 5px
-  cursor: pointer
-  box-sizing: border-box
-  -webkit-transition: all 0.15s ease-out 0s
-  -moz-transition: all 0.15s ease-out 0s
-  -ms-transition: all 0.15s ease-out 0s
-  -o-transition: all 0.15s ease-out 0s
-  transition: all 0.15s ease-out 0s
-  color: $white
-  @if $themeblue
-    background-color: $darkblue
-    border: 1px solid $darkblue
-  @else
-    background-color: $darkgreen
-    border: 1px solid $darkgreen
 
-  &:hover,
-  &:active,
-  &:focus
-    background-color: transparent
-    outline: 0
-    text-decoration: none
-    @if $themeblue
-      color: $darkblue
-      border: 1px solid $darkblue
-    @else
-      color: $darkgreen
-      border: 1px solid $darkgreen
-
-.button-x-th
+.press-th
+  @extend .press
   font-family: "boon"
   font-size: 0.9rem
-  font-weight: bold
-  text-align: center
   letter-spacing: 0.05rem
+  // font-weight: bold
+
+.pressx
+  text-align: center
   text-transform: uppercase
   text-decoration: none
   display: inline-block
@@ -169,10 +88,7 @@ del
   @else
     background-color: $darkgreen
     border: 1px solid $darkgreen
-
-  &:hover,
-  &:active,
-  &:focus
+  &:hover, &:active, &:focus
     background-color: transparent
     outline: 0
     text-decoration: none
@@ -183,31 +99,35 @@ del
       color: $darkgreen
       border: 1px solid $darkgreen
 
+.pressx-en
+  @extend .pressx
+  font-family: "ubuntu"
+  font-size: 0.7rem
+  letter-spacing: 0.1rem
+
+.pressx-th
+  @extend .pressx
+  font-family: "boon"
+  font-size: 0.9rem
+  letter-spacing: 0.05rem
+  // font-weight: bold
+
 .f-icon
-  margin-top: 0px
   font-size: 120%
   @if $themeblue
     color: $blue
   @else
     color: $green
+
+.f-icon-en
+  @extend .f-icon
+  margin-top: 0px
 
 .f-icon-th
+  @extend .f-icon
   margin-top: 7px
-  font-size: 120%
-  @if $themeblue
-    color: $blue
-  @else
-    color: $green
 
-.f-icon2
-  margin-top: -5px
-  font-size: 150%
-  @if $themeblue
-    color: $blue
-  @else
-    color: $green
-
-.f-icon-th2
+.f-icon2, .f-icon2-en, .f-icon2-th
   margin-top: -5px
   font-size: 150%
   @if $themeblue
@@ -223,7 +143,7 @@ del
   font-size: 70%
   color: $lightgrey
 
-label
+label.en
   font-size: 1rem
 
 label.th

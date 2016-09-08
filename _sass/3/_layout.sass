@@ -76,14 +76,22 @@ header
             text-align: center
 
         .topnav-item
-          font-family: "boon"
-          font-size: 0.95rem
           color: $white
           text-decoration: none
           text-align: center
           &:hover
             color: $orange
             text-decoration: none
+
+        .topnav-item-en
+          @extend .topnav-item
+          font-family: "ubuntu"
+          font-size: 0.8rem
+
+        .topnav-item-th
+          @extend .topnav-item
+          font-family: "boon"
+          font-size: 0.95rem
 
   .header-3
     background-color: $silver

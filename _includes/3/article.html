@@ -1,10 +1,10 @@
         <header>
-          {% if page.locale == "th" %}<h2 class="th">{% else %}<h2>{% endif %}{{ page.title }}</h2>
+          {% if page.locale %}<h2 class="{{ page.locale }}">{% else %}<h2>{% endif %}{{ page.title }}</h2>
           {% if page.question %}
-          {% if page.locale == "th" %}<h6 class="th"><i class="pe-bullhorn pe-fw"></i> คำถาม:</h6>{% else %}<h6><i class="pe-bullhorn pe-fw"></i> Question:</h6>{% endif %}
+          {% if page.locale %}<h6 class="{{ page.locale }}">{% else %}<h6>{% endif %}<i class="pe-bullhorn pe-fw"></i> {% if page.locale == "th" %}คำถาม:{% else %}Question:{% endif %}</h6>
           <div class="questionbox">
             <img src="{{ "/assets/img/0/QA.svg" | prepend: site.baseurl }}" alt="You ask and we answer" class="img-responsive article-svg">
-            {% if page.locale == "th" %}<blockquote class="th">{% else %}<blockquote>{% endif %}<i class="pe-quote-left"></i> {{ page.question }} <i class="pe-quote-right"></i></blockquote>
+            {% if page.locale %}<blockquote class="{{ page.locale }}">{% else %}<blockquote>{% endif %}<i class="pe-quote-left"></i> {{ page.question }} <i class="pe-quote-right"></i></blockquote>
           </div>
           {% endif %}
           <p class="post-meta">
