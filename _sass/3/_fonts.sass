@@ -11,8 +11,6 @@
 
 @font-face
   font-family: "pe"
-  font-style: normal
-  font-weight: 400
   src: url("../fonts/pe.woff") format("woff")
 
 @font-face
@@ -32,6 +30,10 @@
   src: url("../fonts/ubuntu.woff") format("woff")
 
 @font-face
+  font-family: "museo"
+  src: url("../fonts/museo.woff") format("woff")
+
+@font-face
   font-family: "snippet"
   src: url("../fonts/snippet.woff") format("woff")
 
@@ -47,6 +49,14 @@
   font-family: "boon"
   src: url("../fonts/boon.woff") format("woff")
 
+@font-face
+  font-family: "anchan"
+  src: url("../fonts/anchan.woff") format("woff")
+
+@font-face
+  font-family: "cheangkhan"
+  src: url("../fonts/cheangkhan.woff") format("woff")
+
 
 // font-size
 
@@ -56,29 +66,29 @@ h1, h2, h3, h4, h5, h6
 
 h1
   font-size: 1.75rem
-  line-height: 0.71428574
+  line-height: 0.81632653085
   letter-spacing: -0.1rem
   color: $white
 
 h2
-  font-size: 1.9rem
-  line-height: 0.75187973
-  letter-spacing: -0.1rem
   color: $black
+
+h2.en
+  @extend h2
+  font-family: "ubuntu"
+  font-size: 1.9rem
+  line-height: 0.75187969947
+  letter-spacing: -0.1rem
 
 h2.th
-  font-family: "boon" !important
+  @extend h2
+  font-family: "boon"
   font-size: 2.1rem
-  line-height: 0.71428571
+  line-height: 0.68027210904
   letter-spacing: -0.03rem
-  color: $black
 
 h3
-  font-size: 1.3rem
-  line-height: 1.09890115
-  letter-spacing: -0.08rem
   color: $white
-  font-family: "ubuntu"
   height: 40px
   background-size: 100%
   padding: 7px 0 10px 10px
@@ -87,166 +97,181 @@ h3
   @else
     background-image: linear-gradient(to right, $darkgreen, rgba(0, 0, 0, 0))
 
-h3.th
-  font-family: "boon" !important
-  font-size: 1.45rem
-  line-height: 1
-  letter-spacing: -0.03rem
-  color: $white
+h3.en
+  @extend h3
   font-family: "ubuntu"
-  height: 40px
-  background-size: 100%
-  padding: 7px 0 10px 13px
-  @if $themeblue
-    background-image: linear-gradient(to right, $darkblue, rgba(0, 0, 0, 0))
-  @else
-    background-image: linear-gradient(to right, $darkgreen, rgba(0, 0, 0, 0))
+  font-size: 1.3rem
+  line-height: 1.09890109923
+  letter-spacing: -0.08rem
+
+h3.th
+  @extend h3
+  font-family: "boon"
+  font-size: 1.45rem
+  line-height: 0.98522167517
+  letter-spacing: -0.03rem
 
 h4
-  font-size: 1.2rem
-  line-height: 1.19047624
-  letter-spacing: -0.03rem
   text-transform: uppercase
   padding-top: 10px
   @if $themeblue
     color: $darkblue
   @else
     color: $darkgreen
+  &:before
+    content: " "
+    display: block
+    border-top: 1px dotted $silver
+    padding-top: 20px
 
-h4:before
-  content: " "
-  display: block
-  border-top: 1px dotted $silver
-  padding-top: 20px
+h4.en
+  @extend h4
+  font-family: "ubuntu"
+  font-size: 1.2rem
+  line-height: 1.19047619083
+  letter-spacing: -0.03rem
 
 h4.th
-  font-family: "boon" !important
+  @extend h4
+  font-family: "boon"
   font-size: 1.4rem
-  line-height: 1.07142857
+  line-height: 1.02040816357
   letter-spacing: -0.01rem
-  //text-transform: uppercase
-  padding-top: 10px
-  @if $themeblue
-    color: $darkblue
-  @else
-    color: $darkgreen
-
-h4.th:before
-  content: " "
-  display: block
-  border-top: 1px dotted $silver
-  padding-top: 20px
 
 h5
-  font-size: 1.05rem
-  line-height: 1.36054428
-  letter-spacing: -0.03rem
-  font-family: "ubuntu"
   text-transform: uppercase
   color: $grey
+
+h5.en
+  @extend h5
+  font-family: "ubuntu"
+  font-size: 1.05rem
+  line-height: 1.3605442181
+  letter-spacing: -0.03rem
 
 h5.th
-  font-family: "boon" !important
+  @extend h5
+  font-family: "boon"
   font-size: 1.3rem
-  line-height: 1.15384615
+  line-height: 1.09890109923
   letter-spacing: -0.01rem
-  font-family: "ubuntu"
-  text-transform: uppercase
-  color: $grey
 
 h5.h5index
+  border-bottom: 1px dotted $darkgrey
+  padding-top: 10px
+  color: $grey
+  font-weight: bold
+
+h5.h5index-en
+  @extend h5.h5index
+  font-family: "ubuntu"
   font-size: 1.25rem
   line-height: 1.1428571432
-  font-weight: bold
-  border-bottom: 1px dotted $darkgrey
-  padding-top: 10px
-  color: $grey
-
-h5.h5indexth
-  font-family: "boon" !important
-  font-size: 1.5rem
   letter-spacing: -0.03rem
-  line-height: 1
-  font-weight: bold
-  border-bottom: 1px dotted $darkgrey
-  padding-top: 10px
-  color: $grey
+
+h5.h5index-th
+  @extend h5.h5index
+  font-family: "boon"
+  font-size: 1.5rem
+  line-height: 0.95238095266
+  letter-spacing: -0.01rem
 
 h6
+  font-weight: bold
+  text-transform: uppercase
+  padding: 0px 15px
+  @if $themeblue
+    color: $darkblue
+  @else
+    color: $darkgreen
+
+h6.en
+  @extend h6
+  font-family: "ubuntu"
   font-size: 1.0rem
-  font-weight: bold
-  // line-height: 1.36054428
-  letter-spacing: -0.03rem
-  font-weight: bold
-  text-transform: uppercase
-  padding: 0px 15px
-  @if $themeblue
-    color: $darkblue
-  @else
-    color: $darkgreen
-
-h6.th
-  font-family: "boon" !important
-  font-size: 1.1rem
-  // line-height: 1.25
-  letter-spacing: -0.01rem
-  font-weight: bold
-  text-transform: uppercase
-  padding: 0px 15px
-  @if $themeblue
-    color: $darkblue
-  @else
-    color: $darkgreen
-
-p
-  font-size: 1rem
   line-height: 1.428571429
   letter-spacing: -0.03rem
+
+h6.th
+  @extend h6
+  font-family: "boon"
+  font-size: 1.1rem
+  line-height: 1.29870129909
+  letter-spacing: -0.01rem
+
+p
   margin-bottom: 1.5rem
   padding: auto 10px
 
+p.en
+  @extend p
+  font-family: "Lucida Grande"
+  font-size: 1rem
+  //line-height: 1.428571429
+  letter-spacing: -0.03rem
+
 p.th
+  @extend p
   font-family: "boon"
   font-size: 1.2rem
+  //line-height: 1.19047619083
   letter-spacing: -0.03rem
-  padding: auto 10px
 
 p.lead
-  font-family: "snippet"
-  font-size: 1.3rem
   color: $grey
 
-p.leadth
+p.lead-en
+  @extend p.lead
+  font-family: "snippet"
+  font-size: 1.3rem
+  //line-height: 1.09890109923
+  letter-spacing: -0.01rem
+
+p.lead-th
+  @extend p.lead
   font-family: "boon"
   font-size: 1.5rem
+  //line-height: 0.95238095266
   letter-spacing: -0.03rem
-  color: $grey
 
 blockquote
   margin: 0px 5px 20px 5px
-  font-family: "snippet"
-  font-size: 1.25rem
   color: $darkgrey
 
+blockquote.en
+  @extend blockquote
+  font-family: "snippet"
+  font-size: 1.25rem
+  //line-height: 1.1428571432
+
 blockquote.th
-  margin: 0px 5px 20px 5px
+  @extend blockquote
   font-family: "boon"
   font-size: 1.45rem
-  color: $darkgrey
+  //line-height: 0.98522167517
+
 
 @media (max-width: 768px)
 
   // h2
   //   font-size: 1.5rem
 
-  p
+  p, p.en
     font-size: 1.05rem
+    //line-height: 1.3605442181
 
-  p.lead
+  p.th
+    font-size: 1.25rem
+    //line-height: 1.1428571432
+
+  p.lead, p.lead-en
     font-size: 1.1rem
+    //line-height: 1.29870129909
 
-  p.leadth
+  p.lead-th
     font-size: 1.3rem
+    //line-height: 1.09890109923
+
 
 // color control
 
