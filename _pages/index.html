@@ -11,9 +11,34 @@ locale: "en"
 <html>
 <head>
 	<meta charset="utf-8">
-  <meta http-equiv="refresh" content="1; URL='{{ "/en/" | prepend: site.baseurl }}'" />
+  <title>Welcome to PEB Support</title>
+  <meta http-equiv="refresh" content="3; URL='{{ "/en/" | prepend: site.baseurl }}'" />
+  <style>
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      font-family: Verdana, sans-serif;
+    }
+    div#welcomebox {
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 50px
+    }
+    h3 {
+      color: #111111;
+    }
+    svg {
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  </style>
 </head>
-<body>
-  <h3>Redirecting you to the main website. One moment please.</h3>
+<body id="welcome">
+  <div id="welcomebox">
+    <h3>Redirecting you to the main website.</h3>
+    {% include 1/wave.svg %}
+    <p>One moment please...</p>
+  </div>
 </body>
 </html>
