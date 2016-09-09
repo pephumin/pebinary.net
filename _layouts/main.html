@@ -20,9 +20,9 @@ layout: index
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
   {% if page.locale == "th" %}
-{{ content | replace: '<h3', '<h3 class="th"' | replace: '<h4', '<h4 class="th"' | replace: '<h5', '<h5 class="th"' | replace: '<h6', '<h6 class="th"' | replace: '<p>', '<p class="th">' | replace: '<span class="panel-title-en">', '<span class="panel-title-th">' }}
+{{ content | replace: '<h3', '<h3 class="th"' | replace: '<h4', '<h4 class="th"' | replace: '<h5', '<h5 class="th"' | replace: '<h6', '<h6 class="th"' | replace: '<p>', '<p class="th">' | replace: '<p class="lead">', '<p class="lead-th">' | replace: '<ol>', '<ol class="th">' | replace: '<ul>', '<ul class="th">' | replace: '<li>', '<li class="th">' | replace: '<span class="panel-title-en">', '<span class="panel-title-th">' }}
   {% else %}
-{{ content }}
+{{ content | replace: '<h3', '<h3 class="en"' | replace: '<h4', '<h4 class="en"' | replace: '<h5', '<h5 class="en"' | replace: '<h6', '<h6 class="en"' | replace: '<p>', '<p class="en">' | replace: '<p class="lead">', '<p class="lead-en">' | replace: '<ol>', '<ol class="en">' | replace: '<ul>', '<ul class="en">' | replace: '<li>', '<li class="en">' | replace: '<span class="panel-title-en">', '<span class="panel-title-th">' }}
   {% endif %}
       </article>
 {% include 3/more.html section = sect %}
@@ -33,9 +33,9 @@ layout: index
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
   {% if page.locale == "th" %}
-{{ content | replace: '<h3', '<h3 class="th"' | replace: '<h4', '<h4 class="th"' | replace: '<h5', '<h5 class="th"' | replace: '<h6', '<h6 class="th"' | replace: '<p>', '<p class="th">' | replace: '<span class="panel-title-en">', '<span class="panel-title-th">' }}
+{{ content | replace: '<h3', '<h3 class="th"' | replace: '<h4', '<h4 class="th"' | replace: '<h5', '<h5 class="th"' | replace: '<h6', '<h6 class="th"' | replace: '<p>', '<p class="th">' | replace: '<p class="lead">', '<p class="lead-th">' | replace: '<ol>', '<ol class="th">' | replace: '<ul>', '<ul class="th">' | replace: '<li>', '<li class="th">' | replace: '<span class="panel-title-en">', '<span class="panel-title-th">' }}
   {% else %}
-{{ content }}
+{{ content | replace: '<h3', '<h3 class="en"' | replace: '<h4', '<h4 class="en"' | replace: '<h5', '<h5 class="en"' | replace: '<h6', '<h6 class="en"' | replace: '<p>', '<p class="en">' | replace: '<p class="lead">', '<p class="lead-en">' | replace: '<ol>', '<ol class="en">' | replace: '<ul>', '<ul class="en">' | replace: '<li>', '<li class="en">' | replace: '<span class="panel-title-en">', '<span class="panel-title-th">' }}
   {% endif %}
       </article>
 {% include 3/more.html section = sect %}
@@ -51,9 +51,9 @@ layout: index
 {% include 3/article.html %}
 {% if page.toc %}<div id="toc" class="hidden-xs"></div>{% endif %}
   {% if page.locale == "th" %}
-{{ content | replace: '<h3', '<h3 class="th"' | replace: '<h4', '<h4 class="th"' | replace: '<h5', '<h5 class="th"' | replace: '<h6', '<h6 class="th"' | replace: '<p>', '<p class="th">' | replace: '<span class="panel-title-en">', '<span class="panel-title-th">' }}
+{{ content | replace: '<h3', '<h3 class="th"' | replace: '<h4', '<h4 class="th"' | replace: '<h5', '<h5 class="th"' | replace: '<h6', '<h6 class="th"' | replace: '<p>', '<p class="th">' | replace: '<p class="lead">', '<p class="lead-th">' | replace: '<ol>', '<ol class="th">' | replace: '<ul>', '<ul class="th">' | replace: '<li>', '<li class="th">' | replace: '<span class="panel-title-en">', '<span class="panel-title-th">' }}
   {% else %}
-{{ content }}
+{{ content | replace: '<h3', '<h3 class="en"' | replace: '<h4', '<h4 class="en"' | replace: '<h5', '<h5 class="en"' | replace: '<h6', '<h6 class="en"' | replace: '<p>', '<p class="en">' | replace: '<p class="lead">', '<p class="lead-en">' | replace: '<ol>', '<ol class="en">' | replace: '<ul>', '<ul class="en">' | replace: '<li>', '<li class="en">' | replace: '<span class="panel-title-en">', '<span class="panel-title-th">' }}
   {% endif %}
       </article>
 {% include 3/more.html section = sect %}

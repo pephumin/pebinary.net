@@ -425,20 +425,19 @@ article.en
   padding: 30px auto
   margin: 0px auto
 
-  ul
+  ul.en
     list-style: none
     margin-bottom: 25px
     padding-left: 10px
     display: block
 
-    li
+    li.en
       font-size: 1.0rem
       list-style: none
       line-height: 1.666
-
-    li:before
-      content: "\00BB\00a0"
-      color: inherit
+      &:before
+        content: "\00BB\00a0"
+        color: inherit
 
 article.th
   font-family: "boon"
@@ -457,10 +456,9 @@ article.th
       font-size: 1.2rem
       list-style: none
       line-height: 1.666
-
-    li:before
-      content: "\00BB\00a0"
-      color: inherit
+      &:before
+        content: "\00BB\00a0"
+        color: inherit
 
 @media (max-width: 768px)
 
