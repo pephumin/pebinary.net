@@ -17,8 +17,9 @@ permalink:            date
 excerpt_separator:    <!--more-->
 host:                 localhost
 port:                 5000
-#url:                  http://pephumin.github.io
-#baseurl:              /pebinary.net
+# url:                  http://www.pebinary.net
+url:                  http://pephumin.github.io
+baseurl:              /pebinary.net
 quiet:                false
 verbose:              true
 encoding:             utf-8
@@ -62,7 +63,7 @@ exclude:
   - .firebaserc
 
 gems:
-  - jekyll-sitemap
+  # - jekyll-sitemap
   - jekyll-timeago
   # - jekyll-redirect-from
 
