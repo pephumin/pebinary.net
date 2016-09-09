@@ -1,15 +1,44 @@
 ---
-title: "Support for clients"
+title: "Rediecting to the client section"
 section: "home"
 permalink: /clients/
+layout:
 nav: "clients"
 locale: "en"
 ---
 
-<section class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 listtops">
-      {% include 3/listtopics.html section = "clients" %}
-    </div>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>Welcome to PEB Support</title>
+  <meta http-equiv="refresh" content="3; URL='{{ "/en/clients/" | prepend: site.baseurl }}'" />
+  <style>
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      font-family: Verdana, sans-serif;
+    }
+    div#welcomebox {
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 50px
+    }
+    h3 {
+      color: #111111;
+    }
+    svg {
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body id="welcome">
+  <div id="welcomebox">
+    <h3>Redirecting you to the {{ page.nav }} section.</h3>
+    {% include 1/wave.svg %}
+    <p>One moment please...</p>
   </div>
-</section>
+</body>
+</html>
