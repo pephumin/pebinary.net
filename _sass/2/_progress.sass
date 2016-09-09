@@ -74,7 +74,7 @@
 
 .progress-title
   display: block
-  font-size: 0.95rem
+  font-size: 0.9rem
   margin-top: 0
   color: $lightgrey
 
@@ -105,7 +105,10 @@
       @else
         background-color: $green
     &::after
-      background-color: $silver
+      @if $themeblue
+        background-color: $blue
+      @else
+        background-color: $green
   &.is-completed .progress-title,
   &.is-completed .progress-text
     @if $themeblue
@@ -126,95 +129,95 @@
     margin-left: auto
     margin-right: auto
 
-.progress-tracker--right
-  .progress-step
-    text-align: right
-    &:last-child
-      -webkit-box-flex: 1
-      -ms-flex-positive: 1
-      flex-grow: 1
-    &::after
-      right: calc(-100% + 14px)
-  .progress-marker
-    margin-left: auto
-
-.progress-tracker--border
-  padding: 5px
-  border: 2px solid $lightgrey
-  border-radius: 38px
-
-.progress-tracker--spaced .progress-step::after
-  width: calc(100% - 48px)
-  margin-right: 24px
-
-.progress-tracker--word
-  padding-right: 38.6666666667px
-  overflow: hidden
-  .progress-text
-    display: inline-block
-    white-space: nowrap
-  .progress-title
-    margin: 0
-
-.progress-tracker--word-center
-  padding-right: 38.6666666667px
-  padding-left: 38.6666666667px
-  .progress-text
-    padding-right: 0
-    padding-left: 0
-    -webkit-transform: translateX(calc(-50% + 14px))
-    transform: translateX(calc(-50% + 14px))
-
-.progress-tracker--word-right
-  padding-right: 0
-  padding-left: 38.6666666667px
-  .progress-text
-    padding-left: 0
-    -webkit-transform: translateX(calc(-100% + 28px))
-    transform: translateX(calc(-100% + 28px))
-
-.progress-tracker--text .progress-step:last-child
-  -webkit-box-flex: 1
-  -ms-flex-positive: 1
-  flex-grow: 1
-
-.progress-tracker--text-top
-  .progress-step::after
-    top: auto
-  .progress-text
-    height: 100%
-  .progress-marker
-    bottom: 28px
-
-.progress-tracker--text-inline
-  .progress-step
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-  .progress-text
-    position: relative
-    z-index: 30
-    max-width: 70%
-    white-space: nowrap
-    padding-top: 0
-    padding-bottom: 0
-    background-color: $white
-  .progress-title
-    margin: 0
-
-.progress-tracker--square
-  .progress-step
-    padding-top: 0
-  .progress-marker
-    -webkit-transform: scaleX(0.33) translateY(-12px)
-    transform: scaleX(0.33) translateY(-12px)
-    border-radius: 0
-
-@media (max-width: 399px)
-  .progress-tracker-mobile
-    overflow-x: auto
-    .progress-tracker
-      min-width: 200%
+// .progress-tracker--right
+//   .progress-step
+//     text-align: right
+//     &:last-child
+//       -webkit-box-flex: 1
+//       -ms-flex-positive: 1
+//       flex-grow: 1
+//     &::after
+//       right: calc(-100% + 14px)
+//   .progress-marker
+//     margin-left: auto
+//
+// .progress-tracker--border
+//   padding: 5px
+//   border: 2px solid $lightgrey
+//   border-radius: 38px
+//
+// .progress-tracker--spaced .progress-step::after
+//   width: calc(100% - 48px)
+//   margin-right: 24px
+//
+// .progress-tracker--word
+//   padding-right: 38.6666666667px
+//   overflow: hidden
+//   .progress-text
+//     display: inline-block
+//     white-space: nowrap
+//   .progress-title
+//     margin: 0
+//
+// .progress-tracker--word-center
+//   padding-right: 38.6666666667px
+//   padding-left: 38.6666666667px
+//   .progress-text
+//     padding-right: 0
+//     padding-left: 0
+//     -webkit-transform: translateX(calc(-50% + 14px))
+//     transform: translateX(calc(-50% + 14px))
+//
+// .progress-tracker--word-right
+//   padding-right: 0
+//   padding-left: 38.6666666667px
+//   .progress-text
+//     padding-left: 0
+//     -webkit-transform: translateX(calc(-100% + 28px))
+//     transform: translateX(calc(-100% + 28px))
+//
+// .progress-tracker--text .progress-step:last-child
+//   -webkit-box-flex: 1
+//   -ms-flex-positive: 1
+//   flex-grow: 1
+//
+// .progress-tracker--text-top
+//   .progress-step::after
+//     top: auto
+//   .progress-text
+//     height: 100%
+//   .progress-marker
+//     bottom: 28px
+//
+// .progress-tracker--text-inline
+//   .progress-step
+//     display: -webkit-box
+//     display: -ms-flexbox
+//     display: flex
+//   .progress-text
+//     position: relative
+//     z-index: 30
+//     max-width: 70%
+//     white-space: nowrap
+//     padding-top: 0
+//     padding-bottom: 0
+//     background-color: $white
+//   .progress-title
+//     margin: 0
+//
+// .progress-tracker--square
+//   .progress-step
+//     padding-top: 0
+//   .progress-marker
+//     -webkit-transform: scaleX(0.33) translateY(-12px)
+//     transform: scaleX(0.33) translateY(-12px)
+//     border-radius: 0
+//
+// @media (max-width: 399px)
+//   .progress-tracker-mobile
+//     overflow-x: auto
+//     .progress-tracker
+//       min-width: 200%
 
 .progress-tracker--vertical
   -webkit-box-orient: vertical
