@@ -1,5 +1,5 @@
 ---
-title: "ขั้นตอนการกู้รหัสลับ"
+title: "การกู้รหัสลับ"
 section: "members"
 category: "general"
 permalink: /th/members/general/4.html

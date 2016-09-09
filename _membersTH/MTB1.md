@@ -1,5 +1,5 @@
 ---
-title: "ภาพรวมของการจัดการสมาชิก"
+title: "การจัดการสมาชิก"
 section: "members"
 category: "dashboard"
 permalink: /th/members/dashboard/1.html

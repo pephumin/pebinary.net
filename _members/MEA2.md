@@ -1,5 +1,5 @@
 ---
-title: "Member registration"
+title: "Registration"
 section: "members"
 category: "general"
 permalink: /en/members/general/2.html

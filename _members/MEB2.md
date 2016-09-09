@@ -38,7 +38,7 @@ Once the registration has been completed. A user must log in to our system to st
     <span class="progress-marker"></span>
     <span class="progress-text">
       <span class="progress-title">Step 4</span>
-      Dashboard:<br>Setting
+      Dashboard:<br>Settings
     </span>
   </li>
   <li class="progress-step">

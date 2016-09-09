@@ -1,5 +1,5 @@
 ---
-title: "Overview of dashboard"
+title: "Control overview"
 section: "members"
 category: "dashboard"
 permalink: /en/members/dashboard/1.html
@@ -40,7 +40,7 @@ All important information is summarised in one page dashboard. And more details 
     <span class="progress-marker"></span>
     <span class="progress-text">
       <span class="progress-title">Step 4</span>
-      Dashboard:<br>Setting
+      Dashboard:<br>Settings
     </span>
   </li>
   <li class="progress-step">

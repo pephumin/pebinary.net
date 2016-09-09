@@ -38,7 +38,7 @@ This section only performs one task, which is the logging a user out from our sy
     <span class="progress-marker"></span>
     <span class="progress-text">
       <span class="progress-title">Step 4</span>
-      Dashboard:<br>Setting
+      Dashboard:<br>Settings
     </span>
   </li>
   <li class="progress-step is-active">

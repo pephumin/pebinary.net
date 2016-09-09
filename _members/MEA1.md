@@ -1,5 +1,5 @@
 ---
-title: "Overview of membership"
+title: "Membership overview"
 section: "members"
 category: "general"
 permalink: /en/members/general/1.html

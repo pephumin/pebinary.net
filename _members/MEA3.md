@@ -1,5 +1,5 @@
 ---
-title: "Registration using Social Media"
+title: "Registration by social media"
 section: "members"
 category: "general"
 permalink: /en/members/general/3.html

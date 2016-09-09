@@ -1,5 +1,5 @@
 ---
-title: "Points"
+title: "Dashbaord: Points"
 section: "members"
 category: "dashboard"
 permalink: /en/members/dashboard/4.html
@@ -38,7 +38,7 @@ This section shows the summary of points you have collected so far. It shows the
     <span class="progress-marker"></span>
     <span class="progress-text">
       <span class="progress-title">Step 4</span>
-      Dashboard:<br>Setting
+      Dashboard:<br>Settings
     </span>
   </li>
   <li class="progress-step">
