@@ -1,7 +1,7 @@
 \:root
   font-size: 16px
   line-height: 1.428571429
-  //letter-spacing: -0.02rem
+
 
 // font-face
 
@@ -60,13 +60,8 @@
 
 // font-size
 
-h1, h2, h3, h4, h5, h6
-  margin-top: 0.5rem
-  margin-bottom: 1.5rem
-
 h1
   font-size: 1.75rem
-  line-height: 0.81632653085
   letter-spacing: -0.1rem
   color: $white
 
@@ -77,14 +72,12 @@ h2.en
   @extend h2
   font-family: "Lucida Grande"
   font-size: 1.9rem
-  line-height: 0.75187969947
   letter-spacing: -0.1rem
 
 h2.th
   @extend h2
   font-family: "boon"
   font-size: 2.1rem
-  line-height: 0.68027210904
   letter-spacing: -0.03rem
 
 h3
@@ -101,14 +94,12 @@ h3.en
   @extend h3
   font-family: "Lucida Grande"
   font-size: 1.3rem
-  line-height: 1.09890109923
   letter-spacing: -0.08rem
 
 h3.th
   @extend h3
   font-family: "boon"
   font-size: 1.45rem
-  line-height: 0.98522167517
   letter-spacing: -0.03rem
 
 h4
@@ -128,14 +119,12 @@ h4.en
   @extend h4
   font-family: "Lucida Grande"
   font-size: 1.2rem
-  line-height: 1.19047619083
   letter-spacing: -0.03rem
 
 h4.th
   @extend h4
   font-family: "boon"
   font-size: 1.4rem
-  line-height: 1.02040816357
   letter-spacing: -0.01rem
 
 h5
@@ -146,14 +135,12 @@ h5.en
   @extend h5
   font-family: "Lucida Grande"
   font-size: 1.05rem
-  line-height: 1.3605442181
   letter-spacing: -0.03rem
 
 h5.th
   @extend h5
   font-family: "boon"
   font-size: 1.3rem
-  line-height: 1.09890109923
   letter-spacing: -0.01rem
 
 h5.h5index
@@ -166,14 +153,12 @@ h5.h5index-en
   @extend h5.h5index
   font-family: "Lucida Grande"
   font-size: 1.25rem
-  line-height: 1.1428571432
   letter-spacing: -0.03rem
 
 h5.h5index-th
   @extend h5.h5index
   font-family: "boon"
   font-size: 1.5rem
-  line-height: 0.95238095266
   letter-spacing: -0.01rem
 
 h6
@@ -189,18 +174,15 @@ h6.en
   @extend h6
   font-family: "Lucida Grande"
   font-size: 1.0rem
-  line-height: 1.428571429
   letter-spacing: -0.03rem
 
 h6.th
   @extend h6
   font-family: "boon"
   font-size: 1.1rem
-  line-height: 1.29870129909
   letter-spacing: -0.01rem
 
 p
-  margin-bottom: 1.5rem
   padding: auto 10px
 
 p.en
@@ -244,10 +226,13 @@ blockquote.th
   font-family: "boon"
   font-size: 1.45rem
 
+h1, h2, h3, h4, h5, h6, p, blockquote
+  line-height: 1.428571429
+  margin-top: 0.5rem
+  margin-bottom: 1.5rem
+
 
 @media (max-width: 768px)
-
-
 
   h1
     font-size: 1.55rem
