@@ -1,12 +1,10 @@
 ---
 layout: index
 ---
-
 {% if page.locale == "en" %}{% assign sect = page.section %}
 {% elsif page.locale == "th" %}{% assign sect = page.section | append: "TH" %}
 {% elsif page.locale == "" %}{% assign page.locale = site.locale %}
 {% endif %}
-
 <main class="container maincontent">
   <div class="row">
 {% if page.format == "layout-left" %}
