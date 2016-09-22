@@ -1,5 +1,5 @@
 ---
-title: "Registration by social media"
+title: "Registration by social network"
 section: "members"
 category: "general"
 permalink: /en/members/general/3.html
@@ -12,17 +12,11 @@ question: "Do you offer a member registration by using my social media account?"
 
 Yes we do.
 
-We have an option to have the member registration done by a few ways as follows.
+Apart from member registration by email, we also have an option for a new member to get registered quickly by using one of their Social Network accounts. Currently we offer this service with one of the three Social Network players as follows.
 
-- Registration by using email
 - Registration by using Facebook
 - Registration by using Google
 - Registration by using Twitter
-
-
-#### Registration by using email
-
-You will be prompted for your name, email address, and the desired password. If the requested user email is not registered in our database, your account will then be created which will allow you to log in using your email address and password.
 
 
 #### Registration by using Facebook
