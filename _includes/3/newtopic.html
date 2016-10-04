@@ -13,16 +13,31 @@
             <img src="{{ "/assets/img/0/f-newtopic.svg" | prepend: site.baseurl }}" alt="New Topic" class="img-responsive newtopic-svg">
           </div>
           <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-            <form name="commentform" method="post" action="/newquestion.php">
+            <form id="new-topic" method="post" action="{{ "/assets/ext/pebinary.net/newtopic.php" | prepend: site.data.domains.client }}">
               {% if page.locale == "th" %}<h3 id="ask-question" class="th">ถามคำถามใหม่</h3>{% else %}<h3 id="ask-question" class="en">Ask your new question</h3>{% endif %}
               <div class="form-group has-feedback">
                 <!-- <label for="InputName">Question</label> <span class="label">required</span> -->
-                <textarea class="{{ page.locale }} form-control" rows="5" id="newquestion" placeholder="{% if page.locale == 'th' %}พิมพ์คำถามของคุณในช่องนี้...{% else %}Type your question here...{% endif %}"></textarea><br>
+                {% if page.locale == "th" %}<textarea class="th form-control" rows="5" id="newquestion" name="newquestionth" placeholder="พิมพ์คำถามของคุณในช่องนี้..."></textarea>{% else %}<textarea class="en form-control" rows="5" id="newquestion" name="newquestionen" placeholder="Type your question here..."></textarea>{% endif %}
                 <i class="pe-commenting-o {% if page.locale == 'th' %}f-icon2-th{% else %}f-icon2-en{% endif %} form-control-feedback"></i>
               </div>
               <input type="hidden" name="section" value="{{ page.nav }}">
-              {% if page.locale == "th" %}<button type="submit" class="pressx-th">ส่งคำถามใหม่{% else %}<button type="submit" class="pressx-en">submit a new question{% endif %} <i class="pe-check-circle-o"></i></button>
+              <p>{% if page.locale == "th" %}<button type="submit" class="pressx-th">ส่งคำถามใหม่{% else %}<button type="submit" class="pressx-en">submit a new question{% endif %} <i class="pe-check-circle-o"></i></button></p>
             </form>
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('#new-topic').formValidation({
+            framework: 'bootstrap',
+            icon: { valid: 'pe-check', invalid: 'pe-times', validating: 'pe-refresh' },
+            button: { selector: '[type="submit"]', disabled: '' },
+            excluded: ':disabled',
+            fields: {
+              newquestionen: { validators: { notEmpty: { message: 'Please type your messsage into the box above' } } },
+              newquestionth: { validators: { notEmpty: { message: 'กรุณาพิมพ์คำถามที่ต้องการลงในช่องด้านบนนี้' } } }
+            }
+          });
+          {% if page.locale == "th" %}$('.help-block').addClass('help-block-th');{% else %}$('.help-block').addClass('help-block-en');{% endif %}
+        });
+      </script>

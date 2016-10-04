@@ -44,24 +44,49 @@
         {% endif %}
         <div class="contact-border">
           <div class="contact">
-            <form name="commentform" method="post" action="{{ "/email.php" | prepend: site.baseurl }}">
+            <form id="contactus" method="post" action="{{ "/assets/ext/pebinary.net/contact.php" | prepend: site.data.domains.client }}">
               <div class="form-group has-feedback">
                 {% if page.locale == "th" %}<label class="th">ชื่อ</label>{% else %}<label class="en">Name</label>{% endif %} <span class="label-red">required</span>
-                <input type="text" class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" name="name" placeholder="{% if page.locale == 'th' %}ชื่อของคุณ{% else %}Your name{% endif %}" required>
-                <i class="pe-user {% if page.locale == 'th' %}f-icon-th{% else %}f-icon-en{% endif %} form-control-feedback"></i>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="pe-user pe-fw"></i></span>
+                  {% if page.locale == 'th' %}<input type="text" class="th form-control" name="nameth" placeholder="ชื่อของคุณ">{% else %}<input type="text" class="en form-control" name="nameen" placeholder="Your name">{% endif %}
+                </div>
               </div>
               <div class="form-group has-feedback">
                 {% if page.locale == "th" %}<label class="th">อีเมล์</label>{% else %}<label class="en">Email</label>{% endif %}</label> <span class="label-red">required</span>
-                <input type="email" class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" name="email" placeholder="{% if page.locale == 'th' %}อีเมล์@บริษัท.คอม{% else %}email@company.com{% endif %}" required>
-                <i class="pe-envelope-o {% if page.locale == 'th' %}f-icon-th{% else %}f-icon-en{% endif %} form-control-feedback"></i>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="pe-envelope pe-fw"></i></span>
+                  {% if page.locale == 'th' %}<input type="text" class="th form-control" name="emailth" placeholder="อีเมล์@บริษัท.คอม">{% else %}<input type="text" class="en form-control" name="emailen" placeholder="email@company.com">{% endif %}
+                </div>
               </div>
               <div class="form-group has-feedback">
                 {% if page.locale == "th" %}<label class="th">คำถาม</label>{% else %}<label class="en">Question</label>{% endif %}</label> <span class="label-red">required</span>
-                <textarea class="{% if page.locale == 'th' %}th form-control{% else %}form-control{% endif %}" rows="4" name="message" placeholder="{% if page.locale == 'th' %}พิมพ์คำถามของคุณที่นี่ คุณสามารถพิมพ์ได้มากเท่าที่ต้องการ{% else %}Type your question here. You can type as long as you need.{% endif %}" required></textarea>
-                <i class="pe-commenting-o {% if page.locale == 'th' %}f-icon-th{% else %}f-icon-en{% endif %} form-control-feedback"></i>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="pe-commenting pe-fw"></i></span>
+                  {% if page.locale == "th" %}<textarea class="th form-control" rows="4" name="messageth" placeholder="พิมพ์คำถามของคุณที่นี่ คุณสามารถพิมพ์ได้มากเท่าที่ต้องการ"></textarea>{% else %}<textarea class="en form-control" rows="4" name="messageen" placeholder="Type your question here. You can type as long as you need."></textarea>{% endif %}
+                </div>
               </div>
               {% if page.locale == "th" %}<button type="submit" class="pressx-th">ส่งคำถาม{% else %}<button type="submit" class="pressx-en">send{% endif %} <i class="pe-paper-plane-o"></i></button>
             </form>
+            <script>
+              $(document).ready(function() {
+                $('#contactus').formValidation({
+                  framework: 'bootstrap',
+                  icon: { valid: 'pe-check', invalid: 'pe-times', validating: 'pe-refresh' },
+                  button: { selector: '[type="submit"]', disabled: '' },
+                  excluded: ':disabled',
+                  fields: {
+                    nameth: { validators: { notEmpty: { message: 'กรุณาพิมพ์ชื่อของคุณ' } } },
+                    emailth: { validators: { notEmpty: { message: 'กรุณาพิมพ์อีเมล์ของคุณ' }, emailAddress: { message: 'คุณพิมพ์อีเมล์ไม่ถูกต้อง' } } },
+                    messageth: { validators: { notEmpty: { message: 'กรุณาพิมพ์คำถามที่ต้องการลงในช่องด้านบนนี้' } } },
+                    nameen: { validators: { notEmpty: { message: 'Please enter your name' } } },
+                    emailen: { validators: { notEmpty: { message: 'Please enter your email' }, emailAddress: { message: 'Invalid email address' } } },
+                    messageen: { validators: { notEmpty: { message: 'Please type your messsage into the box above' } } }
+                  }
+                });
+                {% if page.locale == "th" %}$('.help-block').addClass('help-block-th');{% else %}$('.help-block').addClass('help-block-en');{% endif %}
+              });
+            </script>
           </div>
         </div>
       </section>

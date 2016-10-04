@@ -50,6 +50,11 @@ del
     @else
       background-color: $darkgreen
       border: 1px solid $darkgreen
+  &:disabled
+    cursor: not-allowed
+    opacity: 0.65
+    box-shadow: none
+    pointer-events: none
 
 .press-en
   @extend .press
@@ -98,6 +103,11 @@ del
     @else
       color: $darkgreen
       border: 1px solid $darkgreen
+  &:disabled
+    cursor: not-allowed
+    opacity: 0.65
+    box-shadow: none
+    pointer-events: none
 
 .pressx-en
   @extend .pressx
