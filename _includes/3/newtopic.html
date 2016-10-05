@@ -13,7 +13,7 @@
             <img src="{{ "/assets/img/0/f-newtopic.svg" | prepend: site.baseurl }}" alt="New Topic" class="img-responsive newtopic-svg">
           </div>
           <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-            <form id="new-topic" method="post" action="{{ "/assets/ext/pebinary.net/newtopic.php" | prepend: site.data.domains.client }}">
+            {% if page.locale == "th" %}<form id="new-topic" method="get" action="{{ "/assets/ext/pebinary.net/newtopic-th.php" | prepend: site.data.domains.client }}">{% else %}<form id="new-topic" method="get" action="{{ "/assets/ext/pebinary.net/newtopic-en.php" | prepend: site.data.domains.client }}">{% endif %}
               {% if page.locale == "th" %}<h3 id="ask-question" class="th">ถามคำถามใหม่</h3>{% else %}<h3 id="ask-question" class="en">Ask your new question</h3>{% endif %}
               <div class="form-group has-feedback">
                 <!-- <label for="InputName">Question</label> <span class="label">required</span> -->
