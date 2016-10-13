@@ -12,33 +12,29 @@ locale: "en"
 <head>
 	<meta charset="utf-8">
   <title>Welcome to PEB Support</title>
-  <meta http-equiv="refresh" content="3; URL='{{ "/en/" | prepend: site.baseurl }}'" />
+  <meta http-equiv="refresh" content="5; URL='{{ "/en/" | prepend: site.baseurl }}'" />
   <style>
     body {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      font-family: Verdana, sans-serif;
+      background-color: #131313;
+      text-align: center;
     }
-    div#welcomebox {
+    div#king {
       text-align: center;
       margin: 0 auto;
-      padding-top: 50px
+      padding: 30px 0px;
     }
-    h3 {
-      color: #111111;
-    }
-    svg {
-      margin: 0 auto;
-      overflow: hidden;
+    .continue {
+      color: #FFFFFF;
+      font-family: snippet;
+      font-size: 20px;
+      text-decoration: none;
     }
   </style>
 </head>
-<body id="welcome">
-  <div id="welcomebox">
-    <h3>Redirecting you to the main website.</h3>
-    {% include 1/wave.svg %}
-    <p>One moment please...</p>
+<body>
+  <div id="king">
+    <img src="{{ "/assets/img/0/king.jpg" | prepend: site.baseurl }}" alt="In Remembrance of His Majesty King Bhumibol Adulyadej, 1927-2016">
   </div>
+  <p><a href="{{ "/en/" | prepend: site.baseurl }}" title="Continue to the main website..." class="continue">Continue to the main website...</a></p>
 </body>
 </html>
