@@ -44,7 +44,7 @@
         {% endif %}
         <div class="contact-border">
           <div class="contact">
-            {% if page.locale == "th" %}<form id="contactus" method="post" action="{{ "/api/ext/pebinary.net/contact-th.php" | prepend: site.data.domains.client }}">{% else %}<form id="contactus" method="get" action="{{ "/api/ext/pebinary.net/contact-en.php" | prepend: site.data.domains.client }}">{% endif %}
+            {% if page.locale == "th" %}<form id="contactus" method="post" action="{{ "/ext/pebinary.net/contact-th.php" | prepend: site.data.domains.api }}">{% else %}<form id="contactus" method="get" action="{{ "/ext/pebinary.net/contact-en.php" | prepend: site.data.domains.api }}">{% endif %}
               <div class="form-group has-feedback">
                 {% if page.locale == "th" %}<label class="th">ชื่อ</label>{% else %}<label class="en">Name</label>{% endif %} <span class="label-red">required</span>
                 <div class="input-group">
