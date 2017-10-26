@@ -69,13 +69,13 @@ h2
   color: $black
 
 h2.en
-  @extend h2
+  color: $black
   font-family: "Lucida Grande"
   font-size: 1.9rem
   letter-spacing: -0.1rem
 
 h2.th
-  @extend h2
+  color: $black
   font-family: "boon"
   font-size: 2.1rem
   letter-spacing: -0.03rem
@@ -91,13 +91,27 @@ h3
     background-image: linear-gradient(to right, $darkgreen, $white)
 
 h3.en
-  @extend h3
+  color: $white
+  height: 40px
+  background-size: 100%
+  padding: 7px 0 10px 10px
+  @if $themeblue
+    background-image: linear-gradient(to right, $darkblue, $white)
+  @else
+    background-image: linear-gradient(to right, $darkgreen, $white)
   font-family: "Lucida Grande"
   font-size: 1.3rem
   letter-spacing: -0.08rem
 
 h3.th
-  @extend h3
+  color: $white
+  height: 40px
+  background-size: 100%
+  padding: 7px 0 10px 10px
+  @if $themeblue
+    background-image: linear-gradient(to right, $darkblue, $white)
+  @else
+    background-image: linear-gradient(to right, $darkgreen, $white)
   font-family: "boon"
   font-size: 1.45rem
   letter-spacing: -0.05rem
@@ -116,13 +130,33 @@ h4
     padding-top: 20px
 
 h4.en
-  @extend h4
+  text-transform: uppercase
+  padding-top: 10px
+  @if $themeblue
+    color: $darkblue
+  @else
+    color: $darkgreen
+  &:before
+    content: " "
+    display: block
+    border-top: 1px dotted $silver
+    padding-top: 20px
   font-family: "Lucida Grande"
   font-size: 1.2rem
   letter-spacing: -0.03rem
 
 h4.th
-  @extend h4
+  text-transform: uppercase
+  padding-top: 10px
+  @if $themeblue
+    color: $darkblue
+  @else
+    color: $darkgreen
+  &:before
+    content: " "
+    display: block
+    border-top: 1px dotted $silver
+    padding-top: 20px
   font-family: "boon"
   font-size: 1.4rem
   letter-spacing: -0.01rem
@@ -132,13 +166,15 @@ h5
   color: $grey
 
 h5.en
-  @extend h5
+  text-transform: uppercase
+  color: $grey
   font-family: "Lucida Grande"
   font-size: 1.05rem
   letter-spacing: -0.03rem
 
 h5.th
-  @extend h5
+  text-transform: uppercase
+  color: $grey
   font-family: "boon"
   font-size: 1.3rem
   letter-spacing: -0.01rem
@@ -150,13 +186,19 @@ h5.h5index
   font-weight: bold
 
 h5.h5index-en
-  @extend h5.h5index
+  border-bottom: 1px dotted $darkgrey
+  padding-top: 10px
+  color: $grey
+  font-weight: bold
   font-family: "Lucida Grande"
   font-size: 1.25rem
   letter-spacing: -0.03rem
 
 h5.h5index-th
-  @extend h5.h5index
+  border-bottom: 1px dotted $darkgrey
+  padding-top: 10px
+  color: $grey
+  font-weight: bold
   font-family: "boon"
   font-size: 1.5rem
   letter-spacing: -0.05rem
@@ -171,13 +213,25 @@ h6
     color: $darkgreen
 
 h6.en
-  @extend h6
+  font-weight: bold
+  text-transform: uppercase
+  padding: 0px 15px
+  @if $themeblue
+    color: $darkblue
+  @else
+    color: $darkgreen
   font-family: "Lucida Grande"
   font-size: 1.0rem
   letter-spacing: -0.03rem
 
 h6.th
-  @extend h6
+  font-weight: bold
+  text-transform: uppercase
+  padding: 0px 15px
+  @if $themeblue
+    color: $darkblue
+  @else
+    color: $darkgreen
   font-family: "boon"
   font-size: 1.1rem
   letter-spacing: -0.01rem
@@ -186,13 +240,13 @@ p
   padding: auto 10px
 
 p.en
-  @extend p
+  padding: auto 10px
   font-family: "Lucida Grande"
   font-size: 1rem
   letter-spacing: -0.03rem
 
 p.th
-  @extend p
+  padding: auto 10px
   font-family: "boon"
   font-size: 1.2rem
   letter-spacing: -0.03rem
@@ -201,13 +255,13 @@ p.lead
   color: $grey
 
 p.lead-en
-  @extend p.lead
+  color: $grey
   font-family: "snippet"
   font-size: 1.3rem
   letter-spacing: -0.01rem
 
 p.lead-th
-  @extend p.lead
+  color: $grey
   font-family: "boon"
   font-size: 1.5rem
   letter-spacing: -0.03rem
@@ -217,12 +271,14 @@ blockquote
   color: $darkgrey
 
 blockquote.en
-  @extend blockquote
+  margin: 0px 5px 20px 5px
+  color: $darkgrey
   font-family: "snippet"
   font-size: 1.25rem
 
 blockquote.th
-  @extend blockquote
+  margin: 0px 5px 20px 5px
+  color: $darkgrey
   font-family: "boon"
   font-size: 1.45rem
 

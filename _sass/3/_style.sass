@@ -54,15 +54,42 @@
   box-shadow: inset -2px -2px 0 transparentize($black, 0.5)
 
 .label-red
-  @extend .label
+  font-family: "ubuntu"
+  padding: 3px 4px
+  font-size: 65%
+  font-weight: bold
+  letter-spacing: 0
+  text-transform: uppercase
+  color: $white
+  vertical-align: text-top
+  border-radius: 4px
+  box-shadow: inset -2px -2px 0 transparentize($black, 0.5)
   background-color: $red
 
 .label-green
-  @extend .label
+  font-family: "ubuntu"
+  padding: 3px 4px
+  font-size: 65%
+  font-weight: bold
+  letter-spacing: 0
+  text-transform: uppercase
+  color: $white
+  vertical-align: text-top
+  border-radius: 4px
+  box-shadow: inset -2px -2px 0 transparentize($black, 0.5)
   background-color: $green
 
 .label-blue
-  @extend .label
+  font-family: "ubuntu"
+  padding: 3px 4px
+  font-size: 65%
+  font-weight: bold
+  letter-spacing: 0
+  text-transform: uppercase
+  color: $white
+  vertical-align: text-top
+  border-radius: 4px
+  box-shadow: inset -2px -2px 0 transparentize($black, 0.5)
   background-color: $blue
 
 .alert
@@ -75,7 +102,7 @@
     font-size: 0.9rem
 
 .alert-pe
-  @extend .alert
+  box-shadow: inset 0 0 2px $grey
   color: $black
   background-color: $yellow
 
@@ -331,12 +358,14 @@ div#toc
     text-align: center
 
   div.h-yes
-    @extend div.h
+    position: absolute
+    text-align: center
     top: 0px
     left: 0px
 
   div.h-no
-    @extend div.h
+    position: absolute
+    text-align: center
     top: 5px
     left: 100px
 
@@ -347,12 +376,18 @@ div#toc
     cursor: pointer
 
   .tlable-en
-    @extend .tlabel
+    text-transform: uppercase
+    font-weight: bold
+    color: $grey
+    cursor: pointer
     font-family: "ubuntu"
     font-size: 0.7rem
 
   .tlabel-th
-    @extend .tlabel
+    text-transform: uppercase
+    font-weight: bold
+    color: $grey
+    cursor: pointer
     font-family: "boon"
     font-size: 0.75rem
 
@@ -360,11 +395,11 @@ div#toc
   color: $lightgrey
 
 .helpfulnote-en
-  @extend .helpfulnote
+  color: $lightgrey
   font-size: 0.8rem
 
 .helpfulnote-th
-  @extend .helpfulnote
+  color: $lightgrey
   font-family: "boon"
   font-size: 0.9rem
 
@@ -401,13 +436,33 @@ div#toc
         color: $orange
 
   h5.listposts-head-en
-    @extend h5.listposts-head
+    height: 40px
+    width: 100%
+    margin: 0px
+    @if $themeblue
+      background-color: transparentize($darkblue, 0.25)
+    @else
+      background-color: transparentize($darkgreen, 0.25)
+    a
+      color: $white
+      &:hover
+        color: $orange
     font-family: "ubuntu"
     font-size: 1.1rem
     padding: 8px 15px
 
   h5.listposts-head-th
-    @extend h5.listposts-head
+    height: 40px
+    width: 100%
+    margin: 0px
+    @if $themeblue
+      background-color: transparentize($darkblue, 0.25)
+    @else
+      background-color: transparentize($darkgreen, 0.25)
+    a
+      color: $white
+      &:hover
+        color: $orange
     font-family: "boon"
     font-size: 1.3rem
     padding: 5px 15px
@@ -472,11 +527,17 @@ div#toc
     margin-right: 20px
 
   .listtopics-size-en
-    @extend .listtopics-size
+    float: right
+    color: $orange
+    font-weight: bold
+    margin-right: 20px
     font-size: 0.7rem
 
   .listtopics-size-th
-    @extend .listtopics-size
+    float: right
+    color: $orange
+    font-weight: bold
+    margin-right: 20px
     font-family: "boon"
     font-size: 0.85rem
 
@@ -496,10 +557,12 @@ div#toc
     padding: 0px 15px 20px 15px
 
   .listtopics-body-en
-    @extend .listtopics-body
+    margin: 0px
+    padding: 0px 15px 20px 15px
 
   .listtopics-body-th
-    @extend .listtopics-body
+    margin: 0px
+    padding: 0px 15px 20px 15px
     font-family: "boon"
     font-size: 1.05rem
 
@@ -688,11 +751,11 @@ li.listtopics-item-th.disabled
       padding: 20px 30px
 
     p.indexp-en
-      @extend p.indexp
+      padding: 20px 30px
       font-size: 1rem
 
     p.indexp-th
-      @extend p.indexp
+      padding: 20px 30px
       font-family: "boon"
       font-size: 1.2rem
       letter-spacing: -0.03rem
@@ -811,12 +874,30 @@ li.listtopics-item-th.disabled
         color: inherit
 
   span.panel-title-en
-    @extend span.panel-title
+    letter-spacing: -0.01rem
+    font-weight: bold
+    text-transform: uppercase
+    margin: 0px
+    padding: 0px
+    color: $grey
+    //color: $white
+    >
+      a, small, .small, small > a, .small > a
+        color: inherit
     font-family: "ubuntu"
     font-size: 0.85rem
 
   span.panel-title-th
-    @extend span.panel-title
+    letter-spacing: -0.01rem
+    font-weight: bold
+    text-transform: uppercase
+    margin: 0px
+    padding: 0px
+    color: $grey
+    //color: $white
+    >
+      a, small, .small, small > a, .small > a
+        color: inherit
     font-family: "boon"
     font-size: 0.95rem
 
