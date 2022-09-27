@@ -9,3 +9,4 @@ _site
 firebase.json
 firebase-debug.log
 run
+.jekyll-cache/*
